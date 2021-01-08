@@ -1,0 +1,363 @@
+/*
+  ____   ____    _     ____  _____    ____
+ / ___| |  _ \  / \   / ___|| ____|  | ___|
+ \___ \ | |_) |/ _ \ | |    |  _|    |___ \
+  ___) ||  __// ___ \| |___ | |___    ___) |
+ |____/ |_|  /_/   \_\\____||_____|  |____/
+
+ space 5 ♦ CSS
+ [--DEMO CONTENT--]
+
+*/
+
+
+/* SPOILER
+------- ------- ------- ------- ------- ------- ------- -------*/
+input[id^="spoiler"] {
+    display: none;
+}
+
+input[id^="spoiler"] + label {
+    display: block;
+    width: 200px;
+    margin: 16px auto;
+    padding: 5px 20px;
+    color: #1c7be2;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+input[id^="spoiler"]:checked + label {
+    color: #1c7be2;
+    background: #ededed;
+}
+
+input[id^="spoiler"] ~ .spoiler {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0;
+    padding: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+}
+
+input[id^="spoiler"]:checked + label + .spoiler {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
+
+
+
+/* Test content-----------------------*/
+.body {
+    background: url("/dot-bg.png");
+}
+
+.border {
+    border: 1px dashed mediumvioletred;
+
+}
+
+.future-goals {
+    background: #feffc5;
+    padding: 10px;
+    color: #2b343c;
+}
+
+.release-notes {
+    background: #ededed;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 0.9em;
+    line-height: 2em;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.test {
+    background: #ffc180;
+}
+
+.test2 {
+    background: #80ddff;
+}
+
+.testc {
+    background: #fffe80;
+}
+
+.test-bg {
+    background: url(wide-test.jpg) center;
+    height: 323px;
+}
+
+.test-card {
+    padding: 20px;
+    border: 1px solid #666;
+    margin-top: 20px;
+}
+
+.test-card p {
+    padding: 0;
+}
+
+.testhint {
+    width: 100%;
+    height: 32px;
+    background: #708090;
+    color: #1a3c4d;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+
+
+/*ACCORDION
+*/
+
+.accordion {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 14px;
+    border: 1px solid #542437;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    background: #fff;
+}
+
+.accordion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion li {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion [type=radio], .accordion [type=checkbox] {
+    display: none;
+}
+
+.accordion label {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    background: #D95B43;
+    border: 1px solid #542437;
+    color: #542437;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background: #C02942;
+    color: #FFF;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+}
+
+.accordion .content {
+    padding: 0 10px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+
+.accordion p {
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.accordion h4 {
+    color: #542437;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+.vertical ul li {
+    overflow: hidden;
+    margin: 0 0 1px;
+}
+
+.vertical ul li label {
+    padding: 10px;
+}
+
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom: 0;
+}
+
+.vertical ul li label:hover {
+    border: 1px solid #542437;
+}
+
+.vertical ul li .content {
+    height: 0;
+    border-top: 0;
+    transition: all .5s ease-out;
+}
+
+.vertical [type=checkbox]:checked ~ label ~ .content {
+    height: 170px;
+    border: 1px solid #542437;
+}
+
+
+.dot-bg {
+    background: url("/dot-bg.png");
+}
+
+/* SPACE FORMS TPL
+------- ------- ------- ------- ------- ------- ------- -------*/
+.callform-bg {
+    background: url("/spacespace-background.jpg");
+    padding: 32px 0;
+}
+
+.sf__form--call {
+    background: #E93D3D;
+    width: 300px;
+    margin: 0 auto;
+    padding: 8px 16px;
+}
+
+.sf__fieldset--call {
+    border: none;
+}
+
+.sf__legend--call {
+    display: block;
+    color: #fff;
+}
+
+.sf__label--call {
+    color: #fff;
+    display: block;
+}
+
+.sf__btn--call {
+    color: #fff;
+    background: #C02942;
+    opacity: 0.7;
+}
+
+
+.testbox-1 {
+    border: 2px solid darkorange;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.wide {
+    background-position: center;
+    background-size: cover;
+}
+
+.wide--one {
+    background: url(wide-03.jpg) top center;
+}
+
+.wide--two {
+    background: url(wide-02.jpg) top center;
+}
+
+.svg-demo-bg {
+    margin: 16px 0;
+    border: 2px solid crimson;
+    background: #ededed;
+    padding: 16px;
+}
+
+.demo-svg {
+    border: 1px solid black;
+    stroke: black;
+    fill: #0C2139;
+}
+
+.demo-svg:hover {
+    border: 1px solid black;
+    stroke: orangered;
+    fill: #0C2139;
+}
+
+.demo-img-svg {
+    width: 24px;
+    height: 24px;
+}
+.demo-img-svg:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+
+.demo-ui-pan {
+    background: #d7d7d7;
+    border-bottom: #cacaca 1px solid;
+    border-top: #eeeeee 1px solid;
+}
+/* for 1.4 */
+
+.sp-svg {
+    width: 24px;
+    height: 24px;
+
+    /*start color #cccccc*/
+    filter: invert(97%) sepia(0%) saturate(1925%) hue-rotate(222deg) brightness(89%) contrast(82%);
+    transition: all 0.1s;
+
+}
+.sp-svg:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    transition: all 0.1s;
+}
+
+.hover-svg {
+    border: 1px solid goldenrod;
+    stroke: orchid;
+}
+.hover-svg:hover {
+    border: 1px solid goldenrod;
+    stroke: orangered;
+}
+
+/* SP svg icons system */
+.spis {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #0C2139;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.spis:hover, .spis:focus {
+    background: mediumvioletred;
+}
+
+/*spis icons list*/
+
+.spis__menu {
+    -webkit-mask: url("feather/black/menu.svg");
+    mask: url("feather/black/menu.svg");
+}
+.spis__menu {
+    -webkit-mask: url("feather/black/menu.svg");
+    mask: url("feather/black/menu.svg");
+}
+
+

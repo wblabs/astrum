@@ -1,0 +1,33 @@
+/*
+  ____   ____    _     ____  _____    ____
+ / ___| |  _ \  / \   / ___|| ____|  | ___|
+ \___ \ | |_) |/ _ \ | |    |  _|    |___ \
+  ___) ||  __// ___ \| |___ | |___    ___) |
+ |____/ |_|  /_/   \_\\____||_____|  |____/
+
+ space 5 ♦ CSS
+ [Core]
+
+*/
+
+
+/*template*/
+@import url(normalize/normalize.css);
+@import url(sgs12.css);
+/*@import url(sgs14.css);*/
+@import url(old-astr.css);
+
+
+/*add-ons*/
+
+/*@import url(matter/matter.css);*/
+/*@import url(animate/animate.css);*/
+
+
+/*JS support css*/
+@import url(../js/magnific/magnific-popup.css);
+@import url(../js/sliderpro/slider-pro.css);
+
+
+/*Test--Content*/
+@import url(../demo/sp5-demo.css);
