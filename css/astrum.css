@@ -511,6 +511,23 @@ h1, h2, h3, h4, h5 {
 
 
 /* btn sizes */
+.btn--micro {
+    padding: 4px;
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+}
+.btn--micro svg {
+    width: 16px ;
+    height:16px ;
+    stroke: var(--color-icon-grey);
+}
+.btn--micro:hover svg {
+    stroke: var(--color-text);
+}
+
+
+
 .btn--s {
     padding: var(--gf) calc(var(--gf) * 2);
     font-size: 0.9rem;
