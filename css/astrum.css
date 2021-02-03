@@ -200,6 +200,15 @@ a:hover {
     transition: all 0.3s;
 }
 
+a:link {
+    color: var(--color-link);
+}
+a:visited {
+    color: var(--color-link);
+}
+a:active {
+    color: var(--color-link);
+}
 /* SP5 LAYOUT */
 .body {
     display: grid;
