@@ -646,7 +646,9 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
-/*btn controls*/
+/* btn controls ----- */
+
+/* radio-group */
 .sp-radio-group {
     display: inline-block;
     overflow: hidden;
@@ -692,6 +694,43 @@ h1, h2, h3, h4, h5 {
 .sp-radio-group input[type=radio]:disabled + label {
     background: #efefef;
     color: #666;
+}
+
+/* toggle */
+.sp-toggle {
+    display: inline-block;
+    overflow: hidden;
+}
+.sp-toggle__item {
+    float: left;
+    display: inline-block;
+}
+.sp-toggle__item input[type=radio] {
+    display: none;
+}
+.sp-toggle__item label {
+    display: inline-block;
+    padding: calc(var(--gf) * 2) calc(var(--gf) * 4);
+    border: 1px solid var(--color-btn-border);
+    border-right: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sp-toggle .sp-toggle__item--off label {
+    border-radius: 6px 0 0 6px;
+}
+.sp-toggle .sp-toggle__item--on label {
+    border-radius: 0 6px 6px 0;
+    border-right: 1px solid var(--color-btn-border);
+}
+
+/* Checked */
+.sp-toggle .sp-toggle__item--off input[type=radio]:checked + label {
+    background: #ffc5c5;
+}
+.sp-toggle .sp-toggle__item--on input[type=radio]:checked + label {
+    background: #bbffbb;
 }
 
 /* /BUTTONS */
