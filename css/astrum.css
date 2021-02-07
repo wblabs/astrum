@@ -645,6 +645,55 @@ h1, h2, h3, h4, h5 {
 .btn-pan--col .btn:last-child {
     margin: 0;
 }
+
+/*btn controls*/
+.sp-radio-group {
+    display: inline-block;
+    overflow: hidden;
+}
+.sp-radio-group__item {
+    display: inline-block;
+    float: left;
+}
+.sp-radio-group input[type=radio] {
+    display: none;
+}
+.sp-radio-group label {
+    display: inline-block;
+    cursor: pointer;
+    padding: calc(var(--gf) * 2) calc(var(--gf) * 4);
+    /*line-height: 32px;*/
+    border: 1px solid var(--color-btn-border);
+    border-right: none;
+    user-select: none;
+}
+
+.sp-radio-group .sp-radio-group__item:first-child label {
+    border-radius: 8px 0 0 8px;
+}
+.sp-radio-group .sp-radio-group__item:last-child label {
+    border-radius: 0 8px 8px 0;
+    border: 1px solid var(--color-btn-border);
+}
+
+/* Checked */
+.sp-radio-group input[type=radio]:checked + label {
+    background: var(--color-btn-bg);
+    color: var(--color-btn-text);
+}
+
+/* Hover */
+.sp-radio-group label:hover {
+    background: var(--color-btn-bg);
+    color: var(--color-btn-text);
+}
+
+/* Disabled */
+.sp-radio-group input[type=radio]:disabled + label {
+    background: #efefef;
+    color: #666;
+}
+
 /* /BUTTONS */
 
 /* SPACE FORMS
