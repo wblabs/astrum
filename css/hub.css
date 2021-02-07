@@ -79,6 +79,12 @@
     display: block;
     white-space: pre-wrap;
 }
+
+.grid-hub {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 48px;
+}
 .demo-ui-pan {
     background: #d7d7d7;
     border-bottom: #cacaca 1px solid;
