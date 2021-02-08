@@ -78,26 +78,25 @@
 <div class="page">
 
 
-
     <!--hub start-->
     <div class="hub">
         <aside class="hub__aside">
 
             <nav class="sp-tabs">
                 <ul class="sp-tabs-nav sp-tabs__nav">
-                    <li class="sp-tabs-nav__item"  data-sp-tab-name="sp-tab-1">
+                    <li class="sp-tabs-nav__item" data-sp-tab-name="sp-tab-1">
                         Intro
                     </li>
-                    <li class="sp-tabs-nav__item"  data-sp-tab-name="sp-tab-2">
+                    <li class="sp-tabs-nav__item" data-sp-tab-name="sp-tab-2">
                         Buttons
                     </li>
-                    <li class="sp-tabs-nav__item"  data-sp-tab-name="sp-tab-3">
+                    <li class="sp-tabs-nav__item" data-sp-tab-name="sp-tab-3">
                         Sprite
                     </li>
-                    <li class="sp-tabs-nav__item"  data-sp-tab-name="sp-tab-4">
+                    <li class="sp-tabs-nav__item" data-sp-tab-name="sp-tab-4">
                         Layout
                     </li>
-                    <li class="sp-tabs-nav__item"  data-sp-tab-name="sp-tab-5">
+                    <li class="sp-tabs-nav__item" data-sp-tab-name="sp-tab-5">
                         Forms
                     </li>
 
@@ -108,14 +107,14 @@
 
 
             <!-- intro -->
-            <section class="hub__section hub__section-intro sp-tab sp-tab-1 is-active" >
+            <section class="hub__section hub__section-intro sp-tab sp-tab-1 is-active">
                 <h1>welcome to astrum template</h1>
             </section>
             <!-- /intro -->
 
 
             <!-- buttons -->
-            <section class="hub__section hub__section-buttons sp-tab sp-tab-2" >
+            <section class="hub__section hub__section-buttons sp-tab sp-tab-2">
                 <h2>Кнопки</h2>
 
                 <p>
@@ -230,7 +229,8 @@
                         </button>
                     </div>
                     <div>
-                        Кнопка для интрефейсов <span class="hub__code">btn btn--ui</span>, используются без текстовых подписей
+                        Кнопка для интрефейсов <span class="hub__code">btn btn--ui</span>, используются без текстовых
+                        подписей
                     </div>
                     <div>
                         <button class="btn btn--ui">
@@ -246,7 +246,8 @@
                     Группировка кнопок
                 </h3>
                 <p>
-                    для выстраивания кнопок в линию используется класс для блочного <span class="hub__tag">div</span> <span class="hub__code">btn-pan</span>
+                    для выстраивания кнопок в линию используется класс для блочного <span class="hub__tag">div</span>
+                    <span class="hub__code">btn-pan</span>
                 </p>
                 <div class="grid-hub hub__grid-border">
                     <div>
@@ -367,7 +368,8 @@
                         </div>
                     </div>
                     <div>
-                        панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span class="hub__code">btn-ui</span>
+                        панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
+                            class="hub__code">btn-ui</span>
                     </div>
                     <div>
                         <div class="btn-pan">
@@ -390,7 +392,8 @@
                     </div>
 
                     <div>
-                        панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span class="hub__code">btn-ui btn--s</span>
+                        панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
+                            class="hub__code">btn-ui btn--s</span>
                     </div>
                     <div>
                         <div class="btn-pan">
@@ -423,40 +426,44 @@
                         </p>
                     </div>
                     <div>
-                        <div class="sp-radio-group">
-                            <div class="sp-radio-group__item">
-                                <input id="radio-1" type="radio" name="radio" value="1" checked>
-                                <label for="radio-1">Radio button 1</label>
+                        <form action="">
+                            <div class="sp-radio-group">
+                                <div class="sp-radio-group__item">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1">Radio button 1</label>
+                                </div>
+                                <div class="sp-radio-group__item">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2">Radio button 2</label>
+                                </div>
+                                <div class="sp-radio-group__item">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3">Radio button 3</label>
+                                </div>
+                                <div class="sp-radio-group__item">
+                                    <input id="radio-4" type="radio" name="radio" value="4" disabled>
+                                    <label for="radio-4">Disabled</label>
+                                </div>
                             </div>
-                            <div class="sp-radio-group__item">
-                                <input id="radio-2" type="radio" name="radio" value="2">
-                                <label for="radio-2">Radio button 2</label>
-                            </div>
-                            <div class="sp-radio-group__item">
-                                <input id="radio-3" type="radio" name="radio" value="3">
-                                <label for="radio-3">Radio button 3</label>
-                            </div>
-                            <div class="sp-radio-group__item">
-                                <input id="radio-4" type="radio" name="radio" value="4" disabled>
-                                <label for="radio-4">Disabled</label>
-                            </div>
-                        </div>
+                        </form>
                     </div>
 
                     <div>
                         переключатель <span class="hub__code">sp-toggle</span>
                     </div>
                     <div>
-                        <div class="sp-toggle">
-                            <div class="sp-toggle__item sp-toggle__item--off">
-                                <input id="toggle1-off" type="radio" name="radio" value="off"  checked>
-                                <label for="toggle1-off">OFF</label>
+                        <form action="">
+                            <div class="sp-toggle">
+                                <div class="sp-toggle__item sp-toggle__item--off">
+                                    <input id="toggle1-off" type="radio" name="radio" value="off" checked>
+                                    <label for="toggle1-off">OFF</label>
+                                </div>
+                                <div class="sp-toggle__item sp-toggle__item--on">
+                                    <input id="toggle2-on" type="radio" name="radio" value="on">
+                                    <label for="toggle2-on">ON</label>
+                                </div>
                             </div>
-                            <div class="sp-toggle__item sp-toggle__item--on">
-                                <input id="toggle2-on" type="radio" name="radio" value="on">
-                                <label for="toggle2-on">ON</label>
-                            </div>
-                        </div>
+                        </form>
                     </div>
 
                 </div>
@@ -465,7 +472,7 @@
 
 
             <!-- sprite -->
-            <section class="hub__section hub__section-sprite sp-tab sp-tab-3" >
+            <section class="hub__section hub__section-sprite sp-tab sp-tab-3">
                 <!--  SP5 sprite demo  -->
                 <div class="grid-c-3">
                     <h2 class="grid-line">svg sprite demo</h2>
@@ -535,13 +542,14 @@
                     <div>
                         <h3>sprites use</h3>
                         <p>
-                            изображения назначаются через <span class="hub__tag">use</span> из svg файла со всеми спрайтами с указанием <span class="hub__code">id</span> иконки
+                            изображения назначаются через <span class="hub__tag">use</span> из svg файла со всеми
+                            спрайтами с указанием <span class="hub__code">id</span> иконки
                         </p>
 
-                            <code class="hub__pre-code">
-&lt;svg class="spi-32 spif"&gt;
-    &lt;use href="img/sp5sprite.svg#more-horizontal"&gt;&lt;/use&gt;
-&lt;/svg&gt;
+                        <code class="hub__pre-code">
+                            &lt;svg class="spi-32 spif"&gt;
+                            &lt;use href="img/sp5sprite.svg#more-horizontal"&gt;&lt;/use&gt;
+                            &lt;/svg&gt;
                         </code>
 
                         <p>
@@ -971,23 +979,28 @@
                                 </legend>
                                 <div class="sf__line">
                                     <label for="username" class="sf__label">text</label>
-                                    <input type="text" name="username" placeholder="Ваше имя" class="sf__input" id="username">
+                                    <input type="text" name="username" placeholder="Ваше имя" class="sf__input"
+                                           id="username">
                                 </div>
                                 <div class="sf__line">
                                     <label for="email-address" class="sf__label">email</label>
-                                    <input type="email" name="email-address" placeholder="Адрес" class="sf__input" id="email-address">
+                                    <input type="email" name="email-address" placeholder="Адрес" class="sf__input"
+                                           id="email-address">
                                 </div>
                                 <div class="sf__line">
                                     <label for="phone-number" class="sf__label">tel</label>
-                                    <input type="tel" name="phone-number"  placeholder="Номер телефона" class="sf__input" id="phone-number">
+                                    <input type="tel" name="phone-number" placeholder="Номер телефона" class="sf__input"
+                                           id="phone-number">
                                 </div>
                                 <div class="sf__line">
                                     <label for="password" class="sf__label">password</label>
-                                    <input type="password" name="password" class="sf__input" placeholder="Пароль" id="password">
+                                    <input type="password" name="password" class="sf__input" placeholder="Пароль"
+                                           id="password">
                                 </div>
                                 <div class="sf__line">
                                     <label for="comment" class="sf__label">comment</label>
-                                    <textarea name="comment" placeholder="Ваш комментарий" class="sf__textarea" id="comment">Добавьте сюда свой комментарий</textarea>
+                                    <textarea name="comment" placeholder="Ваш комментарий" class="sf__textarea"
+                                              id="comment">Добавьте сюда свой комментарий</textarea>
                                 </div>
                             </fieldset>
                         </form>
@@ -1080,18 +1093,18 @@
                                 <div class="sf__line">
                                     <label for="day-select">Select</label>
                                     <select name="day-select" id="day-select">
-                                            <option value="Friday" selected>Пятница</option>
-                                            <option value="Saturday">Суббота</option>
-                                            <option value="Sunday">Воскресенье</option>
-                                        </select>
+                                        <option value="Friday" selected>Пятница</option>
+                                        <option value="Saturday">Суббота</option>
+                                        <option value="Sunday">Воскресенье</option>
+                                    </select>
                                 </div>
                                 <div class="sf__line">
                                     <label for="day-multiselect">Select multiple</label>
-                                        <select name="day" id="day-multiselect" multiple>
-                                            <option value="Friday" selected>Пятница</option>
-                                            <option value="Saturday">Суббота</option>
-                                            <option value="Sunday">Воскресенье</option>
-                                        </select>
+                                    <select name="day" id="day-multiselect" multiple>
+                                        <option value="Friday" selected>Пятница</option>
+                                        <option value="Saturday">Суббота</option>
+                                        <option value="Sunday">Воскресенье</option>
+                                    </select>
 
                                 </div>
                                 <div class="sf__line">
