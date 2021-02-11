@@ -791,40 +791,59 @@ h1, h2, h3, h4, h5 {
 /* SP5 icons system
 ------- ------- ------- ------- ------- ------- ------- -------*/
 
-.sp5sprite-demo {
-    border: 1px solid mediumorchid;
+/* v2*/
+
+[class*='spis-'] {
+    stroke: var(--color-white);
+    fill: none;
 }
-.sp5sprite-demo .spis-32, .spif-32 {
-    margin: 8px;
-    border: 1px dotted #f7685b;
+[class*='spis-']:hover {
+    stroke: var(--color-accent);
 }
 
-.spi-16 {
+.spis {
+    stroke: var(--color-icon-grey);
+    fill: none;
+}
+
+.spis-16 {
     width: 16px;
     height: 16px;
 }
-.spi-24 {
+.spis-24 {
     width: 24px;
     height: 24px;
 }
-.spi-32 {
+.spis-32 {
     width: 32px;
     height: 32px;
 }
 
-.spis {
-    stroke: #1c7be2;
-    fill: none;
-}
-.spis:hover {
-    stroke: #f7685b;
-}
-.spif {
+[class*='spif-'] {
+    fill: var(--color-white);
     stroke: none;
-    fill: var(--color-icon-grey);
 }
-.spif:hover {
-    fill: #f7685b;
+[class*='spid-']:hover {
+    fill: var(--color-accent);
+}
+
+.spif {
+    fill: var(--color-icon-grey);
+    stroke: none;
+}
+
+
+.spif-16 {
+    width: 16px;
+    height: 16px;
+}
+.spif-24 {
+    width: 24px;
+    height: 24px;
+}
+.spif-32 {
+    width: 32px;
+    height: 32px;
 }
 
 
