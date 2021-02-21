@@ -106,3 +106,15 @@
     border-right: 1px solid #90a0b7;
     padding: 16px;
 }
+
+.demo-icons-line {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.demo-icons-line .itext-24 {
+    margin: 8px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 4px 6px;
+}
