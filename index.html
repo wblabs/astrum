@@ -39,8 +39,10 @@
 <body class="body">
 <div class="header-wrapper">
     <header class="header wid">
-        <img alt="Demo logo" src="demo/demo-logo.svg" width="100px">
-        <div>
+        <div class="header__logo">
+            <img alt="Demo logo" src="demo/demo-logo.svg" width="100px">
+        </div>
+        <div class="header-text">
             header title
         </div>
 
@@ -110,6 +112,7 @@
             <!-- intro -->
             <section class="hub__section hub__section-intro sp-tab sp-tab-1 is-active">
                 <h1>welcome to astrum template</h1>
+                <img src="img/600x300__main.jpg" alt="current version of astrum template">
             </section>
             <!-- /intro -->
 
@@ -479,27 +482,24 @@
                     <div>
                         <h3>sp5sprite</h3>
                         <div class="sp5sprite-demo">
-                            <svg class="spi-16 spif">
-                                <use class="spi__whatsapp" href="img/sp5sprite.svg#whatsapp"></use>
+                            <svg class="spif-16">
+                                <use class="spi__whatsapp" href="img/share.svg#whatsapp"></use>
                             </svg>
-                            <svg class="spi-24 spif">
-                                <use class="spi__whatsapp" href="img/sp5sprite.svg#whatsapp"></use>
+                            <svg class="spif-24">
+                                <use class="spi__whatsapp" href="img/share.svg#whatsapp"></use>
                             </svg>
-                            <svg class="spi-32 spif">
-                                <use class="spi__whatsapp" href="img/sp5sprite.svg#whatsapp"></use>
+                            <svg class="spif-32">
+                                <use class="spi__whatsapp" href="img/share.svg#whatsapp"></use>
                             </svg>
 
-                            <svg class="spi-16 spis">
+                            <svg class="spis-16">
                                 <use href="img/sp5sprite.svg#file-plus"></use>
                             </svg>
-                            <svg class="spi-24 spis">
+                            <svg class="spis-24">
                                 <use href="img/sp5sprite.svg#file-plus"></use>
                             </svg>
-                            <svg class="spi-32 spis">
+                            <svg class="spis-32">
                                 <use href="img/sp5sprite.svg#file-plus"></use>
-                            </svg>
-                            <svg class="spi-32 spis">
-                                <use href="img/sp5sprite.svg#chevron-right"></use>
                             </svg>
                         </div>
                     </div>
@@ -546,16 +546,17 @@
                         </p>
 
                         <code class="hub__pre-code">
-                            &lt;svg class="spi-32 spif"&gt;
-                            &lt;use href="img/sp5sprite.svg#more-horizontal"&gt;&lt;/use&gt;
-                            &lt;/svg&gt;
+&lt;svg class="spis-32 spif"&gt;
+&lt;use href="img/sp5sprite.svg#more-horizontal"&gt;&lt;/use&gt;
+&lt;/svg&gt;
                         </code>
 
                         <p>
                             Результат:
-                            <svg>
+                            <svg class="spis-32">
                                 <use href="img/sp5sprite.svg#more-horizontal"></use>
                             </svg>
+
                         </p>
                     </div>
 
@@ -1106,7 +1107,10 @@
 
                                 </div>
                                 <div class="sf__line">
-                                    <input type="file" name="file">
+                                    <label for="file" class="sf__label">
+                                        Выберите файл
+                                    </label>
+                                    <input type="file" name="file" id="file" class="sf__input">
                                 </div>
                             </fieldset>
                         </form>
@@ -1353,7 +1357,9 @@
 <div class="footer-wrapper">
     <footer class="footer grid-a wid">
         <div class="footer__left">
-            <img src="demo/logo_2.svg" alt="footer logo" class="footer__logo">
+            <div class="footer__logo">
+                <img src="demo/logo_2.svg" alt="footer logo" class="footer__logo">
+            </div>
             <p class="footer__desc">
                 AstrumTpl 1.4
             </p>

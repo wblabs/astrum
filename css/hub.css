@@ -3,13 +3,15 @@
     grid-template-columns: 200px 1fr;
     grid-template-areas: "aside main";
     grid-gap: var(--gf);
+    height: 100%;
 }
 
 .hub__aside {
     grid-area: aside;
-    background: #90a0b7;
+    background: #fff;
     color: #1a3c4d;
     height: 100%;
+    padding: 16px;
 }
 .hub__aside a {
     color: #fff;
@@ -34,6 +36,7 @@
     max-width: 1200px;
     min-width: 748px;
     margin: 0 auto;
+    padding: 24px;
 }
 
 .hub__code {

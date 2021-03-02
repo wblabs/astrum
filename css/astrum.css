@@ -41,9 +41,9 @@
 
     /*bg colors*/
     --color-bg: #e5e5e5;
-    --color-bg-header: #0C2139;
+    --color-bg-header: #000000;
     --color-bg-header-dark: #001226;
-    --color-bg-darkblue: #020221;
+    --color-bg-darkblue: #0202шт21;
     --color-bg-blue: #c6e8e4;
     --color-bg-grey: #f7f7f7;
     --color--bg-accent: #deeba5;
@@ -81,7 +81,7 @@
     /*objects*/
     --gf: 8px; /* grid flow */
     --header-height: 48px;
-    --wid: 1200px; /* max-width of content */
+    --wid: 1280px; /* max-width of content */
 }
 
 
@@ -109,7 +109,7 @@ body {
 }
 
 .wid {
-    max-width: 1200px;
+    max-width: var(--wid);
     min-width: 748px;
     margin: 0 auto;
 }
@@ -220,6 +220,7 @@ a:active {
                             "footer";
 }
 
+/* header */
 .header-wrapper {
     grid-area: header;
     background: var(--color-bg-header);
@@ -228,8 +229,18 @@ a:active {
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
+.header__logo {
+    margin: 8px;
+}
+
+.header-text  {
+    color: var(--color-text-grey);
+}
+
+/* /header */
 .page {
     grid-area: page;
 }
@@ -237,6 +248,8 @@ a:active {
 .main {
 }
 
+
+/*footer*/
 .footer-wrapper {
     grid-area: footer;
     background: var(--color-bg-header);
@@ -255,13 +268,16 @@ a:active {
 
 .footer__logo {
     width: 80px;
-    padding: 8px 0;
+    height: 32px;
+    margin: 8px 8px 4px 8px;
 }
 .footer__desc {
-    padding: 0;
+    padding: 0 0 8px 24px;
+    color: var(--color-text-grey);
+
 }
 .footer__center {
-
+    color: var(--color-text-grey);
 }
 .footer__right {
     display: flex;
@@ -269,6 +285,8 @@ a:active {
     flex-direction: column;
     padding: 8px;
 }
+
+/* /footer */
 
 .test {
     border: 1px solid #90a0b7;
@@ -468,10 +486,11 @@ h1, h2, h3, h4, h5 {
 
 /* BUTTONS
 ------- ------- ------- ------- ------- ------- ------- -------*/
-.btn {
-    display: flex;
+.btn , a.btn {
+    display: inline-flex;
     align-items: center;
     color: var(--color-btn-text);
+    /* разобраться с глюком цветов */
     background: var(--color-btn-bg);
     padding: calc(var(--gf) * 2) calc(var(--gf) * 4);
     border-radius: var(--gf);
@@ -1153,10 +1172,13 @@ h1, h2, h3, h4, h5 {
 .sp-tabs-nav__item {
     border: 1px solid transparent;
     cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: var(--color-sp5-dev-text);
 }
 
 .sp-tabs-nav__item.is-active {
-    border-color: #55a32a;
+    background: var(--color-sp5-dev-bg);
 }
 
 .sp-tab {
