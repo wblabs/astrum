@@ -63,6 +63,7 @@
     --color-table-grey: #707683;
     --color-dark-blue: #334d6e;
     --color-icon-grey: #666666;
+    --color-icon--active: #05e745;
 
     /*ui colors*/
     --color-yellow: #ffb946;
@@ -813,11 +814,11 @@ h1, h2, h3, h4, h5 {
 /* v2*/
 
 [class*='spis-'] {
-    stroke: var(--color-white);
+    stroke: var(--color-icon-grey);
     fill: none;
 }
 [class*='spis-']:hover {
-    stroke: var(--color-accent);
+    stroke: var(--color-icon--active);
 }
 
 .spis {
@@ -839,11 +840,11 @@ h1, h2, h3, h4, h5 {
 }
 
 [class*='spif-'] {
-    fill: var(--color-white);
+    fill: var(--color-icon-grey);
     stroke: none;
 }
-[class*='spid-']:hover {
-    fill: var(--color-accent);
+[class*='spif-']:hover {
+    fill:  var(--color-icon--active);
 }
 
 .spif {
