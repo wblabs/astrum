@@ -64,6 +64,8 @@
     --color-dark-blue: #334d6e;
     --color-icon-grey: #666666;
     --color-icon--active: #05e745;
+    --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
+    --trans: all 0.2s; /*transition delay*/
 
     /*ui colors*/
     --color-yellow: #ffb946;
@@ -81,6 +83,7 @@
 
     /*objects*/
     --gf: 8px; /* grid flow */
+    --gap: 16px; /* grid gap */
     --header-height: 48px;
     --wid: 1280px; /* max-width of content */
 }
