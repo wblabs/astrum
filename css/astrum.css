@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5 {
     padding: calc(var(--gf) * 2) calc(var(--gf) * 4);
     border-radius: var(--gf);
     line-height: 1;
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
     transition: all 0.2s;
     opacity: 1;
@@ -633,6 +633,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     padding: calc(var(--gf) * 2) 0;
     margin: var(--gf) 0;
+    gap: var(--gap);
 }
 
 .btn-pan--center {
@@ -644,17 +645,6 @@ h1, h2, h3, h4, h5 {
     align-items: baseline;
 }
 
-.btn-pan .btn {
-    margin-right: calc(var(--gf) * 2);
-}
-
-.btn-pan--center .btn {
-    margin-right: 0;
-}
-.btn-pan--center .btn:nth-child(even) {
-    margin:0 calc(var(--gf) * 2);
-}
-
 .btn-pan--right {
     justify-content: flex-end;
 }
@@ -664,7 +654,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn-pan--col .btn {
-    margin: 0 0 var(--gf) 0;
+    gap: var(--gap);
 }
 .btn-pan--col .btn:last-child {
     margin: 0;
