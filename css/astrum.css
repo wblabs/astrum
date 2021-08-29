@@ -216,13 +216,18 @@ img {
 a {
     color: var(--color-link);
     text-decoration: none;
-    transition: all 0.3s;
+    transition: var(--trans);
 }
 
 a:hover {
     color: var(--color-link-hover);
-    transition: all 0.3s;
+    transition: var(--trans);
 }
+
+/* todo везде установить одинаковый transition   */
+
+/*todo разобраться с псевдоклассами ссылок*/
+/*
 
 a:link {
     color: var(--color-link);
@@ -234,7 +239,7 @@ a:visited {
 
 a:active {
     color: var(--color-link);
-}
+}*/
 
 /* SP5 LAYOUT */
 .body {
