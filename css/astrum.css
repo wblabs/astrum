@@ -117,6 +117,12 @@ body {
     min-width: 748px;
     margin: 0 auto;
 }
+.wf {
+    font-family: var(--wf);
+}
+.wf2 {
+    font-family: var(--wf2);
+}
 .cimg {
     text-align: center;
 }
