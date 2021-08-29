@@ -17,71 +17,66 @@
 
 /*   :: VARS ---   */
 :root {
-    /*fonts*/
-    --wf: 'Roboto', sans-serif;
-    --wf2: 'Montserrat', sans-serif;
-    --color-text-heading: #001226;
-    --color-text: #21204d;
-    --color-text-accent: #eb534e;
-    --color-text-note: #cccccc;
+    /* Theme colors */
+    --color-primary:#222e4e;
+    --color-secondary:#05e745;
+    --color-accent: #46FCFF;
+    --color-dark: #192a3e;
+    --color-white: #ffffff;
+    --color-neutral:#EFF2F6;
+    --color-placeholder:#DFE4EA;
+
+    --color-bg: #e5e5e5;
     --color-text-grey: #737373;
 
-    /*project colors*/
-    --color-black: #192a3e;
-    --color-white: #ffffff;
+    /* Fonts */
+    --wf: 'Roboto', sans-serif;
+    --wf2: 'Montserrat', sans-serif;
+    --color-text-heading: var(--color-primary);
+    --color-text: var(--color-dark);
+    --color-text-accent: var(--color-accent);
 
-    --color-link: #109cf1;
-    --color-link-hover: #334d6e;
-    --color-link-active: #334d6e;
-    --color-accent: #46FCFF;
+    /* Project colors */
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-accent);
+    --color-link-active: var(--color-accent);
 
-    --color-grey-dark: #323c47;
-    --color-grey: #90a0b7;
-    --color-grey-light: #c2cfe0;
+    /* Bg colors */
 
-    /*bg colors*/
-    --color-bg: #e5e5e5;
-    --color-bg-header: #000000;
-    --color-bg-header-dark: #001226;
-    --color-bg-darkblue: #0202шт21;
-    --color-bg-blue: #c6e8e4;
-    --color-bg-grey: #f7f7f7;
-    --color--bg-accent: #deeba5;
 
     /* SP5 DEV*/
     --color-sp5-dev-bg: #05e745;
     --color-sp5-dev-text: #222e4e;
 
-    /*interface*/
-    --color-border: #858585;
-    --color-input-bg: #ededed;
-    --color-input-border: #d6d6d6;
-    --color-input-text: #707683;
-    --color-label-text: #206D9B;
-    --color-input-placeholder-text: #a5bbcb;
-    --color-table-black: #323c47;
-    --color-table-grey: #707683;
-    --color-dark-blue: #334d6e;
-    --color-icon-grey: #666666;
-    --color-icon--active: #05e745;
+    /* Interface */
+    --color-border: var(--color-placeholder);
+    --color-input-bg: var(--color-placeholder);
+    --color-input-border: var(--color-placeholder);
+    --color-input-text: var(--color-text);
+    --color-label-text: var(--color-primary);
+    --color-input-placeholder-text: var(--color-text-grey);
+    --color-table-black: var(--color-text);
+    --color-table-grey: var(--color-text-grey);
+    --color-icon-grey: var(--color-text-grey);
+    --color-icon--active: var(--color-accent);
     --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
     --trans: all 0.2s; /*transition delay*/
 
-    /*ui colors*/
+    /* UI colors */
     --color-yellow: #ffb946;
     --color-red: #f7685b;
     --color-green: #2ed47a;
+    --color-blue: #104ae0;
     --color-purple: #885af8;
 
-    /*buttons*/
-    /*--color-btn-bg: #3867F4;*/
-    --color-btn-bg: linear-gradient(to right, #3867F4 0%, #25C1FC 100%) border-box;
-    --color-btn-border: #46c4ff;
-    --color-btn-text: #ffffff;
-    --color-btn-ghost-text: #868686;
+    /* Buttons */
+    --color-btn-bg: var(--color-primary);
+    --color-btn-border:  var(--color-primary);
+    --color-btn-text: var(--color-white);
+    --color-btn-ghost-text: var(--color-text-grey);
     --color-btn-shadow: rgba(37, 193, 252, 0.4);
 
-    /*objects*/
+    /* Objects */
     --gf: 8px; /* grid flow */
     --gap: 16px; /* grid gap */
     --header-height: 48px;
@@ -235,7 +230,7 @@ a:active {
 
 /* header */
 .header-wrapper {
-    background: var(--color-bg-header);
+    background: var(--color-primary);
 }
 
 .header {
@@ -262,12 +257,12 @@ a:active {
 
 /*footer*/
 .footer-wrapper {
-    background: var(--color-bg-header);
+    background: var(--color-neutral);
 
 }
 
 .footer {
-    color: var(--color-white);
+    color: var(--color-text-grey);
     font-size: 0.8em;
     line-height: 1.4;
 }
@@ -542,7 +537,7 @@ h1, h2, h3, h4, h5 {
 
 .btn:disabled {
     color: var(--color-text-grey);
-    background: var(--color-bg-grey);
+    background: var(--color-neutral);
     cursor: auto;
     box-shadow: none;
 }
