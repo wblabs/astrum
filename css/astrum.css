@@ -872,7 +872,7 @@ p {
 /* SP5 icons system
 ------- ------- ------- ------- ------- ------- ------- -------*/
 
-/* v2*/
+/* v2 */
 
 [class*='spis-'] {
     stroke: var(--color-icon-grey);
@@ -1073,8 +1073,7 @@ p {
 
 /* ################### PROJECT SPECIFIED COMPONENTS ################### */
 
-/* product card */
-
+/* Product card */
 .pcard {
     text-align: center;
     background: var(--color-white);
@@ -1210,8 +1209,60 @@ a.pcard__btn:hover {
         margin: 0 16px;
     }
 }
+/* /Pcard -----------------------------*/
 
-/* /pcard -----------------------------*/
+/* Crumbs -----------------------------*/
+.breadcrumb {
+    font-size: 0.8em;
+    line-height: 120%;
+}
+
+ul.breadcrumb a {
+    color: var(--color-text-accent);
+}
+
+ul.breadcrumb a:hover {
+    color: var(--color-link);
+}
+
+ul.breadcrumb {
+    margin: 16px 0;
+    padding: 0;
+    color: var(--color-text-grey);
+}
+
+ol.breadcrumb a {
+    color: var(--color-text-accent);
+}
+
+ol.breadcrumb a:hover {
+    color: var(--color-link);
+}
+
+ol.breadcrumb {
+    margin: 32px 0 16px 0;
+    padding: 24px 0 0 0;
+    color: var(--color-text-grey);
+}
+
+.breadcrumb li {
+    /*float: left;*/
+    display: inline-block;
+    margin: 0 8px 0 0;
+    list-style: none;
+}
+
+.breadcrumb li:after {
+    content: '/';
+    display: inline-block;
+    margin: 0 0 0 6px;
+    color: var(--color-text-grey);
+}
+
+.breadcrumb li:last-child:after {
+    content: '';
+}
+/* /Crumbs -----------------------------*/
 
 
 /* MISC */
