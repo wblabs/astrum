@@ -20,7 +20,7 @@
     /* Theme colors */
     --color-primary: #222e4e;
     --color-secondary: #05e745;
-    --color-accent: #46FCFF;
+    --color-accent: #1961af;
     --color-dark: #192a3e;
     --color-white: #ffffff;
     --color-neutral: #EFF2F6;
@@ -50,7 +50,6 @@
     --color-link-active: var(--color-accent);
 
     /* Bg colors */
-
 
     /* SP5 DEV*/
     --color-sp5-dev-bg: #05e745;
@@ -1265,7 +1264,7 @@ ol.breadcrumb {
 /* /Crumbs -----------------------------*/
 
 
-/* MISC */
+/* MISC start :*/
 
 
 /* =========================== MEDIA ====================================== */
