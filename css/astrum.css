@@ -28,6 +28,12 @@
     --color-bg: #e5e5e5;
     --color-text-grey: #737373;
 
+    /*Theme-shades*/
+    --color-primary-light: #30406f;
+    --color-primary-dark: #1a233b;
+    --color-secondary-light: #0afc4c;
+    --color-secondary-dark: #04cd3d;
+
     /* Fonts */
     --wf: 'Roboto', sans-serif;
     --wf2: 'Montserrat', sans-serif;
@@ -539,23 +545,23 @@ p {
 .btn, a.btn {
     display: inline-flex;
     align-items: center;
-    color: var(--color-btn-text);
-    /* разобраться с глюком цветов */
-    background: var(--color-btn-bg);
-    padding: calc(var(--gf) * 2) calc(var(--gf) * 4);
+    justify-content: center;
+    gap: var(--gf);
+    padding: calc(var(--gf) * 1.4) calc(var(--gf) * 4);
     border-radius: var(--gf);
-    line-height: 1;
     border: 1px solid transparent;
     cursor: pointer;
-    transition: all 0.2s;
-    opacity: 1;
+    color: var(--color-btn-text);
+    background: var(--color-btn-bg);
+    transition: var(--trans);
     font-size: var(--size-text);
+    line-height: 1;
     font-family: inherit;
 }
 
 .btn:hover {
-    transition: all 0.2s;
-    opacity: 0.85;
+    transition: var(--trans);
+    background: var(--color-primary-dark);
     color: var(--color-btn-text);
 }
 
@@ -566,14 +572,14 @@ p {
     stroke: var(--color-btn-text);
     width: calc(var(--gf) * 3);
     height: calc(var(--gf) * 3);
-    margin-right: var(--gf);
+    /*margin-right: var(--gf);*/
 }
 
 /* btn img */
 .btn img {
     width: calc(var(--gf) * 3);
     height: calc(var(--gf) * 3);
-    margin-right: var(--gf);
+    /*margin-right: var(--gf);*/
 }
 
 /* btn states */
@@ -606,6 +612,7 @@ p {
 
 .btn--micro:hover {
     color: var(--color-text);
+    background: none;
 }
 
 .btn--micro:hover svg {
@@ -625,14 +632,15 @@ p {
 
 
 .btn--l {
-    padding: calc(var(--gf) * 3) calc(var(--gf) * 6);
+    padding: calc(var(--gf) * 2) calc(var(--gf) * 6);
     font-size: var(--size-heading-xs);
+    gap: calc(var(--gf) * 2);
 }
 
 .btn--l svg {
     width: calc(var(--gf) * 4);
     height: calc(var(--gf) * 4);
-    margin-right: calc(var(--gf) * 2);
+    /*margin-right: calc(var(--gf) * 2);*/
 }
 
 /* btn types */
@@ -649,7 +657,7 @@ p {
 }
 
 .btn--ui:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--thover);
 }
 
 .btn--ghost {
@@ -693,12 +701,7 @@ p {
 }
 
 .btn-pan--center {
-    align-items: center;
     justify-content: center;
-}
-
-.btn-pan--baseline {
-    align-items: baseline;
 }
 
 .btn-pan--right {
@@ -1046,7 +1049,6 @@ p {
 .madeinsp5:hover {
     filter: none;
 }
-
 /* /made in space5 */
 
 /* video responsive ------ */
@@ -1066,7 +1068,6 @@ p {
     width: 100%;
     height: 100%;
 }
-
 /* /video responsive */
 
 

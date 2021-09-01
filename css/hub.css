@@ -122,6 +122,11 @@
     padding: 4px 6px;
 }
 
+.hub-btn-pan {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
 /* Layout test */
 .test-header {
     color: white;
