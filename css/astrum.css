@@ -1213,48 +1213,30 @@ a.pcard__btn:hover {
 
 /* Crumbs -----------------------------*/
 .breadcrumb {
-    font-size: 0.8em;
+    font-size: var(--size-text-note);
     line-height: 120%;
-}
-
-ul.breadcrumb a {
-    color: var(--color-text-accent);
-}
-
-ul.breadcrumb a:hover {
-    color: var(--color-link);
-}
-
-ul.breadcrumb {
-    margin: 16px 0;
+    color: var(--color-text-grey);
+    margin: 24px 0 16px 0;
     padding: 0;
-    color: var(--color-text-grey);
+    display: inline-flex;
+    gap: var(--gf);
 }
 
-ol.breadcrumb a {
+.breadcrumb a {
     color: var(--color-text-accent);
 }
 
-ol.breadcrumb a:hover {
+.breadcrumb a:hover {
     color: var(--color-link);
-}
-
-ol.breadcrumb {
-    margin: 32px 0 16px 0;
-    padding: 24px 0 0 0;
-    color: var(--color-text-grey);
 }
 
 .breadcrumb li {
-    /*float: left;*/
-    display: inline-block;
-    margin: 0 8px 0 0;
     list-style: none;
 }
 
 .breadcrumb li:after {
     content: '/';
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 0 0 0 6px;
     color: var(--color-text-grey);
 }
@@ -1262,6 +1244,7 @@ ol.breadcrumb {
 .breadcrumb li:last-child:after {
     content: '';
 }
+
 /* /Crumbs -----------------------------*/
 
 
