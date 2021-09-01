@@ -161,6 +161,7 @@
     justify-content: space-between;
     text-align: center;
     flex-direction: column;
+    gap: var(--gf);
 }
 .sp-tabs-nav__item {
     border: 1px solid transparent;
