@@ -87,6 +87,7 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-bottom: 48px;
+    background: var(--color-white);
 }
 .demo-ui-pan {
     background: #d7d7d7;
