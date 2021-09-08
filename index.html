@@ -997,7 +997,7 @@
                                 </div>
                                 <div class="sf__line">
                                     <label for="date" class="sf__label">date</label>
-                                    <input type="date" name="date" id="date">
+                                    <input type="date" name="date" id="date" class="sf__input">
                                 </div>
                                 <div class="sf__line">
                                     <label for="datetime" class="sf__label">datetime-local</label>
@@ -1030,30 +1030,36 @@
                                     Radio and etc
                                 </legend>
                                 <div class="sf__line">
-                                    <label>
+                                    <label class="sf__label">
                                         <input type="radio" name="day" value="Friday" checked> Пятница
                                     </label>
-                                    <label>
+                                    <label class="sf__label">
                                         <input type="radio" name="day" value="Saturday"> Суббота
                                     </label>
-                                    <label>
-                                        <input type="radio" name="day" value="Sunday"> Воскресенье
+                                    <label class="sf__label">
+                                        <input type="radio" name="day" value="Sunday" disabled> Воскресенье
+                                    </label>
+                                    <label class="sf__label">
+                                        <input type="radio" name="day" value="Sunday" checked disabled> Понедельник
                                     </label>
                                 </div>
                                 <div class="sf__line">
-                                    <label>
-                                        <input type="checkbox" name="day" value="Friday" checked> Пятница
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Friday" class="sf__checkbox" checked> Пятница
                                     </label>
-                                    <label>
-                                        <input type="checkbox" name="day" value="Saturday"> Суббота
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Saturday" class="sf__checkbox"> Суббота
                                     </label>
-                                    <label>
-                                        <input type="checkbox" name="day" value="Sunday"> Воскресенье
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Sunday" class="sf__checkbox" disabled> Воскресенье
+                                    </label>
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Sunday" class="sf__checkbox" checked disabled> Понедельник
                                     </label>
                                 </div>
                                 <div class="sf__line">
                                     <label for="day-select">Select</label>
-                                    <select name="day-select" id="day-select">
+                                    <select name="day-select" id="day-select" class="sf__select">
                                         <option value="Friday" selected>Пятница</option>
                                         <option value="Saturday">Суббота</option>
                                         <option value="Sunday">Воскресенье</option>
@@ -1074,6 +1080,27 @@
                                     </label>
                                     <input type="file" name="file" id="file" class="sf__input">
                                 </div>
+
+                                <div class="sf__line">
+
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="switch">
+                                        Party mode
+                                    </label>
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="switch" checked>
+                                        Party mode
+                                    </label>
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="switch" disabled>
+                                        Party mode
+                                    </label>
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="switch" checked disabled>
+                                        Party mode
+                                    </label>
+                                </div>
+
                             </fieldset>
                         </form>
                     </div>
