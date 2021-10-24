@@ -590,7 +590,7 @@ p {
 
 /* btn states */
 .btn:focus {
-    box-shadow: 0 4px 8px 1px var(--color-btn-shadow);
+    outline: 1px solid var(--color-primary);
 }
 
 .btn:disabled {
@@ -827,6 +827,11 @@ p {
 
 /* SPACE FORMS
 ------- ------- ------- ------- ------- ------- ------- -------*/
+
+input {
+    accent-color: var(--color-primary);
+}
+
 .sf {
 }
 
