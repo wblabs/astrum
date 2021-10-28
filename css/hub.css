@@ -207,3 +207,18 @@
     box-shadow: 0 48px 88px rgba(24, 35, 52, 0.32) !important;
     transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(0) translateY(0) !important;
 }
+
+/* color boxes */
+.hub-color-wrapper {
+
+}
+.hub-color-box {}
+.hub-color-box__title {
+    padding: 8px 0;
+    font-size: var(--color-text-heading);
+}
+.hub-color-box__body {
+    border: 1px solid var(--color-border);
+    height: 160px;
+    border-radius: 16px;
+}

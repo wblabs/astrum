@@ -553,7 +553,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: var(--gf);
-    padding: calc(var(--gf) * 1.4) calc(var(--gf) * 4);
+    padding: calc(var(--gf) * 1.5) calc(var(--gf) * 4);
     border-radius: var(--gf);
     border: 1px solid transparent;
     cursor: pointer;
@@ -827,7 +827,6 @@ p {
 
 /* SPACE FORMS
 ------- ------- ------- ------- ------- ------- ------- -------*/
-
 input {
     accent-color: var(--color-primary);
 }
@@ -875,6 +874,11 @@ input {
     padding: 8px;
 }
 
+
+.sf__select {
+    padding: 8px;
+}
+
 .sf__input:focus {
     outline: 2px solid var(--color-primary);
 }
@@ -885,10 +889,6 @@ input {
 
 .sf__select:focus {
     outline: 2px solid var(--color-primary);
-}
-
-.sf__select {
-    padding: 8px;
 }
 
 .sf__select option {
