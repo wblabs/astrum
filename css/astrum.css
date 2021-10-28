@@ -308,7 +308,6 @@ a:active {
 .footer__desc {
     padding: 0 0 8px 24px;
     color: var(--color-text-grey);
-
 }
 
 .footer__center {
@@ -542,7 +541,6 @@ h5 {
 }
 
 p {
-    font-size: var(--size-text);
     line-height: 1.2;
 }
 
