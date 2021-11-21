@@ -47,6 +47,7 @@
     color: #2b1e1e;
     font-family: monospace;
     white-space: nowrap;
+    display: inline-flex;
 }
 
 .hub__tag {
@@ -223,6 +224,8 @@
     height: 160px;
     border-radius: 16px;
     transition: var(--trans);
+    padding: 16px;
+    color: var(--color-white);
 }
 .hub-color-box__body:hover {
     border: 1px solid transparent;
