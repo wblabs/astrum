@@ -871,6 +871,7 @@ input {
     color: var(--color-text);
     font-size: var(--size-text);
     border-radius: 8px;
+    width: 200px;
 }
 
 .sf__input {
@@ -911,6 +912,13 @@ input {
 .sf__textarea::placeholder {
     color: var(--color-input-placeholder-text);
     font-family: inherit;
+}
+
+.sf__input--short,  .sf__select--short {
+    width: 92px;
+}
+.sf__textarea--short {
+    width: 50%;
 }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
