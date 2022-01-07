@@ -18,7 +18,8 @@
 /*   :: VARS ---   */
 :root {
     /* Theme colors */
-    --color-primary: #222e4e;
+    --color-primary: #f85ab2;
+    /* --color-primary: #222e4e; */
     --color-secondary: #05e745;
     --color-accent: #1961af;
     --color-dark: #192a3e;
@@ -913,6 +914,14 @@ input {
     font-family: inherit;
 }
 
+.sf__input--m,  .sf__select--m {
+    width: 168px;
+}
+
+.sf__textarea--m {
+    width: 75%;
+}
+
 .sf__input--s,  .sf__select--s {
     width: 92px;
 }
@@ -920,9 +929,6 @@ input {
     width: 50%;
 }
 
-.sf__input--m,  .sf__select--m {
-    width: 168px;
-}
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type=checkbox],
