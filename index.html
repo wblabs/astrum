@@ -43,7 +43,7 @@
             <img alt="Demo logo" src="demo/astrum-logo--green-inv.svg" width="100px">
         </div>
         <div class="header-text">
-            header title
+            connecting to JFC...
         </div>
 
         <nav class="nav" id="main-nav">
@@ -81,6 +81,37 @@
 
 
     <!--hub start-->
+    <div class="hubber">
+        <div class="hubber__face">
+            >.<
+        </div>
+        <div class="hubber__body">
+            <div class="hubber__body-element">
+                <div class="hubber__body-color" onclick="hub_setCustomColor('--color-primary', 'blue')">
+                    <div class="hubber__body-color-box" style="background: blue;">
+                    </div>
+                    P
+                </div>
+            </div>
+
+            <div class="hubber__body-element">
+                <div class="hubber__body-color" onclick="hub_setCustomColor('--color-secondary', 'orange')">
+                    <div class="hubber__body-color-box" style="background: orange;">
+                    </div>
+                    S
+                </div>
+            </div>
+
+            <button type="button" class="btn btn--s btn--ui" onclick="myFunction_get()">
+                P
+                <svg>
+                    <use href="img/sp5sprite.svg#info"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
     <div class="hub">
         <aside class="hub__aside">
 
@@ -601,13 +632,13 @@
                         <h3>sp5sprite</h3>
                         <div class="sp5sprite-demo">
                             <svg class="spif-16">
-                                <use class="spi__whatsapp" href="img/share.svg#whatsapp"></use>
+                                <use class="spi__whatsapp" href="img/sp5share.svg#whatsapp"></use>
                             </svg>
                             <svg class="spif-24">
-                                <use class="spi__whatsapp" href="img/share.svg#whatsapp"></use>
+                                <use class="spi__whatsapp" href="img/sp5share.svg#whatsapp"></use>
                             </svg>
                             <svg class="spif-32">
-                                <use class="spi__whatsapp" href="img/share.svg#whatsapp"></use>
+                                <use class="spi__whatsapp" href="img/sp5share.svg#whatsapp"></use>
                             </svg>
 
                             <svg class="spis-16">
@@ -1555,6 +1586,12 @@
                                 </svg>
                                 grid
                             </div>
+                            <div class="itext-24">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#info"></use>
+                                </svg>
+                                info
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -1648,6 +1685,7 @@
 </div>
 
 <script src="js/astrum.js"></script>
+<script src="/demo/hubjs/hub.js"></script>
 
 </body>
 </html>

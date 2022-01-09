@@ -869,7 +869,7 @@ input {
     border: 1px solid transparent;
     background: var(--color-placeholder);
     color: var(--color-text);
-    font-size: var(--size-text);
+    font-size: calc(var(--size-text) - 0.1rem);
     border-radius: 8px;
     width: 200px;
 }
