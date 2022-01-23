@@ -40,3 +40,15 @@ function hub_setTheme(p,s) {
     r.style.setProperty('--color-secondary', s);
     console.log('p ' + p + 's ' + s)
 }
+
+//color picker for Primary color
+var inputP = document.getElementById('hub-picker-p')
+inputP.addEventListener('change',
+function hub_setFromPickerP (){
+    r.style.setProperty('--color-primary', inputP.value)
+})
+var inputS = document.getElementById('hub-picker-s')
+inputS.addEventListener('change',
+function hub_setFromPickerP (){
+    r.style.setProperty('--color-secondary', inputS.value)
+})

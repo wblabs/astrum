@@ -246,7 +246,20 @@
     background-image: linear-gradient(
             0deg
             , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), radial-gradient(100% 283.68% at 0% 100%, rgb(252, 171, 20) 0%, rgb(250, 102, 65) 15.91%, rgb(190, 64, 192) 40.21%, rgba(80, 90, 221, 0) 100%), radial-gradient(107.24% 195.45% at 100% 0%, rgb(72, 204, 224) 0%, rgb(66, 139, 235) 28.85%, rgb(80, 90, 221) 60.18%);
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    /*box-shadow: 0 0 8px rgba(0,0,0,0.2);*/
+}
+
+.hubber:hover {
+    animation: hubber-pulse 1500ms infinite;
+}
+
+@keyframes hubber-pulse {
+    0% {
+        box-shadow: #ff69b4 0 0 0 0;
+    }
+    75% {
+        box-shadow: #ff69b400 0 0 0 16px;
+    }
 }
 
 .hubber__face {

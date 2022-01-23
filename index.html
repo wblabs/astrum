@@ -87,6 +87,14 @@
         </div>
         <div class="hubber__body">
             <div class="hubber__body-element">
+                <label class="sf__input"> P:
+                    <input type="color" id="hub-picker-p" value="#f85ab2">
+                </label>
+                <label class="sf__input"> S:
+                    <input type="color" id="hub-picker-s" value="#05e745">
+                </label>
+            </div>
+            <div class="hubber__body-element">
                 <div class="hubber__body-color" onclick="hub_setCustomColor('--color-primary', 'blue')">
                     <div class="hubber__body-color-box" style="background: blue;">
                     </div>
@@ -116,8 +124,7 @@
                 </div>
             </div>
 
-            <button type="button" class="btn btn--s btn--ui" onclick="myFunction_get()">
-                P
+            <button type="button" class="btn btn--s btn--ui" onclick="myFunction_get()" title="View current colors">
                 <svg>
                     <use href="img/sp5sprite.svg#info"></use>
                 </svg>
@@ -129,7 +136,7 @@
                 </svg>
             </button>
 
-            <button type="button" class="btn btn--s btn--ui" onclick="hub_SetOriginalColors()" title="Reset styles">
+            <button type="button" class="btn btn--s btn--ui" onclick="hub_SetOriginalColors()" title="Reset to original styles">
                 <svg>
                     <use href="img/sp5sprite.svg#refresh-cw"></use>
                 </svg>
