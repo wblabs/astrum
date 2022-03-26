@@ -1320,6 +1320,7 @@ input {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 300px;
 }
 
 .pcard:hover {
