@@ -43,7 +43,7 @@
             <img alt="Demo logo" src="demo/astrum-logo--green-inv.svg" width="100px">
         </div>
         <div class="header-text">
-            connecting to JFC...
+            connecting to Tower...
         </div>
 
         <nav class="nav" id="main-nav">
@@ -136,7 +136,8 @@
                 </svg>
             </button>
 
-            <button type="button" class="btn btn--s btn--ui" onclick="hub_SetOriginalColors()" title="Reset to original styles">
+            <button type="button" class="btn btn--s btn--ui" onclick="hub_SetOriginalColors()"
+                    title="Reset to original styles">
                 <svg>
                     <use href="img/sp5sprite.svg#refresh-cw"></use>
                 </svg>
@@ -659,32 +660,519 @@
             <!-- sprite -->
             <section class="hub__section hub__section-sprite sp-tab sp-tab-3">
                 <!--  SP5 sprite demo  -->
+                <h2>svg sprite demo</h2>
+
                 <div class="grid-c-3">
-                    <h2 class="grid-line">svg sprite demo</h2>
 
                     <div>
-                        <h3>sp5sprite</h3>
+                        <h3>sp5sprite.svg contains:</h3>
                         <div class="sp5sprite-demo">
-                            <svg class="spif-16">
-                                <use class="spi__whatsapp" href="img/sp5share.svg#whatsapp"></use>
-                            </svg>
-                            <svg class="spif-24">
-                                <use class="spi__whatsapp" href="img/sp5share.svg#whatsapp"></use>
-                            </svg>
-                            <svg class="spif-32">
-                                <use class="spi__whatsapp" href="img/sp5share.svg#whatsapp"></use>
-                            </svg>
-
-                            <svg class="spis-16">
-                                <use href="img/sp5sprite.svg#file-plus"></use>
-                            </svg>
-                            <svg class="spis-24">
-                                <use href="img/sp5sprite.svg#file-plus"></use>
-                            </svg>
-                            <svg class="spis-32">
-                                <use href="img/sp5sprite.svg#file-plus"></use>
-                            </svg>
+                            <ol class="hub__ul">
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#file-plus"></use>
+                                        </svg>
+                                        file-plus
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#menu"></use>
+                                        </svg>
+                                        menu
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#chevron-right"></use>
+                                        </svg>
+                                        chevron-right
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#chevron-down"></use>
+                                        </svg>
+                                        chevron-down
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#chevron-left"></use>
+                                        </svg>
+                                        chevron-left
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#plus"></use>
+                                        </svg>
+                                        plus
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#minus"></use>
+                                        </svg>
+                                        minus
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#check"></use>
+                                        </svg>
+                                        check
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#save"></use>
+                                        </svg>
+                                        save
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#refresh-cw"></use>
+                                        </svg>
+                                        refresh-cw
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#more-horizontal"></use>
+                                        </svg>
+                                        more-horizontal
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#more-vertical"></use>
+                                        </svg>
+                                        more-vertical
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#x"></use>
+                                        </svg>
+                                        x
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#phone-call"></use>
+                                        </svg>
+                                        phone-call
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#mail"></use>
+                                        </svg>
+                                        mail
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#log-in"></use>
+                                        </svg>
+                                        log-in
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#log-out"></use>
+                                        </svg>
+                                        log-out
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#bell"></use>
+                                        </svg>
+                                        bell
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#home"></use>
+                                        </svg>
+                                        home
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#check-square"></use>
+                                        </svg>
+                                        check-square
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#settings"></use>
+                                        </svg>
+                                        settings
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#round-user"></use>
+                                        </svg>
+                                        round-user
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#edit"></use>
+                                        </svg>
+                                        edit
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#edit-2"></use>
+                                        </svg>
+                                        edit-2
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#book"></use>
+                                        </svg>
+                                        book
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#external-link"></use>
+                                        </svg>
+                                        external-link
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#plugin"></use>
+                                        </svg>
+                                        plugin
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#automaton"></use>
+                                        </svg>
+                                        automaton
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#grid"></use>
+                                        </svg>
+                                        grid
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#info"></use>
+                                        </svg>
+                                        info
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#alert-triangle"></use>
+                                        </svg>
+                                        alert-triangle
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#slash"></use>
+                                        </svg>
+                                        slash
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#file-text"></use>
+                                        </svg>
+                                        file-text
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#send"></use>
+                                        </svg>
+                                        send
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#heart"></use>
+                                        </svg>
+                                        heart
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#printer"></use>
+                                        </svg>
+                                        printer
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#share-2"></use>
+                                        </svg>
+                                        share-2
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#filter"></use>
+                                        </svg>
+                                        filter
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#sliders"></use>
+                                        </svg>
+                                        sliders
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spif">
+                                            <use href="img/sp5sprite.svg#triangle"></use>
+                                        </svg>
+                                        triangle
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#tables"></use>
+                                        </svg>
+                                        tables
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spif">
+                                            <use href="img/sp5sprite.svg#user"></use>
+                                        </svg>
+                                        user
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spif">
+                                            <use href="img/sp5sprite.svg#plus-thin"></use>
+                                        </svg>
+                                        plus-thin
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spif">
+                                            <use href="img/sp5sprite.svg#add"></use>
+                                        </svg>
+                                        add
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#search"></use>
+                                        </svg>
+                                        search
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#trash-2"></use>
+                                        </svg>
+                                        trash-2
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#clock"></use>
+                                        </svg>
+                                        clock
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#folder"></use>
+                                        </svg>
+                                        folder
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#download"></use>
+                                        </svg>
+                                        download
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#eye"></use>
+                                        </svg>
+                                        eye
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#eye-off"></use>
+                                        </svg>
+                                        eye-off
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#sort"></use>
+                                        </svg>
+                                        sort
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#draggable"></use>
+                                        </svg>
+                                        draggable
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="itext-16">
+                                        <svg class="spis">
+                                            <use href="img/sp5sprite.svg#rotate-ccw"></use>
+                                        </svg>
+                                        rotate-ccw
+                                    </div>
+                                </li>
+                            </ol>
                         </div>
+                    </div>
+
+                    <div>
+                        <h3>sp5share.svg contains:</h3>
+
+                        <ol class="hub__ul">
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#whatsapp"></use>
+                                    </svg>
+                                    whatsapp
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#telegram"></use>
+                                    </svg>
+                                    telegram
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#facebook"></use>
+                                    </svg>
+                                    facebook
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#instagram"></use>
+                                    </svg>
+                                    instagram
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#youtube"></use>
+                                    </svg>
+                                    youtube
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#vk"></use>
+                                    </svg>
+                                    vk
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#odnoklassniki"></use>
+                                    </svg>
+                                    odnoklassniki
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#viber"></use>
+                                    </svg>
+                                    viber
+                                </div>
+                            </li>
+                        </ol>
                     </div>
 
                     <div class="test">

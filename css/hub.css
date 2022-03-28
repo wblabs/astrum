@@ -99,6 +99,12 @@
 .hub__ul li{
     line-height: 1.5;
     padding: 4px 0;
+    /*display: flex;
+    align-items: center;*/
+}
+.hub__ul li::marker {
+    color: var(--color-primary);
+    font-size: 1.1rem;
 }
 
 .hub__grid-border {
