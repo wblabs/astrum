@@ -285,4 +285,11 @@
         <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="gift" viewBox="0 0 24 24">
+        <path d="M20.5793 12.3329V22.3329H4.57935V12.3329" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22.5793 7.33295H2.57935V12.3329H22.5793V7.33295Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.5793 22.3329V7.33295" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.5793 7.33295H8.07935C7.4163 7.33295 6.78042 7.06955 6.31158 6.60071C5.84274 6.13187 5.57935 5.49599 5.57935 4.83295C5.57935 4.16991 5.84274 3.53402 6.31158 3.06518C6.78042 2.59634 7.4163 2.33295 8.07935 2.33295C11.5793 2.33295 12.5793 7.33295 12.5793 7.33295Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.5793 7.33295H17.0793C17.7424 7.33295 18.3783 7.06955 18.8471 6.60071C19.316 6.13187 19.5793 5.49599 19.5793 4.83295C19.5793 4.16991 19.316 3.53402 18.8471 3.06518C18.3783 2.59634 17.7424 2.33295 17.0793 2.33295C13.5793 2.33295 12.5793 7.33295 12.5793 7.33295Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>
