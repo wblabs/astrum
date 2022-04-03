@@ -467,7 +467,7 @@ a:active {
 
 .grid-a {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
     grid-gap: calc(var(--gf) * 2);
 }
 
@@ -611,9 +611,8 @@ p {
     box-shadow: none;
 }
 
-
 /* btn sizes */
-.btn--micro {
+.btn--micro, a.btn--micro {
     padding: 0;
     font-size: var(--size-text-note);
     background: none;
@@ -636,8 +635,7 @@ p {
     stroke: var(--color-text);
 }
 
-
-.btn--s {
+.btn--s, a.btn--s {
     padding: var(--gf) calc(var(--gf) * 2);
     font-size: var(--size-text-note);
 }
@@ -647,8 +645,7 @@ p {
     height: calc(var(--gf) * 2);
 }
 
-
-.btn--l {
+.btn--l, a.btn--l {
     padding: calc(var(--gf) * 2) calc(var(--gf) * 6);
     font-size: var(--size-heading-xs);
     gap: calc(var(--gf) * 2);
@@ -678,7 +675,7 @@ p {
     background: var(--thover);
 }
 
-.btn--ghost {
+.btn--ghost, a.btn--ghost {
     background: transparent;
     color: var(--color-btn-ghost-text);
     border: 1px solid var(--color-btn-border);
