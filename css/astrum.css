@@ -1121,6 +1121,7 @@ input {
 [class*='spis-'] {
     stroke: var(--color-icon-grey);
     fill: none;
+    flex-shrink: 0;
 }
 
 [class*='spis-']:hover {
@@ -1150,6 +1151,7 @@ input {
 [class*='spif-'] {
     fill: var(--color-icon-grey);
     stroke: none;
+    flex-shrink: 0;
 }
 
 [class*='spif-']:hover {
