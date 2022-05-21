@@ -52,3 +52,8 @@ inputS.addEventListener('change',
 function hub_setFromPickerP (){
     r.style.setProperty('--color-secondary', inputS.value)
 })
+
+//hub-popover
+function hubPopover() {
+    document.getElementById("hub-popover").classList.toggle("hub-popover--active");
+}

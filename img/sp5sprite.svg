@@ -292,4 +292,10 @@
         <path d="M12.5793 7.33295H8.07935C7.4163 7.33295 6.78042 7.06955 6.31158 6.60071C5.84274 6.13187 5.57935 5.49599 5.57935 4.83295C5.57935 4.16991 5.84274 3.53402 6.31158 3.06518C6.78042 2.59634 7.4163 2.33295 8.07935 2.33295C11.5793 2.33295 12.5793 7.33295 12.5793 7.33295Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M12.5793 7.33295H17.0793C17.7424 7.33295 18.3783 7.06955 18.8471 6.60071C19.316 6.13187 19.5793 5.49599 19.5793 4.83295C19.5793 4.16991 19.316 3.53402 18.8471 3.06518C18.3783 2.59634 17.7424 2.33295 17.0793 2.33295C13.5793 2.33295 12.5793 7.33295 12.5793 7.33295Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="calendar" viewBox="0 0 24 24">
+        <path d="M19.5781 4.76495H5.57812C4.47356 4.76495 3.57812 5.66038 3.57812 6.76495V20.765C3.57812 21.8695 4.47356 22.765 5.57812 22.765H19.5781C20.6827 22.765 21.5781 21.8695 21.5781 20.765V6.76495C21.5781 5.66038 20.6827 4.76495 19.5781 4.76495Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.5781 2.76495V6.76495" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.57812 2.76495V6.76495" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.57812 10.765H21.5781" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>
