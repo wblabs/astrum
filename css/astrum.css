@@ -1257,12 +1257,12 @@ input {
 /* itext pan */
 .itext-pan {
     display: flex;
-    padding: 16px 0;
-    margin: 8px 0;
+    padding: var(--gap) 0;
+    margin: var(--gf) 0;
 }
 
 .itext-pan [class*='itext-'] {
-    margin-right: 16px;
+    margin-right: var(--gap);
 }
 
 /* /SP5 icons --------------------------------------------*/
