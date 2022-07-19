@@ -1486,6 +1486,44 @@ a.pcard__btn:hover {
 
 /* /Crumbs -----------------------------*/
 
+/* PAGINATION */
+.pagination {
+    padding: var(--gap) 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gf);
+
+    column-gap: calc(var(--gf) * 2);
+    list-style: none;
+}
+
+.page-item a {
+    padding: 8px 12px;
+    background: var(--color-bg);
+    border-radius: 4px;
+    transition: var(--trans);
+    color: var(--color-text);
+    display: block;
+}
+
+.page-item a:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.page-item + .active a {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+
+.page-item + .active a:hover {
+    background: var(--color-primary-dark);
+}
+
+/* /PAGINATION */
 
 /* MISC start :*/
 
