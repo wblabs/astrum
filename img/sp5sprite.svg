@@ -35,9 +35,9 @@
         <path d="M7 3V8H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="refresh-cw" viewBox="0 0 24 24">
-        <path d="M23 4V10H17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1 20V14H7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M3.51 9C4.01717 7.56678 4.87913 6.2854 6.01547 5.27542C7.1518 4.26543 8.52547 3.55976 10.0083 3.22426C11.4911 2.88875 13.0348 2.93434 14.4952 3.35677C15.9556 3.77921 17.2853 4.56471 18.36 5.64L23 10M1 14L5.64 18.36C6.71475 19.4353 8.04437 20.2208 9.50481 20.6432C10.9652 21.0657 12.5089 21.1112 13.9917 20.7757C15.4745 20.4402 16.8482 19.7346 17.9845 18.7246C19.1209 17.7146 19.9828 16.4332 20.49 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.20581 4.68213V10.6821H7.20581" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21.2058 18.6821V13.6821H16.2058" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19.0381 9.68147C18.6001 8.48681 17.8557 7.41871 16.8743 6.57684C15.8929 5.73496 14.7065 5.14675 13.4259 4.86709C12.1453 4.58743 10.8122 4.62543 9.55087 4.97755C8.28959 5.32967 7.14127 5.98443 6.21308 6.88074L2.20581 10.515M21.2058 13.8492L17.1985 17.4835C16.2703 18.3798 15.122 19.0346 13.8607 19.3867C12.5995 19.7388 11.2663 19.7768 9.98569 19.4972C8.70508 19.2175 7.51873 18.6293 6.53735 17.7874C5.55597 16.9455 4.81155 15.8774 4.37354 14.6828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="more-horizontal" viewBox="0 0 24 24">
         <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
