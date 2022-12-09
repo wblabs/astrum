@@ -25,7 +25,7 @@
     --color-white: #ffffff;
     --color-neutral: #EFF2F6;
     --color-placeholder: #DFE4EA;
-    --color-bg: #e5e5e5;
+    --color-bg: #F7F9FA;
     --color-text-grey: #737373;
 
     /*Theme-shades*/
@@ -62,7 +62,7 @@
     --color-sp5-dev-text: #222e4e;
 
     /* Interface */
-    --color-border: var(--color-placeholder);
+    --color-border: rgba(0,0,0,0.4);
     --color-border-hover: var(--color-accent);
     --color-input-bg: var(--color-placeholder);
     --color-input-disabled-bg: #E1E6F9;
@@ -177,6 +177,7 @@ body {
         display: block;
     }
 }
+
 /* /Tech */
 
 /* PADS
@@ -191,37 +192,37 @@ body {
     height: 4px;
 }
 
-.pad-1x {
+.pad-x1 {
     width: 100%;
     height: var(--gf);
 }
 
-.pad-2x {
+.pad-x2 {
     width: 100%;
     height: calc(var(--gf) * 2);
 }
 
-.pad-3x {
+.pad-x3 {
     width: 100%;
     height: calc(var(--gf) * 3);
 }
 
-.pad-4x {
+.pad-x4 {
     width: 100%;
     height: calc(var(--gf) * 4);
 }
 
-.pad-5x {
+.pad-x5 {
     width: 100%;
     height: calc(var(--gf) * 5);
 }
 
-.pad-6x {
+.pad-x6 {
     width: 100%;
     height: calc(var(--gf) * 6);
 }
 
-.pad-8x {
+.pad-x8 {
     width: 100%;
     height: calc(var(--gf) * 8);
 }
@@ -595,6 +596,7 @@ a:active {
 .sp-toggle .sp-toggle__item--on input[type=radio]:checked + label {
     background: var(--color-green);
 }
+
 /* /BUTTONS */
 
 /* SPACE FORMS
@@ -958,15 +960,6 @@ input {
     flex-shrink: 0;
 }
 
-/* Only img & svg */
-[class*='itext-'].oimg img {
-    margin: 0;
-}
-
-[class*='itext-'].oimg svg {
-    margin: 0;
-}
-
 /* 16 */
 .itext-16 img {
     width: 16px;
@@ -1067,6 +1060,7 @@ input {
     width: 100%;
     height: 100%;
 }
+
 /* /Video responsive */
 
 /* SP5 LAYOUT
@@ -1080,7 +1074,6 @@ input {
 /* Header
 ------- ------- ------- */
 .header-wrapper {
-    background: var(--color-primary);
 }
 
 .header {
@@ -1091,6 +1084,10 @@ input {
 
 .header__logo {
     margin: 8px;
+}
+
+.header-logo__img {
+    max-width: 64px;
 }
 
 .header-text {
@@ -1106,6 +1103,7 @@ input {
 
 .main {
 }
+
 /* /Main, Page, Aside */
 
 /* Footer
@@ -1260,6 +1258,7 @@ input {
         margin: 4px 0 8px 28px;
     }
 }
+
 /* /MAIN NAV */
 /* /SP5 LAYOUT */
 
@@ -1480,9 +1479,10 @@ a.pcard__btn:hover {
 .breadcrumb li:last-child:after {
     content: '';
 }
+
 /* /Crumbs */
 
-/* PAGINATION */
+/* Pagination */
 .pagination {
     padding: var(--gap) 0;
     margin: 0;
@@ -1517,9 +1517,9 @@ a.pcard__btn:hover {
 .page-item + .active a:hover {
     background: var(--color-primary-dark);
 }
-/* /PAGINATION */
-/* /PROJECT SPECIFIED COMPONENTS */
 
+/* /Pagination */
+/* /PROJECT SPECIFIED COMPONENTS */
 
 /* MISC start:
 ------- ------- ------- ------- ------- ------- -------*/

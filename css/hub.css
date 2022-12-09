@@ -1,3 +1,41 @@
+/*
+  ____   ____    _     ____  _____    ____
+ / ___| |  _ \  / \   / ___|| ____|  | ___|
+ \___ \ | |_) |/ _ \ | |    |  _|    |___ \
+  ___) ||  __// ___ \| |___ | |___    ___) |
+ |____/ |_|  /_/   \_\\____||_____|  |____/
+
+ space 5 ♦ CSS
+ [Hub Template]
+
+*/
+
+/*  Template styles
+------- ------- ------- ------- ------- ------- ------- -------*/
+.body {
+    padding-top: var(--header-height);
+}
+.header-wrapper {
+    border-bottom: 1px solid var(--color-border);
+    position: fixed;
+    top: 0;
+}
+.header {
+    height: var(--header-height);
+}
+.page {}
+
+.compact-header {
+    --header-height: 40px;
+}
+
+.footer-wrapper {
+    background: transparent;
+    border-top: 1px solid var(--color-border);
+}
+
+/* /------- ------- ------- ------- ------- ------- ------- -------*/
+
 .test {
     border: 1px solid #90a0b7;
 }
