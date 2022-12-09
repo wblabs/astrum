@@ -1,0 +1,182 @@
+/*
+  ____   ____    _     ____  _____    ____
+ / ___| |  _ \  / \   / ___|| ____|  | ___|
+ \___ \ | |_) |/ _ \ | |    |  _|    |___ \
+  ___) ||  __// ___ \| |___ | |___    ___) |
+ |____/ |_|  /_/   \_\\____||_____|  |____/
+ space 5 ♦ Notify
+*/
+
+.sp5ntf {
+    position: fixed;
+    z-index: 9999;
+    top: 8px;
+    right: 8px;
+    padding: 16px;
+    font-size: 1rem;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.73);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.sp5nft__icon svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    fill: #1a3c4d;
+}
+
+.sp5ntf__title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #262626;
+    margin-bottom: 2px;
+}
+
+.sp5ntf__text {
+    font-size: 0.8rem;
+    color: #262626;
+}
+
+.sp5ntf--info svg {
+    fill: hotpink;
+}
+
+.sp5ntf--warning svg {
+    fill: hotpink;
+}
+
+svg {
+    fill: hotpink;
+}
+
+.sp5ntf--red {
+}
+
+.sp5ntf--green {
+}
+
+.sp5ntf-win-wrapper {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.sp5ntf-win {
+    width: 320px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.73);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    pointer-events: auto;
+}
+
+.sp5ntf-win__header {
+    display: grid;
+    grid-template-columns: auto 32px;
+    gap: 16px;
+    padding: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sp5ntf-win__title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 4px 0 0 16px;
+}
+
+.sp5ntf-win__close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: transparent;
+    transition: .2ms all;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+.sp5ntf-win__close-btn svg {
+    fill: #0e0e0e;
+    width: 24px;
+    height: 24px;
+}
+
+.sp5ntf-win__close-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.sp5ntf-win__body {
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sp5ntf-win__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp5ntf-win__img svg {
+    width: 100px;
+    height: 100px;
+    fill: var(--color-primary, #0471de);
+}
+
+.sp5ntf-win__text {
+    padding-top: 16px;
+    color: #0e0e0e;
+    font-size: 1rem;
+}
+
+.sp5ntf-win__footer {
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.sp5ntf-btn {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #414141;
+    transition: 0.2ms all;
+}
+
+.sp5ntf-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #414141;
+}
+
+.sp5ntf-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: #0e0e0e;
+}
+
+.sp5ntf-btn:hover svg {
+    width: 24px;
+    height: 24px;
+    fill: #0e0e0e;
+}
