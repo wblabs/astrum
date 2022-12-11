@@ -1077,18 +1077,15 @@ input {
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
 }
 
 .header__logo {
-    margin: 8px;
 }
 
 .header-logo__img {
-    max-width: 64px;
 }
+
+.header-logo__text {}
 
 .header-text {
     color: var(--color-text-grey);
@@ -1154,7 +1151,6 @@ input {
 
 .nav {
     padding: 8px 4px;
-    box-sizing: border-box;
 }
 
 .compact-header .nav {
@@ -1167,14 +1163,11 @@ input {
     list-style: none;
     display: flex;
     align-items: center;
-}
-
-.nav li {
-    margin: 0 32px 0 0;
+    gap: var(--gap);
 }
 
 .nav a {
-    color: var(--color-white);
+    color: var(--color-text);
     transition: var(--trans);
 }
 
