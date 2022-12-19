@@ -18,7 +18,7 @@
 /*   :: VARS ---   */
 :root {
     /* Theme colors */
-    --color-primary: #f85ab2;
+    --color-primary: #003CFF;
     --color-secondary: #05e745;
     --color-accent: #1961af;
     --color-dark: #192a3e;
@@ -62,7 +62,7 @@
     --color-sp5-dev-text: #222e4e;
 
     /* Interface */
-    --color-border: rgba(0,0,0,0.4);
+    --color-border: rgba(0, 0, 0, 0.4);
     --color-border-hover: var(--color-accent);
     --color-input-bg: var(--color-placeholder);
     --color-input-disabled-bg: #E1E6F9;
@@ -311,6 +311,30 @@ a:active {
 
 .grid-c-6 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-c-7 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-c-8 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-c-9 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-c-10 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-c-11 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-c-12 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid-demo {
@@ -1066,9 +1090,11 @@ input {
 /* SP5 LAYOUT
 ------- ------- ------- ------- ------- ------- ------- */
 .body {
+    /*fixed footer*/
+    /*
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;*/
 }
 
 /* Header
@@ -1085,7 +1111,8 @@ input {
 .header-logo__img {
 }
 
-.header-logo__text {}
+.header-logo__text {
+}
 
 .header-text {
     color: var(--color-text-grey);
