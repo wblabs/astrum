@@ -35,8 +35,13 @@
     <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">
 
     <link href="css/core.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="/hub/plugins/highlight/styles/github.min.css">
+    <script src="/hub/plugins/highlight/highlight.min.js"></script>
 </head>
 <body class="body">
+<script>hljs.highlightAll();</script>
+
 <div class="header-wrapper">
     <header class="header wid">
         <div class="header__left">
@@ -352,6 +357,23 @@
                 <p>
                     Можно использовать с тегами <span class="hub__tag">a</span>, <span
                         class="hub__tag">div</span>, <span class="hub__tag">button</span>
+
+                <pre>
+                    <code class="language-css">
+.header-logo__img {
+    max-width: 40px;
+    flex-shrink: 0;
+    transition: var(--trans);
+}
+                </code>
+            </pre>
+
+                <pre>
+                    <code class="language-html">
+&lt;div&gt;Go divs Power!&lt;/div&gt;
+&lt;button class=&quot;btn&quot;&gt;button&lt;/button&gt;
+                </code>
+            </pre>
                 </p>
                 <h3>
                     Размеры кнопок

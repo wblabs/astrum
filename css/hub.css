@@ -37,6 +37,8 @@
     top: 0;
     width: 100%;
 
+    z-index: 999;
+
     background: rgba(255, 255, 255, 0.73);
     backdrop-filter: blur(9.4px);
     -webkit-backdrop-filter: blur(9.4px);
@@ -88,16 +90,19 @@
 .header-logo__img {
     max-width: 40px;
     flex-shrink: 0;
+    transition: var(--trans);
 }
 
 .header-logo__text {
     font-family: var(--wf4);
     color: var(--color-text);
     font-size: 1.2rem;
+    transition: var(--trans);
 }
 
 .header-text {
     font-family: var(--wf3);
+    transition: var(--trans);
 }
 
 .compact-header {
@@ -106,14 +111,20 @@
 
 .compact-header .header-logo__img {
     height: 32px;
+    transition: var(--trans);
+
 }
 
 .compact-header .header-logo__text {
     font-size: var(--size-text-note);
+    transition: var(--trans);
+
 }
 
 .compact-header .header-text {
     font-size: var(--size-text-note);
+    transition: var(--trans);
+
 }
 
 .page {
