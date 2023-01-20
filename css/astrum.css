@@ -1349,8 +1349,7 @@ p {
 
 .pcard__body, .pcard__footer {
     width: 100%;
-    padding: 16px;
-    box-sizing: border-box;
+    padding:var(--gap);
 }
 
 .pcard__footer {
