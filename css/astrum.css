@@ -969,6 +969,11 @@ input {
     height: 32px;
 }
 
+.itext {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
 
 [class*='itext-'] {
     display: inline-flex;
