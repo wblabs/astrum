@@ -1110,7 +1110,7 @@ input {
 .header {
 }
 
-.header__logo {
+.header-logo {
 }
 
 .header-logo__img {
@@ -1119,7 +1119,7 @@ input {
 .header-logo__text {
 }
 
-.header-text {
+.header-center__text {
     color: var(--color-text-grey);
 }
 
@@ -1354,7 +1354,7 @@ p {
 
 .pcard__body, .pcard__footer {
     width: 100%;
-    padding:var(--gap);
+    padding: var(--gap);
 }
 
 .pcard__footer {

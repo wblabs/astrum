@@ -80,7 +80,7 @@
     padding-right: var(--gap);
 }
 
-.header__logo {
+.header-logo {
     margin: 8px;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
     transition: var(--trans);
 }
 
-.header-text {
+.header-center__text {
     font-family: var(--wf3);
     transition: var(--trans);
 }
@@ -121,7 +121,7 @@
 
 }
 
-.compact-header .header-text {
+.compact-header .header-center__text {
     font-size: var(--size-text-note);
     transition: var(--trans);
 
