@@ -31,6 +31,7 @@
     /*Theme-shades*/
     --color-primary-light: #30406f;
     --color-primary-dark: #1a233b;
+    --color-primary-transp: rgba(0, 60, 255,0.16);
     --color-secondary-light: #0afc4c;
     --color-secondary-dark: #04cd3d;
 
@@ -678,7 +679,7 @@ input {
 }
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
     box-shadow: 0 0 0 0.0625em var(--color-primary);
-    background-color: #dee7ff;
+    background-color: var(--color-primary-transp);
     z-index: 1;
     color: var(--color-primary);
 }
