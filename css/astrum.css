@@ -530,52 +530,54 @@ a:active {
 
 /* radio-group */
 .sp-radio-group {
-    display: inline-block;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .sp-radio-group__item {
-    display: inline-block;
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sp-radio-group input[type=radio] {
-    display: none;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
+    box-shadow: 0 0 0 0.0625em var(--color-primary);
+    background-color: #dee7ff;
+    z-index: 1;
+    color: var(--color-primary);
 }
 
-.sp-radio-group label {
-    display: inline-block;
+.sp-radio-group-item__text {
+    display: block;
     cursor: pointer;
-    padding: calc(var(--gf) * 2) calc(var(--gf) * 4);
-    /*line-height: 32px;*/
-    border: 1px solid var(--color-btn-border);
-    border-right: none;
-    user-select: none;
+    background-color: var(--color-white);
+    padding: var(--gf) var(--gap);
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: var(--color-text);
+    text-align: center;
+    transition: background-color .3s ease;
 }
-
-.sp-radio-group .sp-radio-group__item:first-child label {
-    border-radius: 8px 0 0 8px;
+.sp-radio-group__item:first-child .sp-radio-group-item__text {
+    border-radius: var(--gf) 0 0 var(--gf);
 }
+.sp-radio-group__item:last-child .sp-radio-group-item__text {
+    border-radius: 0 var(--gf) var(--gf) 0;
 
-.sp-radio-group .sp-radio-group__item:last-child label {
-    border-radius: 0 8px 8px 0;
-    border: 1px solid var(--color-btn-border);
 }
-
-/* Checked */
-.sp-radio-group input[type=radio]:checked + label {
-    background: var(--color-btn-bg);
-    color: var(--color-btn-text);
-}
-
-/* Hover */
-.sp-radio-group label:hover {
-    background: var(--color-btn-bg);
-    color: var(--color-btn-text);
-}
-
 /* Disabled */
-.sp-radio-group input[type=radio]:disabled + label {
+.sp-radio-group input[type=radio]:disabled + .sp-radio-group-item__text {
     background: var(--color-neutral);
     color: var(--color-text-grey);
 }
