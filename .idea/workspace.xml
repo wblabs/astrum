@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new sp radio group">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp toogle removed&#10;switch renamed to sp-switch">
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -85,7 +84,7 @@
       <workItem from="1679668412969" duration="1314000" />
       <workItem from="1680882374754" duration="85000" />
       <workItem from="1681580262731" duration="8183000" />
-      <workItem from="1681658262507" duration="2889000" />
+      <workItem from="1681658262507" duration="3196000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -122,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681664575390</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sp toogle removed&#10;switch renamed to sp-switch">
+      <created>1681664954292</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681664954292</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +140,7 @@
     <MESSAGE value="play-circle and list icons added to sp5sprite.svg" />
     <MESSAGE value=".wid class fix" />
     <MESSAGE value="new sp radio group" />
-    <option name="LAST_COMMIT_MESSAGE" value="new sp radio group" />
+    <MESSAGE value="sp toogle removed&#10;switch renamed to sp-switch" />
+    <option name="LAST_COMMIT_MESSAGE" value="sp toogle removed&#10;switch renamed to sp-switch" />
   </component>
 </project>
