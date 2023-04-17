@@ -678,7 +678,8 @@ input {
     width: 1px;
 }
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
-    box-shadow: 0 0 0 0.0625em var(--color-primary);
+    border: 1px solid var(--color-primary
+    );
     background-color: var(--color-primary-transp);
     z-index: 1;
     color: var(--color-primary);
@@ -690,8 +691,8 @@ input {
     background-color: var(--color-white);
     padding: var(--gf) var(--gap);
     position: relative;
-    margin-left: .0625em;
-    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    margin-left: -1px;
+    border: 1px solid var(--color-border);
     letter-spacing: .05em;
     color: var(--color-text);
     text-align: center;
