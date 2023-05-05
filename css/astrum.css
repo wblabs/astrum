@@ -84,6 +84,17 @@
     --color-green: #2ed47a;
     --color-blue: #104ae0;
     --color-purple: #885af8;
+    --ui-bg-100: #F5F5F5;
+    --ui-bg-200: #EBEBEB;
+    --ui-bg-300: #E1E1E1;
+
+    /* Box-Shadows */
+    --sp-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --sp-shadow-s: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --sp-shadow-m: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --sp-shadow-l: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --sp-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --sp-shadow-inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 
     /* Buttons */
     --color-btn-bg: var(--color-primary);
@@ -179,7 +190,6 @@ body {
         display: block;
     }
 }
-
 /* /Tech */
 
 /* PADS
