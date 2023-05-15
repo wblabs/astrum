@@ -352,12 +352,12 @@ input[id^="spoiler"]:checked + label + .spoiler {
 /*spis icons list*/
 
 .spis__menu {
-    -webkit-mask: url("feather/black/menu.svg");
-    mask: url("feather/black/menu.svg");
+    -webkit-mask: url("menu.svg");
+    mask: url("menu.svg");
 }
 .spis__menu {
-    -webkit-mask: url("feather/black/menu.svg");
-    mask: url("feather/black/menu.svg");
+    -webkit-mask: url("menu.svg");
+    mask: url("menu.svg");
 }
 
 

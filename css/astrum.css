@@ -62,6 +62,24 @@
     --color-sp5-dev-bg: #05e745;
     --color-sp5-dev-text: #222e4e;
 
+    /* UI colors */
+    --color-orange: #ffb946;
+    --color-red: #f7685b;
+    --color-green: #2ed47a;
+    --color-blue: #104ae0;
+    --color-purple: #885af8;
+    --ui-bg-100: #F5F5F5;
+    --ui-bg-200: #EBEBEB;
+    --ui-bg-300: #E1E1E1;
+    --ui-elem-bg: #edede7;
+    --ui-input-bg: #fff;
+    --ui-input-bg-active: #dee7ff;
+    --ui-color-primary: #0043ed;
+    --ui-color-focus: #0043ed;
+    --ui-input-border: 1px solid #b5bfd9;
+    --ui-input-border-active: 1px solid #0043ed;
+    --ui-elem-height: 36px;
+
     /* Interface */
     --color-border: rgba(0, 0, 0, 0.4);
     --color-border-hover: var(--color-accent);
@@ -78,15 +96,7 @@
     --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
     --trans: all 0.2s; /*transition delay*/
 
-    /* UI colors */
-    --color-yellow: #ffb946;
-    --color-red: #f7685b;
-    --color-green: #2ed47a;
-    --color-blue: #104ae0;
-    --color-purple: #885af8;
-    --ui-bg-100: #F5F5F5;
-    --ui-bg-200: #EBEBEB;
-    --ui-bg-300: #E1E1E1;
+
 
     /* Box-Shadows */
     --sp-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -1032,12 +1042,12 @@ input {
 ------- ------- ------- ------- ------- ------- -------*/
 .madeinsp5 {
     display: inline-block;
-    background: transparent url("../img/sp5__logo.svg") no-repeat;
+    background: transparent url("../img/sp5-logo.svg") no-repeat;
     background-size: contain;
     width: 56px;
     height: 33px;
     filter: grayscale(100%);
-    transition: all 0.5s;
+    transition: var(--trans);
 }
 
 .madeinsp5:hover {
@@ -1103,6 +1113,9 @@ input {
 /* Main, Page, Aside
 ------- ------- ------- */
 .page {
+    width: var(--wid);
+    margin: 0 auto;
+    padding: 0 var(--gf);
 }
 
 .main {
@@ -1126,16 +1139,7 @@ input {
 
 }
 
-.footer__logo {
-    width: 80px;
-    height: 32px;
-    margin: 8px 8px 4px 8px;
-}
 
-.footer__desc {
-    padding: 0 0 8px 24px;
-    color: var(--color-text-grey);
-}
 
 .footer__center {
     color: var(--color-text-grey);
@@ -1157,6 +1161,10 @@ input {
 }
 
 .nav {
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
     padding: 8px 4px;
 }
 
@@ -1164,14 +1172,6 @@ input {
     padding: 4px 4px;
 }
 
-.nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: var(--gap);
-}
 
 .nav a {
     color: var(--color-text);

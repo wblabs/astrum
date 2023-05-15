@@ -37,30 +37,75 @@
     <link href="css/core.css" rel="stylesheet">
 </head>
 <body class="body">
+<div class="header-wrapper">
+    <header class="header wid">
+        <div class="header__left">
+            <a href="index.html" class="header-logo">
+                <img alt="Demo logo" src="img/logo.svg" class="header-logo__img">
+                <div class="header-logo__text">
+                    Astrum Tpl
+                </div>
+            </a>
+        </div>
+        <div class="header__center">
+            <div class="header-center__text">
+                connecting to Tower...
+            </div>
+        </div>
+        <div class="header__right">
+            <nav class="nav" id="main-nav">
+                <!-- mobnav icon -->
+                <button class="mobnav" id="mobnav" onclick="mobilemenu()" title="menu">
+                <span class="mobnav__icon">
+                    <span class="menu-icon-wrapper" id="menu-icon">
+                        <span class="menu-icon menu-icon__top"></span>
+                        <span class="menu-icon menu-icon__middle"></span>
+                        <span class="menu-icon menu-icon__bottom"></span>
+                    </span>
+                </span>
+                    <span class="mobnav__text">
 
-<div class="sp-radio-group">
-    <label class="sp-radio-group__item">
-        <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" checked>
-        <span class="sp-radio-group-item__text">Alien</span>
-    </label>
-    <label class="sp-radio-group__item">
-        <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-        <span class="sp-radio-group-item__text">Terminator</span>
-    </label>
-    <label class="sp-radio-group__item">
-        <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-        <span class="sp-radio-group-item__text">Android</span>
-    </label>
-    <label class="sp-radio-group__item">
-        <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-        <span class="sp-radio-group-item__text">Thing</span>
-    </label>
-    <label class="sp-radio-group__item">
-        <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" disabled>
-        <span class="sp-radio-group-item__text">Prometheus</span>
-    </label>
+                </span>
+                </button>
+                <!-- /mobnav icon -->
+                <div style="color:var(--color-text-grey);">Lab:</div>
+                <a href="layout.html">Layout</a>
+                <a href="demo.html">Demo</a>
+                <a href="sp5notify.html">sp5notify</a>
+
+            </nav>
+        </div>
+    </header>
 </div>
-
+<main class="main">
+    <div class="page wid">
+        <div class="pad-x4"></div>
+        <h1>demo ui</h1>
+        <div class="sp-radio-group">
+            <label class="sp-radio-group__item">
+                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" checked>
+                <span class="sp-radio-group-item__text">Alien</span>
+            </label>
+            <label class="sp-radio-group__item">
+                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                <span class="sp-radio-group-item__text">Terminator</span>
+            </label>
+            <label class="sp-radio-group__item">
+                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                <span class="sp-radio-group-item__text">Android</span>
+            </label>
+            <label class="sp-radio-group__item">
+                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                <span class="sp-radio-group-item__text">Thing</span>
+            </label>
+            <label class="sp-radio-group__item">
+                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" disabled>
+                <span class="sp-radio-group-item__text">Prometheus</span>
+            </label>
+        </div>
+    </div>
+</main>
+<script src="js/nj/nunjucks.js"></script>
 <script src="js/astrum.js"></script>
 <script src="demo/hubjs/hub.js"></script>
 

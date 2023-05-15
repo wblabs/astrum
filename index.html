@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/src/site.webmanifestfest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
@@ -45,16 +45,16 @@
 <div class="header-wrapper">
     <header class="header wid">
         <div class="header__left">
-            <div class="header-logo">
+            <a href="index.html" class="header-logo">
                 <img alt="Demo logo" src="img/logo.svg" class="header-logo__img">
                 <div class="header-logo__text">
                     Astrum Tpl
                 </div>
-            </div>
+            </a>
         </div>
         <div class="header__center">
             <div class="header-center__text">
-                connecting to Tower...
+                 connecting to Tower...
             </div>
         </div>
         <div class="header__right">
@@ -73,24 +73,16 @@
                 </span>
                 </button>
                 <!-- /mobnav icon -->
+                <div style="color:var(--color-text-grey);">Lab:</div>
+                <a href="layout.html">Layout</a>
+                <a href="demo.html">Demo</a>
+                <a href="sp5notify.html">sp5notify</a>
 
-                <ul>
-                    <li class="active"><a href="">главная</a>
-                    </li>
-                    <li><a href="">услуги</a>
-                    </li>
-                    <li><a href="">продукция</a>
-                    </li>
-                    <li><a href="">документы</a>
-                    </li>
-                    <li><a href="">контакты</a>
-                    </li>
-                </ul>
             </nav>
         </div>
     </header>
 </div>
-<div class="page wid">
+<div class="page">
 
     <!--hub start-->
     <div class="hubber">
@@ -2055,22 +2047,22 @@
                 </div>
             </section>
             <!-- /forms -->
-
         </main>
     </div>
     <!--  /hub  -->
-
-
 </div>
 <div class="footer-wrapper">
-    <footer class="footer grid-a wid">
+    <footer class="footer grid-c-3 wid">
         <div class="footer__left">
-            <div class="footer__logo">
-                <img src="demo/astrum-logo--green.svg" alt="footer logo" class="footer__logo">
+            <div class="footer-logo">
+                <img src="img/logo.svg" alt="footer logo" class="footer-logo__img">
+                <div class="footer-logo__text">
+                    AstrumTpl 1.5
+                </div>
             </div>
-            <p class="footer__desc">
-                AstrumTpl 1.5
-            </p>
+            <div class="footer__desc">
+
+            </div>
         </div>
         <div class="footer__center">
             <p>
@@ -2078,13 +2070,14 @@
             </p>
         </div>
         <div class="footer__right">
-            <a href="https://space5.ru" class="madeinsp5" title="made in space5">
+            <a href="https://space5.ru" class="madeinsp5" title="made in Space 5">
             </a>
         </div>
 
     </footer>
 </div>
 
+<script src="js/nj/nunjucks.js"></script>
 <script src="js/astrum.js"></script>
 <script src="demo/hubjs/hub.js"></script>
 

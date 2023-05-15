@@ -4,7 +4,7 @@ function toggleCompactHeader() {
         window.scrollY > 50);
 }
 
-// toggle mobile menu
+// toggle  Mobile menu
 function mobilemenu() {
     document.getElementById("mobnav").classList.toggle("mobnav--active");
     document.getElementById("main-nav").classList.toggle("main-nav--active");

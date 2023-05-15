@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="radio group vars">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new box-shadows vars and demo&#10;new bg ui colors and demo">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/layouts/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/partials/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/partials/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/menu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/menu/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/sp5-demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo/sp5-demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub/plugins/highlight/es/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/hub/plugins/highlight/es/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub/plugins/highlight/es/highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/hub/plugins/highlight/es/highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub/plugins/highlight/highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/hub/plugins/highlight/highlight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub/plugins/highlight/styles/brown-paper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/hub/plugins/highlight/styles/brown-paper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub/plugins/highlight/styles/pojoaque.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/hub/plugins/highlight/styles/pojoaque.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sp5__logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/sp5-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/astrum.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/astrum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sliderpro/slider-pro.css" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliderpro/slider-pro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sliderpro/slider-pro.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliderpro/slider-pro.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp5notify.html" beforeDir="false" afterPath="$PROJECT_DIR$/sp5notify.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="package.json" />
         <option value="HTML File" />
       </list>
     </option>
@@ -35,6 +58,7 @@
   <component name="ProjectId" id="2LhiYH3P2Z1tJVPhlTCspUBpdLY" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,11 +66,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Users/edost/git/astrum/node_modules/gulp&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -62,6 +88,26 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/html/layouts" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$APPLICATION_CONFIG_DIR$/scratches/ai-test-may-23" />
+      <recent name="$PROJECT_DIR$/tpl" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,7 +136,15 @@
       <workItem from="1681666037928" duration="937000" />
       <workItem from="1681667472618" duration="290000" />
       <workItem from="1681728050079" duration="978000" />
-      <workItem from="1683271606315" duration="5961000" />
+      <workItem from="1683271606315" duration="7461000" />
+      <workItem from="1683402960757" duration="5980000" />
+      <workItem from="1683724762558" duration="3376000" />
+      <workItem from="1683794227240" duration="776000" />
+      <workItem from="1683838312597" duration="148000" />
+      <workItem from="1683838580148" duration="6895000" />
+      <workItem from="1683846206936" duration="2278000" />
+      <workItem from="1684061677651" duration="675000" />
+      <workItem from="1684171898242" duration="3985000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -155,13 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681728421855</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="new box-shadows vars and demo&#10;new bg ui colors and demo">
+      <created>1683278354766</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683278354766</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new .idea resolve" />
     <MESSAGE value="layout.html all grids added" />
     <MESSAGE value="play-circle and list icons added to sp5sprite.svg" />
@@ -171,6 +233,7 @@
     <MESSAGE value="sp radio group moved to forms section" />
     <MESSAGE value="new var --color-primary-transp" />
     <MESSAGE value="radio group vars" />
-    <option name="LAST_COMMIT_MESSAGE" value="radio group vars" />
+    <MESSAGE value="new box-shadows vars and demo&#10;new bg ui colors and demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="new box-shadows vars and demo&#10;new bg ui colors and demo" />
   </component>
 </project>
