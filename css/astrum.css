@@ -681,12 +681,13 @@ input {
 /* radio-group */
 .sp-radio-group {
     display: flex;
+    align-items: stretch;
     justify-content: center;
 }
 
 .sp-radio-group__item {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
 }
 
