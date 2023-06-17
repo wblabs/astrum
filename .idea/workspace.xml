@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new ui colors and var&#10;added global header with nav&#10;template files rearrange">
-      <change afterPath="$PROJECT_DIR$/Writerside/astrm.tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/c.list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/completion_procedure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/completion_procedure_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/convert_table_to_xml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/convert_table_to_xml_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/new_topic_options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/images/new_topic_options_dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/project.ihp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/starter-topic.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/v.list" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp-radio-group stretch fix">
+      <change afterPath="$PROJECT_DIR$/img/sp5rte.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,27 +75,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "js.buildTools.gulp.gulp_package_dir": "/Users/edost/git/astrum/node_modules/gulp",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true",
-    "writerside.last.selected.productastrum": "astrm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Users/edost/git/astrum/node_modules/gulp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;writerside.last.selected.productastrum&quot;: &quot;astrm&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -161,7 +156,14 @@
       <workItem from="1683838580148" duration="6895000" />
       <workItem from="1683846206936" duration="2278000" />
       <workItem from="1684061677651" duration="675000" />
-      <workItem from="1684171898242" duration="4632000" />
+      <workItem from="1684171898242" duration="6383000" />
+      <workItem from="1684189461375" duration="608000" />
+      <workItem from="1684785104031" duration="618000" />
+      <workItem from="1684924826826" duration="347000" />
+      <workItem from="1685948780453" duration="749000" />
+      <workItem from="1685981749556" duration="12533000" />
+      <workItem from="1686398511593" duration="679000" />
+      <workItem from="1687003775481" duration="899000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -240,7 +242,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684183516921</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test of Writerside">
+      <created>1684185162742</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684185162742</updated>
+    </task>
+    <task id="LOCAL-00013" summary="new demo for sp-radio-group with js tabs">
+      <created>1686051443376</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686051443376</updated>
+    </task>
+    <task id="LOCAL-00014" summary="sp-radio-group stretch fix">
+      <created>1686398581468</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686398581468</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +293,9 @@
     <MESSAGE value="radio group vars" />
     <MESSAGE value="new box-shadows vars and demo&#10;new bg ui colors and demo" />
     <MESSAGE value="new ui colors and var&#10;added global header with nav&#10;template files rearrange" />
-    <option name="LAST_COMMIT_MESSAGE" value="new ui colors and var&#10;added global header with nav&#10;template files rearrange" />
+    <MESSAGE value="test of Writerside" />
+    <MESSAGE value="new demo for sp-radio-group with js tabs" />
+    <MESSAGE value="sp-radio-group stretch fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="sp-radio-group stretch fix" />
   </component>
 </project>
