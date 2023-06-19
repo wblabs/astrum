@@ -271,13 +271,38 @@
 .hub__ul li {
     line-height: 1.5;
     padding: 4px 0;
-    /*display: flex;
-    align-items: center;*/
+    /*display: flex;*/
+    /*align-items: center;*/
 }
 
 .hub__ul li::marker {
     color: var(--color-primary);
     font-size: 1.1rem;
+}
+
+
+.hub__ol li {
+    line-height: 1.5;
+}
+
+.hub__ol li::marker {
+    color: #989898;
+    font-size: 1rem;
+    padding: 4px 0;
+
+}
+.hub__ol--sprites li::marker {
+    font-size: 0.7rem;
+}
+.hub__ol--sprites {
+    /*color: var(--color-text-grey);*/
+}
+
+.hub__ol--sprites .spif {
+    fill: var(--color-primary);
+}
+.hub__ol--sprites .spis {
+    stroke: var(--color-primary);
 }
 
 .hub__grid-border {

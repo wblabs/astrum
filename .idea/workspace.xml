@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp-radio-group stretch fix">
-      <change afterPath="$PROJECT_DIR$/img/sp5rte.svg" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp5 RTE icons v 0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +163,9 @@
       <workItem from="1685948780453" duration="749000" />
       <workItem from="1685981749556" duration="12533000" />
       <workItem from="1686398511593" duration="679000" />
-      <workItem from="1687003775481" duration="899000" />
+      <workItem from="1687003775481" duration="2250000" />
+      <workItem from="1687164902703" duration="895000" />
+      <workItem from="1687168615777" duration="511000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -263,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686398581468</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="sp5 RTE icons v 0.1">
+      <created>1687004684980</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687004684980</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +305,7 @@
     <MESSAGE value="test of Writerside" />
     <MESSAGE value="new demo for sp-radio-group with js tabs" />
     <MESSAGE value="sp-radio-group stretch fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="sp-radio-group stretch fix" />
+    <MESSAGE value="sp5 RTE icons v 0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="sp5 RTE icons v 0.1" />
   </component>
 </project>
