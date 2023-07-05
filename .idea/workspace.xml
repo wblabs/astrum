@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp5 RTE icons v 0.1">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new main image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp5notify.html" beforeDir="false" afterPath="$PROJECT_DIR$/sp5notify.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,32 +76,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Users/edost/git/astrum/node_modules/gulp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;writerside.last.selected.productastrum&quot;: &quot;astrm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "js.buildTools.gulp.gulp_package_dir": "/Users/edost/git/astrum/node_modules/gulp",
+    "last_opened_file_path": "/Users/edost/git/astrum/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "writerside.last.selected.productastrum": "astrm"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/html/layouts" />
@@ -165,7 +170,9 @@
       <workItem from="1686398511593" duration="679000" />
       <workItem from="1687003775481" duration="2250000" />
       <workItem from="1687164902703" duration="895000" />
-      <workItem from="1687168615777" duration="511000" />
+      <workItem from="1687168615777" duration="1709000" />
+      <workItem from="1687364560228" duration="15000" />
+      <workItem from="1688570230560" duration="3149000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -272,7 +279,46 @@
       <option name="project" value="LOCAL" />
       <updated>1687004684980</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="some ol classes new css">
+      <created>1687169719457</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687169719457</updated>
+    </task>
+    <task id="LOCAL-00017" summary="sp chips added">
+      <option name="closed" value="true" />
+      <created>1688571819006</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688571819006</updated>
+    </task>
+    <task id="LOCAL-00018" summary="sp chips hover fix">
+      <option name="closed" value="true" />
+      <created>1688571968978</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1688571968978</updated>
+    </task>
+    <task id="LOCAL-00019" summary="href fix on demo page">
+      <option name="closed" value="true" />
+      <created>1688572365629</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688572365629</updated>
+    </task>
+    <task id="LOCAL-00020" summary="new main image">
+      <option name="closed" value="true" />
+      <created>1688573139333</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1688573139333</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +352,11 @@
     <MESSAGE value="new demo for sp-radio-group with js tabs" />
     <MESSAGE value="sp-radio-group stretch fix" />
     <MESSAGE value="sp5 RTE icons v 0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="sp5 RTE icons v 0.1" />
+    <MESSAGE value="some ol classes new css" />
+    <MESSAGE value="sp chips added" />
+    <MESSAGE value="sp chips hover fix" />
+    <MESSAGE value="href fix on demo page" />
+    <MESSAGE value="new main image" />
+    <option name="LAST_COMMIT_MESSAGE" value="new main image" />
   </component>
 </project>
