@@ -808,6 +808,7 @@ input {
 .sp-chip--disabled:hover {
     background: transparent;
     cursor: auto;
+    color: rgba(0,0,0,0.3);
 .}
 .sp-chip--disabled svg {
     opacity: 0.2;
@@ -1245,7 +1246,6 @@ input {
 }
 
 .nav {
-    display: flex;
     display: flex;
     align-items: center;
     gap: var(--gap);
