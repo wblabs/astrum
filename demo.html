@@ -80,7 +80,10 @@
 <main class="main">
     <div class="page wid">
         <div class="pad-x4"></div>
-        <h1>sp-radio-group</h1>
+        <h1>UI demos</h1>
+
+        <section class="hub-demo-section">
+            <h2>sp-radio-group</h2>
 
 
             <div class="sp-radio-group">
@@ -112,7 +115,7 @@
             </div>
             <div class="sp-tab-sections-group">
                 <section class="sp-tab-section sp-tab-section--active">
-                    <h2>Alien</h2>
+                    <h3>Alien</h3>
                     <p>
                         The "Alien" movie universe, originating from Ridley Scott's 1979 sci-fi horror film, unveils a
                         dystopian cosmos filled with existential dread. Central to the series is the terrifying
@@ -124,7 +127,7 @@
                 </section>
 
                 <section class="sp-tab-section">
-                    <h2>Terminator</h2>
+                    <h3>Terminator</h3>
                     <p>
                         The "Terminator" franchise, initiated by James Cameron's groundbreaking 1984 film, narrates a
                         dystopian tale of humanity's fight against self-aware machines, led by Skynet. The movies
@@ -136,7 +139,7 @@
                 </section>
 
                 <section class="sp-tab-section">
-                    <h2>Android</h2>
+                    <h3>Android</h3>
                     <p>
                         Androids are artificial beings designed to resemble humans, not only in physical appearance but
                         also in behavior and cognition. They are a common feature in science fiction and speculative
@@ -149,7 +152,7 @@
 
 
                 <section class="sp-tab-section">
-                    <h2>Thing</h2>
+                    <h3>Thing</h3>
                     <p>
                         "The Thing," a cult classic directed by John Carpenter in 1982, is an atmospheric sci-fi horror
                         film set in the isolated expanses of Antarctica. The narrative revolves around a shape-shifting,
@@ -160,22 +163,49 @@
                     </p>
                 </section>
             </div>
-        </div>
 
-    <script>
-            //tabs toogle function click on sp-radio-group-item__radio activates sp-tab-section with same index
-            document.querySelectorAll('.sp-radio-group-item__radio').forEach(function (item, i) {
-                item.addEventListener('click', function () {
-                    document.querySelectorAll('.sp-tab-section').forEach(function (item, j) {
-                        if (j === i) {
-                            item.classList.add('sp-tab-section--active');
-                        } else {
-                            item.classList.remove('sp-tab-section--active');
-                        }
+
+            <script>
+                //tabs toogle function click on sp-radio-group-item__radio activates sp-tab-section with same index
+                document.querySelectorAll('.sp-radio-group-item__radio').forEach(function (item, i) {
+                    item.addEventListener('click', function () {
+                        document.querySelectorAll('.sp-tab-section').forEach(function (item, j) {
+                            if (j === i) {
+                                item.classList.add('sp-tab-section--active');
+                            } else {
+                                item.classList.remove('sp-tab-section--active');
+                            }
+                        });
                     });
                 });
-            });
-    </script>
+            </script>
+        </section>
+
+        <section class="hub-demo-section">
+            <h2>Chips</h2>
+            <div class="sp-chips-pan">
+                <div class="sp-chip">
+                    Enabled
+                    <svg>
+                        <use href="/img/sp5sprite.svg#x"></use>
+                    </svg>
+                </div>
+                <div class="sp-chip">
+                    Enabled 2
+                    <svg>
+                        <use href="/img/sp5sprite.svg#x"></use>
+                    </svg>
+                </div>
+                <div class="sp-chip sp-chip--disabled">
+                    Disabled
+                    <svg>
+                        <use href="/img/sp5sprite.svg#x"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </main>
 <script src="js/astrum.js"></script>
 

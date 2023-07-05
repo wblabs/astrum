@@ -693,3 +693,17 @@
     top: 100%;
     left: 0;
 }
+
+.sp-tab-section {
+    margin: var(--gap) auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0 var(--gap);
+    border-radius: var(--gap);
+}
+.hub-demo-section {
+    border: 1px dotted rgba(0,0,0,0.2);
+    padding: var(--gap);
+    margin: var(--gap) 0;
+    border-radius: var(--gap);
+    box-shadow: var(--sp-shadow-inset);
+}

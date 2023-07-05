@@ -760,6 +760,63 @@ input {
 .sp-tab-section--active {
     display: block;
 }
+
+/* SP Chips */
+.sp-chips-pan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gf);
+}
+
+.sp-chip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:var(--gap);
+    padding: 4px 4px 4px var(--gap);
+    border-radius: var(--gap);
+    background: rgba(0,0,0,0.05);
+    font-size: var(--size-text-note);
+    transition: var(--trans);
+    cursor: pointer;
+    color: rgba(0,0,0,0.6);
+}
+.sp-chip:hover {
+    background: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.8);
+}
+.sp-chip svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.1);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    fill: none;
+    stroke: rgba(0,0,0,0.42);
+}
+.sp-chip:hover svg {
+    stroke: rgba(0,0,0,0.6);
+}
+.sp-chip--disabled {
+    outline: 1px solid rgba(0,0,0,0.1);
+    background: transparent;
+    color: rgba(0,0,0,0.3);
+}
+.sp-chip--disabled:hover {
+    background: transparent;
+    cursor: auto;
+.}
+.sp-chip--disabled svg {
+    opacity: 0.2;
+}
+.sp-chip--disabled:hover svg {
+    opacity: 0.2;
+}
+/* /SP Chips */
+
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type=checkbox],
     input[type=radio] {
