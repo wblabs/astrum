@@ -12,7 +12,7 @@
 
 
 /*template*/
-@import url(normalize.css);
+@import url(normalize/normalize.css);
 @import url(astrum.css);
 @import url(hub.css);
 

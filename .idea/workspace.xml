@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="meta url fix">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="chip icon shrink fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,7 @@
       <workItem from="1687168615777" duration="1709000" />
       <workItem from="1687364560228" duration="15000" />
       <workItem from="1688570230560" duration="3951000" />
-      <workItem from="1688645754808" duration="628000" />
+      <workItem from="1688645754808" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -341,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688573583763</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="chip icon shrink fix">
+      <option name="closed" value="true" />
+      <created>1688651469860</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1688651469860</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +390,7 @@
     <MESSAGE value="new main image and page titles" />
     <MESSAGE value="new main image and page titles fixes" />
     <MESSAGE value="meta url fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="meta url fix" />
+    <MESSAGE value="chip icon shrink fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="chip icon shrink fix" />
   </component>
 </project>
