@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="chip icon shrink fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="normalize path fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,6 +169,7 @@
       <workItem from="1687364560228" duration="15000" />
       <workItem from="1688570230560" duration="3951000" />
       <workItem from="1688645754808" duration="1272000" />
+      <workItem from="1688746727656" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -348,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688651469860</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="normalize path fix">
+      <option name="closed" value="true" />
+      <created>1688746765851</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1688746765851</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +398,7 @@
     <MESSAGE value="new main image and page titles fixes" />
     <MESSAGE value="meta url fix" />
     <MESSAGE value="chip icon shrink fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="chip icon shrink fix" />
+    <MESSAGE value="normalize path fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="normalize path fix" />
   </component>
 </project>
