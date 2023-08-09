@@ -20,28 +20,28 @@
     <meta content="Astrum Tpl" property="og:site_name">
     <meta content="Astrum Tpl by Space5" name="description">
     <meta content="Astrum Tpl by Space5" property="og:description">
-    <meta content="img/600x300__main.png" property="og:image">
-    <meta content="img/600x300__main.png" property="og:image:secure_url">
+    <meta content="../img/600x300__main.png" property="og:image">
+    <meta content="../img/600x300__main.png" property="og:image:secure_url">
 
-    <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
     <!--    <link href="/site.webmanifest" rel="manifest">-->
-    <link color="#5bbad5" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+    <link color="#5bbad5" href="../favicon/safari-pinned-tab.svg" rel="mask-icon">
     <meta content="#2b5797" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
 
     <!--<base href="[[++site_url]]">-->
 <!--    <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">-->
 
-    <link href="css/core.css" rel="stylesheet">
+    <link href="../css/core.css" rel="stylesheet">
 </head>
 <body class="body">
 <div class="header-wrapper">
     <header class="header wid">
         <div class="header__left">
-            <a href="index.html" class="header-logo">
-                <img alt="Demo logo" src="img/logo.svg" class="header-logo__img">
+            <a href="../index.html" class="header-logo">
+                <img alt="Demo logo" src="../img/logo.svg" class="header-logo__img">
                 <div class="header-logo__text">
                     Astrum Tpl
                 </div>
@@ -70,6 +70,7 @@
                 <!-- /mobnav icon -->
                 <div style="color:var(--color-text-grey);">Lab:</div>
                 <a href="layout.html">Layout</a>
+                <a href="forms.html">Forms</a>
                 <a href="demo.html">Demo</a>
                 <a href="sp5notify.html">sp5notify</a>
 
@@ -82,16 +83,15 @@
         <div class="pad-x4"></div>
         <h1>UI demos</h1>
 
+<!-- sp-radio-group -->
         <section class="hub-demo-section">
             <h2>sp-radio-group</h2>
-
-
             <div class="sp-radio-group">
                 <label class="sp-radio-group__item">
                     <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" checked>
                     <span class="sp-radio-group-item__text">
                         <svg>
-                            <use href="img/sp5sprite.svg#home"></use>
+                            <use href="../img/sp5sprite.svg#home"></use>
                         </svg>
                         Alien
                     </span>
@@ -163,8 +163,6 @@
                     </p>
                 </section>
             </div>
-
-
             <script>
                 //tabs toogle function click on sp-radio-group-item__radio activates sp-tab-section with same index
                 document.querySelectorAll('.sp-radio-group-item__radio').forEach(function (item, i) {
@@ -180,34 +178,38 @@
                 });
             </script>
         </section>
+<!-- /sp-radio-group -->
 
+<!-- sp-chip -->
         <section class="hub-demo-section">
             <h2>Chips</h2>
             <div class="sp-chips-pan">
                 <div class="sp-chip">
                     Enabled
                     <svg>
-                        <use href="img/sp5sprite.svg#x"></use>
+                        <use href="../img/sp5sprite.svg#x"></use>
                     </svg>
                 </div>
                 <div class="sp-chip">
                     Enabled 2
                     <svg>
-                        <use href="img/sp5sprite.svg#x"></use>
+                        <use href="../img/sp5sprite.svg#x"></use>
                     </svg>
                 </div>
                 <div class="sp-chip sp-chip--disabled">
                     Disabled
                     <svg>
-                        <use href="img/sp5sprite.svg#x"></use>
+                        <use href="../img/sp5sprite.svg#x"></use>
                     </svg>
                 </div>
             </div>
         </section>
+<!-- /sp-chip -->
+
     </div>
 
 </main>
-<script src="js/astrum.js"></script>
+<script src="../js/astrum.js"></script>
 
 </body>
 </html>

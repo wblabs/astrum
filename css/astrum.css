@@ -406,14 +406,12 @@ a:active {
     stroke: var(--color-btn-text);
     width: calc(var(--gf) * 3);
     height: calc(var(--gf) * 3);
-    /*margin-right: var(--gf);*/
 }
 
 /* btn img */
 .btn img {
     width: calc(var(--gf) * 3);
     height: calc(var(--gf) * 3);
-    /*margin-right: var(--gf);*/
 }
 
 /* btn states */
@@ -545,7 +543,8 @@ a:active {
     gap: var(--gap);
 }
 
-.btn-pan--col .btn:last-child {
+.btn-pan--thin {
+    padding: 0;
     margin: 0;
 }
 
