@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="normalize path fix" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="all demo pages now in hub folder">
+      <change afterPath="$PROJECT_DIR$/css/astrum-1.5.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hub/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hub/forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sp5rte.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/sp5rte.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sp5share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/sp5share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +31,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wblabs&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5a0536c4-7a15-444d-856a-89eaeff11b05" />
+        <option name="url" value="https://github.com/wblabs/astrum.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="InstanceColorv3">
     <option name="map">
@@ -62,6 +85,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2LhiYH3P2Z1tJVPhlTCspUBpdLY" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -80,7 +106,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Users/edost/git/astrum/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/edost/git/astrum/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/edost/git/astrum/css&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -99,14 +125,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/hub" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hub" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/html/layouts" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$APPLICATION_CONFIG_DIR$/scratches/ai-test-may-23" />
-      <recent name="$PROJECT_DIR$/tpl" />
     </key>
   </component>
   <component name="RunManager">
@@ -170,6 +198,37 @@
       <workItem from="1688570230560" duration="3951000" />
       <workItem from="1688645754808" duration="1272000" />
       <workItem from="1688746727656" duration="44000" />
+      <workItem from="1688747224532" duration="65000" />
+      <workItem from="1688747308680" duration="34000" />
+      <workItem from="1689084660705" duration="513000" />
+      <workItem from="1690211041380" duration="2351000" />
+      <workItem from="1690227256739" duration="180000" />
+      <workItem from="1690790752182" duration="745000" />
+      <workItem from="1691601657125" duration="2463000" />
+      <workItem from="1691669292073" duration="19000" />
+      <workItem from="1692108722370" duration="6396000" />
+      <workItem from="1692366523718" duration="114000" />
+      <workItem from="1692700118570" duration="124000" />
+      <workItem from="1692700253522" duration="4293000" />
+      <workItem from="1692799748352" duration="13958000" />
+      <workItem from="1692910631070" duration="2000" />
+      <workItem from="1692910689707" duration="472000" />
+      <workItem from="1692911178106" duration="121000" />
+      <workItem from="1692911309338" duration="1279000" />
+      <workItem from="1693313726641" duration="12579000" />
+      <workItem from="1693403931933" duration="2871000" />
+      <workItem from="1693841689257" duration="10985000" />
+      <workItem from="1694177454012" duration="27928000" />
+      <workItem from="1694441761344" duration="1820000" />
+      <workItem from="1694686102254" duration="108000" />
+      <workItem from="1694700794473" duration="352000" />
+      <workItem from="1694701266348" duration="1485000" />
+      <workItem from="1695370503954" duration="748000" />
+      <workItem from="1695716234062" duration="7976000" />
+      <workItem from="1695896051228" duration="5000" />
+      <workItem from="1695905156587" duration="4990000" />
+      <workItem from="1695975798457" duration="867000" />
+      <workItem from="1696186446755" duration="1454000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -355,7 +414,31 @@
       <option name="project" value="LOCAL" />
       <updated>1688746765851</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="footer default logo classes">
+      <option name="closed" value="true" />
+      <created>1688747284265</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1688747284265</updated>
+    </task>
+    <task id="LOCAL-00027" summary="footer default logo classes fix">
+      <option name="closed" value="true" />
+      <created>1688747325445</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688747325445</updated>
+    </task>
+    <task id="LOCAL-00028" summary="all demo pages now in hub folder">
+      <option name="closed" value="true" />
+      <created>1691608038206</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1691608038206</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,9 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new .idea resolve" />
-    <MESSAGE value="layout.html all grids added" />
-    <MESSAGE value="play-circle and list icons added to sp5sprite.svg" />
     <MESSAGE value=".wid class fix" />
     <MESSAGE value="new sp radio group" />
     <MESSAGE value="sp toogle removed&#10;switch renamed to sp-switch" />
@@ -399,6 +479,9 @@
     <MESSAGE value="meta url fix" />
     <MESSAGE value="chip icon shrink fix" />
     <MESSAGE value="normalize path fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="normalize path fix" />
+    <MESSAGE value="footer default logo classes" />
+    <MESSAGE value="footer default logo classes fix" />
+    <MESSAGE value="all demo pages now in hub folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="all demo pages now in hub folder" />
   </component>
 </project>

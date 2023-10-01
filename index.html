@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--<base href="[[++site_url]]">-->
-<!--    <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">-->
+    <!--    <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">-->
 
     <link href="css/core.css" rel="stylesheet">
     <link rel="stylesheet"
@@ -54,7 +54,7 @@
         </div>
         <div class="header__center">
             <div class="header-center__text">
-                 connecting to Tower...
+                connecting to Tower...
             </div>
         </div>
         <div class="header__right">
@@ -1280,6 +1280,14 @@
                             <li>
                                 <div class="itext-24">
                                     <svg class="spif">
+                                        <use href="img/sp5rte.svg#s"></use>
+                                    </svg>
+                                    s
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-24">
+                                    <svg class="spif">
                                         <use href="img/sp5rte.svg#h1"></use>
                                     </svg>
                                     h1
@@ -1331,6 +1339,38 @@
                                         <use href="img/sp5rte.svg#table"></use>
                                     </svg>
                                     table
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-24">
+                                    <svg class="spif">
+                                        <use href="img/sp5rte.svg#erase"></use>
+                                    </svg>
+                                    erase
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-24">
+                                    <svg class="spif">
+                                        <use href="img/sp5rte.svg#code"></use>
+                                    </svg>
+                                    code
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-24">
+                                    <svg class="spif">
+                                        <use href="img/sp5rte.svg#c-2"></use>
+                                    </svg>
+                                    c-2
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-24">
+                                    <svg class="spif">
+                                        <use href="img/sp5rte.svg#c-3"></use>
+                                    </svg>
+                                    c-3
                                 </div>
                             </li>
                         </ol>
@@ -1417,6 +1457,30 @@
                                         <use href="img/sp5share.svg#rutube"></use>
                                     </svg>
                                     rutube
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#twitter"></use>
+                                    </svg>
+                                    twitter
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#x"></use>
+                                    </svg>
+                                    x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itext-16">
+                                    <svg class="spif">
+                                        <use href="img/sp5share.svg#tiktok"></use>
+                                    </svg>
+                                    tiktok
                                 </div>
                             </li>
                         </ol>
@@ -2003,6 +2067,8 @@
                                                 <option value="Friday" selected>92px A</option>
                                                 <option value="Saturday">92px B</option>
                                                 <option value="Sunday">92px C</option>
+                                                <option value="Sunday">long 98px C</option>
+
                                             </select>
                                         </label>
                                     </div>
@@ -2012,6 +2078,39 @@
                                                       class="sf__textarea sf__textarea--s">width: 50%</textarea>
                                         </label>
                                     </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Auto size
+                                </legend>
+                                <div class="sf">
+                                    <label class="sf__label sf__label--col">text
+                                        <input type="text" name="username-short" placeholder="Name"
+                                               class="sf__input sf__input--a"
+                                        >
+                                    </label>
+                                    <label class="sf__label sf__label--col">datetime-local
+                                        <input type="datetime-local" name="datetime" class="sf__input sf__input--a">
+                                    </label>
+                                    <label class="sf__label sf__label--col">date
+                                        <input type="date" name="datetime" class="sf__input sf__input--a">
+                                    </label>
+
+                                    <label class="sf__label sf__label--col">Select
+                                        <select name="day-select-standart" class="sf__select sf__select--a">
+                                            <option value="Friday" selected>92px A</option>
+                                            <option value="Saturday">92px B</option>
+                                            <option value="Sunday">92px C</option>
+                                            <option value="Sunday">long 98px C</option>
+                                        </select>
+                                    </label>
+                                    <label class="sf__label sf__label--col">comment
+                                        <textarea name="comment-short" placeholder="Ваш комментарий"
+                                                  class="sf__textarea sf__textarea--s">width: 50%</textarea>
+                                    </label>
+
                                 </div>
                             </fieldset>
                         </form>
