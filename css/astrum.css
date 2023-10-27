@@ -175,7 +175,13 @@ body {
 .cimg, .tac {
     text-align: center;
 }
+.tal {
+    text-align: left;
+}
 
+.tar {
+    text-align: right;
+}
 .fw {
     width: 100%;
 }
@@ -183,6 +189,7 @@ body {
 .fb {
     font-weight: bold;
 }
+
 .fi {
     font-style: italic;
 }
@@ -223,6 +230,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    :ROOT {
+        --wid: 100%;
+    }
     .wid {
         max-width: 100%;
         min-width: 100%;
@@ -696,6 +706,7 @@ input {
     font-size: 14px;
     border-radius: var(--ui-raduis);
     width: 200px;
+
 }
 
 .sf__input.fw, .sf__textarea.fw, .sf__select.fw {
@@ -715,6 +726,12 @@ input {
 .sf__select {
     padding: 0 12px;
     height: var(--ui-size);
+
+    /*todo appearance with arrows   */
+    /*
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;*/
 }
 
 .sf__input:focus {
@@ -771,11 +788,12 @@ input {
 .sf__input.ui-s, .sf__select.ui-s {
     height: var(--ui-size-s);
 }
+
 .sf__input.ui-l, .sf__select.ui-l {
     height: var(--ui-size-l);
 }
 
-    /* radio-group */
+/* radio-group */
 .sp-radio-group {
     display: flex;
     align-items: stretch;
