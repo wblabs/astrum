@@ -1171,7 +1171,7 @@ input {
 .itext {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--gf);
 }
 
 [class*='itext-'] {
