@@ -318,4 +318,16 @@
         <path d="M3 12.248H3.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M3 18.248H3.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="sort-down" viewBox="0 0 24 24">
+        <path d="M16 10H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 6H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11 14H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 18H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="sort-up" viewBox="0 0 24 24">
+        <path d="M16 14H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 18H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11 10H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 6H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>
