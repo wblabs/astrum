@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="all demo pages now in hub folder">
-      <change afterPath="$PROJECT_DIR$/css/astrum-1.5.css" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hub/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hub/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/sp5rte.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/sp5rte.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/sp5share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/sp5share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +107,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;writerside.last.selected.productastrum&quot;: &quot;astrm&quot;
   },
@@ -228,7 +221,30 @@
       <workItem from="1695896051228" duration="5000" />
       <workItem from="1695905156587" duration="4990000" />
       <workItem from="1695975798457" duration="867000" />
-      <workItem from="1696186446755" duration="1454000" />
+      <workItem from="1696186446755" duration="3102000" />
+      <workItem from="1696325711103" duration="16000" />
+      <workItem from="1696325744307" duration="156000" />
+      <workItem from="1696328514002" duration="515000" />
+      <workItem from="1696329313890" duration="6231000" />
+      <workItem from="1696351018917" duration="925000" />
+      <workItem from="1697645898656" duration="128000" />
+      <workItem from="1697646038501" duration="1568000" />
+      <workItem from="1698058715955" duration="1206000" />
+      <workItem from="1698067676256" duration="6000" />
+      <workItem from="1698068890991" duration="1718000" />
+      <workItem from="1698412927742" duration="431000" />
+      <workItem from="1698418993884" duration="874000" />
+      <workItem from="1698752282593" duration="586000" />
+      <workItem from="1698762298800" duration="217000" />
+      <workItem from="1698838068702" duration="1368000" />
+      <workItem from="1698851012510" duration="2442000" />
+      <workItem from="1699721668531" duration="115000" />
+      <workItem from="1699721794962" duration="219000" />
+      <workItem from="1699885559459" duration="792000" />
+      <workItem from="1699953742122" duration="282000" />
+      <workItem from="1700476443969" duration="620000" />
+      <workItem from="1700477456501" duration="224000" />
+      <workItem from="1700477722956" duration="3320000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -438,7 +454,55 @@
       <option name="project" value="LOCAL" />
       <updated>1691608038206</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms&#10;new Tokens">
+      <option name="closed" value="true" />
+      <created>1696188153761</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1696188153761</updated>
+    </task>
+    <task id="LOCAL-00030" summary="new icons in RTE&#10;new Tokens">
+      <option name="closed" value="true" />
+      <created>1698413314841</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1698413314841</updated>
+    </task>
+    <task id="LOCAL-00031" summary="new limg/ring icons in RTE">
+      <option name="closed" value="true" />
+      <created>1698752765351</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1698752765351</updated>
+    </task>
+    <task id="LOCAL-00032" summary="new web icon in sp5share.svg">
+      <option name="closed" value="true" />
+      <created>1698839037950</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1698839037950</updated>
+    </task>
+    <task id="LOCAL-00033" summary="new s-toggle item in ui">
+      <option name="closed" value="true" />
+      <created>1700480311201</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1700480311201</updated>
+    </task>
+    <task id="LOCAL-00034" summary="gitignore">
+      <option name="closed" value="true" />
+      <created>1700481102872</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1700481102872</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,13 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value=".wid class fix" />
-    <MESSAGE value="new sp radio group" />
-    <MESSAGE value="sp toogle removed&#10;switch renamed to sp-switch" />
-    <MESSAGE value="sp radio group moved to forms section" />
-    <MESSAGE value="new var --color-primary-transp" />
-    <MESSAGE value="radio group vars" />
-    <MESSAGE value="new box-shadows vars and demo&#10;new bg ui colors and demo" />
     <MESSAGE value="new ui colors and var&#10;added global header with nav&#10;template files rearrange" />
     <MESSAGE value="test of Writerside" />
     <MESSAGE value="new demo for sp-radio-group with js tabs" />
@@ -482,6 +539,13 @@
     <MESSAGE value="footer default logo classes" />
     <MESSAGE value="footer default logo classes fix" />
     <MESSAGE value="all demo pages now in hub folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="all demo pages now in hub folder" />
+    <MESSAGE value="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms" />
+    <MESSAGE value="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms&#10;new Tokens" />
+    <MESSAGE value="new icons in RTE&#10;new Tokens" />
+    <MESSAGE value="new limg/ring icons in RTE" />
+    <MESSAGE value="new web icon in sp5share.svg" />
+    <MESSAGE value="new s-toggle item in ui" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>
