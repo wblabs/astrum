@@ -706,6 +706,7 @@
     margin: var(--gap) 0;
     border-radius: var(--gap);
     box-shadow: var(--sp-shadow-inset);
+    background: var(--color-white);
 }
 
 .hub-btn-bot-pan {

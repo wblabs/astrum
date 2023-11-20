@@ -79,9 +79,10 @@
     --ui-input-bg--active: #dee7ff;
     --ui-color-primary: #0043ed;
     --ui-color-focus: #0043ed;
+    --ui-color-neutral: #EFF2F6;
     --ui-color-text: var(--color-dark);
     --ui-color-text-grey: #737373;
-    --ui-color-neutral: #EFF2F6;
+    --ui-color-text-light-grey: #9b9b9b;
 
     /* UI Sizes */
     --ui-size: 36px;
@@ -945,6 +946,46 @@ input {
 }
 
 /* /SP Chips */
+
+/* SP Toggle */
+    .sp-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        padding: 4px;
+        border-radius: calc(var(--ui-size) / 2);
+        background: var(--ui-bg-100);
+        font-size: var(--size-text-note);
+        transition: var(--trans);
+        cursor: pointer;
+        color: var(--ui-color-text);
+        width: fit-content;
+        height: var(--ui-size);
+    }
+    .sp-toggle__item {
+        height: calc(var(--ui-size) - 8px);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: var(--gf);
+        border-radius: var(--gap);
+        padding: 0 var(--gf);
+        transition: var(--trans);
+        color: var(--ui-color-text-light-grey);
+    }
+
+.sp-toggle__item:hover {
+    background: rgba(255,255,255,0.6);
+    color: var(--ui-color-text-grey);
+}
+    .sp-toggle__item--active, .sp-toggle__item--active:hover {
+        background:var(--color-white);
+        color: var(--ui-color-text);
+    }
+
+/* /SP Toggle */
+
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type=checkbox],
