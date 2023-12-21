@@ -76,7 +76,28 @@
 
     padding-right: var(--gap);
 }
-
+.hub-lab-nav {
+    border-radius: var(--gap);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: var(--trans);
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.hub-lab-nav:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: var(--trans);
+}
+.compact-header .hub-lab-nav {
+    padding: 2px 8px;
+    font-size: 0.8rem;
+}
+.compact-header .hub-lab-nav .itext-32 img{
+    width: 24px;
+    height: 24px;
+    transition: var(--trans);
+}
 .header-logo {
     margin: 8px;
     display: flex;
