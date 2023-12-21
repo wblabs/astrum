@@ -21,7 +21,7 @@ window.addEventListener('scroll', toggleCompactHeader);
 //tabs
 
 let tab = function() {
-    let tabNav = document.querySelectorAll(".sp-tabs-nav__item"),
+    let tabNav = document.querySelectorAll(".header-center-nav__item"),
         tabContent = document.querySelectorAll(".sp-tab"),
         tabName;
 
