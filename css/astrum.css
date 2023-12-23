@@ -176,6 +176,7 @@ body {
 .cimg, .tac {
     text-align: center;
 }
+
 .tal {
     text-align: left;
 }
@@ -183,6 +184,7 @@ body {
 .tar {
     text-align: right;
 }
+
 .fw {
     width: 100%;
 }
@@ -205,6 +207,10 @@ body {
 
 .cg {
     color: var(--color-text-grey);
+}
+
+.clg {
+    color: var(--ui-color-text-light-grey);
 }
 
 .nwp {
@@ -234,6 +240,7 @@ body {
     :ROOT {
         --wid: 100%;
     }
+
     .wid {
         max-width: 100%;
         min-width: 100%;
@@ -948,41 +955,43 @@ input {
 /* /SP Chips */
 
 /* SP Toggle */
-    .sp-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 4px;
-        padding: 4px;
-        border-radius: calc(var(--ui-size) / 2);
-        background: var(--ui-bg-100);
-        font-size: var(--size-text-note);
-        transition: var(--trans);
-        cursor: pointer;
-        color: var(--ui-color-text);
-        width: fit-content;
-        height: var(--ui-size);
-    }
-    .sp-toggle__item {
-        height: calc(var(--ui-size) - 8px);
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: var(--gf);
-        border-radius: var(--gap);
-        padding: 0 var(--gf);
-        transition: var(--trans);
-        color: var(--ui-color-text-light-grey);
-    }
+.sp-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 4px;
+    border-radius: calc(var(--ui-size) / 2);
+    background: var(--ui-bg-100);
+    font-size: var(--size-text-note);
+    transition: var(--trans);
+    cursor: pointer;
+    color: var(--ui-color-text);
+    width: fit-content;
+    height: var(--ui-size);
+}
+
+.sp-toggle__item {
+    height: calc(var(--ui-size) - 8px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gf);
+    border-radius: var(--gap);
+    padding: 0 var(--gf);
+    transition: var(--trans);
+    color: var(--ui-color-text-light-grey);
+}
 
 .sp-toggle__item:hover {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     color: var(--ui-color-text-grey);
 }
-    .sp-toggle__item--active, .sp-toggle__item--active:hover {
-        background:var(--color-white);
-        color: var(--ui-color-text);
-    }
+
+.sp-toggle__item--active, .sp-toggle__item--active:hover {
+    background: var(--color-white);
+    color: var(--ui-color-text);
+}
 
 /* /SP Toggle */
 
