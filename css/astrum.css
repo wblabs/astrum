@@ -41,6 +41,7 @@
     --color-text: var(--color-dark);
     --color-text-accent: var(--color-accent);
     --color-text-grey: #737373;
+    --color-text-light-grey: #a2a2a2;
 
 
     /* Fonts sizes */
@@ -164,6 +165,13 @@ body {
     min-width: 748px;
     margin: 0 auto;
 }
+.wa {
+    width: auto;
+}
+.fw {
+    width: 100%;
+}
+
 
 .wf {
     font-family: var(--wf);
@@ -185,9 +193,6 @@ body {
     text-align: right;
 }
 
-.fw {
-    width: 100%;
-}
 
 .fb {
     font-weight: bold;
@@ -222,6 +227,9 @@ body {
 }
 
 .show-on-mobile, .som {
+    display: none;
+}
+.dn {
     display: none;
 }
 

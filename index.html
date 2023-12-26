@@ -55,21 +55,23 @@
         <div class="header__center">
             <div class="header-center__text">
                 <ul class="header-center__nav">
-                    <li>Basics:</li>
                     <li class="header-center-nav__item is-active" data-sp-tab-name="sp-tab-1">
                         Intro
                     </li>
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-2">
-                        Buttons
+                        UI
                     </li>
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-3">
-                        Sprite
+                        Sprites
                     </li>
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-4">
                         Layout
                     </li>
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-5">
                         Forms
+                    </li>
+                    <li class="header-center-nav__item" data-sp-tab-name="sp-tab-6">
+                        Tokens
                     </li>
                 </ul>
             </div>
@@ -444,12 +446,13 @@
             </section>
             <!-- /intro -->
 
-            <!-- buttons -->
+            <!-- UI -->
             <section class="hub__section sp-tab sp-tab-2">
-                <h2>Кнопки</h2>
+                <h2>Basic UI</h2>
+                <h3>Buttons</h3>
 
                 <p>
-                    Общий класс для кнопок <span class="hub__code">btn</span>
+                    Общий класс для кнопок <span class="hub__code">.btn</span>
                 </p>
 
                 <p>
@@ -457,32 +460,25 @@
                         class="hub__tag">div</span>, <span class="hub__tag">button</span>
 
                 </p>
-                <pre>
-                    <code class="language-css">
-.header-logo__img {
-    max-width: 40px;
-    flex-shrink: 0;
-    transition: var(--trans);
-}
-                </code>
-            </pre>
+
 
                 <pre>
                     <code class="language-html">
-&lt;div&gt;Go divs Power!&lt;/div&gt;
-&lt;button class=&quot;btn&quot;&gt;button&lt;/button&gt;
+&lt;div class="btn"&gt;Button&lt;/div&gt;
+&lt;a href="#" class="btn"&gt;Button&lt;/a&gt;
+&lt;button class="btn"&gt;Button&lt;/button&gt;
                 </code>
             </pre>
                 <h3>
-                    Размеры кнопок
+                    Размеры UI элементов
                 </h3>
                 <p>
-                    Предусмотрено три размера кнопок:
+                    Предусмотрено три размера ui элементов
                 </p>
                 <ul class="hub__ul">
-                    <li>Маленький <span class="hub__code">btn--s</span></li>
-                    <li>Стандартный <span class="hub__code">btn</span></li>
-                    <li>Большой <span class="hub__code">btn--l</span></li>
+                    <li>Маленький <span class="hub__code">ui-s</span></li>
+                    <li>Стандартный <span class="hub__code"></span></li>
+                    <li>Большой <span class="hub__code">ui-l</span></li>
                 </ul>
                 <p>
                     типы кнопок
@@ -793,7 +789,7 @@
 
                 </div>
             </section>
-            <!-- /buttons -->
+            <!-- /UI -->
 
             <!-- sprite -->
             <section class="hub__section sp-tab sp-tab-3">
@@ -2352,6 +2348,214 @@
                 </div>
             </section>
             <!-- /forms -->
+
+            <!-- Tokens -->
+            <section class="hub__section sp-tab sp-tab-6">
+                <h1>CSS Tokens</h1>
+                <div class="hub-form-demo">
+                    <h5>ui sizes</h5>
+                    <div class="hub-token-item">
+                        <div>.ui-s</div>
+                        <div>height: var(--ui-size-s);</div>
+                        <div>height of ui element, small size</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.ui-l</div>
+                        <div>height: var(--ui-size-l);</div>
+                        <div>height of ui element, large size</div>
+                    </div>
+                </div>
+
+
+                <div class="hub-form-demo">
+                    <h5>width</h5>
+
+                    <div class="hub-token-item">
+                        <div>.fw</div>
+                        <div>width: 100%;</div>
+                        <div>sets full width</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .wa
+                        </div>
+                        <div>width: auto;</div>
+                        <div>
+                            <div class="fb">(width auto)</div>
+                            <div class="fi">sets auto width</div>
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.wid</div>
+                        <div>
+                            width: 100%;
+                            max-width: var(--wid);
+                            min-width: 748px;
+                            margin: 0 auto;
+                        </div>
+                        <div>sets element in center of the screen and maximum width from var(--wid)</div>
+                    </div>
+                </div>
+
+                <div class="hub-form-demo">
+                    <h5>Font & Alignment</h5>
+                    <div class="hub-token-item">
+                        <div>
+                            .wf
+                        </div>
+                        <div>
+                            font-family: var(--wf);
+                        </div>
+                        <div>
+                            (primary web font) <br>
+                            sets font family of web font
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .wf2
+                        </div>
+                        <div>
+                            font-family: var(--wf2);
+                        </div>
+                        <div>
+                            (secondary web font) <br>
+                            sets font family of secondary web font
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .tac, .cimg
+                        </div>
+                        <div>text-align: center;</div>
+                        <div>
+                            (text align center)
+                            <br>
+                            Set the text center alignment</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .tal
+                        </div>
+                        <div>text-align: left;</div>
+                        <div>
+                            (text align left)   <br>
+                            Set the text left alignment</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .tar
+                        </div>
+                        <div>text-align: right;</div>
+                        <div>
+                            (text align right)
+                            <br>
+                            Set the text right alignment</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .fb
+                        </div>
+                        <div>font-weight: bold;</div>
+                        <div>
+                            (font bold)
+                            <br>
+                            sets font weight to bold</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .fi
+                        </div>
+                        <div>font-style: italic;</div>
+                        <div>
+                            (font italic)
+                            <br>
+                            sets font style to italic</div>
+                    </div>
+                </div>
+                <div class="hub-form-demo">
+
+                    <h5>Color</h5>
+
+                    <div class="hub-token-item">
+                        <div>
+                            .ca
+                        </div>
+                        <div>color: var(--color-accent);</div>
+                        <div>
+                            (color accent)
+                            <br>
+                            sets accent color</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.cp
+                        </div>
+                        <div>color: var(--color-primary);</div>
+                        <div>
+                            (color primary)
+                            <br>
+                            sets primary color</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.cg
+                        </div>
+                        <div>color: var(--color-text-grey);</div>
+                        <div>
+                            (color grey)
+                            <br>
+                            sets text grey color</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.clg
+                        </div>
+                        <div>color: var(--ui-color-text-light-grey);</div>
+                        <div>
+                            (color light grey)
+                            <br>
+                            sets text light grey color</div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="hub-form-demo">
+
+                    <h5>layout</h5>
+
+                    <div class="hub-token-item">
+                        <div>.dn</div>
+                        <div>display: none;</div>
+                        <div>sets display none</div>
+                    </div>
+
+                    <div class="hub-token-item">
+                        <div>.hom</div>
+                        <div>display: block; <br>
+                            @media screen and (max-width: 768px) {
+                            .hom {
+                            display: none;
+                            }
+                            }
+                        </div>
+                        <div>hides block on mobile / show block on Desktop</div>
+                    </div>
+
+                    <div class="hub-token-item">
+                        <div>.som</div>
+                        <div>display: none; <br>
+                            @media screen and (max-width: 768px) {
+                            .som {
+                            display: block;
+                            }
+                            }
+                        </div>
+                        <div>shows block on mobile / hides block on Desktop</div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Tokens -->
+
         </main>
     </div>
     <!--  /hub  -->
@@ -2382,7 +2586,6 @@
     </footer>
 </div>
 
-<script src="js/nj/nunjucks.js"></script>
 <script src="js/astrum.js"></script>
 <script src="demo/hubjs/hub.js"></script>
 
