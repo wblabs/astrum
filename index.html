@@ -35,18 +35,31 @@
     <!--    <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">-->
 
     <link href="css/core.css" rel="stylesheet">
-    <link rel="stylesheet"
-          href="/hub/plugins/highlight/styles/github.min.css">
-    <script src="/hub/plugins/highlight/highlight.min.js"></script>
 </head>
 <body class="body">
-<script>hljs.highlightAll();</script>
 
 <div class="header-wrapper">
     <header class="header wid">
         <div class="header__left">
             <a href="index.html" class="header-logo">
-                <img alt="Demo logo" src="img/logo.svg" class="header-logo__img">
+                <svg width="100%" height="100%" viewBox="0 0 224 224" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                     class="header-logo__img">
+                    <g transform="matrix(1,0,0,1,-40,-40)">
+                        <g transform="matrix(1,0,0,1,-3687,70)">
+                            <g id="logo">
+                                <g transform="matrix(0.960257,0,0,0.960257,2667.22,-61.713)">
+                                    <circle cx="1220.27" cy="149.661" r="116.635" style="fill:var(--color-primary);"/>
+                                </g>
+                                <g transform="matrix(1,0,0,1,3739.01,-16.2843)">
+                                    <path d="M177.29,92.52L156.51,87.92C134.32,83.01 116.98,65.68 112.07,43.48L107.47,22.7C105.7,14.69 94.28,14.69 92.5,22.7L87.9,43.48C82.99,65.67 65.66,83.01 43.46,87.92L22.68,92.52C14.67,94.29 14.67,105.71 22.68,107.49L43.46,112.09C65.65,117 82.99,134.33 87.9,156.53L92.5,177.31C94.27,185.32 105.69,185.32 107.47,177.31L112.07,156.53C116.98,134.34 134.31,117 156.51,112.09L177.29,107.49C185.3,105.72 185.3,94.3 177.29,92.52Z"
+                                          style="fill:white;fill-rule:nonzero;"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
                 <div class="header-logo__text">
                     Astrum Tpl
                 </div>
@@ -80,21 +93,21 @@
             <nav class="nav" id="main-nav">
                 <!-- mobnav icon -->
                 <button class="mobnav" id="mobnav" onclick="mobilemenu()" title="menu">
-                <span class="mobnav__icon">
-                    <span class="menu-icon-wrapper" id="menu-icon">
-                        <span class="menu-icon menu-icon__top"></span>
-                        <span class="menu-icon menu-icon__middle"></span>
-                        <span class="menu-icon menu-icon__bottom"></span>
+                    <span class="mobnav__icon">
+                        <span class="menu-icon-wrapper" id="menu-icon">
+                            <span class="menu-icon menu-icon__top"></span>
+                            <span class="menu-icon menu-icon__middle"></span>
+                            <span class="menu-icon menu-icon__bottom"></span>
+                        </span>
                     </span>
-                </span>
                     <span class="mobnav__text">
-
-                </span>
+                    </span>
                 </button>
                 <!-- /mobnav icon -->
                 <div class="hub-lab-nav">
                     <div class="itext-32 clg">
-                        <img src="hub/hub-lab.svg" alt="lab juice">Lab:
+                        <img src="hub/hub-lab.svg" alt="lab juice">
+                        <span class="hub-lab-juice-text">Lab:</span>
                     </div>
                     <a href="hub/layout.html">Layout</a>
                     <a href="hub/forms.html">Forms</a>
@@ -102,8 +115,40 @@
                     <a href="hub/sp5notify.html">sp5notify</a>
                 </div>
             </nav>
+
+
+        </div>
+        <div class="header__git">
+            <a href="https://github.com/wblabs/astrum" target="_blank">
+                <svg width="24" height="24" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
+                     data-view-component="true" class="hub-header-git-icon">
+                    <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                </svg>
+            </a>
         </div>
     </header>
+    <div class="mob-header som test">
+        <ul class="mob-nav__nav">
+            <li class="mob-nav__item is-active" data-sp-tab-name="sp-tab-1">
+                Intro
+            </li>
+            <li class="mob-nav__item" data-sp-tab-name="sp-tab-2">
+                UI
+            </li>
+            <li class="mob-nav__item" data-sp-tab-name="sp-tab-3">
+                Sprites
+            </li>
+            <li class="mob-nav__item" data-sp-tab-name="sp-tab-4">
+                Layout
+            </li>
+            <li class="mob-nav__item" data-sp-tab-name="sp-tab-5">
+                Forms
+            </li>
+            <li class="mob-nav__item" data-sp-tab-name="sp-tab-6">
+                Tokens
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="page">
 
@@ -252,7 +297,7 @@
                 <!-- intro colors -->
                 <div>
                     <h2>
-                        color system
+                        Color system
                     </h2>
                     <div class="hub-color-wrapper grid-a">
 
@@ -336,6 +381,20 @@
                              style="background-color: var(--color-text-grey);">
                         </div>
                     </div>
+                </div>
+
+                <div class="hub-wave">
+                    <svg aria-hidden="true" width="100%" height="8" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <pattern id="a" width="91" height="8" patternUnits="userSpaceOnUse">
+                            <g clip-path="url(#clip0_2426_11367)">
+                                <path
+                                        d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0"
+                                        stroke="#cccccc" fill="none" stroke-linecap="square"></path>
+                            </g>
+                        </pattern>
+                        <rect width="100%" height="100%" fill="url(#a)"></rect>
+                    </svg>
                 </div>
 
                 <div class="grid-c-2">
@@ -448,281 +507,253 @@
 
             <!-- UI -->
             <section class="hub__section sp-tab sp-tab-2">
-                <h2>Basic UI</h2>
-                <h3>Buttons</h3>
+                <h1>Basic UI</h1>
 
-                <p>
-                    Общий класс для кнопок <span class="hub__code">.btn</span>
-                </p>
+                <div class="hub-form-demo">
 
-                <p>
-                    Можно использовать с тегами <span class="hub__tag">a</span>, <span
-                        class="hub__tag">div</span>, <span class="hub__tag">button</span>
+                    <h2>
+                        Виды кнопок
+                    </h2>
+                    <div class="grid-hub hub__grid-border">
+                        <div>
+                            <p>
+                                Обычная кнопка <span class="hub__code">
 
-                </p>
-
-
-                <pre>
-                    <code class="language-html">
-&lt;div class="btn"&gt;Button&lt;/div&gt;
-&lt;a href="#" class="btn"&gt;Button&lt;/a&gt;
-&lt;button class="btn"&gt;Button&lt;/button&gt;
-                </code>
-            </pre>
-                <h3>
-                    Размеры UI элементов
-                </h3>
-                <p>
-                    Предусмотрено три размера ui элементов
-                </p>
-                <ul class="hub__ul">
-                    <li>Маленький <span class="hub__code">ui-s</span></li>
-                    <li>Стандартный <span class="hub__code"></span></li>
-                    <li>Большой <span class="hub__code">ui-l</span></li>
-                </ul>
-                <p>
-                    типы кнопок
-                </p>
-                <ul class="hub__ul">
-                    <li>Микро <span class="hub__code">btn--micro</span></li>
-                </ul>
-
-                <div class="hub-btn-pan">
-                    <button class="btn btn--micro">
-                        <svg>
-                            <use href="img/sp5sprite.svg#check"></use>
-                        </svg>
-                        btn--micro
-                    </button>
-                    <button class="btn btn--s">
-                        <svg>
-                            <use href="img/sp5sprite.svg#check"></use>
-                        </svg>
-                        btn--s
-                    </button>
-                    <button class="btn">
-                        <svg>
-                            <use href="img/sp5sprite.svg#check"></use>
-                        </svg>
-                        btn
-                    </button>
-                    <button class="btn btn--l">
-                        <svg>
-                            <use href="img/sp5sprite.svg#check"></use>
-                        </svg>
-                        btn--l
-                    </button>
-                </div>
-
-                <h3>
-                    Виды кнопок
-                </h3>
-                <div class="grid-hub hub__grid-border">
-                    <div>
-                        <p>
-                            Обычная кнопка <span class="hub__code">btn</span>
-                        </p>
-                    </div>
-                    <div>
-                        <button class="btn">
-                            btn
-                        </button>
-                    </div>
-                    <div>
-                        <p>
-                            Прозрачная кнопка <span class="hub__code">btn btn--ghost</span>
-                        </p>
-                    </div>
-                    <div>
-                        <button class="btn btn--ghost">
-                            btn btn--ghost
-                        </button>
-                    </div>
-                    <div>
-                        <p>
-                            Кнопка с <span class="hub__tag">svg</span> иконкой <span
-                                class="hub__code">btn</span>
-                        </p>
-                    </div>
-                    <div>
-                        <button class="btn">
-                            <svg>
-                                <use href="img/sp5sprite.svg#check"></use>
-                            </svg>
-                            btn
-                        </button>
-                    </div>
-                    <div>
-                        <p>
-                            Прозрачная кнопка с <span class="hub__tag">svg</span> иконкой <span
-                                class="hub__code">btn btn--ghost</span>
-                        </p>
-                    </div>
-                    <div>
-                        <button class="btn btn--ghost">
-                            <svg>
-                                <use href="img/sp5sprite.svg#check"></use>
-                            </svg>
-                            btn btn--ghost
-                        </button>
-                    </div>
-                    <div>
-                        <p>
-                            Кнопка с тенью <span class="hub__code">btn btn--shadow</span>
-                        </p>
-                    </div>
-                    <div>
-                        <button class="btn btn--shadow">
-                            btn btn--shadow
-                        </button>
-                    </div>
-                    <div>
-                        Кнопка для интрефейсов <span class="hub__code">btn btn--ui</span>, используются без текстовых
-                        подписей
-                    </div>
-                    <div>
-                        <button class="btn btn--ui" title="save">
-                            <svg>
-                                <use href="img/sp5sprite.svg#save"></use>
-                            </svg>
-                        </button>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Группировка кнопок
-                </h3>
-                <p>
-                    для выстраивания кнопок в линию используется класс для блочного <span class="hub__tag">div</span>
-                    <span class="hub__code">btn-pan</span>
-                </p>
-                <div class="grid-hub hub__grid-border">
-                    <div>
-                        Кнопки в ряд с правым отступом между ними, высота кнопок подстраивается под наибольшую
-                        <span class="hub__code">btn-pan</span>
-                    </div>
-                    <div>
-                        <div class="btn-pan">
-                            <button class="btn">Купить</button>
-                            <button class="btn btn--ghost">Купить</button>
+                            .btn</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
                             <button class="btn">
                                 <svg>
                                     <use href="img/sp5sprite.svg#check"></use>
                                 </svg>
-                                Купить
+                                Launch!
                             </button>
+                        </div>
+                        <div>
+                            <p>
+                                Кнопка с обводкой <span class="hub__code">.btn .btn--outline</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <button class="btn btn--outline">
+                                <svg>
+                                    <use href="img/sp5sprite.svg#check"></use>
+                                </svg>
+                                Launch!
+                            </button>
+                        </div>
+                        <div>
+                            <p>
+                                Прозрачная кнопка <span class="hub__code">.btn .btn--ghost</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
                             <button class="btn btn--ghost">
                                 <svg>
                                     <use href="img/sp5sprite.svg#check"></use>
                                 </svg>
-                                Купить
+                                Launch!
                             </button>
                         </div>
-                    </div>
-                    <div>
-                        Кнопки в ряд с выравниванием по центру
-                        <span class="hub__code">btn-pan bnt-pan--center</span>
-                    </div>
-                    <div>
-                        <div class="btn-pan btn-pan--center">
-                            <button class="btn btn--ghost">Купить</button>
-                            <button class="btn">
+                        <div>
+                            <p>
+                                Микро кнопка <span
+                                    class="hub__code">.btn .btn--micro</span>
+                            <div class="clg">используется для дополнительных интерфейсов</div>
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <button class="btn btn--micro">
                                 <svg>
                                     <use href="img/sp5sprite.svg#check"></use>
                                 </svg>
-                                Купить
+                                Micro launch!
                             </button>
                         </div>
-                    </div>
-                    <div>
-                        Кнопки в ряд с выравниванием по правому краю
-                        <span class="hub__code">btn-pan btn-pan--right</span>
-                    </div>
-                    <div>
-                        <div class="btn-pan btn-pan--right">
-                            <button class="btn btn--ghost">Купить</button>
-                            <button class="btn">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Купить
-                            </button>
 
+                        <div>
+                            <p>
+                                Кнопка для интрефейсов <span class="hub__code">.btn .btn--ui</span>
+                            <div class="clg">используется без текстовых
+                                подписей
+                            </div>
+                            </p>
                         </div>
-                    </div>
-                    <div>
-                        Кнопки в колонке
-                        <span class="hub__code">btn-pan bnt-pan--col</span>
-                    </div>
-                    <div>
-                        <div class="btn-pan btn-pan--col">
-                            <button class="btn">Купить</button>
-                            <button class="btn btn--ghost">Купить</button>
-                            <button class="btn">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Купить
-                            </button>
-                            <button class="btn btn--ghost">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Купить
-                            </button>
-
-                        </div>
-                    </div>
-                    <div>
-                        панель с интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
-                            class="hub__code">btn-ui</span>
-                    </div>
-                    <div>
-                        <div class="btn-pan">
+                        <div class="hub-example">
                             <button class="btn btn--ui" title="save">
                                 <svg>
-                                    <use href="img/sp5sprite.svg#save"></use>
-                                </svg>
-                            </button>
-                            <button class="btn btn--ui" title="refresh-cw">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#refresh-cw"></use>
-                                </svg>
-                            </button>
-                            <button class="btn btn--ui" title="more-horizontal">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#more-horizontal"></use>
+                                    <use href="img/sp5sprite.svg#check"></use>
                                 </svg>
                             </button>
                         </div>
-                    </div>
 
-                    <div>
-                        панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
-                            class="hub__code">btn-ui btn--s</span>
-                    </div>
-                    <div>
-                        <div class="btn-pan">
-                            <button class="btn btn--ui btn--s" title="save">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#save"></use>
-                                </svg>
-                            </button>
-                            <button class="btn btn--ui btn--s" title="save">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#refresh-cw"></use>
-                                </svg>
-                            </button>
-                            <button class="btn btn--ui btn--s" title="save">
-                                <svg>
-                                    <use href="img/sp5sprite.svg#more-horizontal"></use>
-                                </svg>
-                            </button>
-                        </div>
                     </div>
                 </div>
 
+                <div class="hub-form-demo">
+                    <h3>
+                        Группировка кнопок
+                    </h3>
+                    <p>
+                        для выстраивания кнопок в линию используется класс для блочного <span
+                            class="hub__tag">div</span>
+                        <span class="hub__code">btn-pan</span>
+                    </p>
+                    <div class="grid-hub hub__grid-border">
+                        <div>
+                            Кнопки в ряд с правым отступом между ними, высота кнопок подстраивается под наибольшую
+                            <span class="hub__code">.btn-pan</span>
+                        </div>
+                        <div class="hub-example">
+                            <div class="btn-pan btn-pan--hub">
+
+                                <button class="btn">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#check"></use>
+                                    </svg>
+                                    Engage
+                                </button>
+                                <button class="btn btn--outline">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#x"></use>
+                                    </svg>
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            Если нужно использовать панель без отступов , добавьте модификатор
+                            <span class="hub__code">.btn-pan .btn-pan--thin</span>
+                        </div>
+                        <div class="hub-example">
+                            <div class="btn-pan btn-pan--thin btn-pan--hub">
+
+                                <button class="btn">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#check"></use>
+                                    </svg>
+                                    Engage
+                                </button>
+                                <button class="btn btn--outline">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#x"></use>
+                                    </svg>
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            Кнопки в ряд с выравниванием по центру
+                            <span class="hub__code">.btn-pan .bnt-pan--center</span>
+                        </div>
+                        <div class="hub-example">
+                            <div class="btn-pan btn-pan--center btn-pan--hub">
+                                <button class="btn">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#check"></use>
+                                    </svg>
+                                    Engage
+                                </button>
+                                <button class="btn btn--outline">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#x"></use>
+                                    </svg>
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            Кнопки в ряд с выравниванием по правому краю
+                            <span class="hub__code">.btn-pan .btn-pan--right</span>
+                        </div>
+                        <div class="hub-example">
+                            <div class="btn-pan btn-pan--right btn-pan--hub">
+                                <button class="btn">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#check"></use>
+                                    </svg>
+                                    Engage
+                                </button>
+                                <button class="btn btn--outline">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#x"></use>
+                                    </svg>
+                                    Cancel
+                                </button>
+
+                            </div>
+                        </div>
+                        <div>
+                            Кнопки в колонке
+                            <span class="hub__code">btn-pan bnt-pan--col</span>
+                        </div>
+                        <div class="hub-example">
+                            <div class="btn-pan btn-pan--col btn-pan--hub">
+                                <button class="btn">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#check"></use>
+                                    </svg>
+                                    Engage
+                                </button>
+                                <button class="btn btn--outline">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#x"></use>
+                                    </svg>
+                                    Cancel
+                                </button>
+
+                            </div>
+                        </div>
+                        <div>
+                            панель с интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
+                                class="hub__code">btn-ui</span>
+                        </div>
+                        <div>
+                            <div class="btn-pan">
+                                <button class="btn btn--ui" title="save">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#save"></use>
+                                    </svg>
+                                </button>
+                                <button class="btn btn--ui" title="refresh-cw">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#refresh-cw"></use>
+                                    </svg>
+                                </button>
+                                <button class="btn btn--ui" title="more-horizontal">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#more-horizontal"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
+                                class="hub__code">btn-ui btn--s</span>
+                        </div>
+                        <div>
+                            <div class="btn-pan">
+                                <button class="btn btn--ui btn--s" title="save">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#save"></use>
+                                    </svg>
+                                </button>
+                                <button class="btn btn--ui btn--s" title="save">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#refresh-cw"></use>
+                                    </svg>
+                                </button>
+                                <button class="btn btn--ui btn--s" title="save">
+                                    <svg>
+                                        <use href="img/sp5sprite.svg#more-horizontal"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h3>
                     Контролы
                 </h3>
@@ -2431,7 +2462,8 @@
                         <div>
                             (text align center)
                             <br>
-                            Set the text center alignment</div>
+                            Set the text center alignment
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>
@@ -2439,8 +2471,9 @@
                         </div>
                         <div>text-align: left;</div>
                         <div>
-                            (text align left)   <br>
-                            Set the text left alignment</div>
+                            (text align left) <br>
+                            Set the text left alignment
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>
@@ -2450,7 +2483,8 @@
                         <div>
                             (text align right)
                             <br>
-                            Set the text right alignment</div>
+                            Set the text right alignment
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>
@@ -2460,7 +2494,8 @@
                         <div>
                             (font bold)
                             <br>
-                            sets font weight to bold</div>
+                            sets font weight to bold
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>
@@ -2470,7 +2505,8 @@
                         <div>
                             (font italic)
                             <br>
-                            sets font style to italic</div>
+                            sets font style to italic
+                        </div>
                     </div>
                 </div>
                 <div class="hub-form-demo">
@@ -2485,7 +2521,8 @@
                         <div>
                             (color accent)
                             <br>
-                            sets accent color</div>
+                            sets accent color
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>.cp
@@ -2494,7 +2531,8 @@
                         <div>
                             (color primary)
                             <br>
-                            sets primary color</div>
+                            sets primary color
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>.cg
@@ -2503,7 +2541,8 @@
                         <div>
                             (color grey)
                             <br>
-                            sets text grey color</div>
+                            sets text grey color
+                        </div>
                     </div>
                     <div class="hub-token-item">
                         <div>.clg
@@ -2512,16 +2551,16 @@
                         <div>
                             (color light grey)
                             <br>
-                            sets text light grey color</div>
+                            sets text light grey color
+                        </div>
 
                     </div>
                 </div>
 
 
-
                 <div class="hub-form-demo">
 
-                    <h5>layout</h5>
+                    <h5>Layout</h5>
 
                     <div class="hub-token-item">
                         <div>.dn</div>

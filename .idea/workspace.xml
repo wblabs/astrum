@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="gitignore">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new TOKENZZZ page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/matter/matter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,12 +98,13 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.demo.html.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Users/edost/git/astrum/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/edost/git/astrum/css&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/edost/git/astrum/hub&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -107,7 +112,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;writerside.last.selected.productastrum&quot;: &quot;astrm&quot;
   },
@@ -118,8 +123,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/hub" />
+      <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -245,6 +250,27 @@
       <workItem from="1700476443969" duration="620000" />
       <workItem from="1700477456501" duration="224000" />
       <workItem from="1700477722956" duration="3320000" />
+      <workItem from="1700481120209" duration="40000" />
+      <workItem from="1700481244428" duration="609000" />
+      <workItem from="1701079415815" duration="1340000" />
+      <workItem from="1701088296514" duration="436000" />
+      <workItem from="1701090307620" duration="45000" />
+      <workItem from="1701341104175" duration="173000" />
+      <workItem from="1701341571017" duration="979000" />
+      <workItem from="1701858905161" duration="631000" />
+      <workItem from="1701867410863" duration="1993000" />
+      <workItem from="1702028289461" duration="3509000" />
+      <workItem from="1702308690346" duration="738000" />
+      <workItem from="1702322223380" duration="998000" />
+      <workItem from="1702383622168" duration="4627000" />
+      <workItem from="1703195496394" duration="5942000" />
+      <workItem from="1703341777780" duration="10860000" />
+      <workItem from="1703535943736" duration="6000" />
+      <workItem from="1703536013639" duration="6790000" />
+      <workItem from="1703615505051" duration="6855000" />
+      <workItem from="1703750637499" duration="12699000" />
+      <workItem from="1704603915585" duration="23000" />
+      <workItem from="1704604018508" duration="5299000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -502,7 +528,55 @@
       <option name="project" value="LOCAL" />
       <updated>1700481102872</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="gitignore">
+      <option name="closed" value="true" />
+      <created>1700481138859</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1700481138859</updated>
+    </task>
+    <task id="LOCAL-00036" summary="new template skeleton on index">
+      <option name="closed" value="true" />
+      <created>1702400165541</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702400165541</updated>
+    </task>
+    <task id="LOCAL-00037" summary="new header nav, aside nav removed">
+      <option name="closed" value="true" />
+      <created>1703196820760</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1703196820760</updated>
+    </task>
+    <task id="LOCAL-00038" summary="hub-lab icon added to header">
+      <option name="closed" value="true" />
+      <created>1703200019547</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1703200019547</updated>
+    </task>
+    <task id="LOCAL-00039" summary="new clg token">
+      <option name="closed" value="true" />
+      <created>1703343754597</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1703343754597</updated>
+    </task>
+    <task id="LOCAL-00040" summary="new TOKENZZZ page">
+      <option name="closed" value="true" />
+      <created>1703619776438</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1703619776438</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,11 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new ui colors and var&#10;added global header with nav&#10;template files rearrange" />
-    <MESSAGE value="test of Writerside" />
-    <MESSAGE value="new demo for sp-radio-group with js tabs" />
-    <MESSAGE value="sp-radio-group stretch fix" />
-    <MESSAGE value="sp5 RTE icons v 0.1" />
     <MESSAGE value="some ol classes new css" />
     <MESSAGE value="sp chips added" />
     <MESSAGE value="sp chips hover fix" />
@@ -546,6 +615,11 @@
     <MESSAGE value="new web icon in sp5share.svg" />
     <MESSAGE value="new s-toggle item in ui" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="new template skeleton on index" />
+    <MESSAGE value="new header nav, aside nav removed" />
+    <MESSAGE value="hub-lab icon added to header" />
+    <MESSAGE value="new clg token" />
+    <MESSAGE value="new TOKENZZZ page" />
+    <option name="LAST_COMMIT_MESSAGE" value="new TOKENZZZ page" />
   </component>
 </project>

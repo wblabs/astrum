@@ -1482,8 +1482,7 @@ input {
     width: 18px;
     height: 2px;
     transition: all 0.2s;
-    background: var(--color-white);
-
+    background: var(--color-text);
 }
 
 .menu-icon__top {
