@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new TOKENZZZ page">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new button demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/matter/matter.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +267,7 @@
       <workItem from="1703615505051" duration="6855000" />
       <workItem from="1703750637499" duration="12699000" />
       <workItem from="1704603915585" duration="23000" />
-      <workItem from="1704604018508" duration="5299000" />
+      <workItem from="1704604018508" duration="6436000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -576,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703619776438</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="new button demo">
+      <option name="closed" value="true" />
+      <created>1704613497992</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1704613497997</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="some ol classes new css" />
     <MESSAGE value="sp chips added" />
     <MESSAGE value="sp chips hover fix" />
     <MESSAGE value="href fix on demo page" />
@@ -620,6 +624,7 @@
     <MESSAGE value="hub-lab icon added to header" />
     <MESSAGE value="new clg token" />
     <MESSAGE value="new TOKENZZZ page" />
-    <option name="LAST_COMMIT_MESSAGE" value="new TOKENZZZ page" />
+    <MESSAGE value="new button demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="new button demo" />
   </component>
 </project>

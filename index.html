@@ -596,7 +596,7 @@
                         Группировка кнопок
                     </h3>
                     <p>
-                        для выстраивания кнопок в линию используется класс для блочного <span
+                        для выстраивания кнопок в линию используется класс <span
                             class="hub__tag">div</span>
                         <span class="hub__code">btn-pan</span>
                     </p>
@@ -705,50 +705,49 @@
 
                             </div>
                         </div>
-                        <div>
-                            панель с интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
-                                class="hub__code">btn-ui</span>
-                        </div>
-                        <div>
-                            <div class="btn-pan">
-                                <button class="btn btn--ui" title="save">
-                                    <svg>
-                                        <use href="img/sp5sprite.svg#save"></use>
-                                    </svg>
-                                </button>
-                                <button class="btn btn--ui" title="refresh-cw">
-                                    <svg>
-                                        <use href="img/sp5sprite.svg#refresh-cw"></use>
-                                    </svg>
-                                </button>
-                                <button class="btn btn--ui" title="more-horizontal">
-                                    <svg>
-                                        <use href="img/sp5sprite.svg#more-horizontal"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
 
+                    </div>
+                </div>
+
+
+
+                <div class="hub-form-demo">
+                    <h3>
+                        Размеры кнопок
+                    </h3>
+                    <p>
+                        все UI элементы по-умолчанию принимают размер указанный в переменной
+                        <span class="hub__code">--ui-size: 36px;</span>
+                    </p>
+                    <div class="grid-hub hub__grid-border">
                         <div>
-                            панель c интерфейсными кнопками <span class="hub__code">btn-pan</span> &gt; <span
-                                class="hub__code">btn-ui btn--s</span>
+
+                            <p>
+                                для изменения размера кнопки используйте клас
+                                <span class="hub__code">.btn .ui-s</span>
+                                <span class="hub__code">.btn .ui-l</span>
+                            </p>
                         </div>
-                        <div>
+                        <div class="hub-example">
                             <div class="btn-pan">
-                                <button class="btn btn--ui btn--s" title="save">
+
+                                <button class="btn ui-s">
                                     <svg>
-                                        <use href="img/sp5sprite.svg#save"></use>
+                                        <use href="img/sp5sprite.svg#check"></use>
                                     </svg>
+                                    Small
                                 </button>
-                                <button class="btn btn--ui btn--s" title="save">
+                                <button class="btn">
                                     <svg>
-                                        <use href="img/sp5sprite.svg#refresh-cw"></use>
+                                        <use href="img/sp5sprite.svg#check"></use>
                                     </svg>
+                                    Normal
                                 </button>
-                                <button class="btn btn--ui btn--s" title="save">
+                                <button class="btn ui-l">
                                     <svg>
-                                        <use href="img/sp5sprite.svg#more-horizontal"></use>
+                                        <use href="img/sp5sprite.svg#check"></use>
                                     </svg>
+                                    Large
                                 </button>
                             </div>
                         </div>
