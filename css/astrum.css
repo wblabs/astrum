@@ -98,7 +98,7 @@
 
     /* Interface */
     --color-border: rgba(0, 0, 0, 0.4);
-    --color-border-hover: var(--color-accent);
+    --color-border-hover: var(--color-primary);
     --color-input-bg: var(--color-placeholder);
     --color-input-disabled-bg: #E1E6F9;
     --color-input-border: var(--color-placeholder);
@@ -1008,7 +1008,7 @@ input {
     input[type=checkbox],
     input[type=radio] {
         --active-inner: #fff;
-        --focus: var(--color-accent);
+        --focus: var(--color-primary);
         --disabled: #F6F8FF;
         --disabled-inner: #E1E6F9;
         -webkit-appearance: none;
