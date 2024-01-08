@@ -821,6 +821,11 @@ input {
     height: var(--ui-size-l);
 }
 
+.sf__select[multiple] {
+    outline: #0aaeb3 2px solid;
+    height: auto;
+}
+
 /* radio-group */
 .sp-radio-group {
     display: flex;
