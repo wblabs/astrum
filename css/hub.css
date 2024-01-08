@@ -78,6 +78,7 @@
     gap: var(--gf);
     padding-right: var(--gap);
 }
+
 .hub-lab-nav {
     border-radius: var(--gap);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -89,6 +90,7 @@
     font-family: var(--wf3);
     font-size: 0.8rem;
 }
+
 .hub-lab-nav:hover {
     border: 1px solid rgba(0, 0, 0, 0.2);
     transition: var(--trans);
@@ -97,15 +99,18 @@
 .hub-lab-nav > div:first-child {
     flex-shrink: 0;
 }
+
 .compact-header .hub-lab-nav {
     padding: 2px 8px;
     font-size: 0.8rem;
 }
-.compact-header .hub-lab-nav .itext-32 img{
+
+.compact-header .hub-lab-nav .itext-32 img {
     width: 24px;
     height: 24px;
     transition: var(--trans);
 }
+
 .header-logo {
     margin: 8px;
     display: flex;
@@ -232,6 +237,7 @@
     border: 1px solid #f21bff;
     transition: var(--trans);
 }
+
 .test:hover {
     border: 1px solid #0471de;
 }
@@ -295,14 +301,22 @@
 .grid-hub {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 48px;
     background: var(--color-white);
 }
 
-.hub-example{
+
+.hub-example {
     background: #e4efff;
     background-image: radial-gradient(white 1px, transparent 1px);
     background-size: 8px 8px;
+}
+
+.hub-example .sf__fieldset {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.hub-example .sp-tab-section {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .demo-ui-pan {
@@ -355,6 +369,20 @@
     border-top: 1px solid #90a0b7;
     border-left: 1px solid #90a0b7;
     grid-gap: 0;
+    border-radius: var(--gap);
+}
+.hub__grid-border > div:first-child {
+    border-top-left-radius: var(--gap)
+}
+.hub__grid-border > div:last-child {
+    border-bottom-right-radius: var(--gap)
+}
+
+.hub__grid-border > div:nth-last-child(2) {
+    border-bottom-left-radius: var(--gap)
+}
+.hub__grid-border > div:nth-child(2) {
+    border-top-right-radius: var(--gap)
 }
 
 .hub__grid-border > div {
@@ -374,9 +402,11 @@
     grid-template-columns: 80px 1fr 1fr;
     overflow: hidden;
 }
+
 .hub-token-item:not(:last-child) {
     margin-bottom: var(--gap);
 }
+
 .hub-token-item > div {
     padding: var(--gf);
     height: 100%;
@@ -389,13 +419,16 @@
     color: #e1f0ff;
     padding: 8px 16px;
 }
+
 .hub-token-item > div:nth-child(2) {
     color: #188bff;
     font-size: 0.8rem;
 }
+
 .hub-token-item > div:last-child {
     font-size: 0.8rem;
 }
+
 .hub-token-item > div:not(:last-child) {
     border-right: 1px dashed #188bff;
 }
@@ -988,7 +1021,7 @@
 .hub-tsk * {
     border-radius: var(--gf);
     min-height: 1rem;
-    }
+}
 
 .hub-tsk-header, .hub-tsk-header__left, .hub-tsk-header__right {
     display: flex;
@@ -1085,6 +1118,7 @@
     fill: var(--color-text);
     transition: var(--trans);
 }
+
 .hub-header-git-icon:hover {
     fill: var(--color-accent);
 }
@@ -1099,11 +1133,13 @@
     .hub-lab-juice-text {
         display: none;
     }
+
     .header-logo__text {
         font-size: 1rem;
     }
+
     .header-center__nav,
     .hub-lab-nav {
-        gap:var(--gf);
+        gap: var(--gf);
     }
 }

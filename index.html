@@ -74,17 +74,20 @@
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-2">
                         UI
                     </li>
+                    <li class="header-center-nav__item" data-sp-tab-name="sp-tab-5">
+                        Forms
+                    </li>
+                    <li class="header-center-nav__item" data-sp-tab-name="sp-tab-7">
+                        Sizes
+                    </li>
+                    <li class="header-center-nav__item" data-sp-tab-name="sp-tab-6">
+                        Tokens
+                    </li>
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-3">
                         Sprites
                     </li>
                     <li class="header-center-nav__item" data-sp-tab-name="sp-tab-4">
                         Layout
-                    </li>
-                    <li class="header-center-nav__item" data-sp-tab-name="sp-tab-5">
-                        Forms
-                    </li>
-                    <li class="header-center-nav__item" data-sp-tab-name="sp-tab-6">
-                        Tokens
                     </li>
                 </ul>
             </div>
@@ -111,7 +114,6 @@
                     </div>
                     <a href="hub/layout.html">Layout</a>
                     <a href="hub/forms.html">Forms</a>
-                    <a href="hub/demo.html">Demo</a>
                     <a href="hub/sp5notify.html">sp5notify</a>
                 </div>
             </nav>
@@ -598,7 +600,7 @@
                     <p>
                         для выстраивания кнопок в линию используется класс <span
                             class="hub__tag">div</span>
-                        <span class="hub__code">btn-pan</span>
+                        <span class="hub__code">.btn-pan</span>
                     </p>
                     <div class="grid-hub hub__grid-border">
                         <div>
@@ -709,8 +711,511 @@
                     </div>
                 </div>
 
+                <div class="hub-form-demo">
+                    <h3>
+                        Selects
+                    </h3>
+                    <div class="grid-hub hub__grid-border">
 
 
+                        <div>
+                            <p>
+                                Selects
+                                <span class="hub__code">.sf__label</span>
+                                <span class="hub__code">.sf__select</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <div class="sf__line">
+                                <label class="sf__label" for="day-select">Select</label>
+                                <select name="day-select" id="day-select" class="sf__select">
+                                    <option value="Friday" selected>Пятница</option>
+                                    <option value="Saturday">Суббота</option>
+                                    <option value="Sunday">Воскресенье</option>
+                                </select>
+                            </div>
+                            <div class="sf__line">
+                                <label for="day-multiselect" class="sf__label">Select multiple</label>
+                                <select name="day" id="day-multiselect" class="sf__select" multiple>
+                                    <option value="Friday" selected>Пятница</option>
+                                    <option value="Saturday">Суббота</option>
+                                    <option value="Sunday">Воскресенье</option>
+                                </select>
+                            </div>
+                            <div class="sf__line">
+                                <label for="file" class="sf__label">
+                                    Выберите файл
+                                </label>
+                                <input type="file" name="file" id="file" class="sf__input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hub-form-demo">
+                    <h3>
+                        Radio
+                    </h3>
+                    <div class="grid-hub hub__grid-border">
+                        <div>
+                            <p>Radio
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Radio
+                                </legend>
+                                <form action="">
+                                    <div class="sf__line">
+                                        <label class="sf__label">
+                                            <input type="radio" name="day" value="Mercury" checked> Mercury
+                                        </label>
+                                    </div>
+                                    <div class="sf__line">
+                                        <label class="sf__label">
+                                            <input type="radio" name="day" value="Venus"> Venus
+                                        </label>
+                                    </div>
+                                    <div class="sf__line">
+                                        <label class="sf__label">
+                                            <input type="radio" name="day" value="Earth"> Earth
+                                        </label>
+                                    </div>
+                                </form>
+
+                            </fieldset>
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Disabled Radios
+                                </legend>
+                                <form action="">
+
+                                    <div class="sf__line">
+                                        <label class="sf__label">
+                                            <input type="radio" name="day" value="Disabled engine" disabled> Disabled
+                                            engine
+                                        </label>
+                                    </div>
+                                    <div class="sf__line">
+                                        <label class="sf__label">
+                                            <input type="radio" name="day" value="Disabled checked engine" checked
+                                                   disabled> Disabled checked engine
+                                        </label>
+                                    </div>
+                                </form>
+
+                            </fieldset>
+
+
+                        </div>
+                        <div>
+                            <p>
+                                Табы <span class="hub__code">sp-radio-group</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <div class="sp-radio-group">
+                                <label class="sp-radio-group__item">
+                                    <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" checked>
+                                    <span class="sp-radio-group-item__text">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#home"></use>
+                        </svg>
+                        Alien
+                    </span>
+                                </label>
+                                <label class="sp-radio-group__item">
+                                    <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                                    <span class="sp-radio-group-item__text">Terminator</span>
+                                </label>
+                                <label class="sp-radio-group__item">
+                                    <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                                    <span class="sp-radio-group-item__text">Android</span>
+                                </label>
+                                <label class="sp-radio-group__item">
+                                    <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                                    <span class="sp-radio-group-item__text">Thing</span>
+                                </label>
+                                <label class="sp-radio-group__item">
+                                    <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" disabled>
+                                    <span class="sp-radio-group-item__text">Prometheus</span>
+                                </label>
+                            </div>
+                            <div class="sp-tab-sections-group">
+                                <section class="sp-tab-section sp-tab-section--active">
+                                    <h5>Alien</h5>
+                                    <p>
+                                        The "Alien" movie universe, originating from Ridley Scott's 1979 sci-fi horror film, unveils a
+                                        dystopian cosmos filled with existential dread. Central to the series is the terrifying
+                                        Xenomorph, a nightmarish, biomechanical extraterrestrial species. The franchise blends elements
+                                        of horror, science fiction, and action, and expands to various media forms like comics, novels,
+                                        and video games. Its profound influence has shaped sci-fi cinema and popular culture, instilling
+                                        a haunting vision of deep space's terrors.
+                                    </p>
+                                </section>
+
+                                <section class="sp-tab-section">
+                                    <h5>Terminator</h5>
+                                    <p>
+                                        The "Terminator" franchise, initiated by James Cameron's groundbreaking 1984 film, narrates a
+                                        dystopian tale of humanity's fight against self-aware machines, led by Skynet. The movies
+                                        prominently feature time travel, and the relentless Terminator - an iconic, deadly cybernetic
+                                        organism. The saga, rife with action, suspense, and rich thematic elements of fate versus free
+                                        will, has expanded into TV series, comics, and video games. The Terminator's influence resonates
+                                        deeply in popular culture, shaping the course of sci-fi and action cinema.
+                                    </p>
+                                </section>
+
+                                <section class="sp-tab-section">
+                                    <h5>Android</h5>
+                                    <p>
+                                        Androids are artificial beings designed to resemble humans, not only in physical appearance but
+                                        also in behavior and cognition. They are a common feature in science fiction and speculative
+                                        literature, serving as a lens to explore themes of identity, consciousness, and what it means to
+                                        be human. In technology, Android refers to the open-source mobile operating system developed by
+                                        Google. Used by many smartphone manufacturers worldwide, it's known for its flexibility,
+                                        customization, and extensive app ecosystem.
+                                    </p>
+                                </section>
+
+
+                                <section class="sp-tab-section">
+                                    <h5>Thing</h5>
+                                    <p>
+                                        "The Thing," a cult classic directed by John Carpenter in 1982, is an atmospheric sci-fi horror
+                                        film set in the isolated expanses of Antarctica. The narrative revolves around a shape-shifting,
+                                        parasitic alien lifeform that infiltrates a research base, creating an environment of paranoia
+                                        and mistrust among the crew. Known for its high-tension storytelling and grotesquely imaginative
+                                        practical effects, "The Thing" offers a chilling exploration of identity, fear, and human
+                                        nature. Its influence can be felt widely in sci-fi horror cinema and pop culture.
+                                    </p>
+                                </section>
+                            </div>
+                            <script>
+                                //tabs toogle function click on sp-radio-group-item__radio activates sp-tab-section with same index
+                                document.querySelectorAll('.sp-radio-group-item__radio').forEach(function (item, i) {
+                                    item.addEventListener('click', function () {
+                                        document.querySelectorAll('.sp-tab-section').forEach(function (item, j) {
+                                            if (j === i) {
+                                                item.classList.add('sp-tab-section--active');
+                                            } else {
+                                                item.classList.remove('sp-tab-section--active');
+                                            }
+                                        });
+                                    });
+                                });
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="hub-form-demo">
+                    <h3>
+                        Checkbox
+                    </h3>
+                    <div class="grid-hub hub__grid-border">
+
+                        <div>
+                            <p>
+                                Checkbox
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Checkbox
+                                </legend>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Friday" class="sf__checkbox"
+                                               checked>
+                                        Пятница
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Saturday" class="sf__checkbox">
+                                        Суббота
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Checkbox disabled
+                                </legend>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Sunday" class="sf__checkbox"
+                                               disabled>
+                                        Воскресенье
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Sunday" class="sf__checkbox"
+                                               checked
+                                               disabled> Понедельник
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <div>
+                            Переключатель <span class="hub__code">sp-switch</span> based on checkbox
+                        </div>
+                        <div class="hub-example">
+
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Switches
+                                </legend>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch">
+                                        Party mode
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch" checked>
+                                        Party mode
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch" disabled>
+                                        Party mode
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch" checked disabled>
+                                        Party mode
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="hub-form-demo">
+                    <h3>
+                        Custom controls
+                    </h3>
+                    <div class="grid-hub hub__grid-border">
+                        <div>
+                            sp-chip
+                        </div>
+                        <div class="hub-example">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    SP Chip
+                                </legend>
+                                <div class="sp-chips-pan">
+                                    <div class="sp-chip">
+                                        Enabled
+                                        <svg>
+                                            <use href="../img/sp5sprite.svg#x"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="sp-chip">
+                                        Enabled 2
+                                        <svg>
+                                            <use href="../img/sp5sprite.svg#x"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="sp-chip sp-chip--disabled">
+                                        Disabled
+                                        <svg>
+                                            <use href="../img/sp5sprite.svg#x"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            sp toggle
+                        </div>
+                        <div class="hub-example">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    SP Toggle
+                                </legend>
+                                <div class="sp-toggle">
+                                    <div class="sp-toggle__item sp-toggle__item--active">
+                                        Мужчины
+                                    </div>
+                                    <div class="sp-toggle__item ">
+                                        Женщины
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /UI -->
+
+            <!-- forms -->
+            <section class="hub__section sp-tab sp-tab-5">
+                <h1>Space Forms (.SF)</h1>
+                <div class="hub-form-demo">
+                    <div class="grid-hub hub__grid-border">
+                        <div>
+                            Standart inputs
+                        </div>
+                        <div class="hub-example">
+                            <form action="/" method="post" class="sf__form">
+                                <fieldset class="sf__fieldset">
+                                    <legend class="sf__legend">
+                                        Standart inputs
+                                    </legend>
+                                    <div class="sf__line">
+                                        <label for="username" class="sf__label">text</label>
+                                        <input type="text" name="username" placeholder="Ваше имя" class="sf__input"
+                                               id="username">
+                                    </div>
+                                    <div class="sf__line">
+                                        <label for="email-address" class="sf__label">email</label>
+                                        <input type="email" name="email-address" placeholder="Адрес" class="sf__input"
+                                               id="email-address">
+                                    </div>
+                                    <div class="sf__line">
+                                        <label for="phone-number" class="sf__label">tel</label>
+                                        <input type="tel" name="phone-number" placeholder="Номер телефона"
+                                               class="sf__input"
+                                               id="phone-number">
+                                    </div>
+                                    <div class="sf__line">
+                                        <label for="password" class="sf__label">password</label>
+                                        <input type="password" name="password" class="sf__input" placeholder="Пароль"
+                                               id="password">
+                                    </div>
+                                    <div class="sf__line">
+                                        <label for="comment" class="sf__label">comment</label>
+                                        <textarea name="comment" placeholder="Ваш комментарий" class="sf__textarea"
+                                                  id="comment">Добавьте сюда свой комментарий</textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-form-demo">
+                    <h3>
+                        Inputs
+                    </h3><span class="hub__code">--ui-size: 36px;</span>
+                    <div class="grid-hub hub__grid-border">
+                        <div>
+
+                            <p>
+                                <span class="hub__code">.sf__label</span>
+                                <span class="hub__code">.sf__input</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <div class="sf__line">
+                                <label for="username" class="sf__label">Text</label>
+                                <input type="text" name="username" placeholder="Ваше имя" class="sf__input">
+                            </div>
+                            <div class="sf__line">
+                                <label for="email-address" class="sf__label">Email</label>
+                                <input type="email" name="email-address" placeholder="Адрес" class="sf__input">
+                            </div>
+                            <div class="sf__line">
+                                <label for="phone-number" class="sf__label">Tel</label>
+                                <input type="tel" name="phone-number" placeholder="Номер телефона" class="sf__input">
+                            </div>
+                            <div class="sf__line">
+                                <label for="password" class="sf__label">Password</label>
+                                <input type="password" name="password" class="sf__input" placeholder="Пароль">
+                            </div>
+                            <div class="sf__line">
+                                <label for="url" class="sf__label">website</label>
+                                <input type="url" name="website" class="sf__input" id="url">
+                            </div>
+                            <div class="sf__line">
+                                <label for="cost" class="sf__label">number</label>
+                                <input type="number" name="cost" class="sf__input" id="cost">
+                            </div>
+                            <div class="sf__line">
+                                <label for="search" class="sf__label">search</label>
+                                <input type="search" name="search" class="sf__input" id="search">
+                            </div>
+
+                        </div>
+                        <div>
+                            <span class="hub__code">.sf__label</span>
+                            <span class="hub__code">.sf__textarea</span>
+                        </div>
+                        <div class="hub-example">
+                            <div class="sf__line">
+                                <label for="comment" class="sf__label">comment</label>
+                                <textarea name="comment" placeholder="Ваш комментарий" class="sf__textarea">Добавьте сюда свой комментарий</textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="hub__code">.sf__label</span>
+                            <span class="hub__code">.sf__input</span>
+                        </div>
+                        <div class="hub-example">
+
+                            <div class="sf__line">
+                                <label for="game-time" class="sf__label">time</label>
+                                <input type="time" name="game-time" class="sf__input" id="game-time">
+                            </div>
+                            <div class="sf__line">
+                                <label for="date" class="sf__label">date</label>
+                                <input type="date" name="date" id="date" class="sf__input">
+                            </div>
+                            <div class="sf__line">
+                                <label for="datetime" class="sf__label">datetime-local</label>
+                                <input type="datetime-local" name="datetime" class="sf__input" id="datetime">
+                            </div>
+                            <div class="sf__line">
+                                <label for="month" class="sf__label">month</label>
+                                <input type="month" name="month" class="sf__input" id="month">
+                            </div>
+
+                            <div class="sf__line">
+                                <label for="week" class="sf__label">week</label>
+                                <input type="week" name="week" class="sf__input" id="week">
+                            </div>
+                        </div>
+                        <div>
+                            <p>Specific inputs
+                                <span class="hub__code">.sf__label</span>
+                                <span class="hub__code">.sf__input</span>
+                            </p>
+                        </div>
+                        <div class="hub-example">
+                            <div class="sf__line">
+                                <label for="range" class="sf__label">range</label>
+                                <input type="range" name="range" class="sf__input" id="range">
+                            </div>
+                            <div class="sf__line">
+                                <label for="color" class="sf__label">color</label>
+                                <input type="color" name="color" class="sf__input" id="color">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+            <!-- /forms -->
+
+            <!--  UI Sizes  -->
+            <section class="hub__section sp-tab sp-tab-7">
+                <h1>
+                    UI Sizes
+                </h1>
                 <div class="hub-form-demo">
                     <h3>
                         Размеры кнопок
@@ -754,77 +1259,727 @@
                     </div>
                 </div>
 
-                 <div class="hub-form-demo">
-                <h3>
-                    Контролы
-                </h3>
-                <div class="grid-hub hub__grid-border">
-                    <div>
-                        <p>
-                            Табы <span class="hub__code">sp-radio-group</span>
-                        </p>
-                    </div>
-                    <div>
-                        <div class="sp-radio-group">
-                            <label class="sp-radio-group__item">
-                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" checked>
-                                <span class="sp-radio-group-item__text">Alien</span>
-                            </label>
-                            <label class="sp-radio-group__item">
-                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-                                <span class="sp-radio-group-item__text">Terminator</span>
-                            </label>
-                            <label class="sp-radio-group__item">
-                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-                                <span class="sp-radio-group-item__text">Android</span>
-                            </label>
-                            <label class="sp-radio-group__item">
-                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-                                <span class="sp-radio-group-item__text">Thing</span>
-                            </label>
-                            <label class="sp-radio-group__item">
-                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" disabled>
-                                <span class="sp-radio-group-item__text">Prometheus</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="hub-form-demo">
 
-                    <div>
-                        Переключатель <span class="hub__code">sp-switch</span>
-                    </div>
-                    <div>
-                        <div class="sf__line">
-                            <label class="sf__label">
-                                <input type="checkbox" class="sp-switch">
-                                Party mode
-                            </label>
+                    <h3>Buttons</h3>
+                    <div class="hub-size-table hub-size-table--buttons">
+                        <div class="hub-size-table__header hub-size-table__header--start">
+                            <div style="align-self: end;">Button type</div>
+
+                            <div style="align-self: start;">UI size class</div>
                         </div>
-                        <div class="sf__line">
-                            <label class="sf__label">
-                                <input type="checkbox" class="sp-switch" checked>
-                                Party mode
-                            </label>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.btn</div>
+                            <div class="ca">auto width</div>
+                            <div class="hub-size-arrow-hor"></div>
                         </div>
-                        <div class="sf__line">
-                            <label class="sf__label">
-                                <input type="checkbox" class="sp-switch" disabled>
-                                Party mode
-                            </label>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.btn + svg</div>
+                            <div class="ca">auto width</div>
+                            <div class="hub-size-arrow-hor"></div>
                         </div>
-                        <div class="sf__line">
-                            <label class="sf__label">
-                                <input type="checkbox" class="sp-switch" checked disabled>
-                                Party mode
-                            </label>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.btn--outline</div>
+                            <div class="ca">auto width</div>
+                            <div class="hub-size-arrow-hor"></div>
                         </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.btn--ghost</div>
+                            <div class="ca">auto width</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.btn--micro</div>
+                            <div class="ca">auto width</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.btn--ui</div>
+                            <div class="ca">auto <br> width</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+
+                        <!--                btn S size -->
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.ui-s</div>
+                                <div class="ca">24px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <a href="#" class="btn ui-s">Button</a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <a href="#" class="btn ui-s">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#check"></use>
+                                </svg>
+                                Save
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <a href="#" class="btn ui-s btn--outline">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                                Chancel
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <a href="#" class="btn ui-s btn--ghost">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                                Chancel
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <a href="#" class="btn btn--micro">
+                                Sort by name
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#chevron-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <a href="#" class="btn ui-s btn--ui">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <!--                /btn S size-->
+
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <div class="hub-size-table-line-box">
+                                <div class="cg fi">
+                                    (no class)
+                                </div>
+                                <div class="ca">36px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <a href="#" class="btn">Button</a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <a href="#" class="btn">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#check"></use>
+                                </svg>
+                                Save
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <a href="#" class="btn btn--outline">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                                Chancel
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <a href="#" class="btn btn--ghost">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                                Chancel
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <a href="#" class="btn btn--micro">
+                                Sort by name
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#chevron-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line">
+                            <a href="#" class="btn btn--ui">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.ui-l</div>
+                                <div class="ca">44px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <a href="#" class="btn ui-l">Button</a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <a href="#" class="btn ui-l">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#check"></use>
+                                </svg>
+                                Save
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <a href="#" class="btn ui-l btn--outline">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                                Chancel
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <a href="#" class="btn ui-l btn--ghost">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                                Chancel
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <a href="#" class="btn btn--micro">
+                                Sort by name
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#chevron-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <a href="#" class="btn ui-l btn--ui">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#x"></use>
+                                </svg>
+                            </a>
+                        </div>
+
                     </div>
 
                 </div>
-                 </div>
-            </section>
-            <!-- /UI -->
+                <div class="hub-form-demo">
 
-            <!-- sprite -->
+                    <h3>Inputs</h3>
+                    <div class="hub-size-table">
+                        <div class="hub-size-table__header hub-size-table__header--start">
+                            <div style="align-self: end;">width</div>
+
+                            <div style="align-self: start;">height</div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__input</div>
+                            <div class="ca">200px</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__input .sf__input--m</div>
+                            <div class="ca">168px</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__input .sf__input--s</div>
+                            <div class="ca">92px</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__input .sf__input--a</div>
+                            <div class="ca">auto (max 200px)</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.ui-s</div>
+                                <div class="ca">24px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <input type="text" placeholder="name" class="sf__input ui-s">
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <input type="text" placeholder="name" class="sf__input sf__input--m ui-s">
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <input type="text" placeholder="name" class="sf__input sf__input--s ui-s">
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <input type="text" placeholder="name" class="sf__input sf__input--a ui-s">
+                        </div>
+
+
+                        <div class="hub-size-table__line">
+                            <div class="hub-size-table-line-box">
+                                <div class="cg fi">(no class)</div>
+                                <div class="ca">36px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <input type="text" placeholder="name" class="sf__input ">
+                        </div>
+                        <div class="hub-size-table__line">
+                            <input type="text" placeholder="name" class="sf__input sf__input--m ">
+                        </div>
+                        <div class="hub-size-table__line">
+                            <input type="text" placeholder="name" class="sf__input sf__input--s ">
+                        </div>
+                        <div class="hub-size-table__line">
+                            <input type="text" placeholder="name" class="sf__input sf__input--a ">
+                        </div>
+
+
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.ui-l</div>
+                                <div class="ca">44px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <input type="text" placeholder="name" class="sf__input ui-l">
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <input type="text" placeholder="name" class="sf__input sf__input--m ui-l">
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <input type="text" placeholder="name" class="sf__input sf__input--s ui-l">
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <input type="text" placeholder="name" class="sf__input sf__input--a ui-l">
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-form-demo">
+
+                    <h3>Selects</h3>
+                    <div class="hub-size-table">
+                        <div class="hub-size-table__header hub-size-table__header--start">
+                            <div style="align-self: end;">width</div>
+                            <div style="align-self: start;">height</div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__select</div>
+                            <div class="ca">200px</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__select .sf__select--m</div>
+                            <div class="ca">168px</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__select .sf__select--s</div>
+                            <div class="ca">92px</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.sf__select <br> .sf__select--a</div>
+                            <div class="ca">auto <br> (max 200px)</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.ui-s</div>
+                                <div class="ca">24px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <select type="text" placeholder="name" class="sf__select ui-s">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <select type="text" placeholder="name" class="sf__select sf__select--m ui-s">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <select type="text" placeholder="name" class="sf__select sf__select--s ui-s">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--s">
+                            <select type="text" placeholder="name" class="sf__select sf__select--a ui-s">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+
+                        <div class="hub-size-table__line">
+                            <div class="hub-size-table-line-box">
+                                <div class="cg fi">(no class)</div>
+                                <div class="ca">36px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <select type="text" placeholder="name" class="sf__select ">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <select type="text" placeholder="name" class="sf__select sf__select--m ">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <select type="text" placeholder="name" class="sf__select sf__select--s ">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <select type="text" placeholder="name" class="sf__select sf__select--a ">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+
+
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.ui-l</div>
+                                <div class="ca">44px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <select type="text" placeholder="name" class="sf__select ui-l">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <select type="text" placeholder="name" class="sf__select sf__select--m ui-l">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <select type="text" placeholder="name" class="sf__select sf__select--s ui-l">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                        <div class="hub-size-table__line hub-size-table__line--l">
+                            <select type="text" placeholder="name" class="sf__select sf__select--a ui-l">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hub-form-demo">
+
+                    <h3>Full sizes</h3>
+
+                    <div class="hub-size-table hub-size-table--full-size">
+                        <div class="hub-size-table__header hub-size-table__header--start">
+                            <div style="align-self: end;">width</div>
+
+                            <div style="align-self: start;">input type</div>
+                        </div>
+                        <div class="hub-size-table__header">
+                            <div class="fb">.fw</div>
+                            <div class="ca">100% (full width)</div>
+                            <div class="hub-size-arrow-hor"></div>
+                        </div>
+
+                        <div class="hub-size-table__line">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.sf__input .fw</div>
+                                <div class="ca">36px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <input type="text" class="sf__input fw" placeholder="Name">
+                        </div>
+
+                        <div class="hub-size-table__line">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.sf__select .fw</div>
+                                <div class="ca">36px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <select type="text" placeholder="name" class="sf__select fw">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+
+                        <div class="hub-size-table__line">
+                            <div class="hub-size-table-line-box">
+                                <div class="fb">.btn .fw</div>
+                                <div class="ca">36px</div>
+                                <div class="hub-size-arrow-vert"></div>
+                            </div>
+                        </div>
+                        <div class="hub-size-table__line">
+                            <a href="#" class="btn fw">
+                                <svg>
+                                    <use href="../img/sp5sprite.svg#check"></use>
+                                </svg>
+                                Save
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--  /UI Sizes  -->
+
+            <!-- Tokens -->
+            <section class="hub__section sp-tab sp-tab-6">
+                <h1>CSS Tokens</h1>
+                <div class="hub-form-demo">
+                    <h5>ui sizes</h5>
+                    <div class="hub-token-item">
+                        <div>.ui-s</div>
+                        <div>height: var(--ui-size-s);</div>
+                        <div>height of ui element, small size</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.ui-l</div>
+                        <div>height: var(--ui-size-l);</div>
+                        <div>height of ui element, large size</div>
+                    </div>
+                </div>
+
+
+                <div class="hub-form-demo">
+                    <h5>width</h5>
+
+                    <div class="hub-token-item">
+                        <div>.fw</div>
+                        <div>width: 100%;</div>
+                        <div>sets full width</div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .wa
+                        </div>
+                        <div>width: auto;</div>
+                        <div>
+                            <div class="fb">(width auto)</div>
+                            <div class="fi">sets auto width</div>
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.wid</div>
+                        <div>
+                            width: 100%;
+                            max-width: var(--wid);
+                            min-width: 748px;
+                            margin: 0 auto;
+                        </div>
+                        <div>sets element in center of the screen and maximum width from var(--wid)</div>
+                    </div>
+                </div>
+
+                <div class="hub-form-demo">
+                    <h5>Font & Alignment</h5>
+                    <div class="hub-token-item">
+                        <div>
+                            .wf
+                        </div>
+                        <div>
+                            font-family: var(--wf);
+                        </div>
+                        <div>
+                            (primary web font) <br>
+                            sets font family of web font
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .wf2
+                        </div>
+                        <div>
+                            font-family: var(--wf2);
+                        </div>
+                        <div>
+                            (secondary web font) <br>
+                            sets font family of secondary web font
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .tac, .cimg
+                        </div>
+                        <div>text-align: center;</div>
+                        <div>
+                            (text align center)
+                            <br>
+                            Set the text center alignment
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .tal
+                        </div>
+                        <div>text-align: left;</div>
+                        <div>
+                            (text align left) <br>
+                            Set the text left alignment
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .tar
+                        </div>
+                        <div>text-align: right;</div>
+                        <div>
+                            (text align right)
+                            <br>
+                            Set the text right alignment
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .fb
+                        </div>
+                        <div>font-weight: bold;</div>
+                        <div>
+                            (font bold)
+                            <br>
+                            sets font weight to bold
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>
+                            .fi
+                        </div>
+                        <div>font-style: italic;</div>
+                        <div>
+                            (font italic)
+                            <br>
+                            sets font style to italic
+                        </div>
+                    </div>
+                </div>
+                <div class="hub-form-demo">
+
+                    <h5>Color</h5>
+
+                    <div class="hub-token-item">
+                        <div>
+                            .ca
+                        </div>
+                        <div>color: var(--color-accent);</div>
+                        <div>
+                            (color accent)
+                            <br>
+                            sets accent color
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.cp
+                        </div>
+                        <div>color: var(--color-primary);</div>
+                        <div>
+                            (color primary)
+                            <br>
+                            sets primary color
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.cg
+                        </div>
+                        <div>color: var(--color-text-grey);</div>
+                        <div>
+                            (color grey)
+                            <br>
+                            sets text grey color
+                        </div>
+                    </div>
+                    <div class="hub-token-item">
+                        <div>.clg
+                        </div>
+                        <div>color: var(--ui-color-text-light-grey);</div>
+                        <div>
+                            (color light grey)
+                            <br>
+                            sets text light grey color
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="hub-form-demo">
+
+                    <h5>Layout</h5>
+
+                    <div class="hub-token-item">
+                        <div>.dn</div>
+                        <div>display: none;</div>
+                        <div>sets display none</div>
+                    </div>
+
+                    <div class="hub-token-item">
+                        <div>.hom</div>
+                        <div>display: block; <br>
+                            @media screen and (max-width: 768px) {
+                            .hom {
+                            display: none;
+                            }
+                            }
+                        </div>
+                        <div>hides block on mobile / show block on Desktop</div>
+                    </div>
+
+                    <div class="hub-token-item">
+                        <div>.som</div>
+                        <div>display: none; <br>
+                            @media screen and (max-width: 768px) {
+                            .som {
+                            display: block;
+                            }
+                            }
+                        </div>
+                        <div>shows block on mobile / hides block on Desktop</div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Tokens -->
+
+            <!-- Sprites -->
             <section class="hub__section sp-tab sp-tab-3">
                 <!--  SP5 sprite demo  -->
                 <h2>svg sprite demo</h2>
@@ -1688,9 +2843,9 @@
                 </div>
                 <!-- /SP5 sprite demo  -->
             </section>
-            <!-- /sprite -->
+            <!-- /Sprites -->
 
-            <!-- layout -->
+            <!-- Layout -->
             <section class="hub__section sp-tab sp-tab-4">
                 <main class="main wid">
                     <h1>
@@ -2063,539 +3218,8 @@
                     </div>
                 </main>
             </section>
-            <!-- /layout -->
+            <!-- /Layout -->
 
-            <!-- forms -->
-            <section class="hub__section sp-tab sp-tab-5">
-                <h1>SP Forms</h1>
-
-                <div class="grid-hub hub__grid-border">
-                    <div>
-                        Standart inputs
-                    </div>
-                    <div>
-                        <form action="/" method="post" class="sf__form">
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Standart inputs
-                                </legend>
-                                <div class="sf__line">
-                                    <label for="username" class="sf__label">text</label>
-                                    <input type="text" name="username" placeholder="Ваше имя" class="sf__input"
-                                           id="username">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="email-address" class="sf__label">email</label>
-                                    <input type="email" name="email-address" placeholder="Адрес" class="sf__input"
-                                           id="email-address">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="phone-number" class="sf__label">tel</label>
-                                    <input type="tel" name="phone-number" placeholder="Номер телефона" class="sf__input"
-                                           id="phone-number">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="password" class="sf__label">password</label>
-                                    <input type="password" name="password" class="sf__input" placeholder="Пароль"
-                                           id="password">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="comment" class="sf__label">comment</label>
-                                    <textarea name="comment" placeholder="Ваш комментарий" class="sf__textarea"
-                                              id="comment">Добавьте сюда свой комментарий</textarea>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-
-                    <div>
-                        <h3>input's sizes</h3>
-                        <ul>
-                            <li>
-                                Standart: 200px;
-                            </li>
-                            <li>
-                                Medium: 168px;
-                            </li>
-                            <li>
-                                Small: 92px;
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <form action="/" method="post" class="sf__form">
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Standart size
-                                </legend>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">text
-                                        <input type="text" name="username-short" placeholder="200px" class="sf__input">
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">datetime-local
-                                        <input type="datetime-local" name="datetime" class="sf__input">
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">Select
-                                        <select name="day-select-standart" class="sf__select">
-                                            <option value="Friday" selected>200px A</option>
-                                            <option value="Saturday">200px B</option>
-                                            <option value="Sunday">200px C</option>
-                                        </select>
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">comment
-                                        <textarea name="comment-short" placeholder="Ваш комментарий"
-                                                  class="sf__textarea">width: 100%</textarea>
-                                    </label>
-                                </div>
-                            </fieldset>
-
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Medium size
-                                </legend>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">text
-                                        <input type="text" name="username-short" placeholder="168px"
-                                               class="sf__input sf__input--m"
-                                        >
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">datetime-local
-                                        <input type="datetime-local" name="datetime" class="sf__input sf__input--m">
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">Select
-                                        <select name="day-select-standart" class="sf__select sf__select--m">
-                                            <option value="Friday" selected>168px A</option>
-                                            <option value="Saturday">168px B</option>
-                                            <option value="Sunday">168px C</option>
-                                        </select>
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">comment
-                                        <textarea name="comment-short" placeholder="Ваш комментарий"
-                                                  class="sf__textarea sf__textarea--m">width: 75%</textarea>
-                                    </label>
-                                </div>
-                            </fieldset>
-
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Small size
-                                </legend>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">text
-                                        <input type="text" name="username-short" placeholder="92px"
-                                               class="sf__input sf__input--s"
-                                        >
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label sf__label--col">datetime-local
-                                        <input type="datetime-local" name="datetime" class="sf__input sf__input--s">
-                                    </label>
-                                    <div class="sf__line">
-                                        <label class="sf__label sf__label--col">Select
-                                            <select name="day-select-standart" class="sf__select sf__select--s">
-                                                <option value="Friday" selected>92px A</option>
-                                                <option value="Saturday">92px B</option>
-                                                <option value="Sunday">92px C</option>
-                                                <option value="Sunday">long 98px C</option>
-
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="sf__line">
-                                        <label class="sf__label sf__label--col">comment
-                                            <textarea name="comment-short" placeholder="Ваш комментарий"
-                                                      class="sf__textarea sf__textarea--s">width: 50%</textarea>
-                                        </label>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Auto size
-                                </legend>
-                                <div class="sf">
-                                    <label class="sf__label sf__label--col">text
-                                        <input type="text" name="username-short" placeholder="Name"
-                                               class="sf__input sf__input--a"
-                                        >
-                                    </label>
-                                    <label class="sf__label sf__label--col">datetime-local
-                                        <input type="datetime-local" name="datetime" class="sf__input sf__input--a">
-                                    </label>
-                                    <label class="sf__label sf__label--col">date
-                                        <input type="date" name="datetime" class="sf__input sf__input--a">
-                                    </label>
-
-                                    <label class="sf__label sf__label--col">Select
-                                        <select name="day-select-standart" class="sf__select sf__select--a">
-                                            <option value="Friday" selected>92px A</option>
-                                            <option value="Saturday">92px B</option>
-                                            <option value="Sunday">92px C</option>
-                                            <option value="Sunday">long 98px C</option>
-                                        </select>
-                                    </label>
-                                    <label class="sf__label sf__label--col">comment
-                                        <textarea name="comment-short" placeholder="Ваш комментарий"
-                                                  class="sf__textarea sf__textarea--s">width: 50%</textarea>
-                                    </label>
-
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div>
-                        Specific inputs
-                    </div>
-                    <div>
-                        <form action="/" method="post" class="sf__form">
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Specific inputs
-                                </legend>
-                                <div class="sf__line">
-                                    <label for="color" class="sf__label">color</label>
-                                    <input type="color" name="color" class="sf__input" id="color">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="game-time" class="sf__label">time</label>
-                                    <input type="time" name="game-time" class="sf__input" id="game-time">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="url" class="sf__label">website</label>
-                                    <input type="url" name="website" class="sf__input" id="url">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="cost" class="sf__label">number</label>
-                                    <input type="number" name="cost" class="sf__input" id="cost">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="search" class="sf__label">search</label>
-                                    <input type="search" name="search" class="sf__input" id="search">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="date" class="sf__label">date</label>
-                                    <input type="date" name="date" id="date" class="sf__input">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="datetime" class="sf__label">datetime-local</label>
-                                    <input type="datetime-local" name="datetime" class="sf__input" id="datetime">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="month" class="sf__label">month</label>
-                                    <input type="month" name="month" class="sf__input" id="month">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="range" class="sf__label">range</label>
-                                    <input type="range" name="range" class="sf__input" id="range">
-                                </div>
-                                <div class="sf__line">
-                                    <label for="week" class="sf__label">week</label>
-                                    <input type="week" name="week" class="sf__input" id="week">
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-
-
-                    <div>
-                        Radio and etc
-                    </div>
-                    <div>
-                        <form action="/" method="post" class="sf__form">
-                            <fieldset class="sf__fieldset">
-                                <legend class="sf__legend">
-                                    Radio and etc
-                                </legend>
-                                <div class="sf__line">
-                                    <label class="sf__label">
-                                        <input type="radio" name="day" value="Friday" checked> Пятница
-                                    </label>
-                                    <label class="sf__label">
-                                        <input type="radio" name="day" value="Saturday"> Суббота
-                                    </label>
-                                    <label class="sf__label">
-                                        <input type="radio" name="day" value="Sunday" disabled> Воскресенье
-                                    </label>
-                                    <label class="sf__label">
-                                        <input type="radio" name="day" value="Sunday" checked disabled> Понедельник
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label">
-                                        <input type="checkbox" name="day" value="Friday" class="sf__checkbox" checked>
-                                        Пятница
-                                    </label>
-                                    <label class="sf__label">
-                                        <input type="checkbox" name="day" value="Saturday" class="sf__checkbox"> Суббота
-                                    </label>
-                                    <label class="sf__label">
-                                        <input type="checkbox" name="day" value="Sunday" class="sf__checkbox" disabled>
-                                        Воскресенье
-                                    </label>
-                                    <label class="sf__label">
-                                        <input type="checkbox" name="day" value="Sunday" class="sf__checkbox" checked
-                                               disabled> Понедельник
-                                    </label>
-                                </div>
-                                <div class="sf__line">
-                                    <label class="sf__label" for="day-select">Select</label>
-                                    <select name="day-select" id="day-select" class="sf__select">
-                                        <option value="Friday" selected>Пятница</option>
-                                        <option value="Saturday">Суббота</option>
-                                        <option value="Sunday">Воскресенье</option>
-                                    </select>
-                                </div>
-                                <div class="sf__line">
-                                    <label for="day-multiselect" class="sf__label">Select multiple</label>
-                                    <select name="day" id="day-multiselect" class="sf__select" multiple>
-                                        <option value="Friday" selected>Пятница</option>
-                                        <option value="Saturday">Суббота</option>
-                                        <option value="Sunday">Воскресенье</option>
-                                    </select>
-
-                                </div>
-                                <div class="sf__line">
-                                    <label for="file" class="sf__label">
-                                        Выберите файл
-                                    </label>
-                                    <input type="file" name="file" id="file" class="sf__input">
-                                </div>
-
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <!-- /forms -->
-
-            <!-- Tokens -->
-            <section class="hub__section sp-tab sp-tab-6">
-                <h1>CSS Tokens</h1>
-                <div class="hub-form-demo">
-                    <h5>ui sizes</h5>
-                    <div class="hub-token-item">
-                        <div>.ui-s</div>
-                        <div>height: var(--ui-size-s);</div>
-                        <div>height of ui element, small size</div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.ui-l</div>
-                        <div>height: var(--ui-size-l);</div>
-                        <div>height of ui element, large size</div>
-                    </div>
-                </div>
-
-
-                <div class="hub-form-demo">
-                    <h5>width</h5>
-
-                    <div class="hub-token-item">
-                        <div>.fw</div>
-                        <div>width: 100%;</div>
-                        <div>sets full width</div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .wa
-                        </div>
-                        <div>width: auto;</div>
-                        <div>
-                            <div class="fb">(width auto)</div>
-                            <div class="fi">sets auto width</div>
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.wid</div>
-                        <div>
-                            width: 100%;
-                            max-width: var(--wid);
-                            min-width: 748px;
-                            margin: 0 auto;
-                        </div>
-                        <div>sets element in center of the screen and maximum width from var(--wid)</div>
-                    </div>
-                </div>
-
-                <div class="hub-form-demo">
-                    <h5>Font & Alignment</h5>
-                    <div class="hub-token-item">
-                        <div>
-                            .wf
-                        </div>
-                        <div>
-                            font-family: var(--wf);
-                        </div>
-                        <div>
-                            (primary web font) <br>
-                            sets font family of web font
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .wf2
-                        </div>
-                        <div>
-                            font-family: var(--wf2);
-                        </div>
-                        <div>
-                            (secondary web font) <br>
-                            sets font family of secondary web font
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .tac, .cimg
-                        </div>
-                        <div>text-align: center;</div>
-                        <div>
-                            (text align center)
-                            <br>
-                            Set the text center alignment
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .tal
-                        </div>
-                        <div>text-align: left;</div>
-                        <div>
-                            (text align left) <br>
-                            Set the text left alignment
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .tar
-                        </div>
-                        <div>text-align: right;</div>
-                        <div>
-                            (text align right)
-                            <br>
-                            Set the text right alignment
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .fb
-                        </div>
-                        <div>font-weight: bold;</div>
-                        <div>
-                            (font bold)
-                            <br>
-                            sets font weight to bold
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .fi
-                        </div>
-                        <div>font-style: italic;</div>
-                        <div>
-                            (font italic)
-                            <br>
-                            sets font style to italic
-                        </div>
-                    </div>
-                </div>
-                <div class="hub-form-demo">
-
-                    <h5>Color</h5>
-
-                    <div class="hub-token-item">
-                        <div>
-                            .ca
-                        </div>
-                        <div>color: var(--color-accent);</div>
-                        <div>
-                            (color accent)
-                            <br>
-                            sets accent color
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.cp
-                        </div>
-                        <div>color: var(--color-primary);</div>
-                        <div>
-                            (color primary)
-                            <br>
-                            sets primary color
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.cg
-                        </div>
-                        <div>color: var(--color-text-grey);</div>
-                        <div>
-                            (color grey)
-                            <br>
-                            sets text grey color
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.clg
-                        </div>
-                        <div>color: var(--ui-color-text-light-grey);</div>
-                        <div>
-                            (color light grey)
-                            <br>
-                            sets text light grey color
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="hub-form-demo">
-
-                    <h5>Layout</h5>
-
-                    <div class="hub-token-item">
-                        <div>.dn</div>
-                        <div>display: none;</div>
-                        <div>sets display none</div>
-                    </div>
-
-                    <div class="hub-token-item">
-                        <div>.hom</div>
-                        <div>display: block; <br>
-                            @media screen and (max-width: 768px) {
-                            .hom {
-                            display: none;
-                            }
-                            }
-                        </div>
-                        <div>hides block on mobile / show block on Desktop</div>
-                    </div>
-
-                    <div class="hub-token-item">
-                        <div>.som</div>
-                        <div>display: none; <br>
-                            @media screen and (max-width: 768px) {
-                            .som {
-                            display: block;
-                            }
-                            }
-                        </div>
-                        <div>shows block on mobile / hides block on Desktop</div>
-                    </div>
-                </div>
-            </section>
-            <!-- /Tokens -->
 
         </main>
     </div>

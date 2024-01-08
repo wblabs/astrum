@@ -671,14 +671,18 @@ input {
 }
 
 .sf__fieldset {
-    margin: 32px 0 0 0;
+    margin: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 16px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: var(--gap);
+    gap: var(--gf);
     border-radius: calc(var(--ui-raduis) * 2);
+}
+
+.sf__fieldset:not(:last-child) {
+    margin-bottom: calc(var(--gap) * 1.5);
 }
 
 .sf__legend {
@@ -689,6 +693,10 @@ input {
 
 .sf__line {
     margin: 0 0 var(--gap) 0;
+}
+
+.sf__line:last-child {
+    margin: 0;
 }
 
 .sf__label {
@@ -713,6 +721,10 @@ input {
 
 .sf__label + .sf__textarea {
     margin-top: calc(var(--gf) / 2);
+}
+
+.sf__label:has(input:disabled) {
+    color: var(--ui-color-text-light-grey);
 }
 
 .sf__input, .sf__textarea, .sf__select {
