@@ -822,8 +822,8 @@ input {
 }
 
 .sf__select[multiple] {
-    outline: #0aaeb3 2px solid;
     height: auto;
+    overflow: hidden;
 }
 
 /* radio-group */
