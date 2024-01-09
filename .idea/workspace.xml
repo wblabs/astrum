@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sf__select multiple fix with overflow">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new sprites demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -269,7 +269,7 @@
       <workItem from="1703750637499" duration="12699000" />
       <workItem from="1704603915585" duration="23000" />
       <workItem from="1704604018508" duration="19183000" />
-      <workItem from="1704721950488" duration="14371000" />
+      <workItem from="1704721950488" duration="18472000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -623,7 +623,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704736097106</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="all inputs up to date">
+      <option name="closed" value="true" />
+      <created>1704799799829</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1704799799829</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,8 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new main image and page titles fixes" />
-    <MESSAGE value="meta url fix" />
     <MESSAGE value="chip icon shrink fix" />
     <MESSAGE value="normalize path fix" />
     <MESSAGE value="footer default logo classes" />
@@ -667,6 +673,8 @@
     <MESSAGE value="new demos and menu" />
     <MESSAGE value="sf__select multiple fix" />
     <MESSAGE value="sf__select multiple fix with overflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="sf__select multiple fix with overflow" />
+    <MESSAGE value="all inputs up to date" />
+    <MESSAGE value="new sprites demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="new sprites demo" />
   </component>
 </project>

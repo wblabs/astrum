@@ -324,7 +324,13 @@
     border-bottom: #cacaca 1px solid;
     border-top: #eeeeee 1px solid;
 }
-
+.hub-sp5sprite-demo {
+    padding: 8px 24px 0 0;
+}
+.hub__ol {
+    padding: 0;
+    margin: 0;
+}
 .hub__ul li {
     line-height: 1.5;
     padding: 4px 0;
@@ -340,15 +346,46 @@
 
 .hub__ol li {
     line-height: 1.5;
+    list-style: none;
+    counter-increment: item;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+    display: flex;
+    color: var(--color-text-grey);
+    font-size: var(--size-text-note);
+ }
+.hub__ol li:first-child {
+    border-top-left-radius: var(--gf);
+    border-top-right-radius: var(--gf);
 }
-
+.hub__ol li:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: var(--gf);
+    border-bottom-right-radius: var(--gf);
+}
+.hub__ol li:before {
+    content: counter(item) '.';
+    color: #9f9f9f;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 4px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 2rem;
+}
 .hub__ol li::marker {
     color: #989898;
     font-size: 1rem;
     padding: 4px 0;
-
+    margin-right: 4px;
 }
-
+.hub__ol .itext-16 {
+    padding: 4px 6px;
+}
+.hub__ol .itext-24 {
+    padding: 4px 6px;
+}
 .hub__ol--sprites li::marker {
     font-size: 0.7rem;
 }
@@ -395,11 +432,10 @@
     width: fit-content;
     /*display: flex;*/
     align-items: center;
-    gap: var(--gf);
     border: 1px solid #188bff;
     border-radius: 16px;
     display: grid;
-    grid-template-columns: 80px 1fr 1fr;
+    grid-template-columns: 80px 220px 1fr;
     overflow: hidden;
 }
 
@@ -427,6 +463,7 @@
 
 .hub-token-item > div:last-child {
     font-size: 0.8rem;
+    padding-right: var(--gap);
 }
 
 .hub-token-item > div:not(:last-child) {

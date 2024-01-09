@@ -1151,10 +1151,6 @@
                                 <input type="password" name="password" class="sf__input" placeholder="Пароль">
                             </div>
                             <div class="sf__line">
-                                <label for="url" class="sf__label">website</label>
-                                <input type="url" name="website" class="sf__input" id="url">
-                            </div>
-                            <div class="sf__line">
                                 <label for="cost" class="sf__label">number</label>
                                 <input type="number" name="cost" class="sf__input" id="cost">
                             </div>
@@ -1232,2028 +1228,2031 @@
                                 <input type="file" class="sf__input" id="file">
                             </div>
                         </div>
-                        </div>
-
-
                     </div>
+
+
                 </div>
 
-            </section>
-            <!-- /forms -->
 
-            <!--  UI Sizes  -->
-            <section class="hub__section sp-tab sp-tab-7">
-                <h1>
-                    UI Sizes
-                </h1>
-                <div class="hub-form-demo">
-                    <h3>
-                        Размеры кнопок
-                    </h3>
+    </section>
+    <!-- /forms -->
+
+    <!--  UI Sizes  -->
+    <section class="hub__section sp-tab sp-tab-7">
+        <h1>
+            UI Sizes
+        </h1>
+        <div class="hub-form-demo">
+            <h3>
+                Размеры кнопок
+            </h3>
+            <p>
+                все UI элементы по-умолчанию принимают размер указанный в переменной
+                <span class="hub__code">--ui-size: 36px;</span>
+            </p>
+            <div class="grid-hub hub__grid-border">
+                <div>
+
                     <p>
-                        все UI элементы по-умолчанию принимают размер указанный в переменной
-                        <span class="hub__code">--ui-size: 36px;</span>
+                        для изменения размера кнопки используйте клас
+                        <span class="hub__code">.btn .ui-s</span>
+                        <span class="hub__code">.btn .ui-l</span>
                     </p>
-                    <div class="grid-hub hub__grid-border">
-                        <div>
+                </div>
+                <div class="hub-example">
+                    <div class="btn-pan">
 
-                            <p>
-                                для изменения размера кнопки используйте клас
-                                <span class="hub__code">.btn .ui-s</span>
-                                <span class="hub__code">.btn .ui-l</span>
-                            </p>
-                        </div>
-                        <div class="hub-example">
-                            <div class="btn-pan">
-
-                                <button class="btn ui-s">
-                                    <svg>
-                                        <use href="img/sp5sprite.svg#check"></use>
-                                    </svg>
-                                    Small
-                                </button>
-                                <button class="btn">
-                                    <svg>
-                                        <use href="img/sp5sprite.svg#check"></use>
-                                    </svg>
-                                    Normal
-                                </button>
-                                <button class="btn ui-l">
-                                    <svg>
-                                        <use href="img/sp5sprite.svg#check"></use>
-                                    </svg>
-                                    Large
-                                </button>
-                            </div>
-                        </div>
+                        <button class="btn ui-s">
+                            <svg>
+                                <use href="img/sp5sprite.svg#check"></use>
+                            </svg>
+                            Small
+                        </button>
+                        <button class="btn">
+                            <svg>
+                                <use href="img/sp5sprite.svg#check"></use>
+                            </svg>
+                            Normal
+                        </button>
+                        <button class="btn ui-l">
+                            <svg>
+                                <use href="img/sp5sprite.svg#check"></use>
+                            </svg>
+                            Large
+                        </button>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="hub-form-demo">
+        <div class="hub-form-demo">
 
-                    <h3>Buttons</h3>
-                    <div class="hub-size-table hub-size-table--buttons">
-                        <div class="hub-size-table__header hub-size-table__header--start">
-                            <div style="align-self: end;">Button type</div>
+            <h3>Buttons</h3>
+            <div class="hub-size-table hub-size-table--buttons">
+                <div class="hub-size-table__header hub-size-table__header--start">
+                    <div style="align-self: end;">Button type</div>
 
-                            <div style="align-self: start;">UI size class</div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.btn</div>
-                            <div class="ca">auto width</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.btn + svg</div>
-                            <div class="ca">auto width</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.btn--outline</div>
-                            <div class="ca">auto width</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.btn--ghost</div>
-                            <div class="ca">auto width</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.btn--micro</div>
-                            <div class="ca">auto width</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.btn--ui</div>
-                            <div class="ca">auto <br> width</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-
-                        <!--                btn S size -->
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.ui-s</div>
-                                <div class="ca">24px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <a href="#" class="btn ui-s">Button</a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <a href="#" class="btn ui-s">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Save
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <a href="#" class="btn ui-s btn--outline">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                                Chancel
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <a href="#" class="btn ui-s btn--ghost">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                                Chancel
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <a href="#" class="btn btn--micro">
-                                Sort by name
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#chevron-down"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <a href="#" class="btn ui-s btn--ui">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <!--                /btn S size-->
-
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <div class="hub-size-table-line-box">
-                                <div class="cg fi">
-                                    (no class)
-                                </div>
-                                <div class="ca">36px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <a href="#" class="btn">Button</a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <a href="#" class="btn">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Save
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <a href="#" class="btn btn--outline">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                                Chancel
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <a href="#" class="btn btn--ghost">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                                Chancel
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <a href="#" class="btn btn--micro">
-                                Sort by name
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#chevron-down"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line">
-                            <a href="#" class="btn btn--ui">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.ui-l</div>
-                                <div class="ca">44px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <a href="#" class="btn ui-l">Button</a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <a href="#" class="btn ui-l">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Save
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <a href="#" class="btn ui-l btn--outline">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                                Chancel
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <a href="#" class="btn ui-l btn--ghost">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                                Chancel
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <a href="#" class="btn btn--micro">
-                                Sort by name
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#chevron-down"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <a href="#" class="btn ui-l btn--ui">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#x"></use>
-                                </svg>
-                            </a>
-                        </div>
-
-                    </div>
-
+                    <div style="align-self: start;">UI size class</div>
                 </div>
-                <div class="hub-form-demo">
-
-                    <h3>Inputs</h3>
-                    <div class="hub-size-table">
-                        <div class="hub-size-table__header hub-size-table__header--start">
-                            <div style="align-self: end;">width</div>
-
-                            <div style="align-self: start;">height</div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__input</div>
-                            <div class="ca">200px</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__input .sf__input--m</div>
-                            <div class="ca">168px</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__input .sf__input--s</div>
-                            <div class="ca">92px</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__input .sf__input--a</div>
-                            <div class="ca">auto (max 200px)</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.ui-s</div>
-                                <div class="ca">24px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <input type="text" placeholder="name" class="sf__input ui-s">
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <input type="text" placeholder="name" class="sf__input sf__input--m ui-s">
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <input type="text" placeholder="name" class="sf__input sf__input--s ui-s">
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <input type="text" placeholder="name" class="sf__input sf__input--a ui-s">
-                        </div>
-
-
-                        <div class="hub-size-table__line">
-                            <div class="hub-size-table-line-box">
-                                <div class="cg fi">(no class)</div>
-                                <div class="ca">36px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <input type="text" placeholder="name" class="sf__input ">
-                        </div>
-                        <div class="hub-size-table__line">
-                            <input type="text" placeholder="name" class="sf__input sf__input--m ">
-                        </div>
-                        <div class="hub-size-table__line">
-                            <input type="text" placeholder="name" class="sf__input sf__input--s ">
-                        </div>
-                        <div class="hub-size-table__line">
-                            <input type="text" placeholder="name" class="sf__input sf__input--a ">
-                        </div>
-
-
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.ui-l</div>
-                                <div class="ca">44px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <input type="text" placeholder="name" class="sf__input ui-l">
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <input type="text" placeholder="name" class="sf__input sf__input--m ui-l">
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <input type="text" placeholder="name" class="sf__input sf__input--s ui-l">
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <input type="text" placeholder="name" class="sf__input sf__input--a ui-l">
-                        </div>
-                    </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.btn</div>
+                    <div class="ca">auto width</div>
+                    <div class="hub-size-arrow-hor"></div>
                 </div>
-                <div class="hub-form-demo">
-
-                    <h3>Selects</h3>
-                    <div class="hub-size-table">
-                        <div class="hub-size-table__header hub-size-table__header--start">
-                            <div style="align-self: end;">width</div>
-                            <div style="align-self: start;">height</div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__select</div>
-                            <div class="ca">200px</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__select .sf__select--m</div>
-                            <div class="ca">168px</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__select .sf__select--s</div>
-                            <div class="ca">92px</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.sf__select <br> .sf__select--a</div>
-                            <div class="ca">auto <br> (max 200px)</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.ui-s</div>
-                                <div class="ca">24px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <select type="text" placeholder="name" class="sf__select ui-s">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <select type="text" placeholder="name" class="sf__select sf__select--m ui-s">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <select type="text" placeholder="name" class="sf__select sf__select--s ui-s">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--s">
-                            <select type="text" placeholder="name" class="sf__select sf__select--a ui-s">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-
-                        <div class="hub-size-table__line">
-                            <div class="hub-size-table-line-box">
-                                <div class="cg fi">(no class)</div>
-                                <div class="ca">36px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <select type="text" placeholder="name" class="sf__select ">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <select type="text" placeholder="name" class="sf__select sf__select--m ">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <select type="text" placeholder="name" class="sf__select sf__select--s ">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <select type="text" placeholder="name" class="sf__select sf__select--a ">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-
-
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.ui-l</div>
-                                <div class="ca">44px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <select type="text" placeholder="name" class="sf__select ui-l">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <select type="text" placeholder="name" class="sf__select sf__select--m ui-l">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <select type="text" placeholder="name" class="sf__select sf__select--s ui-l">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                        <div class="hub-size-table__line hub-size-table__line--l">
-                            <select type="text" placeholder="name" class="sf__select sf__select--a ui-l">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-                    </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.btn + svg</div>
+                    <div class="ca">auto width</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.btn--outline</div>
+                    <div class="ca">auto width</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.btn--ghost</div>
+                    <div class="ca">auto width</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.btn--micro</div>
+                    <div class="ca">auto width</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.btn--ui</div>
+                    <div class="ca">auto <br> width</div>
+                    <div class="hub-size-arrow-hor"></div>
                 </div>
 
-                <div class="hub-form-demo">
-
-                    <h3>Full sizes</h3>
-
-                    <div class="hub-size-table hub-size-table--full-size">
-                        <div class="hub-size-table__header hub-size-table__header--start">
-                            <div style="align-self: end;">width</div>
-
-                            <div style="align-self: start;">input type</div>
-                        </div>
-                        <div class="hub-size-table__header">
-                            <div class="fb">.fw</div>
-                            <div class="ca">100% (full width)</div>
-                            <div class="hub-size-arrow-hor"></div>
-                        </div>
-
-                        <div class="hub-size-table__line">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.sf__input .fw</div>
-                                <div class="ca">36px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <input type="text" class="sf__input fw" placeholder="Name">
-                        </div>
-
-                        <div class="hub-size-table__line">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.sf__select .fw</div>
-                                <div class="ca">36px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <select type="text" placeholder="name" class="sf__select fw">
-                                <option value="mercury">Mercury</option>
-                                <option value="venus">Venus</option>
-                                <option value="earth">Earth</option>
-                                <option value="mars">Mars</option>
-                            </select>
-                        </div>
-
-                        <div class="hub-size-table__line">
-                            <div class="hub-size-table-line-box">
-                                <div class="fb">.btn .fw</div>
-                                <div class="ca">36px</div>
-                                <div class="hub-size-arrow-vert"></div>
-                            </div>
-                        </div>
-                        <div class="hub-size-table__line">
-                            <a href="#" class="btn fw">
-                                <svg>
-                                    <use href="../img/sp5sprite.svg#check"></use>
-                                </svg>
-                                Save
-                            </a>
-                        </div>
-
+                <!--                btn S size -->
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.ui-s</div>
+                        <div class="ca">24px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
                 </div>
-            </section>
-            <!--  /UI Sizes  -->
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <a href="#" class="btn ui-s">Button</a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <a href="#" class="btn ui-s">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#check"></use>
+                        </svg>
+                        Save
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <a href="#" class="btn ui-s btn--outline">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                        Chancel
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <a href="#" class="btn ui-s btn--ghost">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                        Chancel
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <a href="#" class="btn btn--micro">
+                        Sort by name
+                        <svg>
+                            <use href="../img/sp5sprite.svg#chevron-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <a href="#" class="btn ui-s btn--ui">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!--                /btn S size-->
 
-            <!-- Tokens -->
-            <section class="hub__section sp-tab sp-tab-6">
-                <h1>CSS Tokens</h1>
-                <div class="hub-form-demo">
-                    <h5>ui sizes</h5>
-                    <div class="hub-token-item">
-                        <div>.ui-s</div>
-                        <div>height: var(--ui-size-s);</div>
-                        <div>height of ui element, small size</div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <div class="hub-size-table-line-box">
+                        <div class="cg fi">
+                            (no class)
+                        </div>
+                        <div class="ca">36px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
-                    <div class="hub-token-item">
-                        <div>.ui-l</div>
-                        <div>height: var(--ui-size-l);</div>
-                        <div>height of ui element, large size</div>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <a href="#" class="btn">Button</a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <a href="#" class="btn">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#check"></use>
+                        </svg>
+                        Save
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <a href="#" class="btn btn--outline">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                        Chancel
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <a href="#" class="btn btn--ghost">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                        Chancel
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <a href="#" class="btn btn--micro">
+                        Sort by name
+                        <svg>
+                            <use href="../img/sp5sprite.svg#chevron-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line">
+                    <a href="#" class="btn btn--ui">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.ui-l</div>
+                        <div class="ca">44px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <a href="#" class="btn ui-l">Button</a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <a href="#" class="btn ui-l">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#check"></use>
+                        </svg>
+                        Save
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <a href="#" class="btn ui-l btn--outline">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                        Chancel
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <a href="#" class="btn ui-l btn--ghost">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                        Chancel
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <a href="#" class="btn btn--micro">
+                        Sort by name
+                        <svg>
+                            <use href="../img/sp5sprite.svg#chevron-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <a href="#" class="btn ui-l btn--ui">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#x"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="hub-form-demo">
+
+            <h3>Inputs</h3>
+            <div class="hub-size-table">
+                <div class="hub-size-table__header hub-size-table__header--start">
+                    <div style="align-self: end;">width</div>
+
+                    <div style="align-self: start;">height</div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__input</div>
+                    <div class="ca">200px</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__input .sf__input--m</div>
+                    <div class="ca">168px</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__input .sf__input--s</div>
+                    <div class="ca">92px</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__input .sf__input--a</div>
+                    <div class="ca">auto (max 200px)</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.ui-s</div>
+                        <div class="ca">24px</div>
+                        <div class="hub-size-arrow-vert"></div>
+                    </div>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <input type="text" placeholder="name" class="sf__input ui-s">
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <input type="text" placeholder="name" class="sf__input sf__input--m ui-s">
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <input type="text" placeholder="name" class="sf__input sf__input--s ui-s">
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <input type="text" placeholder="name" class="sf__input sf__input--a ui-s">
                 </div>
 
 
-                <div class="hub-form-demo">
-                    <h5>width</h5>
-
-                    <div class="hub-token-item">
-                        <div>.fw</div>
-                        <div>width: 100%;</div>
-                        <div>sets full width</div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .wa
-                        </div>
-                        <div>width: auto;</div>
-                        <div>
-                            <div class="fb">(width auto)</div>
-                            <div class="fi">sets auto width</div>
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.wid</div>
-                        <div>
-                            width: 100%;
-                            max-width: var(--wid);
-                            min-width: 748px;
-                            margin: 0 auto;
-                        </div>
-                        <div>sets element in center of the screen and maximum width from var(--wid)</div>
+                <div class="hub-size-table__line">
+                    <div class="hub-size-table-line-box">
+                        <div class="cg fi">(no class)</div>
+                        <div class="ca">36px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
                 </div>
-
-                <div class="hub-form-demo">
-                    <h5>Font & Alignment</h5>
-                    <div class="hub-token-item">
-                        <div>
-                            .wf
-                        </div>
-                        <div>
-                            font-family: var(--wf);
-                        </div>
-                        <div>
-                            (primary web font) <br>
-                            sets font family of web font
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .wf2
-                        </div>
-                        <div>
-                            font-family: var(--wf2);
-                        </div>
-                        <div>
-                            (secondary web font) <br>
-                            sets font family of secondary web font
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .tac, .cimg
-                        </div>
-                        <div>text-align: center;</div>
-                        <div>
-                            (text align center)
-                            <br>
-                            Set the text center alignment
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .tal
-                        </div>
-                        <div>text-align: left;</div>
-                        <div>
-                            (text align left) <br>
-                            Set the text left alignment
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .tar
-                        </div>
-                        <div>text-align: right;</div>
-                        <div>
-                            (text align right)
-                            <br>
-                            Set the text right alignment
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .fb
-                        </div>
-                        <div>font-weight: bold;</div>
-                        <div>
-                            (font bold)
-                            <br>
-                            sets font weight to bold
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>
-                            .fi
-                        </div>
-                        <div>font-style: italic;</div>
-                        <div>
-                            (font italic)
-                            <br>
-                            sets font style to italic
-                        </div>
-                    </div>
+                <div class="hub-size-table__line">
+                    <input type="text" placeholder="name" class="sf__input ">
                 </div>
-                <div class="hub-form-demo">
-
-                    <h5>Color</h5>
-
-                    <div class="hub-token-item">
-                        <div>
-                            .ca
-                        </div>
-                        <div>color: var(--color-accent);</div>
-                        <div>
-                            (color accent)
-                            <br>
-                            sets accent color
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.cp
-                        </div>
-                        <div>color: var(--color-primary);</div>
-                        <div>
-                            (color primary)
-                            <br>
-                            sets primary color
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.cg
-                        </div>
-                        <div>color: var(--color-text-grey);</div>
-                        <div>
-                            (color grey)
-                            <br>
-                            sets text grey color
-                        </div>
-                    </div>
-                    <div class="hub-token-item">
-                        <div>.clg
-                        </div>
-                        <div>color: var(--ui-color-text-light-grey);</div>
-                        <div>
-                            (color light grey)
-                            <br>
-                            sets text light grey color
-                        </div>
-
-                    </div>
+                <div class="hub-size-table__line">
+                    <input type="text" placeholder="name" class="sf__input sf__input--m ">
+                </div>
+                <div class="hub-size-table__line">
+                    <input type="text" placeholder="name" class="sf__input sf__input--s ">
+                </div>
+                <div class="hub-size-table__line">
+                    <input type="text" placeholder="name" class="sf__input sf__input--a ">
                 </div>
 
 
-                <div class="hub-form-demo">
-
-                    <h5>Layout</h5>
-
-                    <div class="hub-token-item">
-                        <div>.dn</div>
-                        <div>display: none;</div>
-                        <div>sets display none</div>
-                    </div>
-
-                    <div class="hub-token-item">
-                        <div>.hom</div>
-                        <div>display: block; <br>
-                            @media screen and (max-width: 768px) {
-                            .hom {
-                            display: none;
-                            }
-                            }
-                        </div>
-                        <div>hides block on mobile / show block on Desktop</div>
-                    </div>
-
-                    <div class="hub-token-item">
-                        <div>.som</div>
-                        <div>display: none; <br>
-                            @media screen and (max-width: 768px) {
-                            .som {
-                            display: block;
-                            }
-                            }
-                        </div>
-                        <div>shows block on mobile / hides block on Desktop</div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.ui-l</div>
+                        <div class="ca">44px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
                 </div>
-            </section>
-            <!-- /Tokens -->
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <input type="text" placeholder="name" class="sf__input ui-l">
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <input type="text" placeholder="name" class="sf__input sf__input--m ui-l">
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <input type="text" placeholder="name" class="sf__input sf__input--s ui-l">
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <input type="text" placeholder="name" class="sf__input sf__input--a ui-l">
+                </div>
+            </div>
+        </div>
+        <div class="hub-form-demo">
 
-            <!-- Sprites -->
-            <section class="hub__section sp-tab sp-tab-3">
-                <!--  SP5 sprite demo  -->
-                <h2>svg sprite demo</h2>
+            <h3>Selects</h3>
+            <div class="hub-size-table">
+                <div class="hub-size-table__header hub-size-table__header--start">
+                    <div style="align-self: end;">width</div>
+                    <div style="align-self: start;">height</div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__select</div>
+                    <div class="ca">200px</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__select .sf__select--m</div>
+                    <div class="ca">168px</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__select .sf__select--s</div>
+                    <div class="ca">92px</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.sf__select <br> .sf__select--a</div>
+                    <div class="ca">auto <br> (max 200px)</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
 
-                <div class="grid-c-3">
-
-                    <div>
-                        <h3>sp5sprite.svg contains:</h3>
-                        <div class="sp5sprite-demo">
-                            <ol class="hub__ol hub__ol--sprites">
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#file-plus"></use>
-                                        </svg>
-                                        file-plus
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#menu"></use>
-                                        </svg>
-                                        menu
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#chevron-right"></use>
-                                        </svg>
-                                        chevron-right
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#chevron-down"></use>
-                                        </svg>
-                                        chevron-down
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#chevron-left"></use>
-                                        </svg>
-                                        chevron-left
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#plus"></use>
-                                        </svg>
-                                        plus
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#minus"></use>
-                                        </svg>
-                                        minus
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#check"></use>
-                                        </svg>
-                                        check
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#save"></use>
-                                        </svg>
-                                        save
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#refresh-cw"></use>
-                                        </svg>
-                                        refresh-cw
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#more-horizontal"></use>
-                                        </svg>
-                                        more-horizontal
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#more-vertical"></use>
-                                        </svg>
-                                        more-vertical
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#x"></use>
-                                        </svg>
-                                        x
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#phone-call"></use>
-                                        </svg>
-                                        phone-call
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#mail"></use>
-                                        </svg>
-                                        mail
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#log-in"></use>
-                                        </svg>
-                                        log-in
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#log-out"></use>
-                                        </svg>
-                                        log-out
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#bell"></use>
-                                        </svg>
-                                        bell
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#home"></use>
-                                        </svg>
-                                        home
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#check-square"></use>
-                                        </svg>
-                                        check-square
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#settings"></use>
-                                        </svg>
-                                        settings
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#round-user"></use>
-                                        </svg>
-                                        round-user
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#edit"></use>
-                                        </svg>
-                                        edit
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#edit-2"></use>
-                                        </svg>
-                                        edit-2
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#book"></use>
-                                        </svg>
-                                        book
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#external-link"></use>
-                                        </svg>
-                                        external-link
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#plugin"></use>
-                                        </svg>
-                                        plugin
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#automaton"></use>
-                                        </svg>
-                                        automaton
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#grid"></use>
-                                        </svg>
-                                        grid
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#info"></use>
-                                        </svg>
-                                        info
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#alert-triangle"></use>
-                                        </svg>
-                                        alert-triangle
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#slash"></use>
-                                        </svg>
-                                        slash
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#file-text"></use>
-                                        </svg>
-                                        file-text
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#send"></use>
-                                        </svg>
-                                        send
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#heart"></use>
-                                        </svg>
-                                        heart
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#printer"></use>
-                                        </svg>
-                                        printer
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#share-2"></use>
-                                        </svg>
-                                        share-2
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#filter"></use>
-                                        </svg>
-                                        filter
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#sliders"></use>
-                                        </svg>
-                                        sliders
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spif">
-                                            <use href="img/sp5sprite.svg#triangle"></use>
-                                        </svg>
-                                        triangle
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#tables"></use>
-                                        </svg>
-                                        tables
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spif">
-                                            <use href="img/sp5sprite.svg#user"></use>
-                                        </svg>
-                                        user
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spif">
-                                            <use href="img/sp5sprite.svg#plus-thin"></use>
-                                        </svg>
-                                        plus-thin
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spif">
-                                            <use href="img/sp5sprite.svg#add"></use>
-                                        </svg>
-                                        add
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#search"></use>
-                                        </svg>
-                                        search
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#trash-2"></use>
-                                        </svg>
-                                        trash-2
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#clock"></use>
-                                        </svg>
-                                        clock
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#folder"></use>
-                                        </svg>
-                                        folder
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#download"></use>
-                                        </svg>
-                                        download
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#eye"></use>
-                                        </svg>
-                                        eye
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#eye-off"></use>
-                                        </svg>
-                                        eye-off
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#sort"></use>
-                                        </svg>
-                                        sort
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#draggable"></use>
-                                        </svg>
-                                        draggable
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#rotate-ccw"></use>
-                                        </svg>
-                                        rotate-ccw
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#copy"></use>
-                                        </svg>
-                                        copy
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#shipping-cart"></use>
-                                        </svg>
-                                        shipping-cart
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#gift"></use>
-                                        </svg>
-                                        gift
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#calendar"></use>
-                                        </svg>
-                                        calendar
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#arrow-right"></use>
-                                        </svg>
-                                        arrow-right
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spif">
-                                            <use href="img/sp5sprite.svg#file-pdf"></use>
-                                        </svg>
-                                        file-pdf
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#play-circle"></use>
-                                        </svg>
-                                        play-circle
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#list"></use>
-                                        </svg>
-                                        list
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#sort-down"></use>
-                                        </svg>
-                                        sort-down
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="itext-16">
-                                        <svg class="spis">
-                                            <use href="img/sp5sprite.svg#sort-up"></use>
-                                        </svg>
-                                        sort-up
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.ui-s</div>
+                        <div class="ca">24px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <select type="text" placeholder="name" class="sf__select ui-s">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <select type="text" placeholder="name" class="sf__select sf__select--m ui-s">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <select type="text" placeholder="name" class="sf__select sf__select--s ui-s">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--s">
+                    <select type="text" placeholder="name" class="sf__select sf__select--a ui-s">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
 
-                    <div>
-                        <h3>sp5rte.svg contains:</h3>
-                        <ol class="hub__ol hub__ol--sprites">
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#a"></use>
-                                    </svg>
-                                    a
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#b"></use>
-                                    </svg>
-                                    b
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#i"></use>
-                                    </svg>
-                                    i
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#u"></use>
-                                    </svg>
-                                    u
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#s"></use>
-                                    </svg>
-                                    s
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#h1"></use>
-                                    </svg>
-                                    h1
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#h2"></use>
-                                    </svg>
-                                    h2
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#h3"></use>
-                                    </svg>
-                                    h3
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#ol"></use>
-                                    </svg>
-                                    ol
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#ul"></use>
-                                    </svg>
-                                    ul
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#img"></use>
-                                    </svg>
-                                    img
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#table"></use>
-                                    </svg>
-                                    table
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#erase"></use>
-                                    </svg>
-                                    erase
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#code"></use>
-                                    </svg>
-                                    code
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#q"></use>
-                                    </svg>
-                                    q
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#c-2"></use>
-                                    </svg>
-                                    c-2
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#c-3"></use>
-                                    </svg>
-                                    c-3
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#limg"></use>
-                                    </svg>
-                                    limg
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-24">
-                                    <svg class="spif">
-                                        <use href="img/sp5rte.svg#rimg"></use>
-                                    </svg>
-                                    rimg
-                                </div>
-                            </li>
-                        </ol>
+                <div class="hub-size-table__line">
+                    <div class="hub-size-table-line-box">
+                        <div class="cg fi">(no class)</div>
+                        <div class="ca">36px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
-                    <div>
-                        <h3>sp5share.svg contains:</h3>
+                </div>
+                <div class="hub-size-table__line">
+                    <select type="text" placeholder="name" class="sf__select ">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line">
+                    <select type="text" placeholder="name" class="sf__select sf__select--m ">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line">
+                    <select type="text" placeholder="name" class="sf__select sf__select--s ">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line">
+                    <select type="text" placeholder="name" class="sf__select sf__select--a ">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
 
-                        <ol class="hub__ol hub__ol--sprites">
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#whatsapp"></use>
-                                    </svg>
-                                    whatsapp
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#telegram"></use>
-                                    </svg>
-                                    telegram
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#facebook"></use>
-                                    </svg>
-                                    facebook
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#instagram"></use>
-                                    </svg>
-                                    instagram
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#youtube"></use>
-                                    </svg>
-                                    youtube
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#vk"></use>
-                                    </svg>
-                                    vk
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#odnoklassniki"></use>
-                                    </svg>
-                                    odnoklassniki
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#viber"></use>
-                                    </svg>
-                                    viber
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#zen"></use>
-                                    </svg>
-                                    zen
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#rutube"></use>
-                                    </svg>
-                                    rutube
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#twitter"></use>
-                                    </svg>
-                                    twitter
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#x"></use>
-                                    </svg>
-                                    x
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#tiktok"></use>
-                                    </svg>
-                                    tiktok
-                                </div>
-                            </li>
-                            <li>
-                                <div class="itext-16">
-                                    <svg class="spif">
-                                        <use href="img/sp5share.svg#web"></use>
-                                    </svg>
-                                    web
-                                </div>
-                            </li>
-                        </ol>
+
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.ui-l</div>
+                        <div class="ca">44px</div>
+                        <div class="hub-size-arrow-vert"></div>
                     </div>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <select type="text" placeholder="name" class="sf__select ui-l">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <select type="text" placeholder="name" class="sf__select sf__select--m ui-l">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <select type="text" placeholder="name" class="sf__select sf__select--s ui-l">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+                <div class="hub-size-table__line hub-size-table__line--l">
+                    <select type="text" placeholder="name" class="sf__select sf__select--a ui-l">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
-                    <div class="test">
-                        <h3>itext + sp5sprite</h3>
-                        <span class="itext-16 test">
+        <div class="hub-form-demo">
+
+            <h3>Full sizes</h3>
+
+            <div class="hub-size-table hub-size-table--full-size">
+                <div class="hub-size-table__header hub-size-table__header--start">
+                    <div style="align-self: end;">width</div>
+
+                    <div style="align-self: start;">input type</div>
+                </div>
+                <div class="hub-size-table__header">
+                    <div class="fb">.fw</div>
+                    <div class="ca">100% (full width)</div>
+                    <div class="hub-size-arrow-hor"></div>
+                </div>
+
+                <div class="hub-size-table__line">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.sf__input .fw</div>
+                        <div class="ca">36px</div>
+                        <div class="hub-size-arrow-vert"></div>
+                    </div>
+                </div>
+                <div class="hub-size-table__line">
+                    <input type="text" class="sf__input fw" placeholder="Name">
+                </div>
+
+                <div class="hub-size-table__line">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.sf__select .fw</div>
+                        <div class="ca">36px</div>
+                        <div class="hub-size-arrow-vert"></div>
+                    </div>
+                </div>
+                <div class="hub-size-table__line">
+                    <select type="text" placeholder="name" class="sf__select fw">
+                        <option value="mercury">Mercury</option>
+                        <option value="venus">Venus</option>
+                        <option value="earth">Earth</option>
+                        <option value="mars">Mars</option>
+                    </select>
+                </div>
+
+                <div class="hub-size-table__line">
+                    <div class="hub-size-table-line-box">
+                        <div class="fb">.btn .fw</div>
+                        <div class="ca">36px</div>
+                        <div class="hub-size-arrow-vert"></div>
+                    </div>
+                </div>
+                <div class="hub-size-table__line">
+                    <a href="#" class="btn fw">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#check"></use>
+                        </svg>
+                        Save
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  /UI Sizes  -->
+
+    <!-- Tokens -->
+    <section class="hub__section sp-tab sp-tab-6">
+        <h1>CSS Tokens</h1>
+        <div class="hub-form-demo">
+            <h5>ui sizes</h5>
+            <div class="hub-token-item">
+                <div>.ui-s</div>
+                <div>height: var(--ui-size-s);</div>
+                <div>height of ui element, small size</div>
+            </div>
+            <div class="hub-token-item">
+                <div>.ui-l</div>
+                <div>height: var(--ui-size-l);</div>
+                <div>height of ui element, large size</div>
+            </div>
+        </div>
+
+
+        <div class="hub-form-demo">
+            <h5>width</h5>
+
+            <div class="hub-token-item">
+                <div>.fw</div>
+                <div>width: 100%;</div>
+                <div>sets full width</div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .wa
+                </div>
+                <div>width: auto;</div>
+                <div>
+                    <div class="fb">(width auto)</div>
+                    <div class="fi">sets auto width</div>
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>.wid</div>
+                <div>
+                    width: 100%;
+                    max-width: var(--wid);
+                    min-width: 748px;
+                    margin: 0 auto;
+                </div>
+                <div>sets element in center of the screen and maximum width from var(--wid)</div>
+            </div>
+        </div>
+
+        <div class="hub-form-demo">
+            <h5>Font & Alignment</h5>
+            <div class="hub-token-item">
+                <div>
+                    .wf
+                </div>
+                <div>
+                    font-family: var(--wf);
+                </div>
+                <div>
+                    (primary web font) <br>
+                    sets font family of web font
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .wf2
+                </div>
+                <div>
+                    font-family: var(--wf2);
+                </div>
+                <div>
+                    (secondary web font) <br>
+                    sets font family of secondary web font
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .tac, .cimg
+                </div>
+                <div>text-align: center;</div>
+                <div>
+                    (text align center)
+                    <br>
+                    Set the text center alignment
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .tal
+                </div>
+                <div>text-align: left;</div>
+                <div>
+                    (text align left) <br>
+                    Set the text left alignment
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .tar
+                </div>
+                <div>text-align: right;</div>
+                <div>
+                    (text align right)
+                    <br>
+                    Set the text right alignment
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .fb
+                </div>
+                <div>font-weight: bold;</div>
+                <div>
+                    (font bold)
+                    <br>
+                    sets font weight to bold
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>
+                    .fi
+                </div>
+                <div>font-style: italic;</div>
+                <div>
+                    (font italic)
+                    <br>
+                    sets font style to italic
+                </div>
+            </div>
+        </div>
+        <div class="hub-form-demo">
+
+            <h5>Color</h5>
+
+            <div class="hub-token-item">
+                <div>
+                    .ca
+                </div>
+                <div>color: var(--color-accent);</div>
+                <div>
+                    (color accent)
+                    <br>
+                    sets accent color
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>.cp
+                </div>
+                <div>color: var(--color-primary);</div>
+                <div>
+                    (color primary)
+                    <br>
+                    sets primary color
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>.cg
+                </div>
+                <div>color: var(--color-text-grey);</div>
+                <div>
+                    (color grey)
+                    <br>
+                    sets text grey color
+                </div>
+            </div>
+            <div class="hub-token-item">
+                <div>.clg
+                </div>
+                <div>color: var(--ui-color-text-light-grey);</div>
+                <div>
+                    (color light grey)
+                    <br>
+                    sets text light grey color
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="hub-form-demo">
+
+            <h5>Layout</h5>
+
+            <div class="hub-token-item">
+                <div>.dn</div>
+                <div>display: none;</div>
+                <div>sets display none</div>
+            </div>
+
+            <div class="hub-token-item">
+                <div>.hom</div>
+                <div>display: block; <br>
+                    @media screen and (max-width: 768px) {
+                    .hom {
+                    display: none;
+                    }
+                    }
+                </div>
+                <div>hides block on mobile / show block on Desktop</div>
+            </div>
+
+            <div class="hub-token-item">
+                <div>.som</div>
+                <div>display: none; <br>
+                    @media screen and (max-width: 768px) {
+                    .som {
+                    display: block;
+                    }
+                    }
+                </div>
+                <div>shows block on mobile / hides block on Desktop</div>
+            </div>
+        </div>
+    </section>
+    <!-- /Tokens -->
+
+    <!-- Sprites -->
+    <section class="hub__section sp-tab sp-tab-3">
+        <!--  SP5 sprite demo  -->
+        <h1>SVG sprites demo</h1>
+
+        <div class="grid-c-3">
+
+            <div>
+                <h4>sp5sprite.svg:</h4>
+                <div class="hub-sp5sprite-demo">
+                    <ol class="hub__ol hub__ol--sprites">
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#file-plus"></use>
+                                </svg>
+                                file-plus
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#menu"></use>
+                                </svg>
+                                menu
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#chevron-right"></use>
+                                </svg>
+                                chevron-right
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#chevron-down"></use>
+                                </svg>
+                                chevron-down
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#chevron-left"></use>
+                                </svg>
+                                chevron-left
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#plus"></use>
+                                </svg>
+                                plus
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#minus"></use>
+                                </svg>
+                                minus
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#check"></use>
+                                </svg>
+                                check
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#save"></use>
+                                </svg>
+                                save
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#refresh-cw"></use>
+                                </svg>
+                                refresh-cw
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#more-horizontal"></use>
+                                </svg>
+                                more-horizontal
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#more-vertical"></use>
+                                </svg>
+                                more-vertical
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#x"></use>
+                                </svg>
+                                x
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#phone-call"></use>
+                                </svg>
+                                phone-call
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#mail"></use>
+                                </svg>
+                                mail
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#log-in"></use>
+                                </svg>
+                                log-in
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#log-out"></use>
+                                </svg>
+                                log-out
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#bell"></use>
+                                </svg>
+                                bell
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#home"></use>
+                                </svg>
+                                home
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#check-square"></use>
+                                </svg>
+                                check-square
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#settings"></use>
+                                </svg>
+                                settings
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#round-user"></use>
+                                </svg>
+                                round-user
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#edit"></use>
+                                </svg>
+                                edit
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#edit-2"></use>
+                                </svg>
+                                edit-2
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#book"></use>
+                                </svg>
+                                book
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#external-link"></use>
+                                </svg>
+                                external-link
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#plugin"></use>
+                                </svg>
+                                plugin
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#automaton"></use>
+                                </svg>
+                                automaton
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#grid"></use>
+                                </svg>
+                                grid
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#info"></use>
+                                </svg>
+                                info
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#alert-triangle"></use>
+                                </svg>
+                                alert-triangle
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#slash"></use>
+                                </svg>
+                                slash
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#file-text"></use>
+                                </svg>
+                                file-text
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#send"></use>
+                                </svg>
+                                send
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#heart"></use>
+                                </svg>
+                                heart
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#printer"></use>
+                                </svg>
+                                printer
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#share-2"></use>
+                                </svg>
+                                share-2
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#filter"></use>
+                                </svg>
+                                filter
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#sliders"></use>
+                                </svg>
+                                sliders
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5sprite.svg#triangle"></use>
+                                </svg>
+                                triangle
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#tables"></use>
+                                </svg>
+                                tables
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5sprite.svg#user"></use>
+                                </svg>
+                                user
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5sprite.svg#plus-thin"></use>
+                                </svg>
+                                plus-thin
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5sprite.svg#add"></use>
+                                </svg>
+                                add
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#search"></use>
+                                </svg>
+                                search
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#trash-2"></use>
+                                </svg>
+                                trash-2
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#clock"></use>
+                                </svg>
+                                clock
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#folder"></use>
+                                </svg>
+                                folder
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#download"></use>
+                                </svg>
+                                download
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#eye"></use>
+                                </svg>
+                                eye
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#eye-off"></use>
+                                </svg>
+                                eye-off
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#sort"></use>
+                                </svg>
+                                sort
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#draggable"></use>
+                                </svg>
+                                draggable
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#rotate-ccw"></use>
+                                </svg>
+                                rotate-ccw
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#copy"></use>
+                                </svg>
+                                copy
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#shipping-cart"></use>
+                                </svg>
+                                shipping-cart
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#gift"></use>
+                                </svg>
+                                gift
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#calendar"></use>
+                                </svg>
+                                calendar
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#arrow-right"></use>
+                                </svg>
+                                arrow-right
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5sprite.svg#file-pdf"></use>
+                                </svg>
+                                file-pdf
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#play-circle"></use>
+                                </svg>
+                                play-circle
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#list"></use>
+                                </svg>
+                                list
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#sort-down"></use>
+                                </svg>
+                                sort-down
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spis">
+                                    <use href="img/sp5sprite.svg#sort-up"></use>
+                                </svg>
+                                sort-up
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div>
+                <h4>sp5rte.svg:</h4>
+                <div class="hub-sp5sprite-demo">
+                    <ol class="hub__ol hub__ol--sprites">
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#a"></use>
+                                </svg>
+                                a
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#b"></use>
+                                </svg>
+                                b
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#i"></use>
+                                </svg>
+                                i
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#u"></use>
+                                </svg>
+                                u
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#s"></use>
+                                </svg>
+                                s
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#h1"></use>
+                                </svg>
+                                h1
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#h2"></use>
+                                </svg>
+                                h2
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#h3"></use>
+                                </svg>
+                                h3
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#ol"></use>
+                                </svg>
+                                ol
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#ul"></use>
+                                </svg>
+                                ul
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#img"></use>
+                                </svg>
+                                img
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#table"></use>
+                                </svg>
+                                table
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#erase"></use>
+                                </svg>
+                                erase
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#code"></use>
+                                </svg>
+                                code
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#q"></use>
+                                </svg>
+                                q
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#c-2"></use>
+                                </svg>
+                                c-2
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#c-3"></use>
+                                </svg>
+                                c-3
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#limg"></use>
+                                </svg>
+                                limg
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-24">
+                                <svg class="spif">
+                                    <use href="img/sp5rte.svg#rimg"></use>
+                                </svg>
+                                rimg
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <h4>sp5share.svg:</h4>
+                <div class="hub-sp5sprite-demo">
+                    <ol class="hub__ol hub__ol--sprites">
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#whatsapp"></use>
+                                </svg>
+                                whatsapp
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#telegram"></use>
+                                </svg>
+                                telegram
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#facebook"></use>
+                                </svg>
+                                facebook
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#instagram"></use>
+                                </svg>
+                                instagram
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#youtube"></use>
+                                </svg>
+                                youtube
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#vk"></use>
+                                </svg>
+                                vk
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#odnoklassniki"></use>
+                                </svg>
+                                odnoklassniki
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#viber"></use>
+                                </svg>
+                                viber
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#zen"></use>
+                                </svg>
+                                zen
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#rutube"></use>
+                                </svg>
+                                rutube
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#twitter"></use>
+                                </svg>
+                                twitter
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#x"></use>
+                                </svg>
+                                x
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#tiktok"></use>
+                                </svg>
+                                tiktok
+                            </div>
+                        </li>
+                        <li>
+                            <div class="itext-16">
+                                <svg class="spif">
+                                    <use href="img/sp5share.svg#web"></use>
+                                </svg>
+                                web
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="test">
+                <h3>itext + sp5sprite</h3>
+                <span class="itext-16 test">
                             <svg class="spis">
                                 <use href="img/sp5sprite.svg#plus"></use>
                             </svg>
                             itext-16
                         </span>
-                        <span class="itext-24 test">
+                <span class="itext-24 test">
                             <svg class="spis">
                                 <use href="img/sp5sprite.svg#plus"></use>
                             </svg>
                             itext-24
                         </span>
-                        <span class="itext-32 test">
+                <span class="itext-32 test">
                             <svg class="spis">
                                 <use href="img/sp5sprite.svg#plus"></use>
                             </svg>
                             itext-32
                         </span>
-                        <span class="itext-40 test">
+                <span class="itext-40 test">
                             <svg class="spis">
                                 <use href="img/sp5sprite.svg#plus"></use>
                             </svg>
                             itext-40
                         </span>
-                        <span class="itext-48 test">
+                <span class="itext-48 test">
                             <svg class="spis">
                                 <use href="img/sp5sprite.svg#plus"></use>
                             </svg>
                             itext-48
                         </span>
+            </div>
+
+            <div>
+                <h3>sprites use</h3>
+                <p>
+                    изображения назначаются через <span class="hub__tag">use</span> из svg файла со всеми
+                    спрайтами с указанием <span class="hub__code">id</span> иконки
+                </p>
+
+                <code class="hub__pre-code">
+                    &lt;svg class="spis-32 spif"&gt;
+                    &lt;use href="img/sp5sprite.svg#more-horizontal"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                </code>
+
+                <p>
+                    Результат:
+                    <svg class="spis-32">
+                        <use href="img/sp5sprite.svg#more-horizontal"></use>
+                    </svg>
+
+                </p>
+            </div>
+
+
+        </div>
+        <!-- /SP5 sprite demo  -->
+    </section>
+    <!-- /Sprites -->
+
+    <!-- Layout -->
+    <section class="hub__section sp-tab sp-tab-4">
+        <main class="main wid">
+            <h1>
+                Наш каталог
+            </h1>
+            <div class="grid-a240">
+
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+                            <div class="label label--new">
+                                НОВИНКА
+                            </div>
+                        </div>
+                        <a href="#">
+                            <img alt="Альбит очищенный" class="pcard__img"
+                                 src="demo/holo/holo-43.png">
+                        </a>
+                        <div class="pcard__title">
+                            Альбит очищенный
+                        </div>
+                        <div class="pcard__desc">
+                            Белый натриевый полевой шпат магматического происхождения класса силикатов,
+                            алюмосиликат группы
+                            плагиоклазов
+                        </div>
                     </div>
-
-                    <div>
-                        <h3>sprites use</h3>
-                        <p>
-                            изображения назначаются через <span class="hub__tag">use</span> из svg файла со всеми
-                            спрайтами с указанием <span class="hub__code">id</span> иконки
-                        </p>
-
-                        <code class="hub__pre-code">
-                            &lt;svg class="spis-32 spif"&gt;
-                            &lt;use href="img/sp5sprite.svg#more-horizontal"&gt;&lt;/use&gt;
-                            &lt;/svg&gt;
-                        </code>
-
-                        <p>
-                            Результат:
-                            <svg class="spis-32">
-                                <use href="img/sp5sprite.svg#more-horizontal"></use>
-                            </svg>
-
-                        </p>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">3 311.82 ₽</span> 3 179.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn" href="#">
+                                Подробнее
+                            </a>
+                        </div>
                     </div>
-
-
                 </div>
-                <!-- /SP5 sprite demo  -->
-            </section>
-            <!-- /Sprites -->
 
-            <!-- Layout -->
-            <section class="hub__section sp-tab sp-tab-4">
-                <main class="main wid">
-                    <h1>
-                        Наш каталог
-                    </h1>
-                    <div class="grid-a240">
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
 
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-                                    <div class="label label--new">
-                                        НОВИНКА
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <img alt="Альбит очищенный" class="pcard__img"
-                                         src="demo/holo/holo-43.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Альбит очищенный
-                                </div>
-                                <div class="pcard__desc">
-                                    Белый натриевый полевой шпат магматического происхождения класса силикатов,
-                                    алюмосиликат группы
-                                    плагиоклазов
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">3 311.82 ₽</span> 3 179.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn" href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Барит не очищенный (с примесями)" class="pcard__img"
-                                         src="demo/holo/holo-10.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Барит не очищенный (с примесями)
-                                </div>
-                                <div class="pcard__desc">
-                                    Ромбо-дипирамидальный бесцветный и прозрачный или белый, но окрашен примесями
-                                    оксидов железа
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
+                        <a href="#">
+                            <img alt="Барит не очищенный (с примесями)" class="pcard__img"
+                                 src="demo/holo/holo-10.png">
+                        </a>
+                        <div class="pcard__title">
+                            Барит не очищенный (с примесями)
                         </div>
-
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Тасканская грязь" class="pcard__img" src="demo/holo/holo-17.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Тасканская грязь
-                                </div>
-                                <div class="pcard__desc">
-                                    Ничего необычного, перед вами кусок грязи
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    899 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Папоротник" class="pcard__img" src="demo/holo/holo-23.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Папоротник
-                                </div>
-                                <div class="pcard__desc">
-                                    Этот хорошо сохранившийся образец, представлен в единственном экземпляре
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    768 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Элемент питания MK I" class="pcard__img" src="demo/holo/holo-39.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Элемент питания MK I
-                                </div>
-                                <div class="pcard__desc">
-                                    Из трёх таких элементов состоит Батарея 3336. По отдельности практически не
-                                    используются.
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    219 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Элемент питания MK II" class="pcard__img"
-                                         src="demo/holo/holo-33.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Элемент питания MK II
-                                </div>
-                                <div class="pcard__desc">
-                                    Производятся с 1898 года.
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Барит не очищенный (с примесями)" class="pcard__img"
-                                         src="demo/holo/holo-37.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Барит не очищенный (с примесями)
-                                </div>
-                                <div class="pcard__desc">
-                                    Ромбо-дипирамидальный бесцветный
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Барит не очищенный (с примесями)" class="pcard__img"
-                                         src="demo/holo/holo-71.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Барит не очищенный (с примесями)
-                                </div>
-                                <div class="pcard__desc">
-                                    Окрашен примесями оксидов железа
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Барит не очищенный (с примесями)" class="pcard__img"
-                                         src="demo/holo/holo-82.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Барит не очищенный (с примесями)
-                                </div>
-                                <div class="pcard__desc">
-                                    Ромбо-дипирамидальный бесцветный и прозрачный или белый, но окрашен примесями
-                                    оксидов железа
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Барит не очищенный (с примесями)" class="pcard__img"
-                                         src="demo/holo/holo-85.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Барит не очищенный (с примесями)
-                                </div>
-                                <div class="pcard__desc">
-                                    Ромбо-дипирамидальный бесцветный и прозрачный или белый, но окрашен примесями
-                                    оксидов железа
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard">
-                            <div class="pcard__body">
-                                <div class="label-box">
-
-                                </div>
-                                <a href="#">
-                                    <img alt="Барит не очищенный (с примесями)" class="pcard__img"
-                                         src="demo/holo/holo-67.png">
-                                </a>
-                                <div class="pcard__title">
-                                    Барит не очищенный
-                                </div>
-                                <div class="pcard__desc">
-                                    Ромбо-дипирамидальный бесцветный и прозрачный или белый
-                                </div>
-                            </div>
-                            <div class="pcard__footer">
-                                <div class="pcard__price">
-                                    <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
-                                </div>
-                                <div class="pcard__pad">
-                                    <a class="pcard__btn"
-                                       href="#">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="pcard__desc">
+                            Ромбо-дипирамидальный бесцветный и прозрачный или белый, но окрашен примесями
+                            оксидов железа
                         </div>
                     </div>
-
-                    <div class="pad-8x"></div>
-
-                    <div class="grid-a">
-                        <div class="card">
-                            <img alt="" class="card__img" src="demo/generative/download-6.png">
-                            <div class="card__title">
-                                Card title
-                            </div>
-                            <div class="card__desc">
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                            </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
                         </div>
-                        <div class="card">
-                            <img alt="" class="card__img" src="demo/generative/download-7.png">
-                            <div class="card__title">
-                                Card title
-                            </div>
-                            <div class="card__desc">
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img alt="" class="card__img" src="demo/generative/download-4.png">
-                            <div class="card__title">
-                                Card title
-                            </div>
-                            <div class="card__desc">
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img alt="" class="card__img" src="demo/generative/download-5.png">
-                            <div class="card__title">
-                                Card title
-                            </div>
-                            <div class="card__desc">
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                                Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
-                            </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
                         </div>
                     </div>
-                </main>
-            </section>
-            <!-- /Layout -->
+                </div>
 
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
 
+                        </div>
+                        <a href="#">
+                            <img alt="Тасканская грязь" class="pcard__img" src="demo/holo/holo-17.png">
+                        </a>
+                        <div class="pcard__title">
+                            Тасканская грязь
+                        </div>
+                        <div class="pcard__desc">
+                            Ничего необычного, перед вами кусок грязи
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            899 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Папоротник" class="pcard__img" src="demo/holo/holo-23.png">
+                        </a>
+                        <div class="pcard__title">
+                            Папоротник
+                        </div>
+                        <div class="pcard__desc">
+                            Этот хорошо сохранившийся образец, представлен в единственном экземпляре
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            768 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Элемент питания MK I" class="pcard__img" src="demo/holo/holo-39.png">
+                        </a>
+                        <div class="pcard__title">
+                            Элемент питания MK I
+                        </div>
+                        <div class="pcard__desc">
+                            Из трёх таких элементов состоит Батарея 3336. По отдельности практически не
+                            используются.
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            219 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Элемент питания MK II" class="pcard__img"
+                                 src="demo/holo/holo-33.png">
+                        </a>
+                        <div class="pcard__title">
+                            Элемент питания MK II
+                        </div>
+                        <div class="pcard__desc">
+                            Производятся с 1898 года.
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Барит не очищенный (с примесями)" class="pcard__img"
+                                 src="demo/holo/holo-37.png">
+                        </a>
+                        <div class="pcard__title">
+                            Барит не очищенный (с примесями)
+                        </div>
+                        <div class="pcard__desc">
+                            Ромбо-дипирамидальный бесцветный
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Барит не очищенный (с примесями)" class="pcard__img"
+                                 src="demo/holo/holo-71.png">
+                        </a>
+                        <div class="pcard__title">
+                            Барит не очищенный (с примесями)
+                        </div>
+                        <div class="pcard__desc">
+                            Окрашен примесями оксидов железа
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Барит не очищенный (с примесями)" class="pcard__img"
+                                 src="demo/holo/holo-82.png">
+                        </a>
+                        <div class="pcard__title">
+                            Барит не очищенный (с примесями)
+                        </div>
+                        <div class="pcard__desc">
+                            Ромбо-дипирамидальный бесцветный и прозрачный или белый, но окрашен примесями
+                            оксидов железа
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Барит не очищенный (с примесями)" class="pcard__img"
+                                 src="demo/holo/holo-85.png">
+                        </a>
+                        <div class="pcard__title">
+                            Барит не очищенный (с примесями)
+                        </div>
+                        <div class="pcard__desc">
+                            Ромбо-дипирамидальный бесцветный и прозрачный или белый, но окрашен примесями
+                            оксидов железа
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <div class="pcard__body">
+                        <div class="label-box">
+
+                        </div>
+                        <a href="#">
+                            <img alt="Барит не очищенный (с примесями)" class="pcard__img"
+                                 src="demo/holo/holo-67.png">
+                        </a>
+                        <div class="pcard__title">
+                            Барит не очищенный
+                        </div>
+                        <div class="pcard__desc">
+                            Ромбо-дипирамидальный бесцветный и прозрачный или белый
+                        </div>
+                    </div>
+                    <div class="pcard__footer">
+                        <div class="pcard__price">
+                            <span class="pcard__old-price">1 999.82 ₽</span> 1 479.35 ₽
+                        </div>
+                        <div class="pcard__pad">
+                            <a class="pcard__btn"
+                               href="#">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pad-8x"></div>
+
+            <div class="grid-a">
+                <div class="card">
+                    <img alt="" class="card__img" src="demo/generative/download-6.png">
+                    <div class="card__title">
+                        Card title
+                    </div>
+                    <div class="card__desc">
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                    </div>
+                </div>
+                <div class="card">
+                    <img alt="" class="card__img" src="demo/generative/download-7.png">
+                    <div class="card__title">
+                        Card title
+                    </div>
+                    <div class="card__desc">
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                    </div>
+                </div>
+                <div class="card">
+                    <img alt="" class="card__img" src="demo/generative/download-4.png">
+                    <div class="card__title">
+                        Card title
+                    </div>
+                    <div class="card__desc">
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                    </div>
+                </div>
+                <div class="card">
+                    <img alt="" class="card__img" src="demo/generative/download-5.png">
+                    <div class="card__title">
+                        Card title
+                    </div>
+                    <div class="card__desc">
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                        Culpa deleniti dicta est eum fugit iste magni quasi quia sed suscipit.
+                    </div>
+                </div>
+            </div>
         </main>
-    </div>
-    <!--  /hub  -->
+    </section>
+    <!-- /Layout -->
+
+
+    </main>
+</div>
+<!--  /hub  -->
 </div>
 <div class="footer-wrapper">
     <footer class="footer grid-c-3 wid">
