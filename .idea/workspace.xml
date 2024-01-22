@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new sprites demo">
-      <change afterPath="$PROJECT_DIR$/start.html" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new order of classes in astrum.css&#10;new basic tpl page start.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +269,7 @@
       <workItem from="1704721950488" duration="19793000" />
       <workItem from="1705081775867" duration="1209000" />
       <workItem from="1705083999897" duration="621000" />
-      <workItem from="1705911943715" duration="7909000" />
+      <workItem from="1705911943715" duration="8116000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -642,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704814596218</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="new order of classes in astrum.css&#10;new basic tpl page start.html">
+      <option name="closed" value="true" />
+      <created>1705925581931</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1705925581931</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="chip icon shrink fix" />
     <MESSAGE value="normalize path fix" />
     <MESSAGE value="footer default logo classes" />
     <MESSAGE value="footer default logo classes fix" />
@@ -686,6 +690,7 @@
     <MESSAGE value="sf__select multiple fix with overflow" />
     <MESSAGE value="all inputs up to date" />
     <MESSAGE value="new sprites demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="new sprites demo" />
+    <MESSAGE value="new order of classes in astrum.css&#10;new basic tpl page start.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="new order of classes in astrum.css&#10;new basic tpl page start.html" />
   </component>
 </project>
