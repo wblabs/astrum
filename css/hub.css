@@ -1180,3 +1180,29 @@
         gap: var(--gf);
     }
 }
+
+.header-center__text {
+    color: var(--color-text-grey);
+}
+
+.footer-wrapper {
+    background: var(--color-neutral);
+}
+
+.footer {
+    color: var(--color-text-grey);
+    font-size: var(--size-text-note);
+    line-height: 1.4;
+}
+
+
+.footer__center {
+    color: var(--color-text-grey);
+}
+
+.footer__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 8px;
+}
