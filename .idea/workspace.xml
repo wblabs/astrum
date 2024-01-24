@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="fixed path to home icon">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="ui-s svg size fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +274,8 @@
       <workItem from="1705081775867" duration="1209000" />
       <workItem from="1705083999897" duration="621000" />
       <workItem from="1705911943715" duration="10266000" />
-      <workItem from="1706021764819" duration="72000" />
+      <workItem from="1706021764819" duration="162000" />
+      <workItem from="1706103470879" duration="1983000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -386,14 +388,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00019" summary="href fix on demo page">
-      <option name="closed" value="true" />
-      <created>1688572365629</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1688572365629</updated>
     </task>
     <task id="LOCAL-00020" summary="new main image">
       <option name="closed" value="true" />
@@ -651,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705936491628</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="ui-s svg size fix">
+      <option name="closed" value="true" />
+      <created>1706021920334</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1706021920335</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="footer default logo classes fix" />
     <MESSAGE value="all demo pages now in hub folder" />
     <MESSAGE value="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms" />
     <MESSAGE value="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms&#10;new Tokens" />
@@ -695,6 +696,7 @@
     <MESSAGE value="new order of classes in astrum.css&#10;new basic tpl page start.html" />
     <MESSAGE value="webmanifest url fix" />
     <MESSAGE value="fixed path to home icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed path to home icon" />
+    <MESSAGE value="ui-s svg size fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui-s svg size fix" />
   </component>
 </project>
