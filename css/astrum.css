@@ -1574,41 +1574,6 @@ a.pcard__btn:hover {
 /* /Crumbs */
 
 /* Pagination */
-.pagination {
-    padding: var(--gap) 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--gf);
-
-    column-gap: calc(var(--gf) * 2);
-    list-style: none;
-}
-
-.page-item a {
-    padding: 8px 12px;
-    background: var(--color-bg);
-    border-radius: 4px;
-    transition: var(--trans);
-    color: var(--color-text);
-    display: block;
-}
-
-.page-item a:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-
-.page-item + .active a {
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-
-.page-item + .active a:hover {
-    background: var(--color-primary-dark);
-}
-/*---*/
 .pagination-nav {
     display: flex;
     justify-content: center;
@@ -1622,6 +1587,7 @@ a.pcard__btn:hover {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: var(--gf);
 }
 
 .pagination li {
@@ -1629,18 +1595,32 @@ a.pcard__btn:hover {
 }
 
 .pagination a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5em 1em;
-    border: 1px solid #999;
-    border-radius: 0.2em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: var(--ui-raduis);
     text-decoration: none;
+    color: var(--color-text);
+    height: var(--ui-size-s);
+    font-size: var(--size-text-note);
+
+}
+.pagination a:hover {
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.pagination a[aria-current="page"] {
-    background-color: #333;
-    color: #fff;
+.pagination svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
 }
-/*---*/
+.pagination a[aria-current="page"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
 /* /Pagination */
 
 /*   (9) SP5 Basic Layout ------- ------- ------- ------- ------- */

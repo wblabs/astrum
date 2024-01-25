@@ -438,7 +438,9 @@
     grid-template-columns: 80px 220px 1fr;
     overflow: hidden;
 }
-
+.hub-token-item--long {
+    grid-template-columns: 140px 220px 1fr;
+}
 .hub-token-item:not(:last-child) {
     margin-bottom: var(--gap);
 }
