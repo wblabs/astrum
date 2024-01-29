@@ -7,8 +7,6 @@
     <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new pagination from MDN">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +275,9 @@
       <workItem from="1705911943715" duration="10266000" />
       <workItem from="1706021764819" duration="162000" />
       <workItem from="1706103470879" duration="2490000" />
-      <workItem from="1706165602614" duration="4231000" />
+      <workItem from="1706165602614" duration="5071000" />
+      <workItem from="1706519509905" duration="215000" />
+      <workItem from="1706520996773" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -390,14 +390,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00021" summary="new main image and page titles">
-      <option name="closed" value="true" />
-      <created>1688573415365</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1688573415365</updated>
     </task>
     <task id="LOCAL-00022" summary="new main image and page titles fixes">
       <option name="closed" value="true" />
@@ -655,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706122483814</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="new pagination from MDN">
+      <option name="closed" value="true" />
+      <created>1706177887787</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1706177887788</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
