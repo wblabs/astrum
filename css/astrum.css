@@ -534,6 +534,7 @@ a:active {
     width: 100%;
     height: 100%;
 }
+
 /* /Video responsive */
 
 /*   (4) SP5 Grid ------- ------- ------- ------- ------- */
@@ -683,6 +684,7 @@ a:active {
     width: 16px;
     height: 16px;
 }
+
 .btn--s svg {
     width: 16px;
     height: 16px;
@@ -1007,9 +1009,11 @@ input {
     height: auto;
     overflow: hidden;
 }
+
 .sf__input[typeof="file"] {
     outline: 1px solid mediumvioletred;
 }
+
 /* radio-group */
 .sp-radio-group {
     display: flex;
@@ -1085,6 +1089,62 @@ input {
 }
 
 /* /radio-group */
+
+/* SP Radio Toggle */
+.sp-radio-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 4px;
+    border-radius: calc(var(--ui-size) / 2);
+    background: var(--ui-bg-100);
+    font-size: var(--size-text-note);
+    transition: var(--trans);
+    color: var(--ui-color-text);
+    width: fit-content;
+    height: var(--ui-size);
+}
+
+.sp-radio-toggle .sp-radio-toggle__label {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.sp-radio-toggle .sp-radio-toggle__label input {
+    display: none;
+}
+
+.sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text {
+    height: calc(var(--ui-size) - 8px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gf);
+    border-radius: var(--gap);
+    padding: 0 var(--gf);
+    transition: all .15s ease-in-out;
+    color: var(--ui-color-text-light-grey);
+    cursor: pointer;
+}
+
+.sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--ui-color-text-grey);
+}
+
+.sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text {
+    background: var(--color-white);
+    color: var(--ui-color-text);
+}
+
+.sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text:hover {
+    background: var(--color-white);
+    color: var(--ui-color-text);
+}
+
+/* /SP Radio Toggle */
 
 .sp-tab-sections-group {
 }
@@ -1604,6 +1664,7 @@ a.pcard__btn:hover {
     font-size: var(--size-text-note);
 
 }
+
 .pagination a:hover {
     border: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -1614,10 +1675,12 @@ a.pcard__btn:hover {
     fill: none;
     stroke: currentColor;
 }
+
 .pagination a[aria-current="page"] {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
 /* /Pagination */
 
 /*   (9) SP5 Basic Layout ------- ------- ------- ------- ------- */
@@ -1628,6 +1691,7 @@ a.pcard__btn:hover {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
 /* /for fixed footer */
 
 /* Header
@@ -1642,6 +1706,7 @@ a.pcard__btn:hover {
     align-items: center;
     justify-content: space-between;
 }
+
 .header__left {
 }
 
@@ -1658,8 +1723,10 @@ a.pcard__btn:hover {
 .header-logo__text {
     font-size: 1.6rem;
 }
+
 .header__center {
 }
+
 .header__right {
 }
 
@@ -1691,6 +1758,7 @@ a.pcard__btn:hover {
 .nav a:hover {
     color: var(--color-secondary);
 }
+
 .nav ul {
     list-style: none;
     display: flex;
@@ -1755,6 +1823,7 @@ a.pcard__btn:hover {
     transform: translate(0, 1px) rotate(-45deg);
     transition: all 0.2s;
 }
+
 .mob-header {
     display: none;
 }
@@ -1828,13 +1897,16 @@ a.pcard__btn:hover {
     filter: grayscale(100%);
     transition: var(--trans);
 }
+
 .footer-logo:hover {
     filter: none;
 
 }
+
 .footer-logo__img {
     width: 2rem;
 }
+
 .footer-logo__text {
 }
 
