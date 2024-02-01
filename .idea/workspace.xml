@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new SP Radio Toggle">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp-radio-toggle input accessibility fix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,10 +111,6 @@
     "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "vue.rearranger.settings.migration": "true",
     "writerside.last.selected.productastrum": "astrm"
-  },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
-    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -279,6 +275,7 @@
       <workItem from="1706520996773" duration="88000" />
       <workItem from="1706551719923" duration="40000" />
       <workItem from="1706720188557" duration="3139000" />
+      <workItem from="1706801384978" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -391,22 +388,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00024" summary="chip icon shrink fix">
-      <option name="closed" value="true" />
-      <created>1688651469860</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1688651469860</updated>
-    </task>
-    <task id="LOCAL-00025" summary="normalize path fix">
-      <option name="closed" value="true" />
-      <created>1688746765851</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1688746765851</updated>
     </task>
     <task id="LOCAL-00026" summary="footer default logo classes">
       <option name="closed" value="true" />
@@ -656,7 +637,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706721294139</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="sp-radio-toggle input accessibility fix">
+      <option name="closed" value="true" />
+      <created>1706801442206</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801442207</updated>
+    </task>
+    <task id="LOCAL-00058" summary="sp-radio-toggle input accessibility fix">
+      <option name="closed" value="true" />
+      <created>1706801558495</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1706801558495</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +672,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new icons in RTE&#10;new Tokens" />
     <MESSAGE value="new limg/ring icons in RTE" />
     <MESSAGE value="new web icon in sp5share.svg" />
     <MESSAGE value="new s-toggle item in ui" />
@@ -700,6 +696,7 @@
     <MESSAGE value="new pagination from MDN" />
     <MESSAGE value="pagination margin fix" />
     <MESSAGE value="new SP Radio Toggle" />
-    <option name="LAST_COMMIT_MESSAGE" value="new SP Radio Toggle" />
+    <MESSAGE value="sp-radio-toggle input accessibility fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="sp-radio-toggle input accessibility fix" />
   </component>
 </project>
