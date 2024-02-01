@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="pagination margin fix">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="new SP Radio Toggle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +111,10 @@
     "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "vue.rearranger.settings.migration": "true",
     "writerside.last.selected.productastrum": "astrm"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -276,7 +278,7 @@
       <workItem from="1706519509905" duration="215000" />
       <workItem from="1706520996773" duration="88000" />
       <workItem from="1706551719923" duration="40000" />
-      <workItem from="1706720188557" duration="933000" />
+      <workItem from="1706720188557" duration="3139000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -389,14 +391,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00023" summary="meta url fix">
-      <option name="closed" value="true" />
-      <created>1688573583763</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1688573583763</updated>
     </task>
     <task id="LOCAL-00024" summary="chip icon shrink fix">
       <option name="closed" value="true" />
@@ -654,7 +648,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706521053150</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="new SP Radio Toggle">
+      <option name="closed" value="true" />
+      <created>1706721294137</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1706721294139</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms&#10;new Tokens" />
     <MESSAGE value="new icons in RTE&#10;new Tokens" />
     <MESSAGE value="new limg/ring icons in RTE" />
     <MESSAGE value="new web icon in sp5share.svg" />
@@ -698,6 +699,7 @@
     <MESSAGE value="ui-s svg size fix" />
     <MESSAGE value="new pagination from MDN" />
     <MESSAGE value="pagination margin fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination margin fix" />
+    <MESSAGE value="new SP Radio Toggle" />
+    <option name="LAST_COMMIT_MESSAGE" value="new SP Radio Toggle" />
   </component>
 </project>
