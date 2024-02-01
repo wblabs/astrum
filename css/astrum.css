@@ -1113,7 +1113,9 @@ input {
 }
 
 .sp-radio-toggle .sp-radio-toggle__label input {
-    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 0;
 }
 
 .sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text {
