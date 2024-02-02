@@ -923,6 +923,7 @@ input {
 
 .sf__input.fw, .sf__textarea.fw, .sf__select.fw {
     width: 100%;
+    max-width: 100%;
 }
 
 .sf__input--a, .sf__textarea--a, .sf__select--a {
