@@ -79,11 +79,14 @@
     --ui-input-bg: #fff;
     --ui-input-bg--active: #dee7ff;
     --ui-color-primary: #0043ed;
-    --ui-color-focus: #0043ed;
+    /*--ui-color-focus is for box-shadow*/
+    --ui-color-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
+    --ui-color-checked: var(--ui-color-primary);
     --ui-color-neutral: #EFF2F6;
     --ui-color-text: var(--color-dark);
     --ui-color-text-grey: #737373;
     --ui-color-text-light-grey: #9b9b9b;
+    --ui-trans: 0.16s ease;
 
     /* UI Sizes */
     --ui-size: 36px;
@@ -1015,258 +1018,7 @@ input {
     outline: 1px solid mediumvioletred;
 }
 
-/* radio-group */
-.sp-radio-group {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.sp-radio-group__item {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.sp-radio-group input[type=radio] {
-    clip: rect(0 0 0 0);
-    clip-path: inset(100%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
-.sp-radio-group-item__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gf);
-
-    cursor: pointer;
-    background-color: var(--color-white);
-    padding: var(--gf) var(--gap);
-    position: relative;
-    margin-left: -1px;
-    border: var(--ui-input-border);
-    letter-spacing: .05em;
-    color: var(--ui-color-text);
-    text-align: center;
-    transition: background-color .3s ease;
-}
-
-.sp-radio-group-item__text svg {
-    width: 16px;
-    height: 16px;
-    fill: none;
-    stroke: var(--ui-color-text);
-}
-
-.sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
-    border: 1px solid var(--ui-color-primary);
-    background-color: var(--ui-input-bg--active);
-    z-index: 1;
-    color: var(--ui-color-primary);
-}
-
-.sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text svg {
-    stroke: var(--ui-color-primary);
-}
-
-.sp-radio-group__item:first-child .sp-radio-group-item__text {
-    border-radius: var(--gf) 0 0 var(--gf);
-}
-
-.sp-radio-group__item:last-child .sp-radio-group-item__text {
-    border-radius: 0 var(--gf) var(--gf) 0;
-
-}
-
-/* Disabled */
-.sp-radio-group input[type=radio]:disabled + .sp-radio-group-item__text {
-    background: var(--ui-color-neutral);
-    color: var(--ui-color-text-grey);
-}
-
-/* /radio-group */
-
-/* SP Radio Toggle */
-.sp-radio-toggle {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4px;
-    padding: 4px;
-    border-radius: calc(var(--ui-size) / 2);
-    background: var(--ui-bg-100);
-    font-size: var(--size-text-note);
-    transition: var(--trans);
-    color: var(--ui-color-text);
-    width: fit-content;
-    height: var(--ui-size);
-}
-
-.sp-radio-toggle .sp-radio-toggle__label {
-    flex: 1 1 auto;
-    text-align: center;
-}
-
-.sp-radio-toggle .sp-radio-toggle__label input {
-    opacity: 0;
-    position: absolute;
-    width: 0;
-}
-
-.sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text {
-    height: calc(var(--ui-size) - 8px);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: var(--gf);
-    border-radius: var(--gap);
-    padding: 0 var(--gf);
-    transition: all .15s ease-in-out;
-    color: var(--ui-color-text-light-grey);
-    cursor: pointer;
-}
-
-.sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text:hover {
-    background: rgba(255, 255, 255, 0.6);
-    color: var(--ui-color-text-grey);
-}
-
-.sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text {
-    background: var(--color-white);
-    color: var(--ui-color-text);
-}
-
-.sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text:hover {
-    background: var(--color-white);
-    color: var(--ui-color-text);
-}
-
-/* /SP Radio Toggle */
-
-.sp-tab-sections-group {
-}
-
-.sp-tab-section {
-    display: none;
-}
-
-.sp-tab-section--active {
-    display: block;
-}
-
-/* SP Chips */
-.sp-chips-pan {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gf);
-}
-
-.sp-chip {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--gap);
-    padding: 4px 4px 4px var(--gap);
-    border-radius: var(--gap);
-    background: rgba(0, 0, 0, 0.05);
-    font-size: var(--size-text-note);
-    transition: var(--trans);
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.sp-chip:hover {
-    background: rgba(0, 0, 0, 0.1);
-    color: rgba(0, 0, 0, 0.8);
-}
-
-.sp-chip svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.1);
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-    fill: none;
-    stroke: rgba(0, 0, 0, 0.42);
-    flex-shrink: 0;
-}
-
-.sp-chip:hover svg {
-    stroke: rgba(0, 0, 0, 0.6);
-}
-
-.sp-chip--disabled {
-    outline: 1px solid rgba(0, 0, 0, 0.1);
-    background: transparent;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.sp-chip--disabled:hover {
-    background: transparent;
-    cursor: auto;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.sp-chip--disabled svg {
-    opacity: 0.2;
-}
-
-.sp-chip--disabled:hover svg {
-    opacity: 0.2;
-}
-
-/* /SP Chips */
-
-/* SP Toggle */
-.sp-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4px;
-    padding: 4px;
-    border-radius: calc(var(--ui-size) / 2);
-    background: var(--ui-bg-100);
-    font-size: var(--size-text-note);
-    transition: var(--trans);
-    cursor: pointer;
-    color: var(--ui-color-text);
-    width: fit-content;
-    height: var(--ui-size);
-}
-
-.sp-toggle__item {
-    height: calc(var(--ui-size) - 8px);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: var(--gf);
-    border-radius: var(--gap);
-    padding: 0 var(--gf);
-    transition: var(--trans);
-    color: var(--ui-color-text-light-grey);
-}
-
-.sp-toggle__item:hover {
-    background: rgba(255, 255, 255, 0.6);
-    color: var(--ui-color-text-grey);
-}
-
-.sp-toggle__item--active, .sp-toggle__item--active:hover {
-    background: var(--color-white);
-    color: var(--ui-color-text);
-}
-
-/* /SP Toggle */
-
+/* SP Checkbox and Radio */
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type=checkbox],
@@ -1421,6 +1173,377 @@ input {
         --s: .5;
     }
 }
+
+/* /SP Checkbox and Radio */
+
+/* radio-group */
+.sp-radio-group {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.sp-radio-group__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.sp-radio-group input[type=radio] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.sp-radio-group-item__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gf);
+
+    cursor: pointer;
+    background-color: var(--color-white);
+    padding: var(--gf) var(--gap);
+    position: relative;
+    margin-left: -1px;
+    border: var(--ui-input-border);
+    letter-spacing: .05em;
+    color: var(--ui-color-text);
+    text-align: center;
+    transition: background-color .3s ease;
+}
+
+.sp-radio-group-item__text svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: var(--ui-color-text);
+}
+
+.sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
+    border: 1px solid var(--ui-color-primary);
+    background-color: var(--ui-input-bg--active);
+    z-index: 1;
+    color: var(--ui-color-primary);
+}
+
+.sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text svg {
+    stroke: var(--ui-color-primary);
+}
+
+.sp-radio-group__item:first-child .sp-radio-group-item__text {
+    border-radius: var(--gf) 0 0 var(--gf);
+}
+
+.sp-radio-group__item:last-child .sp-radio-group-item__text {
+    border-radius: 0 var(--gf) var(--gf) 0;
+
+}
+
+/* Disabled */
+.sp-radio-group input[type=radio]:disabled + .sp-radio-group-item__text {
+    background: var(--ui-color-neutral);
+    color: var(--ui-color-text-grey);
+}
+
+/* /radio-group */
+
+/* SP Radio Toggle */
+.sp-radio-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 4px;
+    border-radius: calc(var(--ui-size) / 2);
+    background: var(--ui-bg-100);
+    font-size: var(--size-text-note);
+    transition: var(--trans);
+    color: var(--ui-color-text);
+    width: fit-content;
+    height: var(--ui-size);
+}
+
+.sp-radio-toggle .sp-radio-toggle__label {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.sp-radio-toggle .sp-radio-toggle__label input {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text {
+    height: calc(var(--ui-size) - 8px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gf);
+    border-radius: var(--gap);
+    padding: 0 var(--gf);
+    transition: all .15s ease-in-out;
+    color: var(--ui-color-text-light-grey);
+    cursor: pointer;
+}
+
+.sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--ui-color-text-grey);
+}
+
+.sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text {
+    background: var(--color-white);
+    color: var(--ui-color-text);
+}
+
+.sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text:hover {
+    background: var(--color-white);
+    color: var(--ui-color-text);
+}
+
+/* /SP Radio Toggle */
+
+/* SP Radio Box    */
+.sp-radio-box-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gf);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.sp-radio-box__input:checked + .sp-radio-box-card {
+    border-color: var(--ui-color-focus);
+    color: var(--ui-color-primary);
+}
+
+.sp-radio-box__input:checked + .sp-radio-box-card:before {
+    transform: scale(1);
+    opacity: 1;
+    background-color: var(--ui-color-checked);
+    border-color: var(--ui-color-checked);
+}
+
+
+.sp-radio-box__input:checked + .sp-radio-box-card .sp-radio-box__text {
+    color: var(--ui-color-checked);
+}
+
+.sp-radio-box__input:focus + .sp-radio-box-card {
+    border-color: var(--ui-color-primary);
+    box-shadow: var(--ui-color-focus);
+}
+
+.sp-radio-box__input:focus + .sp-radio-box-card:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.sp-radio-box-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+    border-radius: var(--gf);
+    border: var(--ui-input-border);
+    background-color: var(--color-white);
+    transition: var(--ui-trans);
+    cursor: pointer;
+    position: relative;
+}
+
+.sp-radio-box-card:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: var(--ui-input-border);
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: var(--ui-trans);
+}
+
+.sp-radio-box-card:hover {
+    border-color: #2260ff;
+}
+
+.sp-radio-box-card:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+.sp-radio-box-card__example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.sp-radio-box-card__example img {
+    width: 40px;
+    height: 40px;
+}
+
+.sp-radio-box__text {
+    color: var(--ui-color-text-grey);
+    transition: 0.375s ease;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+}
+
+input[type="radio"].sp-radio-box__input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    outline: 1px solid red;
+}
+
+/* /SP Radio Box    */
+
+.sp-tab-sections-group {
+}
+
+.sp-tab-section {
+    display: none;
+}
+
+.sp-tab-section--active {
+    display: block;
+}
+
+/* SP Chips */
+.sp-chips-pan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gf);
+}
+
+.sp-chip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    padding: 4px 4px 4px var(--gap);
+    border-radius: var(--gap);
+    background: rgba(0, 0, 0, 0.05);
+    font-size: var(--size-text-note);
+    transition: var(--trans);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sp-chip:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.sp-chip svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.42);
+    flex-shrink: 0;
+}
+
+.sp-chip:hover svg {
+    stroke: rgba(0, 0, 0, 0.6);
+}
+
+.sp-chip--disabled {
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sp-chip--disabled:hover {
+    background: transparent;
+    cursor: auto;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sp-chip--disabled svg {
+    opacity: 0.2;
+}
+
+.sp-chip--disabled:hover svg {
+    opacity: 0.2;
+}
+
+/* /SP Chips */
+
+/* SP Toggle */
+.sp-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 4px;
+    border-radius: calc(var(--ui-size) / 2);
+    background: var(--ui-bg-100);
+    font-size: var(--size-text-note);
+    transition: var(--trans);
+    cursor: pointer;
+    color: var(--ui-color-text);
+    width: fit-content;
+    height: var(--ui-size);
+}
+
+.sp-toggle__item {
+    height: calc(var(--ui-size) - 8px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gf);
+    border-radius: var(--gap);
+    padding: 0 var(--gf);
+    transition: var(--trans);
+    color: var(--ui-color-text-light-grey);
+}
+
+.sp-toggle__item:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--ui-color-text-grey);
+}
+
+.sp-toggle__item--active, .sp-toggle__item--active:hover {
+    background: var(--color-white);
+    color: var(--ui-color-text);
+}
+
+/* /SP Toggle */
+
 
 /*   (7) SP5 Typographic ------- ------- ------- ------- ------- */
 h1, h2, h3, h4, h5 {

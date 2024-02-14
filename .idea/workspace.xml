@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="sp-radio-toggle input accessibility fix">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="max-width in fw inputs fix">
+      <change afterPath="$PROJECT_DIR$/hub/hub-box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hub/hub-cactus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hub/hub-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp-lab.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,6 +288,8 @@
       <workItem from="1706720188557" duration="3139000" />
       <workItem from="1706801384978" duration="488000" />
       <workItem from="1706867318797" duration="132000" />
+      <workItem from="1706874320643" duration="53000" />
+      <workItem from="1707919846701" duration="11482000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -393,14 +402,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00027" summary="footer default logo classes fix">
-      <option name="closed" value="true" />
-      <created>1688747325445</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1688747325445</updated>
     </task>
     <task id="LOCAL-00028" summary="all demo pages now in hub folder">
       <option name="closed" value="true" />
@@ -658,7 +659,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706801655930</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="max-width in fw inputs fix">
+      <option name="closed" value="true" />
+      <created>1706874362644</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1706874362644</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new limg/ring icons in RTE" />
     <MESSAGE value="new web icon in sp5share.svg" />
     <MESSAGE value="new s-toggle item in ui" />
     <MESSAGE value="gitignore" />
@@ -702,6 +710,7 @@
     <MESSAGE value="pagination margin fix" />
     <MESSAGE value="new SP Radio Toggle" />
     <MESSAGE value="sp-radio-toggle input accessibility fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="sp-radio-toggle input accessibility fix" />
+    <MESSAGE value="max-width in fw inputs fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="max-width in fw inputs fix" />
   </component>
 </project>

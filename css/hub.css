@@ -1208,3 +1208,18 @@
     flex-direction: column;
     padding: 8px;
 }
+
+.hub__h1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--gf);
+}
+
+.hub__h1 img {
+    width: 80px;
+    height: 80px;
+}
+.body--hub-lab {
+        background: linear-gradient(to right, gold, #ffae00);
+}
