@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="max-width in fw inputs fix">
-      <change afterPath="$PROJECT_DIR$/hub/hub-box.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hub/hub-cactus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hub/hub-clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sp-lab.html" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="New SP Radio box">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/hub.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hub.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +283,9 @@
       <workItem from="1706801384978" duration="488000" />
       <workItem from="1706867318797" duration="132000" />
       <workItem from="1706874320643" duration="53000" />
-      <workItem from="1707919846701" duration="11482000" />
+      <workItem from="1707919846701" duration="12072000" />
+      <workItem from="1707936461110" duration="1474000" />
+      <workItem from="1707983828942" duration="1334000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -402,14 +398,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00028" summary="all demo pages now in hub folder">
-      <option name="closed" value="true" />
-      <created>1691608038206</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1691608038206</updated>
     </task>
     <task id="LOCAL-00029" summary="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms&#10;new Tokens">
       <option name="closed" value="true" />
@@ -667,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706874362644</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="New SP Radio box">
+      <option name="closed" value="true" />
+      <created>1707933082040</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1707933082044</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -686,7 +682,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new web icon in sp5share.svg" />
     <MESSAGE value="new s-toggle item in ui" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="new template skeleton on index" />
@@ -711,6 +706,7 @@
     <MESSAGE value="new SP Radio Toggle" />
     <MESSAGE value="sp-radio-toggle input accessibility fix" />
     <MESSAGE value="max-width in fw inputs fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="max-width in fw inputs fix" />
+    <MESSAGE value="New SP Radio box" />
+    <option name="LAST_COMMIT_MESSAGE" value="New SP Radio box" />
   </component>
 </project>

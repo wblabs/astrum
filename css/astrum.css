@@ -79,13 +79,15 @@
     --ui-input-bg: #fff;
     --ui-input-bg--active: #dee7ff;
     --ui-color-primary: #0043ed;
-    /*--ui-color-focus is for box-shadow*/
-    --ui-color-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
     --ui-color-checked: var(--ui-color-primary);
     --ui-color-neutral: #EFF2F6;
     --ui-color-text: var(--color-dark);
     --ui-color-text-grey: #737373;
     --ui-color-text-light-grey: #9b9b9b;
+
+    --ui-shadow-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
+    --ui-shadow-error: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #fcb5b5;
+
     --ui-trans: 0.16s ease;
 
     /* UI Sizes */
@@ -1326,7 +1328,7 @@ input {
 
 
 .sp-radio-box__input:checked + .sp-radio-box-card {
-    border-color: var(--ui-color-focus);
+    border-color: var(--ui-shadow-focus);
     color: var(--ui-color-primary);
 }
 
@@ -1344,7 +1346,7 @@ input {
 
 .sp-radio-box__input:focus + .sp-radio-box-card {
     border-color: var(--ui-color-primary);
-    box-shadow: var(--ui-color-focus);
+    box-shadow: var(--ui-shadow-focus);
 }
 
 .sp-radio-box__input:focus + .sp-radio-box-card:before {
