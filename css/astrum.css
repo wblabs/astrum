@@ -1020,6 +1020,10 @@ input {
     outline: 1px solid mediumvioletred;
 }
 
+.sf__input--error, .sf__textarea--error, .sf__select--error {
+    box-shadow: var(--ui-shadow-error);
+}
+
 /* SP Checkbox and Radio */
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
