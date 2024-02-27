@@ -758,6 +758,8 @@ a:active {
     padding: 0;
     width: var(--ui-size);
     height: var(--ui-size);
+    color: var(--color-icon-grey);
+    font-size: var(--size-text-note);
 }
 
 .btn--s.btn--ui, .ui-s.btn--ui, a.ui-s.btn--ui {
