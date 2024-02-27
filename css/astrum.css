@@ -781,6 +781,7 @@ a:active {
 
 .btn--ui:hover {
     background: var(--thover);
+    color: var(--color-icon-grey);
 }
 
 /* /btn ui*/
