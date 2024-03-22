@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="New SP Radio box">
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="btn--ui hover fix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,33 @@
   <component name="InstanceColorv3">
     <option name="map">
       <map>
+        <entry key="$PROJECT_DIR$/Writerside/astrm.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="61" />
+                  <option name="red" value="219" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="66" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="142" />
+                  <option name="red" value="255" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
         <entry key="astrm.tree">
           <value>
             <ColorState>
@@ -80,7 +109,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2LhiYH3P2Z1tJVPhlTCspUBpdLY" />
   <component name="ProjectLevelVcsManager">
@@ -285,7 +314,16 @@
       <workItem from="1706874320643" duration="53000" />
       <workItem from="1707919846701" duration="12072000" />
       <workItem from="1707936461110" duration="1474000" />
-      <workItem from="1707983828942" duration="1334000" />
+      <workItem from="1707983828942" duration="1354000" />
+      <workItem from="1708173033774" duration="842000" />
+      <workItem from="1708276131942" duration="605000" />
+      <workItem from="1708373115445" duration="1211000" />
+      <workItem from="1709017007071" duration="3133000" />
+      <workItem from="1709209854412" duration="1265000" />
+      <workItem from="1709719616451" duration="132000" />
+      <workItem from="1710011242013" duration="43000" />
+      <workItem from="1710102356722" duration="3198000" />
+      <workItem from="1711106771865" duration="4169000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -398,38 +436,6 @@
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
-    </task>
-    <task id="LOCAL-00029" summary="new icons in RTE&#10;new ui-size system with fallback ti btn sizes&#10;new icons in sp5share&#10;new demo in forms&#10;new Tokens">
-      <option name="closed" value="true" />
-      <created>1696188153761</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1696188153761</updated>
-    </task>
-    <task id="LOCAL-00030" summary="new icons in RTE&#10;new Tokens">
-      <option name="closed" value="true" />
-      <created>1698413314841</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1698413314841</updated>
-    </task>
-    <task id="LOCAL-00031" summary="new limg/ring icons in RTE">
-      <option name="closed" value="true" />
-      <created>1698752765351</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1698752765351</updated>
-    </task>
-    <task id="LOCAL-00032" summary="new web icon in sp5share.svg">
-      <option name="closed" value="true" />
-      <created>1698839037950</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1698839037950</updated>
     </task>
     <task id="LOCAL-00033" summary="new s-toggle item in ui">
       <option name="closed" value="true" />
@@ -663,7 +669,39 @@
       <option name="project" value="LOCAL" />
       <updated>1707933082044</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="focus and error vars for ui">
+      <option name="closed" value="true" />
+      <created>1708009458355</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1708009458355</updated>
+    </task>
+    <task id="LOCAL-00063" summary="sf__input--error class">
+      <option name="closed" value="true" />
+      <created>1708173196935</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1708173196935</updated>
+    </task>
+    <task id="LOCAL-00064" summary="btn--ui text color &amp; text size">
+      <option name="closed" value="true" />
+      <created>1709018696088</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1709018696088</updated>
+    </task>
+    <task id="LOCAL-00065" summary="btn--ui hover fix">
+      <option name="closed" value="true" />
+      <created>1709018873413</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1709018873413</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,10 +720,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new s-toggle item in ui" />
-    <MESSAGE value="gitignore" />
-    <MESSAGE value="new template skeleton on index" />
-    <MESSAGE value="new header nav, aside nav removed" />
     <MESSAGE value="hub-lab icon added to header" />
     <MESSAGE value="new clg token" />
     <MESSAGE value="new TOKENZZZ page" />
@@ -707,6 +741,10 @@
     <MESSAGE value="sp-radio-toggle input accessibility fix" />
     <MESSAGE value="max-width in fw inputs fix" />
     <MESSAGE value="New SP Radio box" />
-    <option name="LAST_COMMIT_MESSAGE" value="New SP Radio box" />
+    <MESSAGE value="focus and error vars for ui" />
+    <MESSAGE value="sf__input--error class" />
+    <MESSAGE value="btn--ui text color &amp; text size" />
+    <MESSAGE value="btn--ui hover fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="btn--ui hover fix" />
   </component>
 </project>

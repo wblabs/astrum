@@ -855,10 +855,6 @@ input {
     margin-top: var(--gf);
 }
 
-.sf .sf__line {
-    margin: 0;
-}
-
 .sf__form {
 }
 
@@ -885,6 +881,10 @@ input {
 
 .sf__line {
     margin: 0 0 var(--gap) 0;
+}
+
+.sf .sf__line {
+    margin: 0;
 }
 
 .sf__line:last-child {
@@ -956,15 +956,15 @@ input {
 }
 
 .sf__input:focus {
-    outline: 2px solid var(--color-primary);
+    box-shadow: var(--ui-shadow-focus);
 }
 
 .sf__textarea:focus {
-    outline: 2px solid var(--color-primary);
+    box-shadow: var(--ui-shadow-focus);
 }
 
 .sf__select:focus {
-    outline: 2px solid var(--color-primary);
+    box-shadow: var(--ui-shadow-focus);
 }
 
 .sf__select option {
@@ -1190,6 +1190,8 @@ input {
     display: flex;
     align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 4px;
 }
 
 .sp-radio-group__item {
