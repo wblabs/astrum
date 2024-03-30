@@ -685,12 +685,7 @@ a:active {
 }
 
 
-.ui-s svg {
-    width: 16px;
-    height: 16px;
-}
-
-.btn--s svg {
+.ui-s svg, .btn--s svg {
     width: 16px;
     height: 16px;
 }
