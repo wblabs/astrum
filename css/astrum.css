@@ -240,6 +240,10 @@ a:active {
     font-style: italic;
 }
 
+.fsn {
+    font-size: var(--size-text-note);
+}
+
 .ca {
     color: var(--color-accent);
 }
@@ -677,13 +681,12 @@ a:active {
     box-shadow: none;
 }
 
-
 /* btn sizes --- */
 .btn--s, a.btn--s, .btn.ui-s, a.btn.ui-s {
     height: var(--ui-size-s);
     padding: 0 16px;
+    font-size: 0.8rem;
 }
-
 
 .ui-s svg, .btn--s svg {
     width: 16px;
@@ -721,7 +724,7 @@ a:active {
     stroke: var(--color-btn-text);
 }
 
-/* /btn ghost */
+/* /btn outline */
 
 /* btn ghost */
 .btn--ghost, a.btn--ghost {
@@ -816,6 +819,11 @@ a:active {
     gap: var(--gap);
 }
 
+.btn-pan--thin {
+    padding: 0;
+    margin: 0;
+}
+
 .btn-pan--center {
     justify-content: center;
 }
@@ -828,10 +836,6 @@ a:active {
     flex-flow: column;
 }
 
-.btn-pan--thin {
-    padding: 0;
-    margin: 0;
-}
 
 /* /btn pan */
 
