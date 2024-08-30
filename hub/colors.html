@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--
+  ____   ____    _     ____  _____    ____
+ / ___| |  _ \  / \   / ___|| ____|  | ___|
+ \___ \ | |_) |/ _ \ | |    |  _|    |___ \
+  ___) ||  __// ___ \| |___ | |___    ___) |
+ |____/ |_|  /_/   \_\\____||_____|  |____/
+    space 5 ♦ HTML
+    [AstrumTpl]
+    1.4.0
+-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="website" property="og:type">
+
+    <title>Astrum Tpl 1.5.0 by Space ♦ 5</title>
+    <meta content="Astrum Tpl by Space5" property="og:title">
+    <meta content="Astrum Tpl" property="og:site_name">
+    <meta content="Astrum Tpl by Space5" name="description">
+    <meta content="Astrum Tpl by Space5" property="og:description">
+    <meta content="../img/600x300__main.png" property="og:image">
+    <meta content="../img/600x300__main.png" property="og:image:secure_url">
+
+    <link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="../favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="../favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <!--    <link href="/site.webmanifest" rel="manifest">-->
+    <link color="#5bbad5" href="../favicon/safari-pinned-tab.svg" rel="mask-icon">
+    <meta content="#2b5797" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+
+    <!--<base href="[[++site_url]]">-->
+    <!--    <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">-->
+
+    <link href="../css/core.css" rel="stylesheet">
+</head>
+<body class="body">
+<div class="header-wrapper">
+    <header class="header wid">
+        <div class="header__left">
+            <a href="../index.html" class="header-logo">
+                <img alt="Demo logo" src="../img/logo.svg" class="header-logo__img">
+                <div class="header-logo__text">
+                    Astrum Tpl
+                </div>
+            </a>
+        </div>
+        <div class="header__center">
+            <div class="header-center__text">
+                connecting to Tower...
+            </div>
+        </div>
+        <div class="header__right">
+            <nav class="nav" id="main-nav">
+                <!-- mobnav icon -->
+                <button class="mobnav" id="mobnav" onclick="mobilemenu()" title="menu">
+                <span class="mobnav__icon">
+                    <span class="menu-icon-wrapper" id="menu-icon">
+                        <span class="menu-icon menu-icon__top"></span>
+                        <span class="menu-icon menu-icon__middle"></span>
+                        <span class="menu-icon menu-icon__bottom"></span>
+                    </span>
+                </span>
+                    <span class="mobnav__text">
+
+                </span>
+                </button>
+                <!-- /mobnav icon -->
+                <div style="color:var(--color-text-grey);">Lab:</div>
+                <a href="colors.html">Colors</a>
+                <a href="forms.html">Forms</a>
+                <a href="layout.html">Layout</a>
+                <a href="sp5notify.html">sp5notify</a>
+
+            </nav>
+        </div>
+    </header>
+</div>
+<main class="main">
+    <div class="page wid">
+        <div class="pad-x4"></div>
+        <h1>Colors in ui</h1>
+
+        <section class="hub-demo-section">
+            <div class="grid-c-2">
+                <div>
+                    <h3>UI Colors</h3>
+                    <ol class="hub__ol">
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-100);"></div>
+                                <div class="hub-li-color__text">--ui-bg-100</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-200);"></div>
+                                <div class="hub-li-color__text">--ui-bg-200</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-300);"></div>
+                                <div class="hub-li-color__text">--ui-bg-300</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-elem-bg);"></div>
+                                <div class="hub-li-color__text">--ui-elem-bg</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-input-bg);"></div>
+                                <div class="hub-li-color__text">--ui-input-bg</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--ui-input-bg--active);"></div>
+                                <div class="hub-li-color__text">--ui-input-bg--active</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-color-primary);"></div>
+                                <div class="hub-li-color__text">--ui-color-primary</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-color-checked);"></div>
+                                <div class="hub-li-color__text">--ui-color-checked</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-color-neutral);"></div>
+                                <div class="hub-li-color__text">--ui-color-neutral</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-color-text);"></div>
+                                <div class="hub-li-color__text">--ui-color-text</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--ui-color-text-grey);"></div>
+                                <div class="hub-li-color__text">--ui-color-text-grey</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--ui-color-text-light-grey);"></div>
+                                <div class="hub-li-color__text">--ui-color-text-light-grey</div>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <br>
+                    <h3>Buttons</h3>
+                    <ol class="hub__ol">
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-bg);"></div>
+                                <div class="hub-li-color__text">--color-btn-bg</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-border);"></div>
+                                <div class="hub-li-color__text">--color-btn-border</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-text);"></div>
+                                <div class="hub-li-color__text">--color-btn-text</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--color-btn-ghost-text);"></div>
+                                <div class="hub-li-color__text">--color-btn-ghost-text</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-shadow);"></div>
+                                <div class="hub-li-color__text">--color-btn-shadow</div>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <h3>Interface</h3>
+                    <ol class="hub__ol">
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-border);"></div>
+                                <div class="hub-li-color__text">--color-border</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--color-border-hover);"></div>
+                                <div class="hub-li-color__text">--color-border-hover</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-input-bg);"></div>
+                                <div class="hub-li-color__text">--color-input-bg</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--color-input-disabled-bg);"></div>
+                                <div class="hub-li-color__text">--color-input-disabled-bg</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--color-input-border);"></div>
+                                <div class="hub-li-color__text">--color-input-border</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-input-text);"></div>
+                                <div class="hub-li-color__text">--color-input-text</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-label-text);"></div>
+                                <div class="hub-li-color__text">--color-label-text</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--color-input-placeholder-text);"></div>
+                                <div class="hub-li-color__text">--color-input-placeholder-text</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-table-black);"></div>
+                                <div class="hub-li-color__text">--color-table-black</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-table-grey);"></div>
+                                <div class="hub-li-color__text">--color-table-grey</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg" style="background-color: var(--color-icon-grey);"></div>
+                                <div class="hub-li-color__text">--color-icon-grey</div>
+                            </div>
+                        </li>
+                        <li class="hub__li">
+                            <div class="hub-li__color">
+                                <div class="hub-li-color__bg"
+                                     style="background-color: var(--color-icon--active);"></div>
+                                <div class="hub-li-color__text">--color-icon--active</div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    demo ui items
+                    <div class="btn-pan">
+                        <a href="#" class="btn">
+                            <svg>
+                                <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                            </svg>
+                            Button</a>
+                        <a href="#" class="btn btn--outline">
+                            <svg>
+                                <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                            </svg>
+                            Button</a>
+                        <a href="#" class="btn btn--ghost">
+                            <svg>
+                                <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                            </svg>
+                            Button</a>
+                        <a href="#" class="btn btn--micro">
+                            <svg>
+                                <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                            </svg>
+                            Button</a>
+                        <a href="#" class="btn btn--ui">
+                            <svg>
+                                <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+<script src="../js/astrum.js"></script>
+
+</body>
+</html>

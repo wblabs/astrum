@@ -123,6 +123,8 @@
     --color-table-grey: var(--color-text-grey);
     --color-icon-grey: var(--color-text-grey);
     --color-icon--active: var(--color-accent);
+
+
     --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
     --trans: all 0.2s; /*transition delay*/
 
