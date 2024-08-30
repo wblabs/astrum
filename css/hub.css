@@ -549,6 +549,11 @@
     font-weight: bold;
     font-family: var(--wf3);
 }
+.hub-color-box__subtitle {
+    color: var(--color-white);
+    font-family: var(--wf3);
+    padding: var(--gf);
+}
 
 .hub-color-box__body {
     border: 1px transparent;
@@ -557,16 +562,21 @@
     transition: var(--trans);
     padding: 16px;
     color: var(--color-white);
+    display: flex;
+    align-items: center;
 }
-
 .hub-color-box__body:hover {
     border: 1px solid rgba(255, 255, 255, 0.24);
     box-shadow: var(--sp-shadow-xl);
 }
-
-.hub-color-box__body:hover {
+.hub-color-box__sample {
+    height: 100%;
+    width: 100%;
 }
+.hub-color-box__sample--s {
 
+    width: 50%;
+}
 .hub-shadow-box-section-test {
     border-radius: var(--gf);
     height: 32px;

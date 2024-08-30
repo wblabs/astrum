@@ -307,8 +307,27 @@
                             <div class="hub-color-box__title">
                                 --color-primary
                             </div>
-                            <div class="hub-color-box__body"
-                                 style="background-color: var(--color-primary);">
+                            <div class="hub-color-box__body">
+                                <div class="hub-color-box__sample"
+                                     style="background-color: var(--color-primary);">
+                                    <div class="hub-color-box__subtitle">
+                                        primary
+                                    </div>
+                                </div>
+                                <div class="hub-color-box__sample hub-color-box__sample--s"
+                                     style="background-color: var(--color-primary-light);">
+                                    <div class="hub-color-box__subtitle">
+                                        light
+                                    </div>
+
+                                </div>
+                                <div class="hub-color-box__sample hub-color-box__sample--s"
+                                     style="background-color: var(--color-primary-dark);">
+                                    <div class="hub-color-box__subtitle">
+                                        dark
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
@@ -316,8 +335,27 @@
                             <div class="hub-color-box__title">
                                 --color-secondary
                             </div>
-                            <div class="hub-color-box__body"
-                                 style="background-color: var(--color-secondary);">
+                            <div class="hub-color-box__body">
+                                <div class="hub-color-box__sample"
+                                     style="background-color: var(--color-secondary);">
+                                    <div class="hub-color-box__subtitle">
+                                        secondary
+                                    </div>
+                                </div>
+                                <div class="hub-color-box__sample hub-color-box__sample--s"
+                                     style="background-color: var(--color-secondary-light);">
+                                    <div class="hub-color-box__subtitle">
+                                        light
+                                    </div>
+
+                                </div>
+                                <div class="hub-color-box__sample hub-color-box__sample--s"
+                                     style="background-color: var(--color-secondary-dark);">
+                                    <div class="hub-color-box__subtitle">
+                                        dark
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
@@ -325,22 +363,42 @@
                             <div class="hub-color-box__title">
                                 --color-accent
                             </div>
-                            <div class="hub-color-box__body"
-                                 style="background-color: var(--color-accent);">
+                            <div class="hub-color-box__body">
+                                <div class="hub-color-box__sample"
+                                     style="background-color: var(--color-accent);">
+                                    <div class="hub-color-box__subtitle">
+                                        accent
+                                    </div>
+                                </div>
+                                <div class="hub-color-box__sample hub-color-box__sample--s"
+                                     style="background-color: var(--color-accent-light);">
+                                    <div class="hub-color-box__subtitle">
+                                        light
+                                    </div>
+
+                                </div>
+                                <div class="hub-color-box__sample hub-color-box__sample--s"
+                                     style="background-color: var(--color-accent-dark);">
+                                    <div class="hub-color-box__subtitle">
+                                        dark
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
 
-                        <div class="hub-color-box">
-                            <div class="hub-color-box__title">
-                                --color-dark
-                            </div>
-                            <div class="hub-color-box__body"
-                                 style="background-color: var(--color-dark);">
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="hub-color-wrapper grid-a">
+                    <div class="hub-color-box">
+                        <div class="hub-color-box__title">
+                            --color-dark
+                        </div>
+                        <div class="hub-color-box__body"
+                             style="background-color: var(--color-dark);">
+                        </div>
+                    </div>
                     <div class="hub-color-box">
                         <div class="hub-color-box__title">
                             --color-white
@@ -349,20 +407,32 @@
                              style="background-color: var(--color-white);">
                         </div>
                     </div>
+
+                </div>
+                <div class="hub-color-wrapper grid-a">
+
                     <div class="hub-color-box">
                         <div class="hub-color-box__title">
-                            --color-neutral
+                            --color-text
                         </div>
                         <div class="hub-color-box__body"
-                             style="background-color: var(--color-neutral);">
+                             style="background-color: var(--color-text);">
                         </div>
                     </div>
                     <div class="hub-color-box">
                         <div class="hub-color-box__title">
-                            --color-placeholder
+                            --color-text-grey
                         </div>
                         <div class="hub-color-box__body"
-                             style="background-color: var(--color-placeholder);">
+                             style="background-color: var(--color-text-grey);">
+                        </div>
+                    </div>
+                    <div class="hub-color-box">
+                        <div class="hub-color-box__title">
+                            --color-text-light-grey
+                        </div>
+                        <div class="hub-color-box__body"
+                             style="background-color: var(--color-text-light-grey);">
                         </div>
                     </div>
                 </div>
@@ -373,14 +443,6 @@
                         </div>
                         <div class="hub-color-box__body"
                              style="background-color: var(--color-bg);">
-                        </div>
-                    </div>
-                    <div class="hub-color-box">
-                        <div class="hub-color-box__title">
-                            --color-text-grey
-                        </div>
-                        <div class="hub-color-box__body"
-                             style="background-color: var(--color-text-grey);">
                         </div>
                     </div>
                 </div>
@@ -1256,7 +1318,8 @@
                             </div>
                             <div class="sf__line">
                                 <label for="username" class="sf__label">Text (Error)</label>
-                                <input type="text" name="username" placeholder="Ваше имя" class="sf__input sf__input--error">
+                                <input type="text" name="username" placeholder="Ваше имя"
+                                       class="sf__input sf__input--error">
                             </div>
                             <div class="sf__line">
                                 <label for="email-address" class="sf__label">Email</label>
