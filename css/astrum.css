@@ -19,20 +19,23 @@
 :root {
     /* Theme colors */
     --color-primary: #003CFF;
-    --color-secondary: #05e745;
-    --color-accent: #F7685B;
-    --color-dark: #192a3e;
-    --color-white: #ffffff;
-    --color-neutral: #EFF2F6;
-    --color-placeholder: #DFE4EA;
-    --color-bg: #F7F9FA;
+    --color-primary-light: #1f50ff;
+    --color-primary-dark: #0736dc;
 
-    /*Theme-shades*/
-    --color-primary-light: #30406f;
-    --color-primary-dark: #1a233b;
-    --color-primary-transp: rgba(0, 60, 255, 0.16);
+    --color-secondary: #05e745;
     --color-secondary-light: #0afc4c;
     --color-secondary-dark: #04cd3d;
+
+    --color-accent: #F7685B;
+    --color-accent-light: #fc8076;
+    --color-accent-dark: #e75548;
+
+    --color-dark: #192a3e;
+    --color-white: #ffffff;
+    /*--color-neutral: #EFF2F6; no need*/
+    /*--color-placeholder: #DFE4EA; no need*/
+    --color-bg: #F7F9FA;
+
 
     /* Fonts */
     --wf: 'Roboto', sans-serif;
@@ -55,14 +58,12 @@
 
     /* Project colors */
     --color-link: var(--color-primary);
-    --color-link-hover: var(--color-accent);
-    --color-link-active: var(--color-accent);
+    --color-link-hover: var(--color-primary-light);
 
-    /* Bg colors */
 
     /* SP5 DEV*/
-    --color-sp5-dev-bg: #05e745;
-    --color-sp5-dev-text: #222e4e;
+    --color-sp5-dev-light: #05e745;
+    --color-sp5-dev-dark: #222e4e;
 
     /* Support colors */
     --color-orange: #ffb946;
@@ -85,9 +86,11 @@
     --ui-color-text-grey: #737373;
     --ui-color-text-light-grey: #9b9b9b;
 
+    /* UI Shadows*/
     --ui-shadow-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
     --ui-shadow-error: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #fcb5b5;
 
+    /*UI Transitions*/
     --ui-trans: 0.16s ease;
 
     /* UI Sizes */
@@ -100,13 +103,19 @@
     --ui-input-border: 1px solid #b5bfd9;
     --ui-input-border-active: 1px solid #0043ed;
 
+    /* Buttons */
+    --color-btn-bg: var(--color-primary);
+    --color-btn-border: var(--color-primary);
+    --color-btn-text: var(--color-white);
+    --color-btn-ghost-text: var(--color-text-grey);
+    --color-btn-shadow: rgba(37, 193, 252, 0.4);
 
     /* Interface */
     --color-border: rgba(0, 0, 0, 0.4);
     --color-border-hover: var(--color-primary);
-    --color-input-bg: var(--color-placeholder);
+    --color-input-bg: #DFE4EA;
     --color-input-disabled-bg: #E1E6F9;
-    --color-input-border: var(--color-placeholder);
+    --color-input-border: #DFE4EA;
     --color-input-text: var(--color-text);
     --color-label-text: var(--color-text);
     --color-input-placeholder-text: var(--color-text-grey);
@@ -125,12 +134,6 @@
     --sp-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --sp-shadow-inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 
-    /* Buttons */
-    --color-btn-bg: var(--color-primary);
-    --color-btn-border: var(--color-primary);
-    --color-btn-text: var(--color-white);
-    --color-btn-ghost-text: var(--color-text-grey);
-    --color-btn-shadow: rgba(37, 193, 252, 0.4);
 
     /* Objects */
     --gf: 8px; /* grid flow */
@@ -676,7 +679,7 @@ a:active {
 
 .btn:disabled {
     color: var(--color-text-grey);
-    background: var(--color-neutral);
+    background: var(--ui-color-neutral);
     cursor: auto;
     box-shadow: none;
 }
@@ -1271,7 +1274,7 @@ input {
     gap: 4px;
     padding: 4px;
     border-radius: calc(var(--ui-size) / 2);
-    background: var(--ui-bg-100);
+    background: var(--ui-color-neutral);
     font-size: var(--size-text-note);
     transition: var(--trans);
     color: var(--ui-color-text);
@@ -1746,11 +1749,11 @@ a.pcard__btn:hover {
 }
 
 .breadcrumb a {
-    color: var(--color-text-accent);
+    color: var(--color-link);
 }
 
 .breadcrumb a:hover {
-    color: var(--color-link);
+    color: var(--color-link-hover);
 }
 
 .breadcrumb li {
@@ -2001,7 +2004,7 @@ a.pcard__btn:hover {
 /* Footer
 ------- ------- ------- */
 .footer-wrapper {
-    background: var(--color-neutral);
+    background: var(--ui-bg-100);
 }
 
 .footer {
