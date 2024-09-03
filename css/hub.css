@@ -157,7 +157,7 @@
 }
 
 .header-center-nav__item:hover {
-    background: var(--color-placeholder);
+    background: var(--ui-color-neutral);
 }
 
 .header-center-nav__item.is-active {
@@ -1236,7 +1236,7 @@
 }
 
 .footer-wrapper {
-    background: var(--color-neutral);
+    background: var(--ui-bg-100);
 }
 
 .footer {

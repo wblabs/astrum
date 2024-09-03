@@ -85,7 +85,8 @@
 
         <section class="hub-demo-section">
             <div class="grid-c-2">
-                <div>
+                <section class="grid-c-2">
+                    <div>
                     <h3>UI Colors</h3>
                     <ol class="hub__ol">
                         <li class="hub__li">
@@ -165,7 +166,7 @@
                         </li>
                     </ol>
 
-                    <br>
+
                     <h3>Buttons</h3>
                     <ol class="hub__ol">
                         <li class="hub__li">
@@ -200,7 +201,8 @@
                             </div>
                         </li>
                     </ol>
-
+            </div>
+                    <div>
                     <h3>Interface</h3>
                     <ol class="hub__ol">
                         <li class="hub__li">
@@ -281,7 +283,8 @@
                             </div>
                         </li>
                     </ol>
-                </div>
+                    </div>
+                </section>
                 <div>
                     demo ui items
                     <div class="btn-pan">
@@ -311,7 +314,195 @@
                             </svg>
                         </a>
                     </div>
+                    <div class="grid-c-3">
+                        <div>
+                            <label for="username" class="sf__label">Name</label>
+                            <input type="text" name="username" placeholder="Ваше имя" class="sf__input" id="username">
+                        </div>
+                        <div>
+                            <label class="sf__label">Planet</label>
+                            <select type="text" placeholder="name" name="planet" class="sf__select">
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="earth">Earth</option>
+                                <option value="mars">Mars</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-pan">
+                        <div class="sp-radio-group">
+                            <label class="sp-radio-group__item">
+                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" checked>
+                                <span class="sp-radio-group-item__text">
+                                    <svg>
+                                        <use href="../img/sp5sprite.svg#home"></use>
+                                    </svg>
+                                    Alien
+                                    </span>
+                            </label>
+                            <label class="sp-radio-group__item">
+                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                                <span class="sp-radio-group-item__text">Terminator</span>
+                            </label>
+                            <label class="sp-radio-group__item">
+                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                                <span class="sp-radio-group-item__text">Android</span>
+                            </label>
+                            <label class="sp-radio-group__item">
+                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
+                                <span class="sp-radio-group-item__text">Thing</span>
+                            </label>
+                            <label class="sp-radio-group__item">
+                                <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio" disabled>
+                                <span class="sp-radio-group-item__text">Prometheus</span>
+                            </label>
+                        </div>
+                    </div>
 
+                    <div class="grid-c-3">
+                        <div class="btn-pan">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Switches
+                                </legend>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch">
+                                        Party mode
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch" checked>
+                                        Party mode
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch" disabled>
+                                        Party mode
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" class="sp-switch" checked disabled>
+                                        Party mode
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="btn-pan">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Checkbox
+                                </legend>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Friday" class="sf__checkbox"
+                                               checked>
+                                        Пятница
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="checkbox" name="day" value="Saturday" class="sf__checkbox">
+                                        Суббота
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="btn-pan">
+                            <fieldset class="sf__fieldset">
+                                <legend class="sf__legend">
+                                    Checkbox
+                                </legend>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="radio" name="day" value="Friday" class="sf__radio"
+                                               checked>
+                                        Пятница
+                                    </label>
+                                </div>
+                                <div class="sf__line">
+                                    <label class="sf__label">
+                                        <input type="radio" name="day" value="Saturday" class="sf__radio">
+                                        Суббота
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="btn-pan">
+                        <div class="sp-radio-toggle">
+                            <label class="sp-radio-toggle__label">
+                                <input type="radio" name="radio" checked="">
+                                <span class="sp-radio-toggle__text">Venus</span>
+                            </label>
+                            <label class="sp-radio-toggle__label">
+                                <input type="radio" name="radio">
+                                <span class="sp-radio-toggle__text">Earth</span>
+                            </label>
+
+                            <label class="sp-radio-toggle__label">
+                                <input type="radio" name="radio">
+                                <span class="sp-radio-toggle__text">Mars</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="btn-pan">
+                        <div class="sp-radio-box-wrapper">
+                            <label class="sp-radio-box__label">
+                                <input class="sp-radio-box__input" type="radio" name="stuff">
+                                <div class="sp-radio-box-card">
+                                    <div class="sp-radio-box-card__example">
+                                        <img src="../hub/hub-cactus.svg" alt="">
+                                    </div>
+                                    <div class="sp-radio-box__text">Small Mystrious Plant</div>
+                                </div>
+                            </label>
+                            <label>
+                                <input checked class="sp-radio-box__input" type="radio" name="stuff">
+                                <div class="sp-radio-box-card">
+                                    <div class="sp-radio-box-card__example">
+                                        <img src="../hub/hub-box.svg" alt="">
+                                    </div>
+                                    <div class="sp-radio-box__text">Box</div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="sp-radio-box__input" type="radio" name="stuff">
+                                <div class="sp-radio-box-card">
+                                    <div class="sp-radio-box-card__example">
+                                        <img src="../hub/hub-clock.svg" alt="">
+                                    </div>
+                                    <div class="sp-radio-box__text">Apple watch</div>
+                                </div>
+                            </label>
+                            <label>
+                                <input class="sp-radio-box__input" type="radio" name="stuff">
+                                <div class="sp-radio-box-card">
+                                    <div class="sp-radio-box-card__example" style="background-color:#0aaeb3;">
+
+                                    </div>
+                                    <div class="sp-radio-box__text">Green</div>
+                                </div>
+                            </label>
+
+                            <label>
+                                <input class="sp-radio-box__input" type="radio" name="stuff">
+                                <div class="sp-radio-box-card">
+                                    <div class="sp-radio-box-card__example" style="background-color:#ce0a4f;">
+
+                                    </div>
+                                    <div class="sp-radio-box__text">Red</div>
+                                </div>
+                            </label>
+                        </div>
+
+                    </div>
 
 
                 </div>
