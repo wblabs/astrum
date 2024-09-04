@@ -59,6 +59,7 @@
     /* Project colors */
     --color-link: var(--color-primary);
     --color-link-hover: var(--color-primary-light);
+    --color-link-active: var(--color-primary-dark);
 
 
     /* SP5 DEV*/
@@ -76,15 +77,25 @@
     --ui-bg-100: #F5F5F5;
     --ui-bg-200: #EBEBEB;
     --ui-bg-300: #E1E1E1;
-    --ui-elem-bg: #edede7;
+
+
     --ui-input-bg: #fff;
-    --ui-input-bg--active: #dee7ff;
+    --ui-input-bg-active: #dee7ff;
     --ui-color-primary: #0043ed;
-    --ui-color-checked: var(--ui-color-primary);
+    --ui-color-primary-active: var(--ui-color-primary);
+    --ui-color-primary-hover: #1250ef;
     --ui-color-neutral: #EFF2F6;
+
     --ui-color-text: var(--color-dark);
     --ui-color-text-grey: #737373;
     --ui-color-text-light-grey: #9b9b9b;
+    --ui-color-placeholder: var(--color-text-grey);
+
+
+    --ui-color-border: #b5bfd9;
+    --ui-color-border-active: #0043ed;
+    --ui-color-border-hover: #0043ed;
+
 
     /* UI Shadows*/
     --ui-shadow-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
@@ -100,8 +111,8 @@
     --ui-raduis: 8px;
 
     /* UI Borders */
-    --ui-input-border: 1px solid #b5bfd9;
-    --ui-input-border-active: 1px solid #0043ed;
+    --ui-input-border: 1px solid var(--ui-color-border);
+    --ui-input-border-active: 1px solid var(--ui-color-border-active);
 
     /* Buttons */
     --color-btn-bg: var(--color-primary);
@@ -111,18 +122,16 @@
     --color-btn-shadow: rgba(37, 193, 252, 0.4);
 
     /* Interface */
-    --color-border: rgba(0, 0, 0, 0.4);
-    --color-border-hover: var(--color-primary);
-    --color-input-bg: #DFE4EA;
+
+
     --color-input-disabled-bg: #E1E6F9;
     --color-input-border: #DFE4EA;
     --color-input-text: var(--color-text);
     --color-label-text: var(--color-text);
-    --color-input-placeholder-text: var(--color-text-grey);
     --color-table-black: var(--color-text);
     --color-table-grey: var(--color-text-grey);
     --color-icon-grey: var(--color-text-grey);
-    --color-icon--active: var(--color-accent);
+    --color-icon-active: var(--color-accent);
 
 
     --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
@@ -380,7 +389,7 @@ a:active {
 }
 
 [class*='spis-']:hover {
-    stroke: var(--color-icon--active);
+    stroke: var(--color-icon-active);
 }
 
 .spis {
@@ -410,7 +419,7 @@ a:active {
 }
 
 [class*='spif-']:hover {
-    fill: var(--color-icon--active);
+    fill: var(--color-icon-active);
 }
 
 .spif {
@@ -926,7 +935,7 @@ input {
 .sf__input, .sf__textarea, .sf__select {
     border: var(--ui-input-border);
     background: var(--ui-input-bg);
-    color: var(--color-text);
+    color: var(--ui-color-text);
     font-size: 14px;
     border-radius: var(--ui-raduis);
     width: 200px;
@@ -976,7 +985,7 @@ input {
 }
 
 .sf__input::placeholder {
-    color: var(--color-input-placeholder-text);
+    color: var(--ui-color-placeholder);
     font-family: inherit;
 }
 
@@ -986,7 +995,7 @@ input {
 }
 
 .sf__textarea::placeholder {
-    color: var(--color-input-placeholder-text);
+    color: var(--ui-color-placeholder);
     font-family: inherit;
 }
 
@@ -1093,7 +1102,7 @@ input {
 
     input[type=checkbox]:hover:not(:checked):not(:disabled),
     input[type=radio]:hover:not(:checked):not(:disabled) {
-        --bc: var(--color-border-hover);
+        --bc: var(--ui-color-border-hover);
     }
 
     input[type=checkbox]:focus,
@@ -1241,7 +1250,7 @@ input {
 
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
     border: 1px solid var(--ui-color-primary);
-    background-color: var(--ui-input-bg--active);
+    background-color: var(--ui-input-bg-active);
     z-index: 1;
     color: var(--ui-color-primary);
 }
@@ -1348,13 +1357,13 @@ input {
 .sp-radio-box__input:checked + .sp-radio-box-card:before {
     transform: scale(1);
     opacity: 1;
-    background-color: var(--ui-color-checked);
-    border-color: var(--ui-color-checked);
+    background-color: var(--ui-color-primary-active);
+    border-color: var(--ui-color-primary-active);
 }
 
 
 .sp-radio-box__input:checked + .sp-radio-box-card .sp-radio-box__text {
-    color: var(--ui-color-checked);
+    color: var(--ui-color-primary-active);
 }
 
 .sp-radio-box__input:focus + .sp-radio-box-card {
