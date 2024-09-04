@@ -157,7 +157,7 @@
 }
 
 .header-center-nav__item:hover {
-    background: var(--ui-color-neutral);
+    background: var(--ui-input-bg-disabled);
 }
 
 .header-center-nav__item.is-active {
@@ -303,7 +303,17 @@
     grid-template-columns: 1fr 1fr;
     background: var(--color-white);
 }
-
+.grid-hub-1-2 {
+    display: grid;
+    gap: calc(var(--gap) * 2);
+    grid-template-columns: 1fr 2fr;
+}
+@media screen {
+    .grid-hub, grid-hub-1-2 {
+        grid-template-columns: 1fr;
+        gap: var(--gf);
+    }
+}
 
 .hub-example {
     background: #e4efff;

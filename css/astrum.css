@@ -32,8 +32,6 @@
 
     --color-dark: #192a3e;
     --color-white: #ffffff;
-    /*--color-neutral: #EFF2F6; no need*/
-    /*--color-placeholder: #DFE4EA; no need*/
     --color-bg: #F7F9FA;
 
 
@@ -45,7 +43,6 @@
     --color-text-accent: var(--color-accent);
     --color-text-grey: #737373;
     --color-text-light-grey: #a2a2a2;
-
 
     /* Fonts sizes */
     --size-text: 1rem;
@@ -61,11 +58,6 @@
     --color-link-hover: var(--color-primary-light);
     --color-link-active: var(--color-primary-dark);
 
-
-    /* SP5 DEV*/
-    --color-sp5-dev-light: #05e745;
-    --color-sp5-dev-dark: #222e4e;
-
     /* Support colors */
     --color-orange: #ffb946;
     --color-red: #f7685b;
@@ -78,23 +70,26 @@
     --ui-bg-200: #EBEBEB;
     --ui-bg-300: #E1E1E1;
 
-
     --ui-input-bg: #fff;
     --ui-input-bg-active: #dee7ff;
+    --ui-input-bg-disabled: #EFF2F6;
     --ui-color-primary: #0043ed;
     --ui-color-primary-active: var(--ui-color-primary);
     --ui-color-primary-hover: #1250ef;
-    --ui-color-neutral: #EFF2F6;
 
     --ui-color-text: var(--color-dark);
     --ui-color-text-grey: #737373;
     --ui-color-text-light-grey: #9b9b9b;
     --ui-color-placeholder: var(--color-text-grey);
 
-
     --ui-color-border: #b5bfd9;
     --ui-color-border-active: #0043ed;
-    --ui-color-border-hover: #0043ed;
+    --ui-color-border-hover: #a3aecc;
+
+    /* UI Borders */
+    --ui-input-border: 1px solid var(--ui-color-border);
+    --ui-input-border-active: 1px solid var(--ui-color-border-active);
+    --ui-input-border-hover: 1px solid var(--ui-color-border-hover);
 
 
     /* UI Shadows*/
@@ -110,9 +105,6 @@
     --ui-size-l: 44px;
     --ui-raduis: 8px;
 
-    /* UI Borders */
-    --ui-input-border: 1px solid var(--ui-color-border);
-    --ui-input-border-active: 1px solid var(--ui-color-border-active);
 
     /* Buttons */
     --color-btn-bg: var(--color-primary);
@@ -121,18 +113,9 @@
     --color-btn-ghost-text: var(--color-text-grey);
     --color-btn-shadow: rgba(37, 193, 252, 0.4);
 
-    /* Interface */
-
-
-    --color-input-disabled-bg: #E1E6F9;
-    --color-input-border: #DFE4EA;
-    --color-input-text: var(--color-text);
-    --color-label-text: var(--color-text);
-    --color-table-black: var(--color-text);
-    --color-table-grey: var(--color-text-grey);
+    /* Content */
     --color-icon-grey: var(--color-text-grey);
-    --color-icon-active: var(--color-accent);
-
+    --color-icon-active: var(--color-text);
 
     --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
     --trans: all 0.2s; /*transition delay*/
@@ -151,6 +134,12 @@
     --gap: 16px; /* grid gap */
     --header-height: 48px;
     --wid: 1280px; /* max-width of content */
+
+
+    /* SP5 DEV*/
+    --sp5-1: #05e745;
+    --sp5-2: #222e4e;
+
 }
 
 /*   :: Base tags ---   */
@@ -688,13 +677,20 @@ a:active {
     outline: 1px solid var(--color-primary);
 }
 
-.btn:disabled {
+a.btn--disabled, .btn--disabled, .btn:disabled {
     color: var(--color-text-grey);
-    background: var(--ui-color-neutral);
-    cursor: auto;
+    background: var(--ui-input-bg-disabled);
+    cursor: default;
     box-shadow: none;
+    user-select: none;
 }
-
+a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
+    color: var(--color-text-grey);
+    background: var(--ui-input-bg-disabled);
+    cursor: default;
+    box-shadow: none;
+    user-select: none;
+}
 /* btn sizes --- */
 .btn--s, a.btn--s, .btn.ui-s, a.btn.ui-s {
     height: var(--ui-size-s);
@@ -908,7 +904,7 @@ input {
     display: flex;
     align-items: center;
     gap: calc(var(--gf) / 2);
-    color: var(--color-label-text);
+    color: var(--ui-color-text);
 }
 
 .sf__label--col {
@@ -966,6 +962,18 @@ input {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;*/
+}
+
+.sf__input:hover {
+    border: var(--ui-input-border-hover);
+}
+
+.sf__textarea:hover {
+    border: var(--ui-input-border-hover);
+}
+
+.sf__select:hover {
+    border: var(--ui-input-border-hover);
 }
 
 .sf__input:focus {
@@ -1058,7 +1066,7 @@ input {
         position: relative;
         margin: 0;
         cursor: pointer;
-        border: 1px solid var(--bc, var(--color-input-border));
+        border: 1px solid var(--bc, var(--ui-color-border));
         background: var(--b, var(--color-white));
         transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
     }
@@ -1084,15 +1092,15 @@ input {
 
     input[type=checkbox]:disabled,
     input[type=radio]:disabled {
-        --b: var(--color-input-disabled-bg);
+        --b: var(--ui-input-bg-disabled);
         cursor: not-allowed;
         opacity: 0.9;
     }
 
     input[type=checkbox]:disabled:checked,
     input[type=radio]:disabled:checked {
-        --b: var(--color-input-disabled-bg);
-        --bc: var(--color-input-border);
+        --b: var(--ui-input-bg-disabled);
+        --bc: var(--ui-color-border);
     }
 
     input[type=checkbox]:disabled + label,
@@ -1165,7 +1173,7 @@ input {
         border-radius: 50%;
         width: 15px;
         height: 15px;
-        background: var(--ab, var(--color-input-border));
+        background: var(--ab, var(--ui-color-border));
         transform: translateX(var(--x, 0));
     }
 
@@ -1270,7 +1278,7 @@ input {
 
 /* Disabled */
 .sp-radio-group input[type=radio]:disabled + .sp-radio-group-item__text {
-    background: var(--ui-color-neutral);
+    background: var(--ui-input-bg-disabled);
     color: var(--ui-color-text-grey);
 }
 
@@ -1285,7 +1293,7 @@ input {
     gap: 4px;
     padding: 4px;
     border-radius: calc(var(--ui-size) / 2);
-    background: var(--ui-color-neutral);
+    background: var(--ui-input-bg-disabled);
     font-size: var(--size-text-note);
     transition: var(--trans);
     color: var(--ui-color-text);
@@ -1416,6 +1424,7 @@ input {
     transform: scale(1);
     opacity: 1;
 }
+
 .sp-radio-box-card__example {
     display: flex;
     align-items: center;
@@ -1424,6 +1433,7 @@ input {
     height: 40px;
     border-radius: 50%;
 }
+
 .sp-radio-box-card__example img {
     width: 40px;
     height: 40px;
