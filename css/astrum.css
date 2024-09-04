@@ -15,8 +15,11 @@
 /*   :: import ---   */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
 
-/*   :: VARS ---   */
 :root {
+    /* Fonts */
+    --wf: 'Roboto', sans-serif;
+    --wf2: 'Montserrat', sans-serif;
+
     /* Theme colors */
     --color-primary: #003CFF;
     --color-primary-light: #1f50ff;
@@ -34,15 +37,22 @@
     --color-white: #ffffff;
     --color-bg: #F7F9FA;
 
-
-    /* Fonts */
-    --wf: 'Roboto', sans-serif;
-    --wf2: 'Montserrat', sans-serif;
-    --color-text-heading: var(--color-primary);
+    /* Content */
     --color-text: var(--color-dark);
-    --color-text-accent: var(--color-accent);
     --color-text-grey: #737373;
     --color-text-light-grey: #a2a2a2;
+    --color-text-accent: var(--color-accent);
+    --color-text-heading: var(--color-primary);
+
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-primary-light);
+    --color-link-active: var(--color-primary-dark);
+
+    --color-icon-grey: var(--color-text-grey);
+    --color-icon-active: var(--color-text);
+
+    --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
+    --trans: all 0.2s; /*transition delay*/
 
     /* Fonts sizes */
     --size-text: 1rem;
@@ -52,11 +62,6 @@
     --size-heading-m: 2rem;
     --size-heading-s: 1.5rem;
     --size-heading-xs: 1.125rem;
-
-    /* Project colors */
-    --color-link: var(--color-primary);
-    --color-link-hover: var(--color-primary-light);
-    --color-link-active: var(--color-primary-dark);
 
     /* Support colors */
     --color-orange: #ffb946;
@@ -91,7 +96,6 @@
     --ui-input-border-active: 1px solid var(--ui-color-border-active);
     --ui-input-border-hover: 1px solid var(--ui-color-border-hover);
 
-
     /* UI Shadows*/
     --ui-shadow-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
     --ui-shadow-error: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #fcb5b5;
@@ -105,20 +109,17 @@
     --ui-size-l: 44px;
     --ui-raduis: 8px;
 
-
     /* Buttons */
-    --color-btn-bg: var(--color-primary);
-    --color-btn-border: var(--color-primary);
+    --color-btn: var(--ui-color-primary);
+    --color-btn-hover: var(--ui-color-primary-hover);
+    --color-btn-border: var(--ui-color-primary);
     --color-btn-text: var(--color-white);
-    --color-btn-ghost-text: var(--color-text-grey);
-    --color-btn-shadow: rgba(37, 193, 252, 0.4);
-
-    /* Content */
-    --color-icon-grey: var(--color-text-grey);
-    --color-icon-active: var(--color-text);
-
-    --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
-    --trans: all 0.2s; /*transition delay*/
+    --color-btn-text-hover: var(--color-white);
+    --color-btn-sec: #DBE5FF;
+    --color-btn-sec-hover: #EBF1FF;
+    --color-btn-sec-border: #DBE5FF;
+    --color-btn-sec-text: var(--color-primary);
+    --color-btn-sec-text-hover: var(--color-primary);
 
     /* Box-Shadows */
     --sp-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -141,6 +142,7 @@
     --sp5-2: #222e4e;
 
 }
+/*   :: VARS ---   */
 
 /*   :: Base tags ---   */
 * {
@@ -643,7 +645,7 @@ a:active {
     border: 1px solid transparent;
     cursor: pointer;
     color: var(--color-btn-text);
-    background: var(--color-btn-bg);
+    background: var(--color-btn);
     transition: var(--trans);
     font-size: var(--size-text);
     line-height: 1;
@@ -654,10 +656,19 @@ a:active {
 
 .btn:hover {
     transition: var(--trans);
-    background: var(--color-primary-dark);
-    color: var(--color-btn-text);
+    background: var(--color-btn-hover);
+    color: var(--color-btn-text-hover);
 }
 
+.btn--sec, a.btn--sec {
+    background: var(--color-btn-sec);
+    color: var(--color-btn-sec-text);
+}
+
+.btn--sec:hover {
+    background: var(--color-btn-sec-hover);
+    color: var(--color-btn-sec-text-hover);
+}
 
 /* btn icon */
 .btn svg {
@@ -674,18 +685,18 @@ a:active {
 
 /* btn states */
 .btn:focus-visible {
-    outline: 1px solid var(--color-primary);
+    outline: 1px solid var(--ui-color-primary);
 }
 
 a.btn--disabled, .btn--disabled, .btn:disabled {
-    color: var(--color-text-grey);
+    color: var(--color-text-light-grey);
     background: var(--ui-input-bg-disabled);
     cursor: default;
     box-shadow: none;
     user-select: none;
 }
 a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
-    color: var(--color-text-grey);
+    color: var(--color-text-light-grey);
     background: var(--ui-input-bg-disabled);
     cursor: default;
     box-shadow: none;
@@ -717,7 +728,7 @@ a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
 .btn--outline, a.btn--outline {
     background: transparent;
     color: var(--color-text);
-    border: 1px solid var(--color-text);
+    border: 1px solid var(--ui-color-border);
 }
 
 .btn--outline svg {
@@ -725,13 +736,13 @@ a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
 }
 
 .btn--outline:hover {
-    background: var(--color-btn-bg);
-    color: var(--color-btn-text);
-    border-color: transparent;
+    color: var(--color-text);
+    background: var(--color-btn-sec-hover);
+    border-color: var(--ui-color-border-hover);
 }
 
 .btn--outline:hover svg {
-    stroke: var(--color-btn-text);
+    stroke: currentColor;
 }
 
 /* /btn outline */
@@ -739,22 +750,22 @@ a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
 /* btn ghost */
 .btn--ghost, a.btn--ghost {
     background: transparent;
-    color: var(--color-btn-ghost-text);
+    color: var(--color-text);
     border: 1px solid transparent;
 }
 
 .btn--ghost svg {
-    stroke: var(--color-btn-ghost-text);
+    stroke: var(--color-text);
 }
 
 .btn--ghost:hover {
-    background: var(--color-btn-bg);
-    color: var(--color-btn-text);
+    background: var(--thover);
+    color: var(--color-text);
     border-color: transparent;
 }
 
 .btn--ghost:hover svg {
-    stroke: var(--color-btn-text);
+    stroke: currentColor;
 }
 
 /* /btn ghost */
