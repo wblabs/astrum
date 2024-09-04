@@ -112,12 +112,10 @@
     /* Buttons */
     --color-btn: var(--ui-color-primary);
     --color-btn-hover: var(--ui-color-primary-hover);
-    --color-btn-border: var(--ui-color-primary);
     --color-btn-text: var(--color-white);
     --color-btn-text-hover: var(--color-white);
     --color-btn-sec: #DBE5FF;
     --color-btn-sec-hover: #EBF1FF;
-    --color-btn-sec-border: #DBE5FF;
     --color-btn-sec-text: var(--color-primary);
     --color-btn-sec-text-hover: var(--color-primary);
 
@@ -135,6 +133,7 @@
     --gap: 16px; /* grid gap */
     --header-height: 48px;
     --wid: 1280px; /* max-width of content */
+    --content-width: 600px; /* max-width of text content */
 
 
     /* SP5 DEV*/
