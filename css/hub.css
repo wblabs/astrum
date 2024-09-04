@@ -308,7 +308,7 @@
     gap: calc(var(--gap) * 2);
     grid-template-columns: 1fr 2fr;
 }
-@media screen {
+@media screen and (max-width: 768px) {
     .grid-hub, grid-hub-1-2 {
         grid-template-columns: 1fr;
         gap: var(--gf);
