@@ -83,6 +83,10 @@
     --ui-color-primary-hover: #1250ef;
 
     --ui-color-text: var(--color-dark);
+    --ui-color-text-hover: var(--ui-color-primary-hover);
+    --ui-color-text-active: var(--ui-color-primary);
+    --ui-color-text-disabled: #bababa;
+
     --ui-color-text-grey: #737373;
     --ui-color-text-light-grey: #9b9b9b;
     --ui-color-placeholder: var(--color-text-grey);
@@ -688,18 +692,21 @@ a:active {
 }
 
 a.btn--disabled, .btn--disabled, .btn:disabled {
-    color: var(--color-text-light-grey);
+    color: var(--ui-color-text-disabled);
     background: var(--ui-input-bg-disabled);
     cursor: default;
     box-shadow: none;
     user-select: none;
 }
 a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
-    color: var(--color-text-light-grey);
+    color: var(--ui-color-text-disabled);
     background: var(--ui-input-bg-disabled);
     cursor: default;
     box-shadow: none;
     user-select: none;
+}
+a.btn--disabled svg, .btn--disabled svg, .btn:disabled svg {
+    stroke: var(--ui-color-text-disabled);
 }
 /* btn sizes --- */
 .btn--s, a.btn--s, .btn.ui-s, a.btn.ui-s {
@@ -935,7 +942,7 @@ input {
 }
 
 .sf__label:has(input:disabled) {
-    color: var(--ui-color-text-light-grey);
+    color: var(--ui-color-text-disabled);
 }
 
 .sf__input, .sf__textarea, .sf__select {
@@ -1289,7 +1296,7 @@ input {
 /* Disabled */
 .sp-radio-group input[type=radio]:disabled + .sp-radio-group-item__text {
     background: var(--ui-input-bg-disabled);
-    color: var(--ui-color-text-grey);
+    color: var(--ui-color-text-disabled);
 }
 
 /* /radio-group */

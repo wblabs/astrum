@@ -317,7 +317,7 @@
 
 .hub-example {
     background: #e4efff;
-    background-image: radial-gradient(white 1px, transparent 1px);
+    background-image: radial-gradient(#d1ddef 1px, transparent 1px);
     background-size: 8px 8px;
 }
 
