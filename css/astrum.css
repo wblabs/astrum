@@ -93,7 +93,7 @@
 
     --ui-color-border: #b5bfd9;
     --ui-color-border-active: #0043ed;
-    --ui-color-border-hover: #a3aecc;
+    --ui-color-border-hover: #909dc1;
 
     /* UI Borders */
     --ui-input-border: 1px solid var(--ui-color-border);
@@ -1274,14 +1274,14 @@ input {
 }
 
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
-    border: 1px solid var(--ui-color-primary);
+    border: 1px solid var(--ui-color-text-active);
     background-color: var(--ui-input-bg-active);
     z-index: 1;
-    color: var(--ui-color-primary);
+    color: var(--ui-color-border-active);
 }
 
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text svg {
-    stroke: var(--ui-color-primary);
+    stroke: var(--ui-color-text-active);
 }
 
 .sp-radio-group__item:first-child .sp-radio-group-item__text {
@@ -1376,23 +1376,23 @@ input {
 
 .sp-radio-box__input:checked + .sp-radio-box-card {
     border-color: var(--ui-shadow-focus);
-    color: var(--ui-color-primary);
+    color: var(--ui-color-border-active);
 }
 
 .sp-radio-box__input:checked + .sp-radio-box-card:before {
     transform: scale(1);
     opacity: 1;
     background-color: var(--ui-color-primary-active);
-    border-color: var(--ui-color-primary-active);
+    border-color: var(--ui-color-border-active);
 }
 
 
 .sp-radio-box__input:checked + .sp-radio-box-card .sp-radio-box__text {
-    color: var(--ui-color-primary-active);
+    color: var(--ui-color-text-active);
 }
 
 .sp-radio-box__input:focus + .sp-radio-box-card {
-    border-color: var(--ui-color-primary);
+    border-color: var(--ui-color-border-active);
     box-shadow: var(--ui-shadow-focus);
 }
 
@@ -1434,7 +1434,7 @@ input {
 }
 
 .sp-radio-box-card:hover {
-    border-color: #2260ff;
+    border: var(--ui-input-border-hover);
 }
 
 .sp-radio-box-card:hover:before {
