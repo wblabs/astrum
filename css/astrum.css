@@ -42,11 +42,11 @@
     --color-text-grey: #737373;
     --color-text-light-grey: #a2a2a2;
     --color-text-accent: var(--color-accent);
-    --color-text-heading: var(--color-primary);
+    --color-text-heading: var(--color-primary-dark);
 
     --color-link: var(--color-primary);
     --color-link-hover: var(--color-primary-light);
-    --color-link-active: var(--color-primary-dark);
+    --color-link-active: var(--color-text);
 
     --color-icon-grey: var(--color-text-grey);
     --color-icon-active: var(--color-text);
@@ -56,12 +56,12 @@
 
     /* Fonts sizes */
     --size-text: 1rem;
-    --size-text-note: 0.8125rem;
-    --size-heading-xl: 3rem;
-    --size-heading-l: 2.5rem;
-    --size-heading-m: 2rem;
-    --size-heading-s: 1.5rem;
-    --size-heading-xs: 1.125rem;
+    --size-text-note: 0.8rem;
+    --size-heading-xl: 2rem;
+    --size-heading-l: 1.8rem;
+    --size-heading-m: 1.6rem;
+    --size-heading-s: 1.4rem;
+    --size-heading-xs: 1.2rem;
 
     /* Support colors */
     --color-orange: #ffb946;
@@ -694,8 +694,8 @@ a:active {
 a.btn--disabled, .btn--disabled, .btn:disabled {
     color: var(--ui-color-text-disabled);
     background: var(--ui-input-bg-disabled);
-    cursor: default;
     box-shadow: none;
+    cursor: default;
     user-select: none;
 }
 a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
@@ -1297,6 +1297,8 @@ input {
 .sp-radio-group input[type=radio]:disabled + .sp-radio-group-item__text {
     background: var(--ui-input-bg-disabled);
     color: var(--ui-color-text-disabled);
+    cursor: default;
+    user-select: none;
 }
 
 /* /radio-group */
@@ -1338,23 +1340,24 @@ input {
     border-radius: var(--gap);
     padding: 0 var(--gf);
     transition: all .15s ease-in-out;
-    color: var(--ui-color-text-light-grey);
+    color: var(--ui-color-text-disabled);
     cursor: pointer;
 }
 
 .sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text:hover {
     background: rgba(255, 255, 255, 0.6);
-    color: var(--ui-color-text-grey);
+    color: var(--ui-color-primary-hover);
 }
 
 .sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text {
-    background: var(--color-white);
-    color: var(--ui-color-text);
+    background: var(--ui-color-primary);
+    color: var(--color-white);
 }
 
 .sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text:hover {
-    background: var(--color-white);
-    color: var(--ui-color-text);
+    background: var(--ui-color-primary-hover);
+
+    color: var(--color-white);
 }
 
 /* /SP Radio Toggle */
