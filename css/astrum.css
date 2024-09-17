@@ -1077,9 +1077,6 @@ input {
 .sf__input[type="range"] {
     padding: 0;
 }
-.sf__input[typeof="file"] {
-    outline: 1px solid mediumvioletred;
-}
 
 .sf__input--error, .sf__textarea--error, .sf__select--error {
     box-shadow: var(--ui-shadow-error);
