@@ -333,22 +333,6 @@
                                                 Create an account to access the full features of the site.
                                             </div>
                                         </div>
-                                        <div class="sf__line grid-c-2">
-                                            <a href="#" class="btn btn--outline">
-                                                <svg class="spif">
-                                                    <use xlink:href="../img/sp5share.svg#facebook"></use>
-                                                </svg>
-                                                 facebook
-                                            </a>
-                                            <a href="#" class="btn btn--outline">
-                                                <svg class="spif">
-                                                    <use xlink:href="../img/sp5share.svg#x"></use>
-                                                </svg>
-                                                x</a>
-                                            <div class="grid-line tac cg fsn">
-                                                or login with email
-                                            </div>
-                                        </div>
                                         <div class="sf__line">
                                             <label class="sf__label sf__label--col">
                                                 Name of the Loyal Subject:
@@ -357,13 +341,13 @@
                                         </div>
                                         <div class="sf__line">
                                             <label class="sf__label sf__label--col">
-                                                Communication Vox (Email):
+                                                <span>Communication Vox <span class="fsn cg">(Email)</span>:</span>
                                                 <input type="email" class="sf__input fw" placeholder="my@mail.com">
                                             </label>
                                         </div>
                                         <div class="sf__line">
                                             <label class="sf__label sf__label--col">
-                                                Sacred Cipher (Password):
+                                                <span>Sacred Cipher <span class="fsn cg">(Password)</span>:</span>
                                                 <input type="password" class="sf__input fw">
                                             </label>
                                         </div>
@@ -374,19 +358,35 @@
                                         </div>
                                         <div class="sf__line">
 
-                                            <label class="sf__label">
+                                            <label class="sf__label fsn">
                                                 <input type="checkbox">
                                             I want a left-handed bolter — to protect the Imperium and serve the Emperor.
                                             </label>
                                         </div>
-                                        <div class="sf__line">
-                                            <div class="cg fsn">
+                                        <div class="sf__line fsn">
+
                                                 <label class="sf__label">
                                                 <input type="checkbox" checked disabled>
                                                 I agree to bequeath my body and soul to the Emperor, to serve the Imperium in life and in death, and to be used for His sacred purposes.
                                                 </label>
-                                            </div>
+
                                         </div>
+                                    </div>
+
+                                </div>
+                                <div style="border-top: rgba(0, 0, 0, 0.1) 1px dotted; padding: 16px 8px;">
+                                    <div class="sf__line grid-c-2">
+                                        <a href="#" class="btn btn--outline">
+                                            <svg class="spif">
+                                                <use xlink:href="../img/sp5share.svg#facebook"></use>
+                                            </svg>
+                                            facebook
+                                        </a>
+                                        <a href="#" class="btn btn--outline">
+                                            <svg class="spif">
+                                                <use xlink:href="../img/sp5share.svg#x"></use>
+                                            </svg>
+                                            x</a>
                                     </div>
 
                                 </div>
@@ -435,7 +435,7 @@
                                     </div>
                                     <div class="sf__line">
                                         <label for="range" class="sf__label">range</label>
-                                        <input type="range" name="range" class="sf__input sf__input--s" id="range">
+                                        <input type="range" name="range" min="0" max="10" class="sf__input sf__input--s" id="range">
                                     </div>
                                 </div>
 

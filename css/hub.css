@@ -1333,11 +1333,11 @@
 
 .side-sanctum {
     border-right: rgba(0, 0, 0, 0.1) 1px solid;
-    padding: 8px;
+    padding: 0 8px;
 }
 
 .inquisitor-gate {
-    padding: 16px;
+    padding: 8px;
 }
 
 .sanctuary-deck {

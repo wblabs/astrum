@@ -1074,7 +1074,9 @@ input {
     height: auto;
     overflow: hidden;
 }
-
+.sf__input[type="range"] {
+    padding: 0;
+}
 .sf__input[typeof="file"] {
     outline: 1px solid mediumvioletred;
 }
