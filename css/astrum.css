@@ -16,11 +16,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
 
 :root {
-    /* Fonts */
+    /* Fonts 2 */
     --wf: 'Roboto', sans-serif;
     --wf2: 'Montserrat', sans-serif;
 
-    /* Theme colors */
+    /* Theme colors  12*/
     --color-primary: #003CFF;
     --color-primary-light: #1f50ff;
     --color-primary-dark: #0736dc;
@@ -37,7 +37,7 @@
     --color-white: #ffffff;
     --color-bg: #F7F9FA;
 
-    /* Content */
+    /* Content 12*/
     --color-text: var(--color-dark);
     --color-text-grey: #737373;
     --color-text-light-grey: #a2a2a2;
@@ -45,7 +45,7 @@
     --color-text-heading: var(--color-primary-dark);
 
     --color-link: var(--color-primary);
-    --color-link-hover: var(--color-primary-light);
+    --color-link-hover: var(--color-text);
     --color-link-active: var(--color-text);
 
     --color-icon-grey: var(--color-text-grey);
@@ -54,7 +54,7 @@
     --thover: rgba(0, 0, 0, 0.1); /*transparent hover*/
     --trans: all 0.2s; /*transition delay*/
 
-    /* Fonts sizes */
+    /* Fonts sizes 7*/
     --size-text: 1rem;
     --size-text-note: 0.8rem;
     --size-heading-xl: 2rem;
@@ -63,14 +63,14 @@
     --size-heading-s: 1.4rem;
     --size-heading-xs: 1.2rem;
 
-    /* Support colors */
+    /* Support colors 5*/
     --color-orange: #ffb946;
     --color-red: #f7685b;
     --color-green: #2ed47a;
     --color-blue: #104ae0;
     --color-purple: #885af8;
 
-    /* UI Colors */
+    /* UI Colors 19*/
     --ui-bg-100: #F5F5F5;
     --ui-bg-200: #EBEBEB;
     --ui-bg-300: #E1E1E1;
@@ -95,25 +95,25 @@
     --ui-color-border-active: #0043ed;
     --ui-color-border-hover: #909dc1;
 
-    /* UI Borders */
+    /* UI Borders 3*/
     --ui-input-border: 1px solid var(--ui-color-border);
     --ui-input-border-active: 1px solid var(--ui-color-border-active);
     --ui-input-border-hover: 1px solid var(--ui-color-border-hover);
 
-    /* UI Shadows*/
+    /* UI Shadows 2*/
     --ui-shadow-focus: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #b5c9fc;
     --ui-shadow-error: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px #fcb5b5;
 
-    /*UI Transitions*/
+    /*UI Transitions 1*/
     --ui-trans: 0.16s ease;
 
-    /* UI Sizes */
+    /* UI Sizes  4*/
     --ui-size: 36px;
     --ui-size-s: 24px;
     --ui-size-l: 44px;
     --ui-raduis: 8px;
 
-    /* Buttons */
+    /* Buttons 8*/
     --color-btn: var(--ui-color-primary);
     --color-btn-hover: var(--ui-color-primary-hover);
     --color-btn-text: var(--color-white);
@@ -123,7 +123,7 @@
     --color-btn-sec-text: var(--color-primary);
     --color-btn-sec-text-hover: var(--color-primary);
 
-    /* Box-Shadows */
+    /* Box-Shadows 6*/
     --sp-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --sp-shadow-s: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --sp-shadow-m: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -132,7 +132,7 @@
     --sp-shadow-inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 
 
-    /* Objects */
+    /* Objects 5*/
     --gf: 8px; /* grid flow */
     --gap: 16px; /* grid gap */
     --header-height: 48px;
@@ -140,7 +140,7 @@
     --content-width: 600px; /* max-width of text content */
 
 
-    /* SP5 DEV*/
+    /* SP5 DEV 2*/
     --sp5-1: #05e745;
     --sp5-2: #222e4e;
 
@@ -681,6 +681,24 @@ a:active {
     height: 16px;
 }
 
+.btn svg.spif {
+    fill: currentColor;
+    stroke: none;
+}
+.btn:hover svg.spif {
+    fill: currentColor;
+    stroke: none;
+}
+
+.btn svg.spis {
+    stroke: currentColor;
+    fill: none;
+}
+.btn:hover svg.spis {
+    stroke: currentColor;
+    fill: none;
+}
+
 .btn img {
     width: 16px;
     height: 16px;
@@ -1064,6 +1082,9 @@ input {
 .sf__input--error, .sf__textarea--error, .sf__select--error {
     box-shadow: var(--ui-shadow-error);
 }
+.sf__input--error::placeholder, .sf__textarea--error::placeholder, .sf__select--error::placeholder {
+    color: var(--color-red);
+}
 
 /* SP Checkbox and Radio */
 
@@ -1086,6 +1107,7 @@ input {
         border: 1px solid var(--bc, var(--ui-color-border));
         background: var(--b, var(--color-white));
         transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+        flex-shrink: 0;
     }
 
     input[type=checkbox]:after,
@@ -1202,6 +1224,9 @@ input {
     input[type=checkbox].sp-switch:disabled:not(:checked):after {
         opacity: 0.6;
     }
+    input[type=checkbox]:disabled:not(.sp-switch):after {
+        border-color: var(--ui-color-border);
+    }
 
     input[type=radio] {
         border-radius: 50%;
@@ -1218,6 +1243,9 @@ input {
 
     input[type=radio]:checked {
         --s: .5;
+    }
+    input[type=radio]:disabled:after {
+        background: var(--ui-color-border);
     }
 }
 

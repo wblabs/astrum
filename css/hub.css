@@ -303,11 +303,13 @@
     grid-template-columns: 1fr 1fr;
     background: var(--color-white);
 }
+
 .grid-hub-1-2 {
     display: grid;
     gap: calc(var(--gap) * 2);
     grid-template-columns: 1fr 2fr;
 }
+
 @media screen and (max-width: 768px) {
     .grid-hub, grid-hub-1-2 {
         grid-template-columns: 1fr;
@@ -1284,7 +1286,63 @@
 .body--hub-lab {
     background: linear-gradient(to right, gold, #ffae00);
 }
+
 .hub-na {
     color: var(--color-red);
     font-size: 0.8rem;
 }
+
+/* VOID chamber */
+.void-chamber {
+    background: #e4efff;
+    background-image: radial-gradient(#d1ddef 1px, transparent 1px);
+    background-size: 8px 8px;
+    padding: 32px 24px;
+}
+
+.main-hull {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin: 0 auto;
+    background: var(--color-white);
+    border-radius: var(--gf);
+    box-shadow: var(--sp-shadow-m);
+}
+
+.command-bridge {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+    width: 100%;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+    padding: var(--gap);
+}
+
+.command-bridge__logo {
+    height: 20px;
+}
+
+.warp-gateway {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.side-sanctum {
+    border-right: rgba(0, 0, 0, 0.1) 1px solid;
+    padding: 8px;
+}
+
+.inquisitor-gate {
+    padding: 16px;
+}
+
+.sanctuary-deck {
+    padding: 8px;
+
+}
+
+/* /VOID chamber */
