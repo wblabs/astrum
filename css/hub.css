@@ -1341,8 +1341,22 @@
 }
 
 .sanctuary-deck {
-    padding: 8px;
 
+}
+
+.sanctuary-cell {
+    padding: 8px;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.sanctuary-cell--purge-signal {
+    /*background: linear-gradient(180deg, #ffa123 0%, #fdd56e 16%, #ffffff 30%, #ffffff 100%);*/
+}
+
+.heresy-ward {
+    border: 1px solid red;
+    border-radius: var(--gf);
+    padding: var(--gap);
 }
 
 /* /VOID chamber */
