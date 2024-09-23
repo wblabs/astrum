@@ -71,9 +71,9 @@
     --color-purple: #885af8;
 
     /* UI Colors 19*/
-    --ui-bg-100: #F5F5F5;
-    --ui-bg-200: #EBEBEB;
-    --ui-bg-300: #E1E1E1;
+    --ui-bg-100: #F5F5F5; /* not used */
+    --ui-bg-200: #EBEBEB; /* not used */
+    --ui-bg-300: #E1E1E1; /* not used */
 
     --ui-input-bg: #fff;
     --ui-input-bg-active: #dee7ff;
@@ -83,7 +83,7 @@
     --ui-color-primary-hover: #1250ef;
 
     --ui-color-text: var(--color-dark);
-    --ui-color-text-hover: var(--ui-color-primary-hover);
+    --ui-color-text-hover: var(--ui-color-primary-hover); /* not used */
     --ui-color-text-active: var(--ui-color-primary);
     --ui-color-text-disabled: #bababa;
 
@@ -97,7 +97,7 @@
 
     /* UI Borders 3*/
     --ui-input-border: 1px solid var(--ui-color-border);
-    --ui-input-border-active: 1px solid var(--ui-color-border-active);
+    --ui-input-border-active: 1px solid var(--ui-color-border-active); /* not used */
     --ui-input-border-hover: 1px solid var(--ui-color-border-hover);
 
     /* UI Shadows 2*/
@@ -265,7 +265,7 @@ a:active {
 }
 
 .clg {
-    color: var(--ui-color-text-light-grey);
+    color: var(--color-text-light-grey);
 }
 
 .nwp {
@@ -649,7 +649,7 @@ a:active {
     cursor: pointer;
     color: var(--color-btn-text);
     background: var(--color-btn);
-    transition: var(--trans);
+    transition: var(--ui-trans);
     font-size: var(--size-text);
     line-height: 1;
     font-family: inherit;
@@ -658,7 +658,7 @@ a:active {
 }
 
 .btn:hover {
-    transition: var(--trans);
+    transition: var(--ui-trans);
     background: var(--color-btn-hover);
     color: var(--color-btn-text-hover);
 }
@@ -1534,7 +1534,7 @@ input[type="radio"].sp-radio-box__input {
     border-radius: var(--gap);
     background: rgba(0, 0, 0, 0.05);
     font-size: var(--size-text-note);
-    transition: var(--trans);
+    transition: var(--ui-trans);
     cursor: pointer;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -1594,7 +1594,7 @@ input[type="radio"].sp-radio-box__input {
     border-radius: calc(var(--ui-size) / 2);
     background: var(--ui-bg-100);
     font-size: var(--size-text-note);
-    transition: var(--trans);
+    transition: var(--ui-trans);
     cursor: pointer;
     color: var(--ui-color-text);
     width: fit-content;
@@ -1609,7 +1609,7 @@ input[type="radio"].sp-radio-box__input {
     gap: var(--gf);
     border-radius: var(--gap);
     padding: 0 var(--gf);
-    transition: var(--trans);
+    transition: var(--ui-trans);
     color: var(--ui-color-text-light-grey);
 }
 

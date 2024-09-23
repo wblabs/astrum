@@ -325,7 +325,7 @@
                                 </div>
                             </header>
                             <aside class="side-sanctum">
-                                <div class="inquisitor-gate">
+                                <div class="inquisitor-gate sanctuary-cell">
                                     <div class="sf">
                                         <div class="sf__line">
                                             <h4>Glory to the Emperor!</h4>
@@ -364,6 +364,15 @@
                                                 Emperor.
                                             </label>
                                         </div>
+                                        <div class="sf__line fsn">
+
+                                            <label class="sf__label">
+                                                <input type="checkbox" checked>
+                                                I prefer to undergo the upgrade course to Ultramarine and dedicate
+                                                myself to serving the Imperium under the leadership of Roboute Guilliman
+                                            </label>
+                                        </div>
+
                                         <div class="sf__line fsn">
 
                                             <label class="sf__label">
@@ -423,28 +432,28 @@
                                     <svg>
                                         <use href="../img/sp5sprite.svg#home"></use>
                                     </svg>
-                                    Horus
+                                    Primus
                                     </span>
                                             </label>
                                             <label class="sp-radio-group__item">
                                                 <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-                                                <span class="sp-radio-group-item__text">Lorgar</span>
+                                                <span class="sp-radio-group-item__text">Void</span>
                                             </label>
                                             <label class="sp-radio-group__item">
                                                 <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio">
-                                                <span class="sp-radio-group-item__text">Corax</span>
+                                                <span class="sp-radio-group-item__text">Nexus</span>
                                             </label>
                                             <label class="sp-radio-group__item">
                                                 <input type="radio" name="sp5-radio" class="sp-radio-group-item__radio"
                                                        disabled>
-                                                <span class="sp-radio-group-item__text">Omegon</span>
+                                                <span class="sp-radio-group-item__text">Sanctuary Gate</span>
                                             </label>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="sanctuary-cell">
-                                    <div class="btn-pan">
+                                    <div class="btn-pan  btn-pan--sanctuary">
                                         <div>
                                             <label for="username" class="sf__label">Name</label>
                                             <input type="text" name="username" placeholder="Ваше имя"
@@ -468,8 +477,6 @@
                                                    id="range">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="sanctuary-cell sanctuary-cell--purge-signal">
 
                                     <div class="btn-pan heresy-ward">
                                         <div>
@@ -497,26 +504,34 @@
                                     <div class="btn-pan">
                                         <fieldset class="sf__fieldset">
                                             <legend class="sf__legend">
-                                                Radio
+                                                Titan Battle Mode Activation:
                                             </legend>
                                             <label class="sf__label">
-                                                <input type="radio" name="day" value="Friday" class="sf__radio"
+                                                <input type="radio" name="Battle Mode" value="Friday" class="sf__radio"
                                                        checked>
-                                                Пятница
+                                                God-Machine Wrath
                                             </label>
                                             <label class="sf__label">
-                                                <input type="radio" name="day" value="Saturday" class="sf__radio">
-                                                Суббота
+                                                <input type="radio" name="Battle Mode" value="Saturday"
+                                                       class="sf__radio">
+                                                Omnissiah’s Shield
+                                            </label>
+
+                                        </fieldset>
+                                        <fieldset class="sf__fieldset">
+                                            <legend class="sf__legend">
+                                                Path of Power:
+                                            </legend>
+                                            <label class="sf__label">
+                                                <input type="radio" name="Path of Power" value="Disabled engine"
+                                                       disabled>
+                                                Purge Protocol
                                             </label>
                                             <label class="sf__label">
-                                                <input type="radio" name="day" value="Disabled engine" disabled>
-                                                Понедельник
-                                            </label>
-                                            <label class="sf__label">
-                                                <input type="radio" name="day" value="Disabled checked engine"
+                                                <input type="radio" name="Path of Power" value="Disabled checked engine"
                                                        checked
                                                        disabled>
-                                                Вторник
+                                                Vox Dominatus
                                             </label>
                                         </fieldset>
                                     </div>
@@ -524,13 +539,16 @@
                                 </div>
                                 <div class="sanctuary-cell">
                                     <section>
-                                        demo ui items
-                                        <div class="btn-pan">
-                                            <a href="#" class="btn btn--sec">
+                                        <div class="btn-pan btn-pan--sanctuary">
+                                            <a href="#" class="btn">
                                                 <svg>
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
                                                 </svg>
-                                                Secondary</a>
+                                                Primary</a><a href="#" class="btn btn--sec">
+                                            <svg>
+                                                <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                                            </svg>
+                                            Secondary</a>
                                             <a href="#" class="btn btn--ghost">
                                                 <svg>
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
@@ -547,7 +565,7 @@
                                                 </svg>
                                             </a>
                                         </div>
-                                        <div class="btn-pan">
+                                        <div class="btn-pan btn-pan--sanctuary">
                                             <a href="#" class="btn btn--disabled">
                                                 <svg>
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
@@ -560,7 +578,7 @@
 
                                 </div>
                                 <div class="sanctuary-cell">
-                                    <div class="btn-pan">
+                                    <div class="btn-pan btn-pan--thin">
 
 
                                         <div class="sp-radio-box-wrapper">

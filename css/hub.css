@@ -1333,11 +1333,10 @@
 
 .side-sanctum {
     border-right: rgba(0, 0, 0, 0.1) 1px solid;
-    padding: 0 8px;
 }
 
 .inquisitor-gate {
-    padding: 8px;
+    /*background: #0aaeb3;*/
 }
 
 .sanctuary-deck {
@@ -1345,7 +1344,7 @@
 }
 
 .sanctuary-cell {
-    padding: 8px;
+    padding: 8px 16px;
     border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
 }
 
@@ -1354,9 +1353,13 @@
 }
 
 .heresy-ward {
-    border: 1px solid red;
+    outline: 2px solid rgba(255, 0, 0, 0.1);
     border-radius: var(--gf);
     padding: var(--gap);
+}
+
+.btn-pan--sanctuary {
+    padding: 0 4px;
 }
 
 /* /VOID chamber */
