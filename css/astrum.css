@@ -57,10 +57,10 @@
     /* Fonts sizes 7*/
     --size-text: 1rem;
     --size-text-note: 0.8rem;
-    --size-heading-xl: 2rem;
-    --size-heading-l: 1.8rem;
-    --size-heading-m: 1.6rem;
-    --size-heading-s: 1.4rem;
+    --size-heading-xl: 1.8rem;
+    --size-heading-l: 1.64rem;
+    --size-heading-m: 1.48rem;
+    --size-heading-s: 1.32rem;
     --size-heading-xs: 1.2rem;
 
     /* Support colors 5*/
@@ -71,9 +71,9 @@
     --color-purple: #885af8;
 
     /* UI Colors 19*/
-    --ui-bg-100: #F5F5F5; /* not used */
-    --ui-bg-200: #EBEBEB; /* not used */
-    --ui-bg-300: #E1E1E1; /* not used */
+    --ui-bg-100: #F5F5F5;
+    --ui-bg-200: #EBEBEB;
+    --ui-bg-300: #E1E1E1;
 
     --ui-input-bg: #fff;
     --ui-input-bg-active: #dee7ff;
@@ -83,7 +83,7 @@
     --ui-color-primary-hover: #1250ef;
 
     --ui-color-text: var(--color-dark);
-    --ui-color-text-hover: var(--ui-color-primary-hover); /* not used */
+    --ui-color-text-hover: var(--ui-color-primary-hover);
     --ui-color-text-active: var(--ui-color-primary);
     --ui-color-text-disabled: #bababa;
 
@@ -145,6 +145,7 @@
     --sp5-2: #222e4e;
 
 }
+
 /*   :: VARS ---   */
 
 /*   :: Base tags ---   */
@@ -685,6 +686,7 @@ a:active {
     fill: currentColor;
     stroke: none;
 }
+
 .btn:hover svg.spif {
     fill: currentColor;
     stroke: none;
@@ -694,6 +696,7 @@ a:active {
     stroke: currentColor;
     fill: none;
 }
+
 .btn:hover svg.spis {
     stroke: currentColor;
     fill: none;
@@ -716,6 +719,7 @@ a.btn--disabled, .btn--disabled, .btn:disabled {
     cursor: default;
     user-select: none;
 }
+
 a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
     color: var(--ui-color-text-disabled);
     background: var(--ui-input-bg-disabled);
@@ -723,9 +727,11 @@ a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
     box-shadow: none;
     user-select: none;
 }
+
 a.btn--disabled svg, .btn--disabled svg, .btn:disabled svg {
     stroke: var(--ui-color-text-disabled);
 }
+
 /* btn sizes --- */
 .btn--s, a.btn--s, .btn.ui-s, a.btn.ui-s {
     height: var(--ui-size-s);
@@ -1074,6 +1080,7 @@ input {
     height: auto;
     overflow: hidden;
 }
+
 .sf__input[type="range"] {
     padding: 0;
 }
@@ -1081,6 +1088,7 @@ input {
 .sf__input--error, .sf__textarea--error, .sf__select--error {
     box-shadow: var(--ui-shadow-error);
 }
+
 .sf__input--error::placeholder, .sf__textarea--error::placeholder, .sf__select--error::placeholder {
     color: var(--color-red);
 }
@@ -1090,10 +1098,10 @@ input {
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type=checkbox],
     input[type=radio] {
-        --active-inner: #fff;
+        --active-inner: var(--ui-input-bg);
         --focus: var(--color-primary);
-      /*  --disabled: #F6F8FF;
-        --disabled-inner: #E1E6F9;*/
+        /*  --disabled: #F6F8FF;
+          --disabled-inner: #E1E6F9;*/
         -webkit-appearance: none;
         -moz-appearance: none;
         height: 21px;
@@ -1104,7 +1112,7 @@ input {
         margin: 0;
         cursor: pointer;
         border: 1px solid var(--bc, var(--ui-color-border));
-        background: var(--b, var(--color-white));
+        background: var(--b, var(--ui-input-bg));
         transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
         flex-shrink: 0;
     }
@@ -1121,8 +1129,8 @@ input {
 
     input[type=checkbox]:checked,
     input[type=radio]:checked {
-        --b: var(--color-primary);
-        --bc: var(--color-primary);
+        --b: var(--ui-color-primary);
+        --bc: var(--ui-color-border-active);
         --d-o: .3s; /* delay opacity */
         --d-t: .6s; /* delay transform */
         --d-t-e: cubic-bezier(.2, .85, .32, 1.2); /* delay ease */
@@ -1223,6 +1231,7 @@ input {
     input[type=checkbox].sp-switch:disabled:not(:checked):after {
         opacity: 0.6;
     }
+
     input[type=checkbox]:disabled:not(.sp-switch):after {
         border-color: var(--ui-color-border);
     }
@@ -1243,6 +1252,7 @@ input {
     input[type=radio]:checked {
         --s: .5;
     }
+
     input[type=radio]:disabled:after {
         background: var(--ui-color-border);
     }
@@ -1301,14 +1311,14 @@ input {
 }
 
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text {
-    border: 1px solid var(--ui-color-text-active);
+    border: 1px solid var(--ui-color-border-active);
     background-color: var(--ui-input-bg-active);
     z-index: 1;
-    color: var(--ui-color-border-active);
+    color: var(--ui-color-text-active);
 }
 
 .sp-radio-group input[type="radio"]:checked + .sp-radio-group-item__text svg {
-    stroke: var(--ui-color-text-active);
+    stroke: currentColor;
 }
 
 .sp-radio-group__item:first-child .sp-radio-group-item__text {
@@ -1341,7 +1351,7 @@ input {
     border-radius: calc(var(--ui-size) / 2);
     background: var(--ui-input-bg-disabled);
     font-size: var(--size-text-note);
-    transition: var(--trans);
+    transition: var(--ui-trans);
     color: var(--ui-color-text);
     width: fit-content;
     height: var(--ui-size);
@@ -1373,7 +1383,7 @@ input {
 
 .sp-radio-toggle .sp-radio-toggle__label .sp-radio-toggle__text:hover {
     background: rgba(255, 255, 255, 0.6);
-    color: var(--ui-color-primary-hover);
+    color: var(--ui-color-text-hover);
 }
 
 .sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text {
@@ -1383,7 +1393,6 @@ input {
 
 .sp-radio-toggle .sp-radio-toggle__label input:checked + .sp-radio-toggle__text:hover {
     background: var(--ui-color-primary-hover);
-
     color: var(--color-white);
 }
 
@@ -1402,7 +1411,6 @@ input {
     -ms-user-select: none;
     user-select: none;
 }
-
 
 .sp-radio-box__input:checked + .sp-radio-box-card {
     border-color: var(--ui-shadow-focus);

@@ -306,7 +306,7 @@
 
 .grid-hub-1-2 {
     display: grid;
-    gap: calc(var(--gap) * 2);
+    gap: var(--gap);
     grid-template-columns: 1fr 2fr;
 }
 
@@ -1298,15 +1298,17 @@
     background-image: radial-gradient(#d1ddef 1px, transparent 1px);
     background-size: 8px 8px;
     padding: 32px 24px;
+    border-radius: 12px;
 }
 
 .main-hull {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 260px auto;
     margin: 0 auto;
     background: var(--color-white);
-    border-radius: var(--gf);
     box-shadow: var(--sp-shadow-m);
+    /*font-family: var(--wf3);
+    font-size: 0.8rem;*/
 }
 
 .command-bridge {
@@ -1318,6 +1320,8 @@
     width: 100%;
     border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
     padding: var(--gap);
+    background: var(--ui-bg-100);
+    /*overflow: clip;*/
 }
 
 .command-bridge__logo {
@@ -1333,8 +1337,17 @@
 
 .side-sanctum {
     border-right: rgba(0, 0, 0, 0.1) 1px solid;
+    background: var(--ui-bg-200);
 }
 
+.sanctum__footer {
+    background: var(--ui-bg-300);
+    padding: 16px 0;
+}
+.sanctum__footer .btn-pan--sanctuary {
+    margin: 0;
+
+}
 .inquisitor-gate {
     /*background: #0aaeb3;*/
 }
@@ -1347,7 +1360,9 @@
     padding: 8px 16px;
     border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
 }
-
+.sanctuary-cell--clr {
+    border: none;
+}
 .sanctuary-cell--purge-signal {
     /*background: linear-gradient(180deg, #ffa123 0%, #fdd56e 16%, #ffffff 30%, #ffffff 100%);*/
 }

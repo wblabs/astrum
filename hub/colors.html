@@ -35,6 +35,51 @@
     <!--    <meta content="[[++site_url]][[~ [[*id]]]]" property="og:url">-->
 
     <link href="../css/core.css" rel="stylesheet">
+    <style>
+        /* Стили для модального окна цветового выбора */
+        #colorPickerModal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        #colorPickerModalContent {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        #colorPicker {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        #resetColorsBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--color-btn);
+            color: var(--color-btn-text);
+            border: none;
+            border-radius: var(--ui-raduis);
+            cursor: pointer;
+            transition: background-color var(--ui-trans);
+        }
+
+        #resetColorsBtn:hover {
+            background-color: var(--color-btn-hover);
+        }
+    </style>
 </head>
 <body class="body">
 <div class="header-wrapper">
@@ -56,16 +101,16 @@
             <nav class="nav" id="main-nav">
                 <!-- mobnav icon -->
                 <button class="mobnav" id="mobnav" onclick="mobilemenu()" title="menu">
-                <span class="mobnav__icon">
-                    <span class="menu-icon-wrapper" id="menu-icon">
-                        <span class="menu-icon menu-icon__top"></span>
-                        <span class="menu-icon menu-icon__middle"></span>
-                        <span class="menu-icon menu-icon__bottom"></span>
+                    <span class="mobnav__icon">
+                        <span class="menu-icon-wrapper" id="menu-icon">
+                            <span class="menu-icon menu-icon__top"></span>
+                            <span class="menu-icon menu-icon__middle"></span>
+                            <span class="menu-icon menu-icon__bottom"></span>
+                        </span>
                     </span>
-                </span>
                     <span class="mobnav__text">
 
-                </span>
+                    </span>
                 </button>
                 <!-- /mobnav icon -->
                 <div style="color:var(--color-text-grey);">Lab:</div>
@@ -87,194 +132,230 @@
             <div class="grid-hub-1-2">
                 <section>
 
-                    <h3>UI Colors</h3>
+                    <h4>UI Colors</h4>
                     <ol class="hub__ol">
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-100);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-100);"
+                                     data-variable="--ui-bg-100"></div>
                                 <div class="hub-li-color__text">--ui-bg-100</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-200);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-200);"
+                                     data-variable="--ui-bg-200"></div>
                                 <div class="hub-li-color__text">--ui-bg-200</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-300);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-bg-300);"
+                                     data-variable="--ui-bg-300"></div>
                                 <div class="hub-li-color__text">--ui-bg-300</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--ui-input-bg);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-input-bg);"
+                                     data-variable="--ui-input-bg"></div>
                                 <div class="hub-li-color__text">--ui-input-bg</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-input-bg-active);"></div>
+                                     style="background-color: var(--ui-input-bg-active);"
+                                     data-variable="--ui-input-bg-active"></div>
                                 <div class="hub-li-color__text">--ui-input-bg-active</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-input-bg-disabled);"></div>
+                                     style="background-color: var(--ui-input-bg-disabled);"
+                                     data-variable="--ui-input-bg-disabled"></div>
                                 <div class="hub-li-color__text">--ui-input-bg-disabled</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-primary);"></div>
+                                     style="background-color: var(--ui-color-primary);"
+                                     data-variable="--ui-color-primary"></div>
                                 <div class="hub-li-color__text">--ui-color-primary</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-primary-active);"></div>
+                                     style="background-color: var(--ui-color-primary-active);"
+                                     data-variable="--ui-color-primary-active"></div>
                                 <div class="hub-li-color__text">--ui-color-primary-active</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-primary-hover);"></div>
+                                     style="background-color: var(--ui-color-primary-hover);"
+                                     data-variable="--ui-color-primary-hover"></div>
                                 <div class="hub-li-color__text">--ui-color-primary-hover</div>
                             </div>
                         </li>
 
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--ui-color-text);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--ui-color-text);"
+                                     data-variable="--ui-color-text"></div>
                                 <div class="hub-li-color__text">--ui-color-text</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-text-hover);"></div>
+                                     style="background-color: var(--ui-color-text-hover);"
+                                     data-variable="--ui-color-text-hover"></div>
                                 <div class="hub-li-color__text">--ui-color-text-hover</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-text-active);"></div>
+                                     style="background-color: var(--ui-color-text-active);"
+                                     data-variable="--ui-color-text-active"></div>
                                 <div class="hub-li-color__text">--ui-color-text-active</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-text-disabled);"></div>
+                                     style="background-color: var(--ui-color-text-disabled);"
+                                     data-variable="--ui-color-text-disabled"></div>
                                 <div class="hub-li-color__text">--ui-color-text-disabled</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-text-grey);"></div>
+                                     style="background-color: var(--ui-color-text-grey);"
+                                     data-variable="--ui-color-text-grey"></div>
                                 <div class="hub-li-color__text">--ui-color-text-grey</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-text-light-grey);"></div>
+                                     style="background-color: var(--ui-color-text-light-grey);"
+                                     data-variable="--ui-color-text-light-grey"></div>
                                 <div class="hub-li-color__text">--ui-color-text-light-grey</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-placeholder);"></div>
+                                     style="background-color: var(--ui-color-placeholder);"
+                                     data-variable="--ui-color-placeholder"></div>
                                 <div class="hub-li-color__text">--ui-color-placeholder</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-border);"></div>
+                                     style="background-color: var(--ui-color-border);"
+                                     data-variable="--ui-color-border"></div>
                                 <div class="hub-li-color__text">--ui-color-border</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-border-active);"></div>
+                                     style="background-color: var(--ui-color-border-active);"
+                                     data-variable="--ui-color-border-active"></div>
                                 <div class="hub-li-color__text">--ui-color-border-active</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--ui-color-border-hover);"></div>
+                                     style="background-color: var(--ui-color-border-hover);"
+                                     data-variable="--ui-color-border-hover"></div>
                                 <div class="hub-li-color__text">--ui-color-border-hover</div>
                             </div>
                         </li>
                     </ol>
 
-                    <h3>Buttons</h3>
+                    <h4>Buttons</h4>
                     <ol class="hub__ol">
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--color-btn);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn);"
+                                     data-variable="--color-btn"></div>
                                 <div class="hub-li-color__text">--color-btn</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-hover);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-hover);"
+                                     data-variable="--color-btn-hover"></div>
                                 <div class="hub-li-color__text">--color-btn-hover</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-text);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-text);"
+                                     data-variable="--color-btn-text"></div>
                                 <div class="hub-li-color__text">--color-btn-text</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--color-btn-text-hover);"></div>
+                                     style="background-color: var(--color-btn-text-hover);"
+                                     data-variable="--color-btn-text-hover"></div>
                                 <div class="hub-li-color__text">--color-btn-text-hover</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
-                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-sec);"></div>
+                                <div class="hub-li-color__bg" style="background-color: var(--color-btn-sec);"
+                                     data-variable="--color-btn-sec"></div>
                                 <div class="hub-li-color__text">--color-btn-sec</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--color-btn-sec-hover);"></div>
+                                     style="background-color: var(--color-btn-sec-hover);"
+                                     data-variable="--color-btn-sec-hover"></div>
                                 <div class="hub-li-color__text">--color-btn-sec-hover</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--color-btn-sec-text);"></div>
+                                     style="background-color: var(--color-btn-sec-text);"
+                                     data-variable="--color-btn-sec-text"></div>
                                 <div class="hub-li-color__text">--color-btn-sec-text</div>
                             </div>
                         </li>
                         <li class="hub__li">
                             <div class="hub-li__color">
                                 <div class="hub-li-color__bg"
-                                     style="background-color: var(--color-btn-sec-text-hover);"></div>
+                                     style="background-color: var(--color-btn-sec-text-hover);"
+                                     data-variable="--color-btn-sec-text-hover"></div>
                                 <div class="hub-li-color__text">--color-btn-sec-text-hover</div>
                             </div>
                         </li>
                     </ol>
+
+                    <!-- Кнопка сброса цветов -->
+                    <button id="resetColorsBtn" class="btn">
+                        <svg>
+                            <use href="../img/sp5sprite.svg#refresh-cw">
+
+                            </use>
+                        </svg>
+                        Reset all</button>
 
                 </section>
                 <div>
@@ -330,7 +411,7 @@
                                         <div class="sf__line">
                                             <h4>Glory to the Emperor!</h4>
                                             <div>
-                                                Create an account to access the full features of the site.
+                                                Enlist to access the site’s sacred features and serve the Emperor
                                             </div>
                                         </div>
                                         <div class="sf__line">
@@ -360,16 +441,14 @@
 
                                             <label class="sf__label fsn">
                                                 <input type="checkbox">
-                                                I want a left-handed bolter — to protect the Imperium and serve the
-                                                Emperor.
+                                                I want a left-handed bolter to serve the Emperor and protect the Imperium.
                                             </label>
                                         </div>
                                         <div class="sf__line fsn">
 
                                             <label class="sf__label">
                                                 <input type="checkbox" checked>
-                                                I prefer to undergo the upgrade course to Ultramarine and dedicate
-                                                myself to serving the Imperium under the leadership of Roboute Guilliman
+                                                I choose to upgrade to Ultramarine and serve under Roboute Guilliman.
                                             </label>
                                         </div>
 
@@ -377,49 +456,34 @@
 
                                             <label class="sf__label">
                                                 <input type="checkbox" checked disabled>
-                                                I agree to bequeath my body and soul to the Emperor, to serve the
-                                                Imperium in life and in death, and to be used for His sacred purposes.
+                                                I bequeath my body and soul to the Emperor, to serve the Imperium in life and death.
                                             </label>
 
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="sanctuary-cell">
-                                    <div class="sf__line grid-c-2">
-                                        <a href="#" class="btn btn--outline">
-                                            <svg class="spif">
-                                                <use xlink:href="../img/sp5share.svg#facebook"></use>
-                                            </svg>
-                                            facebook
-                                        </a>
-                                        <a href="#" class="btn btn--outline">
-                                            <svg class="spif">
-                                                <use xlink:href="../img/sp5share.svg#x"></use>
-                                            </svg>
-                                            x</a>
+
+                                <section class="sanctum__footer">
+                                    <div class="btn-pan btn-pan--sanctuary btn-pan--center">
+                                        <div class="sp-radio-toggle">
+                                            <label class="sp-radio-toggle__label">
+                                                <input type="radio" name="radio" checked="">
+                                                <span class="sp-radio-toggle__text">Phase 1</span>
+                                            </label>
+                                            <label class="sp-radio-toggle__label">
+                                                <input type="radio" name="radio">
+                                                <span class="sp-radio-toggle__text">Phase 2</span>
+                                            </label>
+
+                                            <label class="sp-radio-toggle__label">
+                                                <input type="radio" name="radio">
+                                                <span class="sp-radio-toggle__text">Phase 3</span>
+                                            </label>
+                                        </div>
+
                                     </div>
-
-
-                                </div>
-                                <div class="btn-pan btn-pan--center">
-                                    <div class="sp-radio-toggle">
-                                        <label class="sp-radio-toggle__label">
-                                            <input type="radio" name="radio" checked="">
-                                            <span class="sp-radio-toggle__text">Phase 1</span>
-                                        </label>
-                                        <label class="sp-radio-toggle__label">
-                                            <input type="radio" name="radio">
-                                            <span class="sp-radio-toggle__text">Phase 2</span>
-                                        </label>
-
-                                        <label class="sp-radio-toggle__label">
-                                            <input type="radio" name="radio">
-                                            <span class="sp-radio-toggle__text">Phase 3</span>
-                                        </label>
-                                    </div>
-
-                                </div>
+                                </section>
                             </aside>
                             <main class="sanctuary-deck">
                                 <div class="sanctuary-cell">
@@ -461,14 +525,15 @@
                                                    id="username">
                                         </div>
                                         <div>
-                                            <label class="sf__label">Planet</label>
-                                            <select type="text" placeholder="name" name="planet"
-                                                    class="sf__select sf__input--m">
-                                                <option value="mercury">Mercury</option>
-                                                <option value="venus">Venus</option>
-                                                <option value="earth">Earth</option>
-                                                <option value="mars">Mars</option>
-                                            </select>
+                                            <label class="sf__label sf__label--col">Planet
+                                                <select type="text" name="planet"
+                                                        class="sf__select sf__input--m">
+                                                    <option value="mercury">Mercury</option>
+                                                    <option value="venus">Venus</option>
+                                                    <option value="earth">Earth</option>
+                                                    <option value="mars">Mars</option>
+                                                </select>
+                                            </label>
                                         </div>
                                         <div class="sf__line">
                                             <label for="range" class="sf__label">Jump Range</label>
@@ -480,8 +545,8 @@
 
                                     <div class="btn-pan heresy-ward">
                                         <div>
-                                            <label for="username" class="sf__label">Name <span class="fsn"
-                                                                                               style="color: var(--color-red);">[ERRO\R]</span></label>
+                                            <label for="username-err" class="sf__label">Name <span class="fsn"
+                                                                                                   style="color: var(--color-red);">[ERRO\R]</span></label>
                                             <input type="text" name="username-err" placeholder="Ваше имя"
                                                    class="sf__input sf__input--m sf__input--error"
                                                    id="username-err">
@@ -549,11 +614,24 @@
                                                 <use xlink:href="../img/sp5sprite.svg#sliders"></use>
                                             </svg>
                                             Secondary</a>
+                                            <a href="#" class="btn btn--outline">
+                                                <svg>
+                                                    <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                                                </svg>
+                                                Outline</a>
                                             <a href="#" class="btn btn--ghost">
                                                 <svg>
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
                                                 </svg>
                                                 Ghost</a>
+
+                                        </div>
+                                        <div class="btn-pan btn-pan--sanctuary">
+                                            <a href="#" class="btn btn--disabled">
+                                                <svg>
+                                                    <use xlink:href="../img/sp5sprite.svg#sliders"></use>
+                                                </svg>
+                                                Disabled</a>
                                             <a href="#" class="btn btn--micro">
                                                 <svg>
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
@@ -564,21 +642,15 @@
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
                                                 </svg>
                                             </a>
-                                        </div>
-                                        <div class="btn-pan btn-pan--sanctuary">
-                                            <a href="#" class="btn btn--disabled">
-                                                <svg>
-                                                    <use xlink:href="../img/sp5sprite.svg#sliders"></use>
-                                                </svg>
-                                                Disabled</a>
+
                                         </div>
 
 
                                     </section>
 
                                 </div>
-                                <div class="sanctuary-cell">
-                                    <div class="btn-pan btn-pan--thin">
+                                <section class="sanctuary-cell sanctuary-cell--clr">
+                                    <div class="btn-pan btn-pan--center btn-pan--thin">
 
 
                                         <div class="sp-radio-box-wrapper">
@@ -635,7 +707,7 @@
 
                                     </div>
 
-                                </div>
+                                </section>
                             </main>
 
                         </div>
@@ -648,7 +720,121 @@
     </div>
 
 </main>
-<script src="../js/astrum.js"></script>
+
+<!-- Модальное окно для выбора цвета -->
+<div id="colorPickerModal">
+    <div id="colorPickerModalContent">
+        <h3>Выберите цвет</h3>
+        <input type="color" id="colorPicker" value="#ffffff">
+        <br>
+        <button id="applyColorBtn">Применить</button>
+        <button id="closeModalBtn">Закрыть</button>
+    </div>
+</div>
+
+<!-- Кнопка сброса цветов уже добавлена выше -->
+
+<!-- Скрипт для управления выбором цветов и сбросом -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const colorBlocks = document.querySelectorAll('.hub-li-color__bg');
+        const colorPickerModal = document.getElementById('colorPickerModal');
+        const colorPicker = document.getElementById('colorPicker');
+        const applyColorBtn = document.getElementById('applyColorBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const resetColorsBtn = document.getElementById('resetColorsBtn');
+
+        // Объект для хранения исходных значений переменных
+        const initialColors = {};
+
+        // Инициализация исходных значений
+        colorBlocks.forEach(block => {
+            const variable = block.getAttribute('data-variable');
+            const computedColor = getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
+            initialColors[variable] = computedColor;
+        });
+
+        let selectedVariable = null;
+
+        // Функция открытия модального окна
+        const openModal = (variable, currentColor) => {
+            selectedVariable = variable;
+            colorPicker.value = rgbToHex(currentColor);
+            colorPickerModal.style.display = 'block';
+        };
+
+        // Функция закрытия модального окна
+        const closeModal = () => {
+            selectedVariable = null;
+            colorPickerModal.style.display = 'none';
+        };
+
+        // Преобразование RGB в HEX
+        function rgbToHex(rgb) {
+            // Проверка, если цвет уже в HEX
+            if (rgb.startsWith('#')) {
+                return rgb;
+            }
+
+            const result = rgb.match(/\d+/g);
+            if (result) {
+                return '#' + result.slice(0, 3).map(x => {
+                    const hex = parseInt(x).toString(16);
+                    return hex.length === 1 ? '0' + hex : hex;
+                }).join('');
+            }
+            return '#ffffff';
+        }
+
+        // Добавление обработчиков кликов на цветовые блоки
+        colorBlocks.forEach(block => {
+            block.style.cursor = 'pointer';
+            block.addEventListener('click', () => {
+                const variable = block.getAttribute('data-variable');
+                const currentColor = getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
+                openModal(variable, currentColor);
+            });
+        });
+
+        // Обработчик кнопки "Применить" в модальном окне
+        applyColorBtn.addEventListener('click', () => {
+            if (selectedVariable) {
+                const newColor = colorPicker.value;
+                document.documentElement.style.setProperty(selectedVariable, newColor);
+                // Обновление цвета блока
+                const block = document.querySelector(`.hub-li-color__bg[data-variable="${selectedVariable}"]`);
+                if (block) {
+                    block.style.backgroundColor = newColor;
+                }
+                closeModal();
+            }
+        });
+
+        // Обработчик кнопки "Закрыть" в модальном окне
+        closeModalBtn.addEventListener('click', () => {
+            closeModal();
+        });
+
+        // Закрытие модального окна при клике вне контента
+        window.addEventListener('click', (event) => {
+            if (event.target === colorPickerModal) {
+                closeModal();
+            }
+        });
+
+        // Обработчик кнопки сброса цветов
+        resetColorsBtn.addEventListener('click', () => {
+            for (const variable in initialColors) {
+                document.documentElement.style.setProperty(variable, initialColors[variable]);
+                // Обновление цвета блока
+                const block = document.querySelector(`.hub-li-color__bg[data-variable="${variable}"]`);
+                if (block) {
+                    block.style.backgroundColor = initialColors[variable];
+                }
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
