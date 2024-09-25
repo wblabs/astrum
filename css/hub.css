@@ -1352,13 +1352,18 @@
     /*background: #0aaeb3;*/
 }
 
-.sanctuary-deck {
+.sanctuary-deck .sf__fieldset:not(:last-child){
+    margin-bottom:0;
 
 }
 
 .sanctuary-cell {
     padding: 8px 16px;
     border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.sanctuary-cell .sf__fieldset {
+
 }
 .sanctuary-cell--clr {
     border: none;
