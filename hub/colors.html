@@ -723,12 +723,14 @@
 
 <!-- Модальное окно для выбора цвета -->
 <div id="colorPickerModal">
-    <div id="colorPickerModalContent">
+    <div id="colorPickerModalContent" style="box-shadow: var(--sp-shadow-m);">
         <h3>Выберите цвет</h3>
-        <input type="color" id="colorPicker" value="#ffffff">
-        <br>
-        <button id="applyColorBtn">Применить</button>
-        <button id="closeModalBtn">Закрыть</button>
+        <input type="color" id="colorPicker" value="#ffffff" class="sf__input">
+        <div class="btn-pan btn-pan--thin">
+            <button id="closeModalBtn" class="btn btn--sec">Закрыть</button>
+
+        <button id="applyColorBtn" class="btn">Применить</button>
+        </div>
     </div>
 </div>
 

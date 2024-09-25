@@ -892,7 +892,7 @@ a.btn--disabled svg, .btn--disabled svg, .btn:disabled svg {
 
 /*   (6) SP5 Forms ------- ------- ------- ------- ------- */
 input {
-    accent-color: var(--color-primary);
+    accent-color: var(--ui-color-primary);
 }
 
 .sf {
@@ -1018,7 +1018,7 @@ input {
 }
 
 .sf__input:focus {
-    box-shadow: var(--ui-shadow-focus);
+    /*box-shadow: var(--ui-shadow-focus);*/
 }
 
 .sf__textarea:focus {
