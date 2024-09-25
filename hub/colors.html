@@ -46,7 +46,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
         #colorPickerModalContent {
@@ -355,7 +355,8 @@
 
                             </use>
                         </svg>
-                        Reset all</button>
+                        Reset all
+                    </button>
 
                 </section>
                 <div>
@@ -388,13 +389,13 @@
                                         navis-relay:
                                     </div>
                                     <a href="#" class="warp-gateway__point">
-                                        Ω point
+                                        <span class="fb">Ω</span> Point
                                     </a>
                                     <a href="#" class="warp-gateway__point">
-                                        ß point
+                                        <span class="fb">ß</span> Point
                                     </a>
                                     <a href="#" class="warp-gateway__point">
-                                        ∆ point
+                                        <span class="fb">∆</span> Point
                                     </a>
                                 </div>
                                 <div>
@@ -410,7 +411,7 @@
                                     <div class="sf">
                                         <div class="sf__line">
                                             <h4>Glory to the Emperor!</h4>
-                                            <div>
+                                            <div class="fsn">
                                                 Enlist to access the site’s sacred features and serve the Emperor
                                             </div>
                                         </div>
@@ -441,7 +442,8 @@
 
                                             <label class="sf__label fsn">
                                                 <input type="checkbox">
-                                                I want a left-handed bolter to serve the Emperor and protect the Imperium.
+                                                I want a left-handed bolter to serve the Emperor and protect the
+                                                Imperium.
                                             </label>
                                         </div>
                                         <div class="sf__line fsn">
@@ -456,7 +458,8 @@
 
                                             <label class="sf__label">
                                                 <input type="checkbox" checked disabled>
-                                                I bequeath my body and soul to the Emperor, to serve the Imperium in life and death.
+                                                I bequeath my body and soul to the Emperor, to serve the Imperium in
+                                                life and death.
                                             </label>
 
                                         </div>
@@ -535,12 +538,9 @@
                                                 </select>
                                             </label>
                                         </div>
-                                        <div class="sf__line">
-                                            <label for="range" class="sf__label">Jump Range</label>
-                                            <input type="range" name="range" min="0" max="10"
-                                                   class="sf__input sf__input--s"
-                                                   id="range">
-                                        </div>
+                                        <textarea class="sf__textarea"
+                                                  placeholder="Your message here"></textarea>
+
                                     </div>
 
                                     <div class="btn-pan heresy-ward">
@@ -562,6 +562,8 @@
                                                 <option value="mars">Mars</option>
                                             </select>
                                         </div>
+                                        <textarea class="sf__textarea sf__textarea--error"
+                                                  placeholder="Your message here"></textarea>
                                     </div>
 
                                 </div>
@@ -642,6 +644,13 @@
                                                     <use xlink:href="../img/sp5sprite.svg#sliders"></use>
                                                 </svg>
                                             </a>
+
+                                            <label for="range" class="sf__label fsn">Jump Range
+                                                <input type="range" name="range" min="0" max="10"
+                                                       class="sf__input sf__input--s"
+                                                       id="range">
+                                            </label>
+
 
                                         </div>
 
@@ -729,7 +738,7 @@
         <div class="btn-pan btn-pan--thin">
             <button id="closeModalBtn" class="btn btn--sec">Закрыть</button>
 
-        <button id="applyColorBtn" class="btn">Применить</button>
+            <button id="applyColorBtn" class="btn">Применить</button>
         </div>
     </div>
 </div>

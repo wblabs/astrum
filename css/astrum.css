@@ -708,10 +708,6 @@ a:active {
 }
 
 /* btn states */
-.btn:focus-visible {
-    outline: 1px solid var(--ui-color-primary);
-}
-
 a.btn--disabled, .btn--disabled, .btn:disabled {
     color: var(--ui-color-text-disabled);
     background: var(--ui-input-bg-disabled);
@@ -1017,15 +1013,11 @@ input {
     border: var(--ui-input-border-hover);
 }
 
-.sf__input:focus {
-    /*box-shadow: var(--ui-shadow-focus);*/
+button, .btn:focus, a.btn:focus, .sf__input:focus, .sf__textarea:focus, .sf__select:focus {
+    outline: none;
 }
 
-.sf__textarea:focus {
-    box-shadow: var(--ui-shadow-focus);
-}
-
-.sf__select:focus {
+button, .btn:focus-visible, a.btn:focus-visible, .sf__input:focus-visible, .sf__textarea:focus-visible, .sf__select:focus-visible {
     box-shadow: var(--ui-shadow-focus);
 }
 
