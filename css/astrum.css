@@ -149,10 +149,6 @@
 /*   :: VARS ---   */
 
 /*   :: Base tags ---   */
-* {
-    box-sizing: border-box;
-}
-
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -176,7 +172,10 @@ img {
     height: auto;
 }
 
-a {
+a,
+a:link,
+a:visited,
+a:active {
     color: var(--color-link);
     text-decoration: none;
     transition: var(--trans);
@@ -184,23 +183,8 @@ a {
 
 a:hover {
     color: var(--color-link-hover);
-    transition: var(--trans);
 }
 
-/*todo links states */
-/*
-
-a:link {
-    color: var(--color-link);
-}
-
-a:visited {
-    color: var(--color-link);
-}
-
-a:active {
-    color: var(--color-link);
-}*/
 
 /*   (2) SP5 Tokens ------- ------- ------- ------- ------- */
 
