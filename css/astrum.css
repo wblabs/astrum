@@ -70,6 +70,12 @@
     --color-blue: #104ae0;
     --color-purple: #885af8;
 
+    /* UI Sizes  4*/
+    --ui-size: 36px;
+    --ui-size-s: 24px;
+    --ui-size-l: 44px;
+    --ui-raduis: 8px;
+
     /* UI Colors 19*/
     --ui-bg-100: #F5F5F5;
     --ui-bg-200: #EBEBEB;
@@ -78,6 +84,7 @@
     --ui-input-bg: #fff;
     --ui-input-bg-active: #dee7ff;
     --ui-input-bg-disabled: #EFF2F6;
+
     --ui-color-primary: #0043ed;
     --ui-color-primary-active: var(--ui-color-primary);
     --ui-color-primary-hover: #1250ef;
@@ -95,6 +102,16 @@
     --ui-color-border-active: #0043ed;
     --ui-color-border-hover: #909dc1;
 
+    /* Buttons 8*/
+    --color-btn: var(--ui-color-primary);
+    --color-btn-hover: var(--ui-color-primary-hover);
+    --color-btn-text: var(--color-white);
+    --color-btn-text-hover: var(--color-white);
+    --color-btn-sec: #DBE5FF;
+    --color-btn-sec-hover: #EBF1FF;
+    --color-btn-sec-text: var(--color-primary);
+    --color-btn-sec-text-hover: var(--color-primary);
+
     /* UI Borders 3*/
     --ui-input-border: 1px solid var(--ui-color-border);
     --ui-input-border-active: 1px solid var(--ui-color-border-active); /* not used */
@@ -106,22 +123,6 @@
 
     /*UI Transitions 1*/
     --ui-trans: 0.16s ease;
-
-    /* UI Sizes  4*/
-    --ui-size: 36px;
-    --ui-size-s: 24px;
-    --ui-size-l: 44px;
-    --ui-raduis: 8px;
-
-    /* Buttons 8*/
-    --color-btn: var(--ui-color-primary);
-    --color-btn-hover: var(--ui-color-primary-hover);
-    --color-btn-text: var(--color-white);
-    --color-btn-text-hover: var(--color-white);
-    --color-btn-sec: #DBE5FF;
-    --color-btn-sec-hover: #EBF1FF;
-    --color-btn-sec-text: var(--color-primary);
-    --color-btn-sec-text-hover: var(--color-primary);
 
     /* Box-Shadows 6*/
     --sp-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
