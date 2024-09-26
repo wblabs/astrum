@@ -692,26 +692,6 @@ a:hover {
     height: 16px;
 }
 
-/* btn states */
-a.btn--disabled, .btn--disabled, .btn:disabled {
-    color: var(--ui-color-text-disabled);
-    background: var(--ui-input-bg-disabled);
-    box-shadow: none;
-    cursor: default;
-    user-select: none;
-}
-
-a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover {
-    color: var(--ui-color-text-disabled);
-    background: var(--ui-input-bg-disabled);
-    cursor: default;
-    box-shadow: none;
-    user-select: none;
-}
-
-a.btn--disabled svg, .btn--disabled svg, .btn:disabled svg {
-    stroke: var(--ui-color-text-disabled);
-}
 
 /* btn sizes --- */
 .btn--s, a.btn--s, .btn.ui-s, a.btn.ui-s {
@@ -842,6 +822,27 @@ a.btn--disabled svg, .btn--disabled svg, .btn:disabled svg {
 }
 
 /* /btn micro */
+
+/* btn disabled */
+a.btn--disabled, .btn--disabled, .btn:disabled, a.btn:disabled {
+    color: var(--ui-color-text-disabled);
+    background: var(--ui-input-bg-disabled);
+    box-shadow: none;
+    cursor: default;
+    user-select: none;
+}
+
+a.btn--disabled:hover, .btn--disabled:hover, .btn:disabled:hover, a.btn:disabled:hover {
+    color: var(--ui-color-text-disabled);
+    background: var(--ui-input-bg-disabled);
+    cursor: default;
+    box-shadow: none;
+    user-select: none;
+}
+
+a.btn--disabled svg, .btn--disabled svg, .btn:disabled svg, a.btn:disabled svg {
+    stroke: var(--ui-color-text-disabled);
+}
 
 /* btn pan */
 .btn-pan {
