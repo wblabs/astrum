@@ -785,13 +785,13 @@ a:hover {
 }
 
 .btn--ui svg {
-    stroke: var(--color-icon-grey);
+    stroke: currentColor;
     margin: 0;
 }
 
 .btn--ui:hover {
     background: var(--thover);
-    color: var(--color-icon-grey);
+    color: var(--color-text);
 }
 
 /* /btn ui*/
