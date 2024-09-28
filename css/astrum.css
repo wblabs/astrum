@@ -999,11 +999,11 @@ input {
     border: var(--ui-input-border-hover);
 }
 
-button, .btn:focus, a.btn:focus, .sf__input:focus, .sf__textarea:focus, .sf__select:focus {
+button:focus, .btn:focus, a.btn:focus, .sf__input:focus, .sf__textarea:focus, .sf__select:focus {
     outline: none;
 }
 
-button, .btn:focus-visible, a.btn:focus-visible, .sf__input:focus-visible, .sf__textarea:focus-visible, .sf__select:focus-visible {
+button:focus-visible, .btn:focus-visible, a.btn:focus-visible, .sf__input:focus-visible, .sf__textarea:focus-visible, .sf__select:focus-visible {
     box-shadow: var(--ui-shadow-focus);
 }
 
