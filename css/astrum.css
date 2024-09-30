@@ -958,7 +958,6 @@ input {
     font-size: 14px;
     border-radius: var(--ui-raduis);
     width: 200px;
-
 }
 
 .sf__input.fw, .sf__textarea.fw, .sf__select.fw {
