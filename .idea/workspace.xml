@@ -3,12 +3,14 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BookmarksViewState">
+    <option name="rewriteBookmarkType" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="btn--ui hover fix">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="aadb8c76-8570-49f6-ab1c-bca4391ac8b4" name="Changes" comment="Increase the height of the command-bridge logo to 24px in hub.css.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/astrum.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/astrum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sp-lab.html" beforeDir="false" afterPath="$PROJECT_DIR$/hub/sp-lab.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -34,14 +36,12 @@
     &quot;assignee&quot;: &quot;wblabs&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="5a0536c4-7a15-444d-856a-89eaeff11b05" />
-        <option name="url" value="https://github.com/wblabs/astrum.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wblabs/astrum.git&quot;,
+    &quot;accountId&quot;: &quot;5a0536c4-7a15-444d-856a-89eaeff11b05&quot;
+  }
+}</component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
@@ -55,18 +55,18 @@
                   <option name="darkBlue" value="60" />
                   <option name="darkGreen" value="68" />
                   <option name="darkRed" value="206" />
-                  <option name="green" value="61" />
-                  <option name="red" value="219" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
                 </RgbState>
               </option>
               <option name="second">
                 <RgbState>
-                  <option name="blue" value="66" />
+                  <option name="blue" value="65" />
                   <option name="darkBlue" value="65" />
                   <option name="darkGreen" value="126" />
                   <option name="darkRed" value="231" />
-                  <option name="green" value="142" />
-                  <option name="red" value="255" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
                 </RgbState>
               </option>
             </ColorState>
@@ -109,7 +109,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2LhiYH3P2Z1tJVPhlTCspUBpdLY" />
   <component name="ProjectLevelVcsManager">
@@ -130,7 +130,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Users/edost/git/astrum/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/edost/git/astrum&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/edost/git/astrum/hub&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -138,19 +138,18 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.stickyLines&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;writerside.last.selected.productastrum&quot;: &quot;astrm&quot;
   },
   &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
-    ]
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/hub" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
@@ -172,6 +171,13 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -323,7 +329,48 @@
       <workItem from="1709719616451" duration="132000" />
       <workItem from="1710011242013" duration="43000" />
       <workItem from="1710102356722" duration="3198000" />
-      <workItem from="1711106771865" duration="4169000" />
+      <workItem from="1711106771865" duration="4207000" />
+      <workItem from="1711646438260" duration="616000" />
+      <workItem from="1711824449655" duration="1624000" />
+      <workItem from="1711965304742" duration="2277000" />
+      <workItem from="1712270443774" duration="357000" />
+      <workItem from="1713351846210" duration="716000" />
+      <workItem from="1713425512490" duration="1114000" />
+      <workItem from="1716198450857" duration="2594000" />
+      <workItem from="1716832253354" duration="467000" />
+      <workItem from="1716837678310" duration="2537000" />
+      <workItem from="1719213073137" duration="2461000" />
+      <workItem from="1722337163100" duration="1251000" />
+      <workItem from="1724692419064" duration="4928000" />
+      <workItem from="1724781544707" duration="1410000" />
+      <workItem from="1724913128580" duration="33000" />
+      <workItem from="1724955905381" duration="22781000" />
+      <workItem from="1725346720697" duration="2590000" />
+      <workItem from="1725400384198" duration="27583000" />
+      <workItem from="1725535655255" duration="25547000" />
+      <workItem from="1725901332144" duration="5346000" />
+      <workItem from="1726049573222" duration="4355000" />
+      <workItem from="1726152023897" duration="5537000" />
+      <workItem from="1726217758704" duration="1048000" />
+      <workItem from="1726218860858" duration="826000" />
+      <workItem from="1726517719393" duration="23344000" />
+      <workItem from="1726812336819" duration="855000" />
+      <workItem from="1726822615412" duration="2491000" />
+      <workItem from="1727095007155" duration="3265000" />
+      <workItem from="1727105232287" duration="18000" />
+      <workItem from="1727105263005" duration="4638000" />
+      <workItem from="1727166097620" duration="29633000" />
+      <workItem from="1727334834810" duration="348000" />
+      <workItem from="1727340715097" duration="3032000" />
+      <workItem from="1727445441743" duration="1988000" />
+      <workItem from="1727530787538" duration="7767000" />
+      <workItem from="1727687171997" duration="862000" />
+      <workItem from="1727719966154" duration="10000" />
+      <workItem from="1727719991719" duration="3000" />
+      <workItem from="1727720007527" duration="2645000" />
+      <workItem from="1728020304723" duration="59000" />
+      <workItem from="1728022774026" duration="14000" />
+      <workItem from="1728032142895" duration="565000" />
     </task>
     <task id="LOCAL-00001" summary="new .idea resolve">
       <created>1676331206470</created>
@@ -437,271 +484,271 @@
       <option name="project" value="LOCAL" />
       <updated>1687169719457</updated>
     </task>
-    <task id="LOCAL-00033" summary="new s-toggle item in ui">
+    <task id="LOCAL-00068" summary="Updated CSS file to include a new class for small text (.fsn) with font-size set to var(--size-text-note) for better styling. Made adjustments to button sizes and added new button styles for thin and centered padding.">
       <option name="closed" value="true" />
-      <created>1700480311201</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+      <created>1716201337184</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1700480311201</updated>
+      <updated>1716201337184</updated>
     </task>
-    <task id="LOCAL-00034" summary="gitignore">
+    <task id="LOCAL-00069" summary="Updated CSS file to include a new class for small text (.fsn) with font-size set to var(--size-text-note) for better styling. Made adjustments to button sizes and added new button styles for thin and centered padding.">
       <option name="closed" value="true" />
-      <created>1700481102872</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+      <created>1725004612842</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
       <option name="project" value="LOCAL" />
-      <updated>1700481102872</updated>
+      <updated>1725004612842</updated>
     </task>
-    <task id="LOCAL-00035" summary="gitignore">
+    <task id="LOCAL-00070" summary="Update color box body structure and add color box subtitle styles.">
       <option name="closed" value="true" />
-      <created>1700481138859</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+      <created>1725009120592</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
       <option name="project" value="LOCAL" />
-      <updated>1700481138859</updated>
+      <updated>1725009120593</updated>
     </task>
-    <task id="LOCAL-00036" summary="new template skeleton on index">
+    <task id="LOCAL-00071" summary="Add color links to navigation menu in 'colors.html'.">
       <option name="closed" value="true" />
-      <created>1702400165541</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+      <created>1725015051675</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
       <option name="project" value="LOCAL" />
-      <updated>1702400165541</updated>
+      <updated>1725015051678</updated>
     </task>
-    <task id="LOCAL-00037" summary="new header nav, aside nav removed">
+    <task id="LOCAL-00072" summary="Change link from &quot;Layout&quot; to &quot;Colors&quot; and add link to &quot;Layout&quot; in navigation.">
       <option name="closed" value="true" />
-      <created>1703196820760</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+      <created>1725015067501</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
       <option name="project" value="LOCAL" />
-      <updated>1703196820760</updated>
+      <updated>1725015067501</updated>
     </task>
-    <task id="LOCAL-00038" summary="hub-lab icon added to header">
+    <task id="LOCAL-00073" summary="Refactor hub colors and add new UI elements and interactions.">
       <option name="closed" value="true" />
-      <created>1703200019547</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+      <created>1725402367269</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
       <option name="project" value="LOCAL" />
-      <updated>1703200019547</updated>
+      <updated>1725402367270</updated>
     </task>
-    <task id="LOCAL-00039" summary="new clg token">
+    <task id="LOCAL-00074" summary="Update colors in UI with new classes and variables.">
       <option name="closed" value="true" />
-      <created>1703343754597</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+      <created>1725467796171</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
       <option name="project" value="LOCAL" />
-      <updated>1703343754597</updated>
+      <updated>1725467796171</updated>
     </task>
-    <task id="LOCAL-00040" summary="new TOKENZZZ page">
+    <task id="LOCAL-00075" summary="Refactor UI colors and button styles in CSS.&#10;new .btn--disabled class">
       <option name="closed" value="true" />
-      <created>1703619776438</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+      <created>1725476173378</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
       <option name="project" value="LOCAL" />
-      <updated>1703619776438</updated>
+      <updated>1725476173378</updated>
     </task>
-    <task id="LOCAL-00041" summary="new button demo">
+    <task id="LOCAL-00076" summary="Update UI color variables and button styles in astrum.css.">
       <option name="closed" value="true" />
-      <created>1704613497992</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+      <created>1725482472277</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
       <option name="project" value="LOCAL" />
-      <updated>1704613497997</updated>
+      <updated>1725482472277</updated>
     </task>
-    <task id="LOCAL-00042" summary="new button sizes example">
+    <task id="LOCAL-00077" summary="Remove redundant button border color variables.">
       <option name="closed" value="true" />
-      <created>1704614660148</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+      <created>1725483309333</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
       <option name="project" value="LOCAL" />
-      <updated>1704614660148</updated>
+      <updated>1725483309333</updated>
     </task>
-    <task id="LOCAL-00043" summary="sp-switch hover fix">
+    <task id="LOCAL-00078" summary="Update media query in hub.css for screen widths up to 768px.">
       <option name="closed" value="true" />
-      <created>1704619073594</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+      <created>1725483392742</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
       <option name="project" value="LOCAL" />
-      <updated>1704619073594</updated>
+      <updated>1725483392742</updated>
     </task>
-    <task id="LOCAL-00044" summary="new demos and menu">
+    <task id="LOCAL-00079" summary="Add flex-shrink: 0 property to sidebar container in hub.css.">
       <option name="closed" value="true" />
-      <created>1704734992005</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+      <created>1725522243005</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
       <option name="project" value="LOCAL" />
-      <updated>1704734992005</updated>
+      <updated>1725522243005</updated>
     </task>
-    <task id="LOCAL-00045" summary="sf__select multiple fix">
+    <task id="LOCAL-00080" summary="Update text hover color variables in colors.html and astrum.css.">
       <option name="closed" value="true" />
-      <created>1704736008502</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+      <created>1725552379791</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
       <option name="project" value="LOCAL" />
-      <updated>1704736008502</updated>
+      <updated>1725552379791</updated>
     </task>
-    <task id="LOCAL-00046" summary="sf__select multiple fix with overflow">
+    <task id="LOCAL-00081" summary="Update text hover color variables in colors.html and astrum.css.">
       <option name="closed" value="true" />
-      <created>1704736097106</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+      <created>1725562364022</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
       <option name="project" value="LOCAL" />
-      <updated>1704736097106</updated>
+      <updated>1725562364022</updated>
     </task>
-    <task id="LOCAL-00047" summary="all inputs up to date">
+    <task id="LOCAL-00082" summary="Update color theme and radio toggle options in UI.">
       <option name="closed" value="true" />
-      <created>1704799799829</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+      <created>1725615760724</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
       <option name="project" value="LOCAL" />
-      <updated>1704799799829</updated>
+      <updated>1725615760724</updated>
     </task>
-    <task id="LOCAL-00048" summary="new sprites demo">
+    <task id="LOCAL-00083" summary="Update UI colors and add new elements in the void chamber section.&#10;fixed disabled inputs for checkbox/radio">
       <option name="closed" value="true" />
-      <created>1704814596217</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+      <created>1726562975273</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
       <option name="project" value="LOCAL" />
-      <updated>1704814596218</updated>
+      <updated>1726562975273</updated>
     </task>
-    <task id="LOCAL-00049" summary="new order of classes in astrum.css&#10;new basic tpl page start.html">
+    <task id="LOCAL-00084" summary="Adjust padding for range input in hub form and add styling for share buttons.">
       <option name="closed" value="true" />
-      <created>1705925581931</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+      <created>1726564102745</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
       <option name="project" value="LOCAL" />
-      <updated>1705925581931</updated>
+      <updated>1726564102745</updated>
     </task>
-    <task id="LOCAL-00050" summary="webmanifest url fix">
+    <task id="LOCAL-00085" summary="Remove outline from file input type.">
       <option name="closed" value="true" />
-      <created>1705925727404</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
+      <created>1726564391127</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1705925727405</updated>
+      <updated>1726564391127</updated>
     </task>
-    <task id="LOCAL-00051" summary="fixed path to home icon">
+    <task id="LOCAL-00086" summary="Style sanctuaries with a heresy-ward border and purge signal background.">
       <option name="closed" value="true" />
-      <created>1705936491628</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
+      <created>1726780180231</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1705936491628</updated>
+      <updated>1726780180231</updated>
     </task>
-    <task id="LOCAL-00052" summary="ui-s svg size fix">
+    <task id="LOCAL-00087" summary="Refactor unused CSS variables and update button transitions.">
       <option name="closed" value="true" />
-      <created>1706021920334</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
+      <created>1727107162424</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1706021920335</updated>
+      <updated>1727107162425</updated>
     </task>
-    <task id="LOCAL-00053" summary="new pagination from MDN">
+    <task id="LOCAL-00088" summary="colors demo section with active color choosing">
       <option name="closed" value="true" />
-      <created>1706122483809</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
+      <created>1727190122171</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1706122483814</updated>
+      <updated>1727190122172</updated>
     </task>
-    <task id="LOCAL-00054" summary="new pagination from MDN">
+    <task id="LOCAL-00089" summary="Refactor color picker modal styles and button classes.">
       <option name="closed" value="true" />
-      <created>1706177887787</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
+      <created>1727253565556</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1706177887788</updated>
+      <updated>1727253565556</updated>
     </task>
-    <task id="LOCAL-00055" summary="pagination margin fix">
+    <task id="LOCAL-00090" summary="Refactor CSS in hub.css for sanctuary-deck margin change.">
       <option name="closed" value="true" />
-      <created>1706521053146</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
+      <created>1727253887888</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1706521053150</updated>
+      <updated>1727253887888</updated>
     </task>
-    <task id="LOCAL-00056" summary="new SP Radio Toggle">
+    <task id="LOCAL-00091" summary="Refactor padding in hub card styles for better consistency.">
       <option name="closed" value="true" />
-      <created>1706721294137</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
+      <created>1727254636243</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1706721294139</updated>
+      <updated>1727254636243</updated>
     </task>
-    <task id="LOCAL-00057" summary="sp-radio-toggle input accessibility fix">
+    <task id="LOCAL-00092" summary="Refactor focus styles for buttons and form inputs.">
       <option name="closed" value="true" />
-      <created>1706801442206</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
+      <created>1727266335291</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1706801442207</updated>
+      <updated>1727266335291</updated>
     </task>
-    <task id="LOCAL-00058" summary="sp-radio-toggle input accessibility fix">
+    <task id="LOCAL-00093" summary="Refactor link styles for consistency and readability.">
       <option name="closed" value="true" />
-      <created>1706801558495</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
+      <created>1727266647965</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1706801558495</updated>
+      <updated>1727266647967</updated>
     </task>
-    <task id="LOCAL-00059" summary="sp-radio-toggle input accessibility fix">
+    <task id="LOCAL-00094" summary="Update UI sizes, borders, shadows, and transitions in astrum.css.">
       <option name="closed" value="true" />
-      <created>1706801655930</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
+      <created>1727274780603</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1706801655930</updated>
+      <updated>1727274780603</updated>
     </task>
-    <task id="LOCAL-00060" summary="max-width in fw inputs fix">
+    <task id="LOCAL-00095" summary="Refactor: Improved styling for disabled buttons.">
       <option name="closed" value="true" />
-      <created>1706874362644</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
+      <created>1727343101800</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1706874362644</updated>
+      <updated>1727343101800</updated>
     </task>
-    <task id="LOCAL-00061" summary="New SP Radio box">
+    <task id="LOCAL-00096" summary="Update button UI hover text color to use color-text variable to ensure consistency.">
       <option name="closed" value="true" />
-      <created>1707933082040</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
+      <created>1727434434776</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1707933082044</updated>
+      <updated>1727434434776</updated>
     </task>
-    <task id="LOCAL-00062" summary="focus and error vars for ui">
+    <task id="LOCAL-00097" summary="Update button UI hover text color to use color-text variable to ensure consistency.">
       <option name="closed" value="true" />
-      <created>1708009458355</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
+      <created>1727530837821</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1708009458355</updated>
+      <updated>1727530837823</updated>
     </task>
-    <task id="LOCAL-00063" summary="sf__input--error class">
+    <task id="LOCAL-00098" summary="Update placeholder text from Cyrillic to English for user input fields.">
       <option name="closed" value="true" />
-      <created>1708173196935</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
+      <created>1727621213757</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1708173196935</updated>
+      <updated>1727621213757</updated>
     </task>
-    <task id="LOCAL-00064" summary="btn--ui text color &amp; text size">
+    <task id="LOCAL-00099" summary="Update SVG logo in colors.html to improve readability and design.">
       <option name="closed" value="true" />
-      <created>1709018696088</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
+      <created>1727679729791</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1709018696088</updated>
+      <updated>1727679729791</updated>
     </task>
-    <task id="LOCAL-00065" summary="btn--ui hover fix">
+    <task id="LOCAL-00100" summary="Increase the height of the command-bridge logo to 24px in hub.css.">
       <option name="closed" value="true" />
-      <created>1709018873413</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
+      <created>1727720050477</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1709018873413</updated>
+      <updated>1727720050477</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,31 +767,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="hub-lab icon added to header" />
-    <MESSAGE value="new clg token" />
-    <MESSAGE value="new TOKENZZZ page" />
-    <MESSAGE value="new button demo" />
-    <MESSAGE value="new button sizes example" />
-    <MESSAGE value="sp-switch hover fix" />
-    <MESSAGE value="new demos and menu" />
-    <MESSAGE value="sf__select multiple fix" />
-    <MESSAGE value="sf__select multiple fix with overflow" />
-    <MESSAGE value="all inputs up to date" />
-    <MESSAGE value="new sprites demo" />
-    <MESSAGE value="new order of classes in astrum.css&#10;new basic tpl page start.html" />
-    <MESSAGE value="webmanifest url fix" />
-    <MESSAGE value="fixed path to home icon" />
-    <MESSAGE value="ui-s svg size fix" />
-    <MESSAGE value="new pagination from MDN" />
-    <MESSAGE value="pagination margin fix" />
-    <MESSAGE value="new SP Radio Toggle" />
-    <MESSAGE value="sp-radio-toggle input accessibility fix" />
-    <MESSAGE value="max-width in fw inputs fix" />
-    <MESSAGE value="New SP Radio box" />
-    <MESSAGE value="focus and error vars for ui" />
-    <MESSAGE value="sf__input--error class" />
-    <MESSAGE value="btn--ui text color &amp; text size" />
-    <MESSAGE value="btn--ui hover fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="btn--ui hover fix" />
+    <MESSAGE value="Refactor UI colors and button styles in CSS.&#10;new .btn--disabled class" />
+    <MESSAGE value="Update UI color variables and button styles in astrum.css." />
+    <MESSAGE value="Remove redundant button border color variables." />
+    <MESSAGE value="Update media query in hub.css for screen widths up to 768px." />
+    <MESSAGE value="Add flex-shrink: 0 property to sidebar container in hub.css." />
+    <MESSAGE value="Update text hover color variables in colors.html and astrum.css." />
+    <MESSAGE value="Update color theme and radio toggle options in UI." />
+    <MESSAGE value="Update UI colors and add new elements in the void chamber section.&#10;fixed disabled inputs for checkbox/radio" />
+    <MESSAGE value="Adjust padding for range input in hub form and add styling for share buttons." />
+    <MESSAGE value="Remove outline from file input type." />
+    <MESSAGE value="Style sanctuaries with a heresy-ward border and purge signal background." />
+    <MESSAGE value="Refactor unused CSS variables and update button transitions." />
+    <MESSAGE value="colors demo section with active color choosing" />
+    <MESSAGE value="Refactor color picker modal styles and button classes." />
+    <MESSAGE value="Refactor CSS in hub.css for sanctuary-deck margin change." />
+    <MESSAGE value="Refactor padding in hub card styles for better consistency." />
+    <MESSAGE value="Refactor focus styles for buttons and form inputs." />
+    <MESSAGE value="Refactor link styles for consistency and readability." />
+    <MESSAGE value="Update UI sizes, borders, shadows, and transitions in astrum.css." />
+    <MESSAGE value="Refactor: Improved styling for disabled buttons." />
+    <MESSAGE value="Update button UI hover text color to use color-text variable to ensure consistency." />
+    <MESSAGE value="Update placeholder text from Cyrillic to English for user input fields." />
+    <MESSAGE value="Update SVG logo in colors.html to improve readability and design." />
+    <MESSAGE value=".command-bridge__logo correct size" />
+    <MESSAGE value="Increase the height of the command-bridge logo to 24px in hub.css." />
+    <option name="LAST_COMMIT_MESSAGE" value="Increase the height of the command-bridge logo to 24px in hub.css." />
   </component>
 </project>

@@ -267,7 +267,7 @@ a:hover {
 }
 
 .dn {
-    display: none;
+    display: none !important;
 }
 
 .clicked-item {

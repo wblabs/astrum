@@ -17,12 +17,12 @@
 
 @font-face {
     font-family: pexelgrotesk;
-    src: url(../demo/fonts/PexelGrotesk-Regular.woff);
+    src: url(../hub/demo/fonts/PexelGrotesk-Regular.woff);
 }
 
 @font-face {
     font-family: unbounded;
-    src: url(../demo/fonts/unbounded/Unbounded-Medium.woff2);
+    src: url(../hub/demo/fonts/unbounded/Unbounded-Medium.woff2);
 }
 
 :root {
