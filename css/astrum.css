@@ -1159,7 +1159,7 @@ button:focus-visible, .btn:focus-visible, a.btn:focus-visible, .sf__input:focus-
     }
 
     input[type=checkbox]:not(.sp-switch) {
-        border-radius: 7px;
+        border-radius: 8px;
     }
 
     input[type=checkbox]:not(.sp-switch):after {
