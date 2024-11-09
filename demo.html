@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подача заявки на мероприятие</title>
+    <link rel="stylesheet" href="css/astrum.css">
+</head>
+<body>
+<div class="page">
+    <!-- Заголовок -->
+    <div class="grid-c-2" style="align-items: center; margin: var(--gap) 0;">
+        <div>
+            <h1>Подача заявки</h1>
+            <p class="cg">Заполните форму для получения аккредитации</p>
+        </div>
+        <div class="tar">
+            <button class="btn">
+                <svg class="spis">
+                    <use href="img/sp5sprite.svg#check"/>
+                </svg>
+                Подать заявку
+            </button>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="grid-c-2" style="align-items: start;">
+        <!-- Левая колонка -->
+        <div>
+            <!-- О процессе -->
+            <div class="sf__fieldset">
+                <div class="sf__legend">О процессе подачи заявки</div>
+
+                <div style="display: flex; gap: var(--gap); align-items: start; margin-bottom: var(--gf);">
+                    <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                    <div>
+                        <div class="fb">Выберите мероприятие</div>
+                        <div class="cg">Укажите мероприятие, на которое хотите получить аккредитацию</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: var(--gap); align-items: start; margin-bottom: var(--gf);">
+                    <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                    <div>
+                        <div class="fb">Выберите роль</div>
+                        <div class="cg">Определите вашу роль на мероприятии</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: var(--gap); align-items: start;">
+                    <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                    <div>
+                        <div class="fb">Заполните данные</div>
+                        <div class="cg">Предоставьте необходимую информацию и документы</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Информационное сообщение -->
+            <div class="sf__fieldset">
+                <div class="sf__legend">
+                    <svg class="spis">
+                        <use href="img/sp5sprite.svg#info"/>
+                    </svg>
+                    Важно
+                </div>
+                <p>Заявка будет рассмотрена в течение 3 рабочих дней. Результат рассмотрения придет на указанную почту.</p>
+            </div>
+        </div>
+
+        <!-- Правая колонка -->
+        <div>
+            <!-- Выбор мероприятия -->
+            <div class="sf__fieldset">
+                <div class="sf__legend">Выбор мероприятия и роли</div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Мероприятие</label>
+                    <select class="sf__select fw">
+                        <option value="">Выберите мероприятие</option>
+                        <option value="1">Чемпионат мира 2024 (15.06.2024 - 15.07.2024)</option>
+                        <option value="2">Международный музыкальный фестиваль (01.08.2024 - 07.08.2024)</option>
+                    </select>
+                </div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Роль на мероприятии</label>
+                    <select class="sf__select fw">
+                        <option value="">Выберите роль</option>
+                        <option value="1">Пресса - Для представителей СМИ</option>
+                        <option value="2">Технический персонал - Для обслуживающего персонала</option>
+                        <option value="3">VIP - Для особых гостей</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Личные данные -->
+            <div class="sf__fieldset">
+                <div class="sf__legend">Личные данные</div>
+
+                <div class="grid-c-2 gap">
+                    <div class="sf__line">
+                        <label class="sf__label">Фамилия</label>
+                        <input type="text" class="sf__input fw" placeholder="Введите фамилию">
+                    </div>
+                    <div class="sf__line">
+                        <label class="sf__label">Имя</label>
+                        <input type="text" class="sf__input fw" placeholder="Введите имя">
+                    </div>
+                </div>
+
+                <div class="grid-c-2 gap">
+                    <div class="sf__line">
+                        <label class="sf__label">Отчество</label>
+                        <input type="text" class="sf__input fw" placeholder="Введите отчество">
+                    </div>
+                    <div class="sf__line">
+                        <label class="sf__label">Дата рождения</label>
+                        <input type="date" class="sf__input fw">
+                    </div>
+                </div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Email</label>
+                    <input type="email" class="sf__input fw" placeholder="example@mail.com">
+                </div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Телефон</label>
+                    <input type="tel" class="sf__input fw" placeholder="+7 (___) ___-__-__">
+                </div>
+            </div>
+
+            <!-- Организация -->
+            <div class="sf__fieldset">
+                <div class="sf__legend">Данные об организации</div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Название организации</label>
+                    <input type="text" class="sf__input fw" placeholder="Введите название организации">
+                </div>
+
+                <div class="grid-c-2 gap">
+                    <div class="sf__line">
+                        <label class="sf__label">Должность</label>
+                        <input type="text" class="sf__input fw" placeholder="Введите должность">
+                    </div>
+                    <div class="sf__line">
+                        <label class="sf__label">Отдел</label>
+                        <input type="text" class="sf__input fw" placeholder="Введите отдел">
+                    </div>
+                </div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Рабочий телефон</label>
+                    <input type="tel" class="sf__input fw" placeholder="+7 (___) ___-__-__">
+                </div>
+            </div>
+
+            <!-- Документы -->
+            <div class="sf__fieldset">
+                <div class="sf__legend">Документы</div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Фотография</label>
+                    <div style="border: 1px dashed var(--ui-color-border); padding: var(--gap); text-align: center; border-radius: var(--ui-radius);">
+                        <svg class="spis" style="width: 32px; height: 32px; margin: var(--gf) auto;">
+                            <use href="img/sp5sprite.svg#upload"/>
+                        </svg>
+                        <div>Перетащите файл или нажмите для выбора</div>
+                        <div class="fsn cg">PNG, JPG до 5MB</div>
+                    </div>
+                </div>
+
+                <div class="sf__line">
+                    <label class="sf__label">Паспорт (первая страница)</label>
+                    <div style="border: 1px dashed var(--ui-color-border); padding: var(--gap); text-align: center; border-radius: var(--ui-radius);">
+                        <svg class="spis" style="width: 32px; height: 32px; margin: var(--gf) auto;">
+                            <use href="img/sp5sprite.svg#upload"/>
+                        </svg>
+                        <div>Перетащите файл или нажмите для выбора</div>
+                        <div class="fsn cg">PDF, JPG до 10MB</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопки управления -->
+            <div class="btn-pan btn-pan--right">
+                <button class="btn btn--outline">Отменить</button>
+                <button class="btn">
+                    <svg class="spis">
+                        <use href="img/sp5sprite.svg#save"/>
+                    </svg>
+                    Подать заявку
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

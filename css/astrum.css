@@ -69,7 +69,7 @@
     --ui-size: 36px;
     --ui-size-s: 24px;
     --ui-size-l: 44px;
-    --ui-raduis: 8px;
+    --ui-radius: 8px;
 
     /* UI Colors */
     --ui-bg-100: #F5F5F5;
@@ -890,7 +890,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: var(--gf);
-    border-radius: calc(var(--ui-raduis) * 2);
+    border-radius: calc(var(--ui-radius) * 2);
 }
 
 .sf__fieldset:not(:last-child) {
@@ -948,7 +948,7 @@ input {
     background: var(--ui-input-bg);
     color: var(--ui-color-text);
     font-size: 14px;
-    border-radius: var(--ui-raduis);
+    border-radius: var(--ui-radius);
     width: 200px;
 }
 
@@ -1841,7 +1841,7 @@ a.pcard__btn:hover {
     justify-content: center;
     padding: 0.5em 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: var(--ui-raduis);
+    border-radius: var(--ui-radius);
     text-decoration: none;
     color: var(--color-text);
     height: var(--ui-size-s);
