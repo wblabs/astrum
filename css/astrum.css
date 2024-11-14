@@ -418,13 +418,13 @@ a:hover {
 .itext {
     display: inline-flex;
     align-items: center;
-    gap: var(--gf);
+    gap: 4px;
 }
 
 [class*='itext-'] {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 [class*='itext-'] img {
