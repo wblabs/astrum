@@ -622,7 +622,7 @@ a:hover {
     justify-content: center;
     gap: var(--gf);
     padding: 0 24px;
-    border-radius: var(--gf);
+    border-radius: var(--ui-radius);
     border: 1px solid transparent;
     cursor: pointer;
     color: var(--color-btn-text);
