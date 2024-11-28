@@ -1867,6 +1867,13 @@ a.pcard__btn:hover {
 
 /* /Pagination */
 
+/* Summary */
+summary {
+    cursor: pointer;
+}
+
+/* /Summary */
+
 /*   (9) SP5 Basic Layout ------- ------- ------- ------- ------- */
 
 /* for fixed footer */
