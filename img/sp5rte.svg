@@ -81,5 +81,9 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 13.5H19.5V12.5H14.5V13.5Z"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 15.5H19.5V14.5H14.5V15.5Z"/>
     </symbol>
+    <symbol id="video" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6.2H6C5.00589 6.2 4.2 7.00589 4.2 8V15C4.2 15.9941 5.00589 16.8 6 16.8H18C18.9941 16.8 19.8 15.9941 19.8 15V8C19.8 7.00589 18.9941 6.2 18 6.2ZM6 5C4.34315 5 3 6.34315 3 8V15C3 16.6569 4.34315 18 6 18H18C19.6569 18 21 16.6569 21 15V8C21 6.34315 19.6569 5 18 5H6Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 11.5001L9.75 8.46899L9.75 14.5312L15 11.5001ZM13 11.5001L10.75 10.201L10.75 12.7991L13 11.5001Z"/>
+    </symbol>
 </svg>
-        <!-- sp5 RTE icons v 0.4 -->
+        <!-- sp5 RTE icons v 0.5 -->
