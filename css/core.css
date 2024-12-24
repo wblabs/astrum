@@ -14,7 +14,7 @@
 /*template*/
 @import url(normalize/normalize.css);
 @import url(astrum.css);
-@import url(hub.css);
+@import url(../hub/hub.css);
 
 
 
