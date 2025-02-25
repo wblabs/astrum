@@ -2099,7 +2099,8 @@ summary {
 /* Main, Page, Aside
 ------- ------- ------- */
 .page {
-    width: var(--wid);
+    width: 100%;
+    max-width: var(--wid);
     margin: 0 auto;
     padding: 0 var(--gf);
 }
