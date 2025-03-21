@@ -42,18 +42,18 @@ function hub_setTheme(p,s) {
 }
 
 //color picker for Primary color
-var inputP = document.getElementById('hub-picker-p')
+var inputP = document.getElementById('docs-picker-p')
 inputP.addEventListener('change',
 function hub_setFromPickerP (){
     r.style.setProperty('--color-primary', inputP.value)
 })
-var inputS = document.getElementById('hub-picker-s')
+var inputS = document.getElementById('docs-picker-s')
 inputS.addEventListener('change',
 function hub_setFromPickerP (){
     r.style.setProperty('--color-secondary', inputS.value)
 })
 
-//hub-popover
+//docs-popover
 function hubPopover() {
-    document.getElementById("hub-popover").classList.toggle("hub-popover--active");
+    document.getElementById("docs-popover").classList.toggle("docs-popover--active");
 }
