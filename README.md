@@ -129,7 +129,7 @@ Astrum uses CSS variables for easy customization. You can override the default v
 
 ## Figma Integration: AstrumTransitus
 
-Enhance your workflow with the official Figma plugin for Astrum:
+Enhance your workflow with the Figma plugin (Development version) for Astrum:
 
 ### AstrumTransitus
 
