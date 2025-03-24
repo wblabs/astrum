@@ -1,13 +1,14 @@
-# AstrumTpl 1.6.0
+# Astrum
 
 A modern, lightweight front-end template by Space5 for building responsive web applications.
 
-<img src="img/logo.svg" width="100" alt="AstrumTpl Logo">
+<img src="img/logo.svg" width="100" alt="Astrum Logo">
 
 ## Overview
 
 AstrumTpl provides a robust foundation for web projects with carefully crafted CSS components, responsive layouts, and utility classes. It's designed to be simple, flexible, and highly customizable.
 
+<img src="img/600x300__main.png" alt="Astrum Hero image">
 ## Features
 
 - **Responsive Grid System** - Flexible grid layouts that work across devices
