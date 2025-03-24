@@ -1,14 +1,12 @@
 # Astrum
-
+<img src="img/600x300__main.png" alt="Astrum Hero image">
 A modern, lightweight front-end template by Space5 for building responsive web applications.
-
-<img src="img/logo.svg" width="100" alt="Astrum Logo">
 
 ## Overview
 
-AstrumTpl provides a robust foundation for web projects with carefully crafted CSS components, responsive layouts, and utility classes. It's designed to be simple, flexible, and highly customizable.
+Astrum provides a robust foundation for web projects with carefully crafted CSS components, responsive layouts, and utility classes. It's designed to be simple, flexible, and highly customizable.
 
-<img src="img/600x300__main.png" alt="Astrum Hero image">
+
 ## Features
 
 - **Responsive Grid System** - Flexible grid layouts that work across devices
@@ -20,7 +18,7 @@ AstrumTpl provides a robust foundation for web projects with carefully crafted C
 
 ## Demo
 
-Visit the online demo to see AstrumTpl in action:
+Visit the online demo to see Astrum in action:
 
 - **Live Demo**: [wblabs.github.io/astrum-demo/](https://wblabs.github.io/astrum-demo/)
 - **Demo Repository**: [github.com/wblabs/astrum-demo](https://github.com/wblabs/astrum-demo)
@@ -31,7 +29,7 @@ Visit the online demo to see AstrumTpl in action:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/space5/astrumtpl.git
+   git clone https://github.com/wblabs/astrum.git
    ```
 
 2. Include the CSS in your HTML:
@@ -118,7 +116,7 @@ The CSS is organized in a logical, easy-to-understand structure:
 
 ## Customization
 
-AstrumTpl uses CSS variables for easy customization. You can override the default variables in your own CSS file:
+Astrum uses CSS variables for easy customization. You can override the default variables in your own CSS file:
 
 ```css
 :root {
@@ -131,7 +129,7 @@ AstrumTpl uses CSS variables for easy customization. You can override the defaul
 
 ## Figma Integration: AstrumTransitus
 
-Enhance your workflow with the official Figma plugin for AstrumTpl:
+Enhance your workflow with the official Figma plugin for Astrum:
 
 ### AstrumTransitus
 
@@ -139,30 +137,22 @@ Enhance your workflow with the official Figma plugin for AstrumTpl:
 
 - **Repository**: [github.com/wblabs/AstrumTransitus](https://github.com/wblabs/AstrumTransitus)
 
-AstrumTransitus allows designers to export Figma styles directly to AstrumTpl CSS variables, streamlining the design-to-development process. This powerful tool ensures design consistency by automatically generating CSS that matches your Figma design system.
+AstrumTransitus allows designers to export Figma styles directly to Astrum CSS variables, streamlining the design-to-development process. This powerful tool ensures design consistency by automatically generating CSS that matches your Figma design system.
 
 ### Key Features:
-- One-click export from Figma to AstrumTpl CSS
+- One-click export from Figma to Astrum CSS
 - Automatic conversion of Figma color styles to CSS variables
 - Typography and spacing token generation
-- Direct implementation into your AstrumTpl project
+- Direct implementation into your Astrum project
 
 ## Browser Support
 
-AstrumTpl supports all modern browsers, including:
+Astrum supports all modern browsers, including:
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
