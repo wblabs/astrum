@@ -1,44 +1,169 @@
-# AstrumTpl 1.6 
+# AstrumTpl 1.6.0
 
-## CSS structure:
+A modern, lightweight front-end template by Space5 for building responsive web applications.
 
-### (1) Base settings
-    Font import
-    VARS
-    Base tags
+<img src="img/logo.svg" width="100" alt="AstrumTpl Logo">
 
-### (2) SP5 Tokens 
+## Overview
 
-### (3) SP5 Services
-    Pads
-    SP5 icons
-    Made on space5
-    Video responsive
+AstrumTpl provides a robust foundation for web projects with carefully crafted CSS components, responsive layouts, and utility classes. It's designed to be simple, flexible, and highly customizable.
 
-### (4) SP5 Grid
+## Features
 
-### (5) SP5 Buttons
-    .btn
-    btn sizes
-    .btn--outline
-    .btn--ghost
-    .btn--ui
-    .btn--micro
-    .btn-pan
+- **Responsive Grid System** - Flexible grid layouts that work across devices
+- **Modern UI Components** - Buttons, forms, cards, navigation elements, and more
+- **Variable-based Theming** - Easily customize colors, sizes, and spacing
+- **Lightweight & Fast** - No bloat, only what you need
+- **Cross-browser Compatible** - Works in all modern browsers
+- **Mobile-first Design** - Looks great on any device
 
-### (6) SP5 Forms
+## Demo
 
-### (7) SP5 Typographic
-### (8) SP5 Components
-    Product card
-    Breadcrumb
-    Pagination
+Visit the online demo to see AstrumTpl in action:
 
-### (9) SP5 Basic layout
-    Header
-    Main Nav
-    Main, Page
-    Footer
+- **Live Demo**: [wblabs.github.io/astrum-demo/](https://wblabs.github.io/astrum-demo/)
+- **Demo Repository**: [github.com/wblabs/astrum-demo](https://github.com/wblabs/astrum-demo)
 
-### (10) TPL Start
+## Getting Started
 
+### Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/space5/astrumtpl.git
+   ```
+
+2. Include the CSS in your HTML:
+   ```html
+   <link href="css/normalize/normalize.css" rel="stylesheet">
+   <link href="css/astrum.css" rel="stylesheet">
+   ```
+
+3. Include the JavaScript:
+   ```html
+   <script src="js/astrum.js"></script>
+   ```
+
+### Project Structure
+
+```
+astrum/
+├── css/
+│   ├── normalize/
+│   │   └── normalize.css
+│   ├── astrum.css
+│   └── sp5notify.css
+├── js/
+│   └── astrum.js
+├── img/
+│   ├── logo.svg
+│   ├── sp5sprite.svg
+│   ├── sp5share.svg
+│   └── sp5rte.svg
+├── favicon/
+│   └── ...
+└── index.html
+```
+
+## CSS Structure
+
+The CSS is organized in a logical, easy-to-understand structure:
+
+1. **Base Settings**
+    - Font imports
+    - Variables
+    - Base tag styling
+
+2. **Tokens**
+    - Core design tokens and utility classes
+
+3. **Service Classes**
+    - Padding utilities
+    - Icon systems
+    - Video responsive utilities
+
+4. **Grid System**
+    - Responsive grid layouts
+    - Column configurations
+
+5. **Buttons**
+    - Default buttons
+    - Button variations (outline, ghost, UI, micro)
+    - Button sizes
+    - Button groups
+
+6. **Forms**
+    - Input fields
+    - Checkboxes and radio buttons
+    - Select menus
+    - Form layouts
+
+7. **Typography**
+    - Headings
+    - Text utilities
+    - Font styles
+
+8. **Components**
+    - Product cards
+    - Breadcrumbs
+    - Pagination
+    - Notifications
+
+9. **Layout**
+    - Header
+    - Navigation
+    - Main content
+    - Footer
+
+## Customization
+
+AstrumTpl uses CSS variables for easy customization. You can override the default variables in your own CSS file:
+
+```css
+:root {
+  --color-primary: #your-primary-color;
+  --color-secondary: #your-secondary-color;
+  --wf: 'Your Font', sans-serif;
+  --wid: 1200px; /* max width of content */
+}
+```
+
+## Figma Integration: AstrumTransitus
+
+Enhance your workflow with the official Figma plugin for AstrumTpl:
+
+### AstrumTransitus
+
+"A plugin to export styles from Figma into Astrum CSS, purified and ready to serve the Emperor"
+
+- **Repository**: [github.com/wblabs/AstrumTransitus](https://github.com/wblabs/AstrumTransitus)
+
+AstrumTransitus allows designers to export Figma styles directly to AstrumTpl CSS variables, streamlining the design-to-development process. This powerful tool ensures design consistency by automatically generating CSS that matches your Figma design system.
+
+### Key Features:
+- One-click export from Figma to AstrumTpl CSS
+- Automatic conversion of Figma color styles to CSS variables
+- Typography and spacing token generation
+- Direct implementation into your AstrumTpl project
+
+## Browser Support
+
+AstrumTpl supports all modern browsers, including:
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Created and maintained by Ed Ostrovsky
+- Normalize.css by Nicolas Gallagher and Jonathan Neal
