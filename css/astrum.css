@@ -264,12 +264,12 @@ a:hover {
 
 .clicked-item {
     cursor: pointer;
-    transition: all 0.2s;
+    transition: var(--trans);
     text-decoration: none;
 }
 
 .clicked-item:hover {
-    transition: all 0.2s;
+    transition: var(--trans);
     text-decoration: underline;
 }
 
